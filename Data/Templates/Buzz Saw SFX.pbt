@@ -58,10 +58,10 @@ Assets {
           }
           AutoPlay: true
           Transient: true
-          Pitch: 900
-          Volume: 0.6
-          Falloff: -1
-          Radius: -1
+          Pitch: 1200
+          Volume: 0.5
+          Falloff: 4000
+          Radius: 500
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -94,9 +94,9 @@ Assets {
           AutoPlay: true
           Transient: true
           Pitch: 300
-          Volume: 0.4
-          Falloff: -1
-          Radius: -1
+          Volume: 0.3
+          Falloff: 4000
+          Radius: 500
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -128,10 +128,10 @@ Assets {
           }
           AutoPlay: true
           Transient: true
-          Pitch: 500
-          Volume: 1
-          Falloff: -1
-          Radius: -1
+          Pitch: 800
+          Volume: 0.7
+          Falloff: 4000
+          Radius: 500
           FadeInTime: 0.1
           StartTime: 1.35
           IsSpatializationEnabled: true

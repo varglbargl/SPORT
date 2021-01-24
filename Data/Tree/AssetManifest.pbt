@@ -206,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14672404339147855747
+  Name: "Water"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_077"
+  }
+}
+Assets {
   Id: 14671404091088855717
   Name: "Sign Font 1 Neon Outline: A"
   PlatformAssetType: 1
@@ -221,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_mil_fence_pole_02_end_001"
+  }
+}
+Assets {
+  Id: 14430901596065935635
+  Name: "Sun"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Sun"
   }
 }
 Assets {
@@ -311,15 +329,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Outline_01_Text_018"
-  }
-}
-Assets {
-  Id: 13519136249364037771
-  Name: "Sports Game End Buzzer Alarm 03 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_sports_game_end_buzzer_03_Cue_ref"
   }
 }
 Assets {
@@ -431,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11957752047128977443
+  Name: "Moon"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Moon"
+  }
+}
+Assets {
   Id: 11708018539974020779
   Name: "Sign Font 1 Bulbs: ."
   PlatformAssetType: 1
@@ -530,6 +548,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11041032944589227390
+  Name: "UI Gradient Circular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -617,6 +644,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Urban_Icon_058"
+  }
+}
+Assets {
+  Id: 8782163070724756276
+  Name: "BG Gradient 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_027"
   }
 }
 Assets {
@@ -737,12 +773,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7606244814295697377
+  Name: "VO 10 Second Countdown Female 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "vo_meta_10_second_countdown_female_full_01_Cue_ref"
+  }
+}
+Assets {
   Id: 7573629316572273781
   Name: "Sign Font 1 Neon Outline: N"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Outline_01_Text_013"
+  }
+}
+Assets {
+  Id: 7470635470376502876
+  Name: "Drumline Percussion Music Stingers Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_percussion_drumline_stingers_ref"
   }
 }
 Assets {
@@ -1052,6 +1106,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1673604840497545603
+  Name: "Tornado"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Tornado"
+  }
+}
+Assets {
   Id: 1650030349424866433
   Name: "Icon Random"
   PlatformAssetType: 9
@@ -1076,6 +1139,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
+  Id: 1219164686276614780
+  Name: "Icon Core"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Core"
   }
 }
 Assets {
@@ -1106,12 +1178,12 @@ Assets {
   }
 }
 Assets {
-  Id: 813042068477676783
-  Name: "Male Generic Pain Groan 01 SFX"
-  PlatformAssetType: 7
+  Id: 549490623371013608
+  Name: "Icon Ice"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_male_generic_pain_groan_01a_Cue_ref"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Ice"
   }
 }
 Assets {

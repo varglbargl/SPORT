@@ -44,19 +44,27 @@ function touchBall(thisTrigger, other)
 end
 
 function resetBall()
+  Task.Wait(math.random(1, 50) / 100)
   if not Object.IsValid(ball) then return end
 
-  ball:SetWorldPosition(ball.serverUserData["RespawnPos"])
+  if ball.lifeSpan > 0 then
+    ball:Destroy()
+    return
+  end
+
+  ball.collision = Collision.INHERIT
+  ball.visibility = Visibility.INHERIT
   ball.serverUserData["ScoringPlayer"] = nil
+  ball:SetWorldPosition(ball.serverUserData["RespawnPos"])
   ball:SetVelocity(Vector3.ZERO)
   ball:SetAngularVelocity(Vector3.ZERO)
 end
 
--- woulda thought this stuff would get automatically cleaned up when the script is destroyed but here we are
 local overlapEvent = nil
 local resetEvent = nil
 local destroyEvent = nil
 
+-- woulda thought this stuff would get automatically cleaned up when the script is destroyed yet here we are
 function cleanupEvents()
   if overlapEvent then overlapEvent:Disconnect() end
   if resetEvent then resetEvent:Disconnect() end

@@ -750,14 +750,14 @@ Objects {
     Location {
       X: -230
       Y: 160
-      Z: 795
+      Z: 713.712585
     }
     Rotation {
       Roll: -90
     }
     Scale {
       X: 0.00995253
-      Y: 3.60000038
+      Y: 2.88673615
       Z: 18.8999977
     }
   }
@@ -784,11 +784,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.22
+      Float: 0.345
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.25
+      Float: 1.8
     }
   }
   Collidable_v2 {
@@ -821,14 +821,14 @@ Objects {
     Location {
       X: -230
       Y: 160
-      Z: 140
+      Z: 94.3470612
     }
     Rotation {
       Roll: -90
     }
     Scale {
       X: 0.00995253
-      Y: 3.60000038
+      Y: 2.88673615
       Z: 44.8
     }
   }
@@ -855,11 +855,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.22
+      Float: 0.345
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.5
+      Float: 4.5
     }
   }
   Collidable_v2 {

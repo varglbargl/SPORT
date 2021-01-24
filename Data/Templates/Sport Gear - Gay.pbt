@@ -2181,23 +2181,23 @@ Assets {
         Name: "Hearts Volume VFX"
         Transform {
           Location {
-            X: -15
-            Y: 1.59335432e-05
-            Z: 3.21753323e-05
+            X: -14.9998493
+            Y: 1.5933545e-05
+            Z: 6.22309744e-05
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 3866454960287923517
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 3
+            Float: 4
           }
           Overrides {
             Name: "bp:Density"
@@ -2219,6 +2219,7 @@ Assets {
           Overrides {
             Name: "bp:Wind Speed"
             Vector {
+              Z: -60
             }
           }
           Overrides {
@@ -2248,23 +2249,23 @@ Assets {
         Name: "Hearts Volume VFX"
         Transform {
           Location {
-            X: -15
-            Y: 1.59335432e-05
-            Z: 4.72031534e-05
+            X: -14.9998522
+            Y: 1.5933545e-05
+            Z: 7.72625208e-05
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 3866454960287923517
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 3
+            Float: 4
           }
           Overrides {
             Name: "bp:Density"
@@ -2286,6 +2287,7 @@ Assets {
           Overrides {
             Name: "bp:Wind Speed"
             Vector {
+              Z: -60
             }
           }
           Overrides {
@@ -2321,20 +2323,18 @@ Assets {
           }
           Rotation {
             Pitch: 6.83018879e-06
-            Yaw: -1.30275513e-11
-            Roll: -2.84977727e-12
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 3866454960287923517
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 3
+            Float: 4
           }
           Overrides {
             Name: "bp:Density"
@@ -2356,6 +2356,7 @@ Assets {
           Overrides {
             Name: "bp:Wind Speed"
             Vector {
+              Z: -60
             }
           }
           Overrides {

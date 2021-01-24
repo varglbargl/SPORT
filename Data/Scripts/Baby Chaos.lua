@@ -3,9 +3,11 @@
 function chaosLoop()
   local sound = sounds[math.random(1, #sounds)]
 
+  sound.pitch = math.random(-6, 6) * 100
+
   sound:Play()
 
-  Task.Wait(math.random(8, 16))
+  Task.Wait(math.random(10, 20))
 
   chaosLoop()
 end

@@ -6,7 +6,7 @@ Objects {
   Transform {
     Location {
       Y: 1.87493896
-      Z: 1262.62256
+      Z: 1226.98828
     }
     Rotation {
       Roll: -90
@@ -148,7 +148,7 @@ Objects {
   Transform {
     Location {
       Y: 1.875
-      Z: 1610
+      Z: 1522.94226
     }
     Rotation {
       Roll: -90
@@ -217,7 +217,7 @@ Objects {
   Transform {
     Location {
       Y: -2233.125
-      Z: 7.99325657
+      Z: -64.5
     }
     Rotation {
     }
@@ -257,7 +257,7 @@ Objects {
   Transform {
     Location {
       Y: 2221.875
-      Z: 7.99325657
+      Z: -64.5
     }
     Rotation {
     }
@@ -297,7 +297,7 @@ Objects {
   Transform {
     Location {
       Y: 1.875
-      Z: 955
+      Z: 882.253906
     }
     Rotation {
       Roll: -90

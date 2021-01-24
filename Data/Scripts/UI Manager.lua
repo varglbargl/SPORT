@@ -1,11 +1,20 @@
-﻿local FOUL_BALL = script:GetCustomProperty("FoulBall"):WaitForObject()
-local SCORE = script:GetCustomProperty("Score"):WaitForObject()
+﻿local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
+local FOUL_BALL = script:GetCustomProperty("FoulBall"):WaitForObject()
+local SCORE = script:GetCustomProperty("Score"):WaitForObject()
+local TIMER = script:GetCustomProperty("Timer"):WaitForObject()
+local COUNTDOWN_SFX = script:GetCustomProperty("CountdownSFX")
+
+local JOINED_PANEL = script:GetCustomProperty("PlayerJoinedPanel"):WaitForObject()
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
 local TEAM_LOGOS = script:GetCustomProperty("TeamLogos"):WaitForObject()
 local HOME_TOWN = script:GetCustomProperty("HomeTown"):WaitForObject()
+local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local TEAM_NAME = script:GetCustomProperty("TeamName"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
+local ABBR = script:GetCustomProperty("Abbr"):WaitForObject()
+local ABBR_ICON = script:GetCustomProperty("AbbrIcon"):WaitForObject()
+local ABBR_BKG = script:GetCustomProperty("AbbrBackground"):WaitForObject()
 
 local teamLogos = TEAM_LOGOS:GetChildren()
 
@@ -81,6 +90,17 @@ function setTextWithShadow(shadow, message, optionalColor)
   end
 end
 
+function setImageWithShadow(shadow, image, optionalColor)
+  local highlight = shadow:GetChildren()[1]
+
+  highlight:SetImage(image)
+  shadow:SetImage(image)
+
+  if optionalColor then
+    highlight:SetColor(optionalColor)
+  end
+end
+
 function showMessage(message)
   setTextWithShadow(FOUL_BALL, message)
 
@@ -114,49 +134,81 @@ function updateScore(thisPlayer, resourceName, amount)
   if thisPlayer ~= clientPlayer then return end
   if resourceName ~= "Score" then return end
 
-  setTextWithShadow(SCORE, "SCORE: " .. amount)
+  setTextWithShadow(SCORE, tostring(amount))
 end
 
-local roundStartTime = time()
+local roundStartTime = nil
 local timerTask = nil
+local roundLength = 0
 
-function restartRound()
-  if timerTask then timerTask:Cancel() end
-
-  roundStartTime = time()
-  timerTask = Task.Spawn(tickTimer)
+function syncRound(thisTime, thisLength, reset)
+  roundStartTime = thisTime
+  roundLength = thisLength
 end
 
-function tickTimer(dt)
-  dt = dt or 0
+function tickTimer()
 
-  print(os.time())
+  local now = time() - 1
+  local diff = math.abs(roundStartTime - now)
 
-  tickTimer(Task.Wait(1 - dt) - 1)
+  local minutes = math.floor((roundLength - diff) / 60)
+  local seconds = math.floor((roundLength - diff) % 60)
+
+  if seconds == 10 then
+    local countdown = World.SpawnAsset(COUNTDOWN_SFX)
+  end
+
+  if seconds < 10 then
+    setTextWithShadow(TIMER, minutes..":0"..seconds)
+  else
+    setTextWithShadow(TIMER, minutes..":"..seconds)
+  end
+
+  if diff % 1 == 0 then
+    tickTimer(Task.Wait(1))
+  else
+    tickTimer(Task.Wait(1.01 - diff % 1))
+  end
 end
 
 Events.Connect("FoulBall", foulBall)
 Events.Connect("Wasted", wasted)
-Events.Connect("RoundRestart", restartRound)
+Events.Connect("sR", syncRound)
 
 -- handler params: Player_, string_, integer_
 clientPlayer.resourceChangedEvent:Connect(updateScore)
 
-setTextWithShadow(SCORE, "SCORE: 0")
+setTextWithShadow(SCORE, "0")
 
-function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
+function announceTeamJoined(thisPlayer, homeTown, teamName, teamAbbr, primaryColor, secondaryColor, logoInner, logoOuter)
   local randomLogo = teamLogos[math.random(1, #teamLogos)]
 
   primaryColor = Color.FromLinearHex(primaryColor)
   secondaryColor = Color.FromLinearHex(secondaryColor)
 
-  setTextWithShadow(HOME_TOWN, homeTown)
-  setTextWithShadow(TEAM_NAME, teamName, secondaryColor)
+  setTextWithShadow(HOME_TOWN, homeTown, secondaryColor)
+  setTextWithShadow(TEAM_NAME, teamName, primaryColor)
+  setTextWithShadow(PLAYER_NAME, thisPlayer.name)
+
+  if thisPlayer == clientPlayer then
+    setTextWithShadow(ABBR, teamAbbr)
+    setImageWithShadow(ABBR_ICON, randomLogo:GetImage(), secondaryColor)
+    ABBR_ICON.rotationAngle = randomLogo.rotationAngle
+  end
 
   randomLogo.visibility = Visibility.INHERIT
   randomLogo:SetColor(secondaryColor)
   HELMET_ICON:SetColor(primaryColor)
-  BACKGROUND:SetColor(primaryColor * Color.New(0.1, 0.1, 0.1, 1))
+  ABBR_BKG:SetColor(primaryColor)
+  BACKGROUND:SetColor(primaryColor * Color.New(0.075, 0.075, 0.075, 1))
+
+  EaseUI.EaseX(JOINED_PANEL, -75, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
+
+  Task.Wait(8)
+
+  EaseUI.EaseX(JOINED_PANEL, -625, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.IN)
 end
 
 Events.Connect("tJ", announceTeamJoined)
+
+tickTimer(Task.Wait(1) - 1)

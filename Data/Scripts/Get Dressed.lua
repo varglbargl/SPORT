@@ -4,9 +4,9 @@ local GEAR_GREEN = script:GetCustomProperty("SportGearGreen")
 local GEAR_GAY = script:GetCustomProperty("SportGearGay")
 
 local costumes = {
-  {gear = GEAR_ORANGE,  primary = "8D1E00",  secondary = "8B8AA7"},
+  {gear = GEAR_ORANGE,  primary = "8D1E00",  secondary = "9796BC"},
   {gear = GEAR_TEAL,    primary = "005D6D",  secondary = "FFCEAB"},
-  {gear = GEAR_GREEN,   primary = "6C7600",  secondary = "921D03"},
+  {gear = GEAR_GREEN,   primary = "393D00",  secondary = "921D03"},
   {gear = GEAR_GAY,     primary = "F77892",  secondary = "26D2FB"}
 }
 
