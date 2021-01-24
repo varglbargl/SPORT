@@ -37,6 +37,7 @@ function touchBall(thisTrigger, other)
       sfx.isOcclusionEnabled = false
       sfx.radius = 1000
       sfx.falloff = 5000
+      sfx.volume = 0.5
       sfx:Play()
     end
   end

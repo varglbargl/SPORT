@@ -4,10 +4,10 @@ local GEAR_GREEN = script:GetCustomProperty("SportGearGreen")
 local GEAR_GAY = script:GetCustomProperty("SportGearGay")
 
 local costumes = {
-  GEAR_ORANGE,
-  GEAR_TEAL,
-  GEAR_GREEN,
-  GEAR_GAY
+  {gear = GEAR_ORANGE,  primary = "8D1E00",  secondary = "8B8AA7"},
+  {gear = GEAR_TEAL,    primary = "005D6D",  secondary = "FFCEAB"},
+  {gear = GEAR_GREEN,   primary = "6C7600",  secondary = "921D03"},
+  {gear = GEAR_GAY,     primary = "F77892",  secondary = "26D2FB"}
 }
 
 local costumeCounter = math.random(1, #costumes)
@@ -15,7 +15,7 @@ local costumeCounter = math.random(1, #costumes)
 function wearCostume(player, costume)
   local sockets = costume:GetChildren()
 
-  for idx, child in pairs(sockets) do  --  for all the socket folders under the script node...
+  for idx, child in pairs(sockets) do
     if child:IsA("Equipment") then
       child:Equip(player)
       child.unequippedEvent:Connect(function(thisEquipment, thisPlayer)
@@ -23,20 +23,22 @@ function wearCostume(player, costume)
       end)
 
     else
-      child:AttachToPlayer(player, child.name)  --  attach each socket folder to their corresponding sockets in the skeleton
+      child:AttachToPlayer(player, child.name)
     end
   end
 end
 
 function OnPlayerJoined(player)
   local randomCostume = costumes[costumeCounter]
-  local suit = World.SpawnAsset(randomCostume, {position = Vector3.UP * -1000})
+  local suit = World.SpawnAsset(randomCostume.gear, {position = Vector3.UP * -1000})
 
   wearCostume(player, suit)
 
   costumeCounter = costumeCounter % #costumes + 1
 
   suit:Destroy()
+
+  Events.Broadcast("ReadyPlayer", player, randomCostume.primary, randomCostume.secondary)
 end
 
 function OnPlayerLeft(player)

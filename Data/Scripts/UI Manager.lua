@@ -1,14 +1,11 @@
 ﻿local FOUL_BALL = script:GetCustomProperty("FoulBall"):WaitForObject()
-local FOUL_BALL_SHADOW = script:GetCustomProperty("FoulBallShadow"):WaitForObject()
 local SCORE = script:GetCustomProperty("Score"):WaitForObject()
-local SCORE_SHADOW = script:GetCustomProperty("ScoreShadow"):WaitForObject()
 
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
 local TEAM_LOGOS = script:GetCustomProperty("TeamLogos"):WaitForObject()
 local HOME_TOWN = script:GetCustomProperty("HomeTown"):WaitForObject()
 local TEAM_NAME = script:GetCustomProperty("TeamName"):WaitForObject()
-local HOME_TOWN_SHADOW = script:GetCustomProperty("HomeTownShadow"):WaitForObject()
-local TEAM_NAME_SHADOW = script:GetCustomProperty("TeamNameShadow"):WaitForObject()
+local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
 
 local teamLogos = TEAM_LOGOS:GetChildren()
 
@@ -73,92 +70,19 @@ local deathMessages = {
   "[SUPA HOT FIRE VOICE] I'M NOT A GAMER"
 }
 
-local teamNames = {
-  "Spenglers",
-  "Brunches",
-  "Pianos",
-  "Laundry",
-  "Dungeon Punchers",
-  "Clam Diggers",
-  "Flannel Moms",
-  "Flamingos",
-  "Sparkle Ponies",
-  "Finger Guns",
-  "Poltergeists",
-  "Batmans",
-  "Rectangles",
-  "Karate Kids",
-  "Giraffes",
-  "Puppycats",
-  "Jazz Hands",
-  "Taco Trucks",
-  "Duct Tapers",
-  "Scallywags",
-  "David Bowies",
-  "Guitar Heroes",
-  "Calligraphers",
-  "Gregs",
-  "Tap Shoes",
-  "Muppets",
-  "Spectastrophies",
-  "Disasterpieces",
-  "Illuminati",
-  "Princesses",
-  "Nebulords",
-  "Idiots",
-  "Sailor Scouts",
-  "H4ck3rZ",
-  "Etceteras",
-  "Tire Slashers",
-  "Trash Fires",
-  "Cold Ones",
-  "Teen Girl Squad",
-  "VTuber Union Local 203",
-  "Obvious Cheaters",
-  "Sport Players",
-  "Team Namers",
-  "Shakey Dogs",
-  "Podcasters",
-  "Twelve Bricks"
-}
+function setTextWithShadow(shadow, message, optionalColor)
+  local highlight = shadow:GetChildren()[1]
 
-local homeTowns = {
-  "Philadelphia",
-  "Kansas City",
-  "New Jersey",
-  "Manchester",
-  "Edmonton",
-  "Winnipeg",
-  "Hangzhou",
-  "Buenos Aires",
-  "Tokyo-3",
-  "Atlantis",
-  "Kilkenny",
-  "Rivendell",
-  "Mos Eisley",
-  "Cloudsdale",
-  "Rotterdam",
-  "Ripper's Gultch",
-  "Goldshire",
-  "Mystic Falls",
-  "Gravity Falls",
-  "Bikini Bottom",
-  "Springfield",
-  "Ogdenvill",
-  "Twin Peaks",
-  "Moscow",
-  "City 17",
-  "Pacific Ocean",
-  "Rhonert Park",
-  "Petaluma",
-  "Wrong Town",
-  "Tristram",
-  "Beach City"
-}
+  highlight.text = message
+  shadow.text = message
+
+  if optionalColor then
+    highlight:SetColor(optionalColor)
+  end
+end
 
 function showMessage(message)
-  FOUL_BALL.text = message
-  FOUL_BALL_SHADOW.text = message
+  setTextWithShadow(FOUL_BALL, message)
 
   if messageTask then messageTask:Cancel() end
 
@@ -166,8 +90,7 @@ function showMessage(message)
     Task.Wait(3.5)
     if not Object.IsValid(clientPlayer) then return end
 
-    FOUL_BALL.text = ""
-    FOUL_BALL_SHADOW.text = ""
+    setTextWithShadow(FOUL_BALL, "")
   end)
 end
 
@@ -191,8 +114,7 @@ function updateScore(thisPlayer, resourceName, amount)
   if thisPlayer ~= clientPlayer then return end
   if resourceName ~= "Score" then return end
 
-  SCORE.text = "SCORE: " .. amount
-  SCORE_SHADOW.text = "SCORE: " .. amount
+  setTextWithShadow(SCORE, "SCORE: " .. amount)
 end
 
 local roundStartTime = time()
@@ -208,7 +130,7 @@ end
 function tickTimer(dt)
   dt = dt or 0
 
-
+  print(os.time())
 
   tickTimer(Task.Wait(1 - dt) - 1)
 end
@@ -220,12 +142,21 @@ Events.Connect("RoundRestart", restartRound)
 -- handler params: Player_, string_, integer_
 clientPlayer.resourceChangedEvent:Connect(updateScore)
 
-local randomPastel = Color.Lerp(Color.Random(), Color.WHITE, 0.5)
+setTextWithShadow(SCORE, "SCORE: 0")
 
-HOME_TOWN.text = homeTowns[math.random(1, #homeTowns)]
-HOME_TOWN_SHADOW.text = HOME_TOWN.text
-TEAM_NAME.text = teamNames[math.random(1, #teamNames)]
-TEAM_NAME_SHADOW.text = TEAM_NAME.text
-TEAM_NAME:SetColor(randomPastel)
-teamLogos[math.random(1, #teamLogos)].visibility = Visibility.INHERIT
-HELMET_ICON:SetColor(randomPastel)
+function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
+  local randomLogo = teamLogos[math.random(1, #teamLogos)]
+
+  primaryColor = Color.FromLinearHex(primaryColor)
+  secondaryColor = Color.FromLinearHex(secondaryColor)
+
+  setTextWithShadow(HOME_TOWN, homeTown)
+  setTextWithShadow(TEAM_NAME, teamName, secondaryColor)
+
+  randomLogo.visibility = Visibility.INHERIT
+  randomLogo:SetColor(secondaryColor)
+  HELMET_ICON:SetColor(primaryColor)
+  BACKGROUND:SetColor(primaryColor * Color.New(0.1, 0.1, 0.1, 1))
+end
+
+Events.Connect("tJ", announceTeamJoined)

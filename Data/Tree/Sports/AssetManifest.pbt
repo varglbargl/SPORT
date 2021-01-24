@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8050488825896343419
+  Name: "Pipe - 7-Sided Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_7_sided_thick_001"
+  }
+}
+Assets {
   Id: 5007694927593417850
   Name: "Metal Thud Hollow Hit Impact Long 01 SFX"
   PlatformAssetType: 7

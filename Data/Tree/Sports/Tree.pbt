@@ -4173,7 +4173,7 @@ Objects {
   }
   ParentId: 1231868157073874387
   ChildIds: 5670524663164356745
-  ChildIds: 16587432708350997933
+  ChildIds: 11841465390561766043
   ChildIds: 1927559803104026278
   ChildIds: 12575599183450449489
   WantsNetworking: true
@@ -4278,6 +4278,7 @@ Objects {
   ChildIds: 1608181730803226860
   ChildIds: 8864333098145771165
   ChildIds: 2529399686091654366
+  ChildIds: 16587432708350997933
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -4286,6 +4287,54 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 16587432708350997933
+  Name: "Tire Worn"
+  Transform {
+    Location {
+      X: -65.671875
+      Y: 10.1119995
+      Z: 206.390869
+    }
+    Rotation {
+      Pitch: -90
+    }
+    Scale {
+      X: 3.40619659
+      Y: 3.40619659
+      Z: 3.13153839
+    }
+  }
+  ParentId: 1927559803104026278
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9605197959426201295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -4536,39 +4585,33 @@ Objects {
   }
 }
 Objects {
-  Id: 16587432708350997933
-  Name: "Tire Worn"
+  Id: 11841465390561766043
+  Name: "Pipe - 7-Sided Thick"
   Transform {
     Location {
-      X: -71.9414063
-      Y: 5.77813721
+      X: 76.9404297
+      Y: 6.87579346
     }
     Rotation {
-      Pitch: -90
+      Pitch: 90
     }
     Scale {
-      X: 3.40619659
-      Y: 3.40619659
-      Z: 3.13153839
+      X: 4.5
+      Y: 4.5
+      Z: 1.4
     }
   }
   ParentId: 11685211788237344670
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
-      Id: 9605197959426201295
+      Id: 8050488825896343419
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -8075,14 +8118,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.23714709
-            Y: 1.23714709
-            Z: 1.23714709
           }
         }
       }

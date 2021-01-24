@@ -80,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17586365689296088662
+  Name: "BG Gradient 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
   Id: 17153255781905611132
   Name: "Sign Font 1 Neon Lines: ="
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Horizontal_01_Text_048"
+  }
+}
+Assets {
+  Id: 16964117855639857004
+  Name: "Decal Spray Manticore 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_spray_manticore_001"
   }
 }
 Assets {
@@ -140,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_sports_organ_short_rise_ref"
+  }
+}
+Assets {
+  Id: 16343881362210963692
+  Name: "Corner Beveled 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CornerBeveled_012"
   }
 }
 Assets {
@@ -233,6 +260,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14042490741502659623
+  Name: "Frame Beveled 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_033"
+  }
+}
+Assets {
   Id: 13932033635576794901
   Name: "Decal Painted Lines 01"
   PlatformAssetType: 14
@@ -311,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_numbers_002"
+  }
+}
+Assets {
+  Id: 13268682126596343854
+  Name: "UI Basic Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Frame_001"
   }
 }
 Assets {
@@ -440,6 +485,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11384631316084891420
+  Name: "Sci-fi Frame 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Frame_006"
+  }
+}
+Assets {
   Id: 11370451361056094342
   Name: "Ball"
   PlatformAssetType: 9
@@ -566,6 +620,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8671663117954032084
+  Name: "Sci-fi Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Frame_005"
+  }
+}
+Assets {
+  Id: 8637606698667981252
+  Name: "Sci-fi 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Fill_006"
+  }
+}
+Assets {
   Id: 8570050337888796693
   Name: "Vinyl Floor Square 01"
   PlatformAssetType: 2
@@ -683,6 +755,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7388441351131580249
+  Name: "Frame Beveled 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_026"
+  }
+}
+Assets {
   Id: 7387552368942579971
   Name: "Snake"
   PlatformAssetType: 9
@@ -716,6 +797,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 6506212536894600650
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
+  }
+}
+Assets {
+  Id: 6429935802779687077
+  Name: "Sci-fi Fill 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Fill_004"
   }
 }
 Assets {
@@ -779,6 +878,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_sports_organ_letsgo_ref"
+  }
+}
+Assets {
+  Id: 5124962683585716950
+  Name: "BG Gradient 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_026"
   }
 }
 Assets {

@@ -4,16 +4,14 @@ local trigger = script.parent
 local bowlingPin = script.parent.parent
 local triggerPos = trigger:GetWorldPosition()
 
-local tipped = false
-
 bowlingPin.serverUserData["RespawnPos"] = bowlingPin:GetWorldPosition()
 bowlingPin.serverUserData["Hitable"] = true
 bowlingPin.serverUserData["HitSFX"] = HIT_SFX
 
 function bumpOther(thisTrigger, other)
-  if tipped then return end
   if not Object.IsValid(other) then return end
   if not Object.IsValid(other.serverUserData["ScoringPlayer"]) and not other:IsA("Player") then return end
+  if math.abs(bowlingPin:GetWorldRotation().x) + math.abs(bowlingPin:GetWorldRotation().y) > 10 then return end
 
   local scorer = nil
 
@@ -35,17 +33,17 @@ function bumpOther(thisTrigger, other)
     sfx.isOcclusionEnabled = false
     sfx.radius = 1000
     sfx.falloff = 5000
+    sfx.volume = 0.5
     sfx:Play()
   end
 
   Task.Wait(3)
 
   bowlingPin.serverUserData["ScoringPlayer"] = nil
-  tipped = false
 
   Task.Wait(7)
 
-  while bowlingPin:GetVelocity().size > 100 and bowlingPin:GetWorldPosition().size < 8000 do
+  while bowlingPin:GetVelocity().size > 200 and bowlingPin:GetWorldPosition().size < 8000 do
     Task.Wait(1)
   end
 
@@ -66,7 +64,7 @@ trigger.beginOverlapEvent:Connect(bumpOther)
 Events.Connect("ResetAllBalls", resetPin)
 
 while Task.Wait(10) do
-  if not tipped and bowlingPin:GetVelocity().size < 10 and (bowlingPin:GetWorldPosition() - bowlingPin.serverUserData["RespawnPos"]).size > 20 or bowlingPin:GetWorldRotation().x > 10 or bowlingPin:GetWorldRotation().y > 10 then
+  if not tipped and bowlingPin:GetVelocity().size < 10 and (bowlingPin:GetWorldPosition() - bowlingPin.serverUserData["RespawnPos"]).size > 20 then
     resetPin()
   end
 end

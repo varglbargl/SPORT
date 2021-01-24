@@ -10,9 +10,9 @@ Assets {
         Name: "Bowling Pin"
         Transform {
           Scale {
-            X: 0.883676469
-            Y: 0.883676469
-            Z: 0.883676469
+            X: 1.23714709
+            Y: 1.23714709
+            Z: 1.23714709
           }
         }
         ParentId: 1231868157073874387
@@ -33,6 +33,7 @@ Assets {
             IsEnabled: true
             Mass: 100
             LinearDamping: 0.5
+            AngularDamping: 0.2
           }
           Radius: 40
           Length: 200
