@@ -1,7 +1,8 @@
 local jiggler = script.parent
 local jiggleRoot = script.parent.parent
 
-local fromPos = jiggler:GetWorldRotation() * Vector3.FORWARD * 500
+local fromPos = jiggler:GetWorldPosition() + jiggleRoot:GetWorldRotation() * Vector3.FORWARD * -100
+jiggler:LookAt(fromPos)
 
 function jiggle()
   local toPos = jiggler:GetWorldPosition() + jiggleRoot:GetWorldRotation() * Vector3.FORWARD * -100

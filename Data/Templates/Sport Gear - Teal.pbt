@@ -95,6 +95,7 @@ Assets {
         ChildIds: 897462405555628170
         ChildIds: 13177740495233551521
         ChildIds: 12009519742180857005
+        ChildIds: 3167219714336810651
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -1613,7 +1614,7 @@ Assets {
               R: 1.5
               G: 1.21152318
               B: 1.00499988
-              A: 1
+              A: 0.75
             }
           }
         }
@@ -2334,6 +2335,70 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+          }
+        }
+      }
+      Objects {
+        Id: 3167219714336810651
+        Name: "Bubble Stream VFX"
+        Transform {
+          Location {
+            X: -25.3130455
+            Y: 16.8336391
+            Z: 31.6724796
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+          }
+          Scale {
+            X: 0.0653758645
+            Y: 0.0653758645
+            Z: 0.0653758645
+          }
+        }
+        ParentId: 7442889842098264649
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 25
+              G: 25
+              B: 25
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13467854320985403070
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
@@ -7178,6 +7243,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_eightsided_002"
+      }
+    }
+    Assets {
+      Id: 13467854320985403070
+      Name: "Bubble Stream VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_bubble_stream"
       }
     }
     Assets {

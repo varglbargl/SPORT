@@ -1077,6 +1077,7 @@ Objects {
   Name: "Bump Zone"
   Transform {
     Location {
+      Z: -101.834587
     }
     Rotation {
     }

@@ -63,7 +63,6 @@ Assets {
         ChildIds: 13847368497683356025
         ChildIds: 1966846069344295032
         ChildIds: 1102313456134586896
-        ChildIds: 16101284929293859120
         ChildIds: 2772682230924348935
         ChildIds: 12033124746058536236
         ChildIds: 14826942298815926484
@@ -91,6 +90,9 @@ Assets {
         ChildIds: 7986117734710927083
         ChildIds: 9178258875792516454
         ChildIds: 6729218249744335527
+        ChildIds: 16101284929293859120
+        ChildIds: 11964473484996430372
+        ChildIds: 13526011220017900458
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -451,56 +453,6 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-          }
-        }
-      }
-      Objects {
-        Id: 16101284929293859120
-        Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
-        Transform {
-          Location {
-            X: -2.75776243
-            Y: -0.011964255
-            Z: 23.0815411
-          }
-          Rotation {
-            Pitch: 9.93504238
-            Yaw: -3.05175781e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10240237753363757351
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Continue Play While Silent"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 15312176520349150751
-          }
-          TeamSettings {
-          }
-          AudioBP {
-            AutoPlay: true
-            Repeat: true
-            Pitch: 700
-            Volume: 0.15
-            Falloff: 800
-            Radius: 10
-            IsSpatializationEnabled: true
-            IsAttenuationEnabled: true
           }
         }
       }
@@ -1514,9 +1466,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 5
-              G: 5
-              B: 5
+              R: 2
+              G: 1.82781458
+              B: 1.74
               A: 1
             }
           }
@@ -1562,9 +1514,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 5
-              G: 5
-              B: 5
+              R: 2
+              G: 1.82781458
+              B: 1.74
               A: 1
             }
           }
@@ -1612,9 +1564,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.880000055
-              G: 0.880000055
-              B: 0.880000055
+              R: 2
+              G: 1.82781458
+              B: 1.74
               A: 1
             }
           }
@@ -1637,7 +1589,7 @@ Assets {
       }
       Objects {
         Id: 2244196085320587262
-        Name: "Pipe - Quarter Thick"
+        Name: "Pipe - Half"
         Transform {
           Location {
             X: 2.68554688
@@ -1969,7 +1921,7 @@ Assets {
       }
       Objects {
         Id: 9178258875792516454
-        Name: "Cylinder - Rounded Bottom-Aligned"
+        Name: "Cylinder"
         Transform {
           Location {
             X: 0.0568457022
@@ -2020,7 +1972,7 @@ Assets {
       }
       Objects {
         Id: 6729218249744335527
-        Name: "Cylinder - Rounded Bottom-Aligned"
+        Name: "Cylinder"
         Transform {
           Location {
             X: 0.0551757813
@@ -2070,6 +2022,218 @@ Assets {
         }
       }
       Objects {
+        Id: 16101284929293859120
+        Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
+        Transform {
+          Location {
+            X: -2.75776243
+            Y: -0.011964255
+            Z: 23.0815411
+          }
+          Rotation {
+            Pitch: 9.93504238
+            Yaw: -3.05175781e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10240237753363757351
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Continue Play While Silent"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 15312176520349150751
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Repeat: true
+            Pitch: 700
+            Volume: 0.15
+            Falloff: 800
+            Radius: 10
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
+          }
+        }
+      }
+      Objects {
+        Id: 11964473484996430372
+        Name: "Explosion Kit Fire Ring VFX"
+        Transform {
+          Location {
+            X: 1.93167198
+            Y: 12.9586105
+            Z: 26.0010433
+          }
+          Rotation {
+            Pitch: -67.216
+            Yaw: -24.7815857
+            Roll: 24.8541164
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10240237753363757351
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Looping"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Loop Duration"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Size Min"
+            Float: 0.03
+          }
+          Overrides {
+            Name: "bp:Size Max"
+            Float: 0.04
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.187999964
+              G: 0.878199935
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 12829424240831885246
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 13526011220017900458
+        Name: "Explosion Kit Fire Ring VFX"
+        Transform {
+          Location {
+            X: 1.93164599
+            Y: -11.695137
+            Z: 26.0010395
+          }
+          Rotation {
+            Pitch: -65.7245178
+            Yaw: 31.7035637
+            Roll: -31.8005981
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10240237753363757351
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Looping"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Loop Duration"
+            Float: 0.25
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Size Min"
+            Float: 0.03
+          }
+          Overrides {
+            Name: "bp:Size Max"
+            Float: 0.04
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.187999964
+              G: 0.878199935
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 12829424240831885246
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
         Id: 3866454960287923517
         Name: "neck"
         Transform {
@@ -2091,9 +2255,6 @@ Assets {
         }
         ParentId: 3387421417440170199
         ChildIds: 15426170065752815633
-        ChildIds: 3023162057271566485
-        ChildIds: 139917381972628416
-        ChildIds: 13680106159121164301
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -2173,211 +2334,6 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-          }
-        }
-      }
-      Objects {
-        Id: 3023162057271566485
-        Name: "Hearts Volume VFX"
-        Transform {
-          Location {
-            X: -14.9998493
-            Y: 1.5933545e-05
-            Z: 6.22309744e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 3866454960287923517
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Life"
-            Float: 4
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.0749999285
-              G: 0.722499788
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              Z: -60
-            }
-          }
-          Overrides {
-            Name: "bp:Burst"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 8356303135181338016
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 139917381972628416
-        Name: "Hearts Volume VFX"
-        Transform {
-          Location {
-            X: -14.9998522
-            Y: 1.5933545e-05
-            Z: 7.72625208e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 3866454960287923517
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Life"
-            Float: 4
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 0.329999983
-              B: 0.549001276
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              Z: -60
-            }
-          }
-          Overrides {
-            Name: "bp:Burst"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 8356303135181338016
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 13680106159121164301
-        Name: "Hearts Volume VFX"
-        Transform {
-          Location {
-            X: -14.9998465
-            Y: 1.59335432e-05
-            Z: 4.72031534e-05
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 3866454960287923517
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Life"
-            Float: 4
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.1
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              Z: -60
-            }
-          }
-          Overrides {
-            Name: "bp:Burst"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 8356303135181338016
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
           }
         }
       }
@@ -10404,15 +10360,6 @@ Assets {
       }
     }
     Assets {
-      Id: 15312176520349150751
-      Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
-      PlatformAssetType: 10
-      PrimaryAsset {
-        AssetType: "AudioBlueprintAssetRef"
-        AssetId: "abp_8bit_funland_sections_kit_ref"
-      }
-    }
-    Assets {
       Id: 10422289660553740450
       Name: "Ring - Quarter"
       PlatformAssetType: 1
@@ -10530,6 +10477,24 @@ Assets {
       }
     }
     Assets {
+      Id: 15312176520349150751
+      Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "abp_8bit_funland_sections_kit_ref"
+      }
+    }
+    Assets {
+      Id: 12829424240831885246
+      Name: "Explosion Kit Fire Ring VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_explokit_fireRing"
+      }
+    }
+    Assets {
       Id: 16777535128683621171
       Name: "Ring - Thick"
       PlatformAssetType: 1
@@ -10545,15 +10510,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_urb_office_carpet_004_uv_ref"
-      }
-    }
-    Assets {
-      Id: 8356303135181338016
-      Name: "Hearts Volume VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_heart_volume"
       }
     }
     Assets {

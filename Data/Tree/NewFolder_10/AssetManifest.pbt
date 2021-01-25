@@ -1,27 +1,27 @@
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 9249676690155819450
-  Name: "Concrete Basic 01"
+  Id: 18209708905784008205
+  Name: "Rubber Old 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_concrete_001"
+    AssetId: "mi_mil_rubber_old_001_uv_ref"
   }
 }
 Assets {
-  Id: 7620351576055659081
-  Name: "Pipe - Half Thick"
+  Id: 15100306515943018207
+  Name: "Ball - Tennis 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_003"
+    AssetId: "sm_prop_urb_ball_tennis_01_ref"
+  }
+}
+Assets {
+  Id: 3090596827184957478
+  Name: "Rope"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_rope_001"
   }
 }

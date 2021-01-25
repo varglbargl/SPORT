@@ -60,10 +60,11 @@ Assets {
           }
           AutoPlay: true
           Pitch: 300
-          Volume: 2
-          Falloff: 5000
+          Volume: 1
+          Falloff: 8000
           Radius: 5000
           IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -94,9 +95,10 @@ Assets {
           }
           AutoPlay: true
           Pitch: -1200
-          Volume: 2
-          Falloff: 5000
+          Volume: 1
+          Falloff: 8000
           Radius: 5000
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -127,9 +129,10 @@ Assets {
           }
           AutoPlay: true
           Pitch: -400
-          Volume: 2
-          Falloff: 5000
+          Volume: 1
+          Falloff: 8000
           Radius: 5000
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -162,9 +165,10 @@ Assets {
           }
           AudioBP {
             AutoPlay: true
-            Volume: 2
-            Falloff: 5000
+            Volume: 1
+            Falloff: 8000
             Radius: 5000
+            IsAttenuationEnabled: true
           }
         }
       }
@@ -196,9 +200,10 @@ Assets {
           }
           AutoPlay: true
           Volume: 1
-          Falloff: 5000
+          Falloff: 8000
           Radius: 5000
           IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
     }

@@ -60,11 +60,13 @@ Assets {
           }
           AutoPlay: true
           Volume: 0.6
-          Falloff: 8000
-          Radius: 1000
+          Falloff: 5000
+          Radius: 5000
+          EnableOcclusion: true
           FadeInTime: 5
           StartTime: 0.05
           IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -99,10 +101,12 @@ Assets {
           AudioBP {
             AutoPlay: true
             Volume: 0.5
-            Falloff: 8000
-            Radius: 1000
+            Falloff: 5000
+            Radius: 5000
+            EnableOcclusion: true
             FadeInTime: 10
             IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
           }
         }
       }
@@ -135,10 +139,12 @@ Assets {
           }
           AutoPlay: true
           Volume: 0.6
-          Falloff: 8000
-          Radius: 1000
+          Falloff: 5000
+          Radius: 5000
+          EnableOcclusion: true
           FadeInTime: 5
           IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -173,10 +179,12 @@ Assets {
           AudioBP {
             AutoPlay: true
             Volume: 0.5
-            Falloff: 8000
-            Radius: 1000
+            Falloff: 5000
+            Radius: 5000
+            EnableOcclusion: true
             FadeInTime: 10
             IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
           }
         }
       }

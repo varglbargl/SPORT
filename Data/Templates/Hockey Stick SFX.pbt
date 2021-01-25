@@ -173,6 +173,10 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "bp:Dust Gravity"
+            Float: -5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1515,23 +1515,23 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 14886640634936289174
+              Id: 13472710801787298368
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:utile"
-            Float: 3
+            Float: 2
           }
           Overrides {
             Name: "ma:Shared_Detail1:vtile"
-            Float: 3
+            Float: 20
           }
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.112
-              G: 0.107268788
-              B: 0.0904167071
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
               A: 1
             }
           }
@@ -3163,6 +3163,11 @@ Assets {
         ChildIds: 16300376015926990448
         ChildIds: 7735451545882712856
         ChildIds: 267659421973894454
+        ChildIds: 5817644596208385463
+        ChildIds: 9393867200969652737
+        ChildIds: 12019264327688728193
+        ChildIds: 12451123543769338469
+        ChildIds: 12518791205522368523
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -3356,7 +3361,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1137112816547272582
+            Id: 1667729590806278953
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3419,6 +3424,311 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5817644596208385463
+        Name: "Urban Damaged Rebar - Lattice 01"
+        Transform {
+          Location {
+            X: 56.1422157
+            Y: -34.3456764
+            Z: -68.8898926
+          }
+          Rotation {
+            Pitch: -43.0673218
+            Yaw: 56.8512268
+            Roll: 57.7272263
+          }
+          Scale {
+            X: 0.0590164438
+            Y: 0.0802731216
+            Z: 0.054608997
+          }
+        }
+        ParentId: 17357807090566652035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16092869253742582086
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.75
+              G: 0.75
+              B: 0.75
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15864537660089476386
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9393867200969652737
+        Name: "Urban Damaged Rebar - Lattice 01"
+        Transform {
+          Location {
+            X: 40.854435
+            Y: -18.4306278
+            Z: -52.7866325
+          }
+          Rotation {
+            Pitch: -11.4449768
+            Yaw: -66.7608643
+            Roll: 140.933624
+          }
+          Scale {
+            X: 0.0545927584
+            Y: 0.1143867
+            Z: 0.0515055172
+          }
+        }
+        ParentId: 17357807090566652035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16092869253742582086
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.75
+              G: 0.75
+              B: 0.75
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5770722494384530191
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12019264327688728193
+        Name: "Urban Damaged Rebar - Lattice 01"
+        Transform {
+          Location {
+            X: 47.5890846
+            Y: -36.5104446
+            Z: -57.6559486
+          }
+          Rotation {
+            Pitch: -39.3779297
+            Yaw: -35.7698364
+            Roll: 100.68412
+          }
+          Scale {
+            X: 0.0760976449
+            Y: 0.070445329
+            Z: 0.022764219
+          }
+        }
+        ParentId: 17357807090566652035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16092869253742582086
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.75
+              G: 0.75
+              B: 0.75
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1358463712937310634
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12451123543769338469
+        Name: "Urban Damaged Rebar - Lattice 01"
+        Transform {
+          Location {
+            X: 53.9561234
+            Y: -22.1428165
+            Z: -69.9734
+          }
+          Rotation {
+            Pitch: -45.239563
+            Yaw: 51.7111702
+            Roll: 61.3095779
+          }
+          Scale {
+            X: 0.0707722604
+            Y: 0.065517731
+            Z: 0.0365389325
+          }
+        }
+        ParentId: 17357807090566652035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16092869253742582086
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.75
+              G: 0.75
+              B: 0.75
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14307818101647843922
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12518791205522368523
+        Name: "Urban Damaged Rebar - Lattice 01"
+        Transform {
+          Location {
+            X: 46.4075928
+            Y: -32.3069267
+            Z: -57.5029144
+          }
+          Rotation {
+            Pitch: 31.6982365
+            Yaw: 14.3832798
+            Roll: 87.939949
+          }
+          Scale {
+            X: 0.0553136
+            Y: 0.0752626434
+            Z: 0.0186787844
+          }
+        }
+        ParentId: 17357807090566652035
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 16092869253742582086
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.75
+              G: 0.75
+              B: 0.75
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14307818101647843922
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -4012,10 +4322,18 @@ Assets {
           }
         }
         ParentId: 14254285814529745117
-        ChildIds: 3876257764734660116
         ChildIds: 8694392519551400000
         ChildIds: 7296646669034685423
         ChildIds: 6811392684332285036
+        ChildIds: 3876257764734660116
+        ChildIds: 15528049757097324872
+        ChildIds: 3318935895334380567
+        ChildIds: 3412354768248518402
+        ChildIds: 1059316776028428339
+        ChildIds: 9314007502554992534
+        ChildIds: 752354713540222685
+        ChildIds: 6170485864607599152
+        ChildIds: 7112289490097329761
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -4026,95 +4344,6 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
-        }
-      }
-      Objects {
-        Id: 3876257764734660116
-        Name: "Baseball Bat"
-        Transform {
-          Location {
-            X: -22.5534401
-            Y: -9.53613472
-            Z: 0.220370531
-          }
-          Rotation {
-            Pitch: -59.3929749
-            Yaw: 163.705536
-            Roll: -158.055634
-          }
-          Scale {
-            X: 1.26742244
-            Y: 1.26742232
-            Z: 1.77193725
-          }
-        }
-        ParentId: 11814278139128937726
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail2:id"
-            AssetReference {
-              Id: 2887966541650210293
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2197817192819564849
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.295000017
-              G: 0.295000017
-              B: 0.295000017
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 2197817192819564849
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.488000035
-              G: 0.0307439845
-              B: 0.0307439845
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3306799177420480719
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
         }
       }
       Objects {
@@ -4310,6 +4539,570 @@ Assets {
         }
       }
       Objects {
+        Id: 3876257764734660116
+        Name: "Fantasy Axe Grip 01"
+        Transform {
+          Location {
+            X: -14.046339
+            Y: -12.9644337
+            Z: 1.06142795
+          }
+          Rotation {
+            Pitch: -52.2079163
+            Yaw: 168.35553
+            Roll: -149.827911
+          }
+          Scale {
+            X: 1.16748118
+            Y: 1.51078987
+            Z: 0.968718529
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 2887966541650210293
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14359217783623684227
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2197817192819564849
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.488000035
+              G: 0.0307439845
+              B: 0.0307439845
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.183333337
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:color"
+            Color {
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 13316617164365721939
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 12
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 12
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 820217430221713418
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15528049757097324872
+        Name: "Cylinder - Rounded Bottom-Aligned"
+        Transform {
+          Location {
+            X: 18.6327343
+            Y: 2.25015879
+            Z: -21.3768082
+          }
+          Rotation {
+            Pitch: 52.2076454
+            Yaw: -11.6442261
+            Roll: 149.827698
+          }
+          Scale {
+            X: 0.0559364036
+            Y: 0.262573153
+            Z: 1.06447113
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 2887966541650210293
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13316617164365721939
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2197817192819564849
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.488000035
+              G: 0.0307439845
+              B: 0.0307439845
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:color"
+            Color {
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 13316617164365721939
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 12
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 12
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6695169517725908947
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3318935895334380567
+        Name: "Decal Painted Lines 01"
+        Transform {
+          Location {
+            X: 34.999897
+            Y: 10.8585253
+            Z: -36.4119606
+          }
+          Rotation {
+            Pitch: 33.0602
+            Yaw: 130.699066
+            Roll: 158.78627
+          }
+          Scale {
+            X: 0.066621393
+            Y: 0.066621393
+            Z: 0.013
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13932033635576794901
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 3412354768248518402
+        Name: "Decal Painted Lines 01"
+        Transform {
+          Location {
+            X: 38.2891083
+            Y: 18.8593788
+            Z: -37.4312363
+          }
+          Rotation {
+            Pitch: 33.0602264
+            Yaw: 130.699051
+            Roll: 158.786209
+          }
+          Scale {
+            X: 0.066621393
+            Y: 0.066621393
+            Z: 0.013
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.3
+              G: 0.0150000043
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13932033635576794901
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 1059316776028428339
+        Name: "Decal Painted Lines 01"
+        Transform {
+          Location {
+            X: 41.5087891
+            Y: 18.0587463
+            Z: -33.2613525
+          }
+          Rotation {
+            Pitch: 33.060173
+            Yaw: 130.699081
+            Roll: 158.78627
+          }
+          Scale {
+            X: -0.066621393
+            Y: 0.067
+            Z: 0.013
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.3
+              G: 0.0150000043
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13932033635576794901
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 9314007502554992534
+        Name: "Decal Painted Lines 01"
+        Transform {
+          Location {
+            X: 38.2192383
+            Y: 10.0583496
+            Z: -32.243042
+          }
+          Rotation {
+            Pitch: 33.0601425
+            Yaw: 130.699112
+            Roll: 158.786423
+          }
+          Scale {
+            X: -0.066621393
+            Y: 0.067
+            Z: 0.013
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 2
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13932033635576794901
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 752354713540222685
+        Name: "Decal Bullet Damage Wood"
+        Transform {
+          Location {
+            X: 81.006546
+            Y: 24.022337
+            Z: -62.0734
+          }
+          Rotation {
+            Pitch: -29.1949768
+            Yaw: 31.749361
+            Roll: -33.1896362
+          }
+          Scale {
+            X: 0.108278453
+            Y: 0.108278453
+            Z: 0.01
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7062900499653447755
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 6170485864607599152
+        Name: "Decal Bullet Damage Wood"
+        Transform {
+          Location {
+            X: 48.8195229
+            Y: 21.1905022
+            Z: -38.2358284
+          }
+          Rotation {
+            Pitch: 30.4218121
+            Yaw: -154.888199
+            Roll: 10.3700085
+          }
+          Scale {
+            X: 0.108278453
+            Y: 0.108278453
+            Z: 0.01
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Sort Order"
+            Int: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7062900499653447755
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 7112289490097329761
+        Name: "Decal Burnt Streaks 01"
+        Transform {
+          Location {
+            X: 74.5306
+            Y: 26.8435173
+            Z: -63.4450531
+          }
+          Rotation {
+            Pitch: 27.4479885
+            Yaw: 124.22377
+            Roll: 154.14032
+          }
+          Scale {
+            X: 0.0761318281
+            Y: 0.104355395
+            Z: 0.02
+          }
+        }
+        ParentId: 11814278139128937726
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 0
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.0100000007
+              G: 0.009181
+              B: 0.00818
+              A: 0.5
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13565815907994828789
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
         Id: 4233973815709959908
         Name: "Trigger"
         Transform {
@@ -4373,6 +5166,12 @@ Assets {
           Overrides {
             Name: "cs:Force"
             Int: 4000
+          }
+          Overrides {
+            Name: "cs:BumpSFXTemplate"
+            AssetReference {
+              Id: 4235600815799243379
+            }
           }
         }
         WantsNetworking: true
@@ -5562,12 +6361,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14886640634936289174
-      Name: "Bark Dead 01"
+      Id: 13472710801787298368
+      Name: "Bark Birch 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_dead_001_uv"
+        AssetId: "mi_bark_birch_001_uv"
       }
     }
     Assets {
@@ -5760,6 +6559,15 @@ Assets {
       }
     }
     Assets {
+      Id: 1667729590806278953
+      Name: "Crescent - 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_crescent_001"
+      }
+    }
+    Assets {
       Id: 3233792038343252451
       Name: "Chain Link 01"
       PlatformAssetType: 2
@@ -5778,6 +6586,51 @@ Assets {
       }
     }
     Assets {
+      Id: 15864537660089476386
+      Name: "Urban Damaged Rebar - Twisted Ends 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_rebar_003_ref"
+      }
+    }
+    Assets {
+      Id: 16092869253742582086
+      Name: "Plastic Shiny"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "plastic_shiny_001"
+      }
+    }
+    Assets {
+      Id: 5770722494384530191
+      Name: "Urban Damaged Rebar Lattice 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dtn_mlt_rebar_001_ref"
+      }
+    }
+    Assets {
+      Id: 1358463712937310634
+      Name: "Urban Damaged Rebar Twisted Ends 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_rebar_004_ref"
+      }
+    }
+    Assets {
+      Id: 14307818101647843922
+      Name: "Urban Damaged Rebar - Single 4m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ts_urb_dest_rebar_005_ref"
+      }
+    }
+    Assets {
       Id: 10540476877732019221
       Name: "Military Walkie"
       PlatformAssetType: 1
@@ -5793,24 +6646,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cylinder_hq_test_001"
-      }
-    }
-    Assets {
-      Id: 3306799177420480719
-      Name: "Crowbar"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_crowbar_001"
-      }
-    }
-    Assets {
-      Id: 2197817192819564849
-      Name: "Metal Iron Rusted 02"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_iron_003"
       }
     }
     Assets {
@@ -5847,6 +6682,78 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_mil_sandbag_003"
+      }
+    }
+    Assets {
+      Id: 820217430221713418
+      Name: "Fantasy Axe Grip 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_grip_axe_001"
+      }
+    }
+    Assets {
+      Id: 14359217783623684227
+      Name: "Rubber Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_scf_rubber_panels_004_uv"
+      }
+    }
+    Assets {
+      Id: 2197817192819564849
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
+      }
+    }
+    Assets {
+      Id: 13316617164365721939
+      Name: "Wood Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
+      }
+    }
+    Assets {
+      Id: 6695169517725908947
+      Name: "Cylinder - Rounded Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_rounded_001"
+      }
+    }
+    Assets {
+      Id: 13932033635576794901
+      Name: "Decal Painted Lines 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_lines_001"
+      }
+    }
+    Assets {
+      Id: 7062900499653447755
+      Name: "Decal Bullet Damage Wood"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_bullet_wood_001"
+      }
+    }
+    Assets {
+      Id: 13565815907994828789
+      Name: "Decal Burnt Streaks 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_burned_streak_002_ref"
       }
     }
     Assets {

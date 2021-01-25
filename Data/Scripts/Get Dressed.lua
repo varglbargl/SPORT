@@ -1,16 +1,4 @@
-﻿local GEAR_ORANGE = script:GetCustomProperty("SportGearOrange")
-local GEAR_TEAL = script:GetCustomProperty("SportGearTeal")
-local GEAR_GREEN = script:GetCustomProperty("SportGearGreen")
-local GEAR_GAY = script:GetCustomProperty("SportGearGay")
-
-local costumes = {
-  {gear = GEAR_ORANGE,  primary = "8D1E00",  secondary = "9796BC"},
-  {gear = GEAR_TEAL,    primary = "005D6D",  secondary = "FFCEAB"},
-  {gear = GEAR_GREEN,   primary = "393D00",  secondary = "921D03"},
-  {gear = GEAR_GAY,     primary = "F77892",  secondary = "26D2FB"}
-}
-
-local costumeCounter = math.random(1, #costumes)
+﻿local Utils = require(script:GetCustomProperty("Utils"))
 
 function wearCostume(player, costume)
   local sockets = costume:GetChildren()
@@ -28,20 +16,21 @@ function wearCostume(player, costume)
   end
 end
 
-function OnPlayerJoined(player)
-  local randomCostume = costumes[costumeCounter]
-  local suit = World.SpawnAsset(randomCostume.gear, {position = Vector3.UP * -1000})
+function getDressed(player, gearNumber, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
+  local costume = Utils.getCostume(gearNumber)
+  local suit = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
+
+  primaryColor = primaryColor or costume.primary
+  secondaryColor = secondaryColor or costume.secondary
 
   wearCostume(player, suit)
 
-  costumeCounter = costumeCounter % #costumes + 1
-
   suit:Destroy()
 
-  Events.Broadcast("ReadyPlayer", player, randomCostume.primary, randomCostume.secondary)
+  Events.Broadcast("ReadyPlayer", player, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
 end
 
-function OnPlayerLeft(player)
+function playerLeft(player)
   local attachedObjects = player:GetAttachedObjects()
 
   for _, thisObject in ipairs(attachedObjects) do
@@ -50,5 +39,6 @@ function OnPlayerLeft(player)
 end
 
 -- on player joined/left functions need to be defined before calling event:Connect()
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
-Game.playerLeftEvent:Connect(OnPlayerLeft)
+-- Game.playerJoinedEvent:Connect(playerJoined)
+Events.Connect("GetDressed", getDressed)
+Game.playerLeftEvent:Connect(playerLeft)

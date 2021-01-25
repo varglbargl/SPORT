@@ -1,34 +1,35 @@
 Name: "NewFolder_4"
-RootId: 4460890304031288490
+RootId: 15287008192186974628
 Objects {
-  Id: 3758335186103853471
-  Name: "Cube"
+  Id: 13809225514593828529
+  Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: 18.75
-      Y: -3137.24805
-      Z: 109.476952
+      X: -0.262996018
+      Y: 133.206589
+      Z: 16.9768963
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 15.9000006
-      Y: 35.9
-      Z: 9
+      X: 0.184881136
+      Y: 0.184881136
+      Z: 0.84244144
     }
   }
-  ParentId: 4460890304031288490
+  ParentId: 15287008192186974628
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -39,13 +40,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -56,34 +56,34 @@ Objects {
   }
 }
 Objects {
-  Id: 15464189534209379357
-  Name: "Cube"
+  Id: 6050036104523600783
+  Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      X: 18.75
-      Y: 3133.66968
-      Z: 109.476952
+      X: -0.262996018
+      Y: 133.206589
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 15.9000006
-      Y: 35.9
-      Z: 9
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
     }
   }
-  ParentId: 4460890304031288490
+  ParentId: 15287008192186974628
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -94,13 +94,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 18393437648231545508
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -111,34 +110,35 @@ Objects {
   }
 }
 Objects {
-  Id: 11623290420471578618
-  Name: "Pipe - Half Thick"
+  Id: 5588506216982520913
+  Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: 1592.49866
-      Y: -2.75245976
-      Z: -202.729874
+      X: -0.263183594
+      Y: -26.8704834
+      Z: 16.9765625
     }
     Rotation {
-      Yaw: 89.9999924
     }
     Scale {
-      X: 77.999939
-      Y: 77.999939
-      Z: 7.61463737
+      X: 0.184881151
+      Y: 0.184881151
+      Z: 0.842441559
     }
   }
-  ParentId: 4460890304031288490
+  ParentId: 15287008192186974628
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -149,13 +149,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7620351576055659081
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -166,34 +165,34 @@ Objects {
   }
 }
 Objects {
-  Id: 11427753991205356684
-  Name: "Pipe - Half Thick"
+  Id: 4807499015732015090
+  Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      X: -1378.92737
-      Y: -2.75245976
-      Z: -202.729874
+      X: -0.263183594
+      Y: -26.8704834
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 77.999939
-      Y: 77.999939
-      Z: 7.61463737
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 4460890304031288490
+  ParentId: 15287008192186974628
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -204,13 +203,53 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7620351576055659081
+      Id: 18393437648231545508
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8963529435929613607
+  Name: "Small Crate Lid"
+  Transform {
+    Location {
+      X: 0.527832031
+      Y: 53.7409668
+      Z: 108.946289
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.22405279
+      Y: 1.62987578
+      Z: 1.80216765
+    }
+  }
+  ParentId: 15287008192186974628
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4913020950094832864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
     EnableCameraCollision: true
     StaticMesh {
       Physics {

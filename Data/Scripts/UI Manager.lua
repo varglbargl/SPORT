@@ -1,4 +1,5 @@
-﻿local EaseUI = require(script:GetCustomProperty("EaseUI"))
+﻿local Utils = require(script:GetCustomProperty("Utils"))
+local EaseUI = require(script:GetCustomProperty("EaseUI"))
 
 local FOUL_BALL = script:GetCustomProperty("FoulBall"):WaitForObject()
 local SCORE = script:GetCustomProperty("Score"):WaitForObject()
@@ -7,102 +8,27 @@ local COUNTDOWN_SFX = script:GetCustomProperty("CountdownSFX")
 
 local JOINED_PANEL = script:GetCustomProperty("PlayerJoinedPanel"):WaitForObject()
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
-local TEAM_LOGOS = script:GetCustomProperty("TeamLogos"):WaitForObject()
+local HELMET_INNER = script:GetCustomProperty("HelmetInner"):WaitForObject()
+local INNER_LOGOS = script:GetCustomProperty("InnerLogos"):WaitForObject()
+local OUTER_LOGOS = script:GetCustomProperty("OuterLogos"):WaitForObject()
 local HOME_TOWN = script:GetCustomProperty("HomeTown"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local TEAM_NAME = script:GetCustomProperty("TeamName"):WaitForObject()
 local BACKGROUND = script:GetCustomProperty("Background"):WaitForObject()
 local ABBR = script:GetCustomProperty("Abbr"):WaitForObject()
-local ABBR_ICON = script:GetCustomProperty("AbbrIcon"):WaitForObject()
 local ABBR_BKG = script:GetCustomProperty("AbbrBackground"):WaitForObject()
+local LOGO_INNER = script:GetCustomProperty("LogoInner"):WaitForObject()
+local LOGO_OUTER = script:GetCustomProperty("LogoOuter"):WaitForObject()
+local CROSSHAIR = script:GetCustomProperty("Crosshair"):WaitForObject()
 
-local teamLogos = TEAM_LOGOS:GetChildren()
+local innerLogos = INNER_LOGOS:GetChildren()
+local outerLogos = OUTER_LOGOS:GetChildren()
 
 local clientPlayer = Game.GetLocalPlayer()
 local messageTask = nil
 
-local foulMessages = {
-  "OVER THE LINE",
-  "HIGH STICKING",
-  "HAT FLAUNTING",
-  "TOUCHING THE LINE",
-  "UNSPORTING LANGUAGE",
-  "ADMINISTRATIVE TECHNICAL",
-  "A BEE FLEW INTO MY WHISTLE",
-  "CRYING IN BASEBALL",
-  "EXCESSIVE BLEEDING",
-  "INADEQUATE SHOWBOATING",
-  "RUNNING NEAR THE POOL",
-  "TOO FAR FROM THE LINE",
-  "OFF SIDES",
-  "SPILLING THE BEANS",
-  "OUT OF BOUNDS",
-  "UNAPPROVED HAIR STYLE",
-  "BANANAS ON THE BOOST",
-  "MAKIN 'EM WAIT FOR IT",
-  "BLUMENFELD COUNTERGAMBIT",
-  "CHOWDERHOUSING",
-  "HOLDING HANDS",
-  "FAILURE TO KISS THAT GOOD GOOD EGG",
-  "GREASING THE PLATE",
-  "USING A DEAD MEME",
-  "Error running Lua task: Instruction limit exceeded. Your code may be in an infinite loop."
-}
-
-local deathMessages = {
-  "WASTED",
-  "HIT THE BENCH",
-  "TRANS RIGHTS",
-  "OUCH",
-  "KEEP YOUR HEAD IN THE GAME",
-  "YOU GOT THIS",
-  "WALK IT OFF",
-  "HIT THE SHOWERS",
-  "YOU CAN DO IT",
-  "DO A FLIP",
-  "GO FOR THE BRONZE",
-  "PUSH YOURSELF TO THE LIMIT",
-  "10/10 STAGE DIVE",
-  "YOU'LL NEVER SHINE IF YOU DON'T GLOW",
-  "SHUT UP AND JAM",
-  "JUST FOR THAT, WE'RE BRINGING \"BIG OOF\" BACK",
-  "DO IT FOR THE CONTENT",
-  "YOU'RE DOING GREAT",
-  "ROLL THAT BEAUTIFUL BEAN FOOTAGE",
-  "SEE YOU, SPACE COWBOY",
-  "GOOD LUCK, BEEP-BOOP",
-  "HUMANITY RESTORED",
-  "WOW, THAT WAS VIOLENT",
-  "HACK THE PLANET! HACK THE PLANET!",
-  "HAHA NICE",
-  "BOTTOM TEXT",
-  "[SUPA HOT FIRE VOICE] I'M NOT A GAMER"
-}
-
-function setTextWithShadow(shadow, message, optionalColor)
-  local highlight = shadow:GetChildren()[1]
-
-  highlight.text = message
-  shadow.text = message
-
-  if optionalColor then
-    highlight:SetColor(optionalColor)
-  end
-end
-
-function setImageWithShadow(shadow, image, optionalColor)
-  local highlight = shadow:GetChildren()[1]
-
-  highlight:SetImage(image)
-  shadow:SetImage(image)
-
-  if optionalColor then
-    highlight:SetColor(optionalColor)
-  end
-end
-
 function showMessage(message)
-  setTextWithShadow(FOUL_BALL, message)
+  Utils.setTextWithShadow(FOUL_BALL, message)
 
   if messageTask then messageTask:Cancel() end
 
@@ -110,22 +36,20 @@ function showMessage(message)
     Task.Wait(3.5)
     if not Object.IsValid(clientPlayer) then return end
 
-    setTextWithShadow(FOUL_BALL, "")
+    Utils.setTextWithShadow(FOUL_BALL, "")
   end)
 end
 
 function foulBall()
   if not Object.IsValid(clientPlayer) then return end
 
-  local randomFoulMessage = foulMessages[math.random(1, #foulMessages)]
-  showMessage("FOUL BALL: " .. randomFoulMessage)
+  showMessage("FOUL BALL: " .. Utils.getFoulMessage())
 end
 
 function wasted()
   if not Object.IsValid(clientPlayer) then return end
 
-  local randomDeathMessage = deathMessages[math.random(1, #deathMessages)]
-  showMessage(randomDeathMessage .. "!")
+  showMessage(Utils.getDeathMessage() .. "!")
 end
 
 function updateScore(thisPlayer, resourceName, amount)
@@ -134,19 +58,23 @@ function updateScore(thisPlayer, resourceName, amount)
   if thisPlayer ~= clientPlayer then return end
   if resourceName ~= "Score" then return end
 
-  setTextWithShadow(SCORE, tostring(amount))
+  Utils.setTextWithShadow(SCORE, tostring(amount))
 end
 
 local roundStartTime = nil
 local timerTask = nil
 local roundLength = 0
 
-function syncRound(thisTime, thisLength, reset)
+function syncRound(thisTime, thisLength, roundName, weather, reset)
   roundStartTime = thisTime
   roundLength = thisLength
 end
 
 function tickTimer()
+  if not roundStartTime then
+    tickTimer(Task.Wait(1))
+    return
+  end
 
   local now = time() - 1
   local diff = math.abs(roundStartTime - now)
@@ -159,9 +87,9 @@ function tickTimer()
   end
 
   if seconds < 10 then
-    setTextWithShadow(TIMER, minutes..":0"..seconds)
+    Utils.setTextWithShadow(TIMER, minutes..":0"..seconds)
   else
-    setTextWithShadow(TIMER, minutes..":"..seconds)
+    Utils.setTextWithShadow(TIMER, minutes..":"..seconds)
   end
 
   if diff % 1 == 0 then
@@ -178,37 +106,44 @@ Events.Connect("sR", syncRound)
 -- handler params: Player_, string_, integer_
 clientPlayer.resourceChangedEvent:Connect(updateScore)
 
-setTextWithShadow(SCORE, "0")
+Utils.setTextWithShadow(SCORE, "0")
 
-function announceTeamJoined(thisPlayer, homeTown, teamName, teamAbbr, primaryColor, secondaryColor, logoInner, logoOuter)
-  local randomLogo = teamLogos[math.random(1, #teamLogos)]
-
+function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
   primaryColor = Color.FromLinearHex(primaryColor)
   secondaryColor = Color.FromLinearHex(secondaryColor)
 
-  setTextWithShadow(HOME_TOWN, homeTown, secondaryColor)
-  setTextWithShadow(TEAM_NAME, teamName, primaryColor)
-  setTextWithShadow(PLAYER_NAME, thisPlayer.name)
+  Utils.setTextWithShadow(HOME_TOWN, homeTown, secondaryColor)
+  Utils.setTextWithShadow(TEAM_NAME, teamName, primaryColor)
+  Utils.setTextWithShadow(PLAYER_NAME, thisPlayer.name)
+  Utils.setImageWithShadow(HELMET_ICON, nil, primaryColor)
+  Utils.setImageWithShadow(HELMET_INNER, innerLogos[logoInner], secondaryColor)
+  -- Utils.setImageWithShadow(HELMET_OUTER, outerLogos[logoOuter])
 
-  if thisPlayer == clientPlayer then
-    setTextWithShadow(ABBR, teamAbbr)
-    setImageWithShadow(ABBR_ICON, randomLogo:GetImage(), secondaryColor)
-    ABBR_ICON.rotationAngle = randomLogo.rotationAngle
-  end
-
-  randomLogo.visibility = Visibility.INHERIT
-  randomLogo:SetColor(secondaryColor)
-  HELMET_ICON:SetColor(primaryColor)
-  ABBR_BKG:SetColor(primaryColor)
+  CROSSHAIR.visibility = Visibility.INHERIT
+  innerLogos[logoInner].visibility = Visibility.INHERIT
+  innerLogos[logoInner]:SetColor(secondaryColor)
   BACKGROUND:SetColor(primaryColor * Color.New(0.075, 0.075, 0.075, 1))
 
   EaseUI.EaseX(JOINED_PANEL, -75, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
 
-  Task.Wait(8)
+  Task.Wait(6)
 
   EaseUI.EaseX(JOINED_PANEL, -625, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.IN)
 end
 
-Events.Connect("tJ", announceTeamJoined)
+function setPlayerTeamInfo(teamAbbr, primaryColor, secondaryColor, logoInner, logoOuter)
+  primaryColor = Color.FromLinearHex(primaryColor)
+  secondaryColor = Color.FromLinearHex(secondaryColor)
 
-tickTimer(Task.Wait(1) - 1)
+  Utils.setTextWithShadow(ABBR, teamAbbr)
+  Utils.setImageWithShadow(LOGO_INNER, innerLogos[logoInner], secondaryColor)
+  LOGO_OUTER:SetImage(outerLogos[logoOuter]:GetImage())
+  LOGO_OUTER.rotationAngle = outerLogos[logoOuter].rotationAngle
+  LOGO_OUTER:SetColor(primaryColor)
+  ABBR_BKG:SetColor(primaryColor * Color.New(0.25, 0.25, 0.25, 1))
+end
+
+Events.Connect("tJ", announceTeamJoined)
+Events.Connect("SetTeam", setPlayerTeamInfo)
+
+tickTimer(Task.Wait(1))

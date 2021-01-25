@@ -197,12 +197,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15312176520349150751
-  Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
-  PlatformAssetType: 10
+  Id: 15419471716895672689
+  Name: "Center Arrow 008 Wedge"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_8bit_funland_sections_kit_ref"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_008Wedge"
   }
 }
 Assets {
@@ -275,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_sports_referee_whistle_long_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 14346764423269318166
+  Name: "Frame Ring 4x 002 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing4x_002Wedge"
   }
 }
 Assets {
@@ -410,6 +419,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_crowd_medieval_battle_fighting_loop_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 12343937913841555500
+  Name: "Frame Beveled 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_027"
   }
 }
 Assets {
@@ -599,6 +617,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing6x_004Wedge"
+  }
+}
+Assets {
+  Id: 9638772472306934538
+  Name: "Emblem 008"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_058"
   }
 }
 Assets {
@@ -854,6 +881,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6654037610077184271
+  Name: "Frame Beveled 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_023"
+  }
+}
+Assets {
   Id: 6506212536894600650
   Name: "Frame Beveled 001"
   PlatformAssetType: 9
@@ -905,6 +941,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_003"
+  }
+}
+Assets {
+  Id: 5787646963779468904
+  Name: "Weapon - Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_pipe_001"
   }
 }
 Assets {
@@ -989,6 +1034,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4639298374636567622
+  Name: "Frame Rect 006 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRect_006Wedge"
+  }
+}
+Assets {
   Id: 4191189716791684405
   Name: "Pipe - Thick"
   PlatformAssetType: 1
@@ -1004,6 +1058,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Horizontal_01_Text_049"
+  }
+}
+Assets {
+  Id: 3804607129857597470
+  Name: "BG Gradient 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_023"
   }
 }
 Assets {
@@ -1097,6 +1160,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2197817192819564849
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
   Id: 2174184688664788373
   Name: "Frame Ring 6x 003 Wedge"
   PlatformAssetType: 9
@@ -1178,12 +1250,30 @@ Assets {
   }
 }
 Assets {
+  Id: 622433789355555801
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 549490623371013608
   Name: "Icon Ice"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Ice"
+  }
+}
+Assets {
+  Id: 499697514733272876
+  Name: "Modern Weapon - Stock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_stock_001"
   }
 }
 Assets {

@@ -1,34 +1,35 @@
 Name: "NewFolder_8"
-RootId: 15829366686212814130
+RootId: 10737974070587987529
 Objects {
-  Id: 563959745112019840
-  Name: "Cube"
+  Id: 13514155554704536959
+  Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: 18.75
-      Y: -3137.24805
-      Z: 109.476959
+      X: -0.263183594
+      Y: -26.8704834
+      Z: 16.9765625
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 15.9000101
-      Y: 55.5053711
-      Z: 8.95187187
+      X: 0.184881151
+      Y: 0.184881151
+      Z: 0.842441559
     }
   }
-  ParentId: 15829366686212814130
+  ParentId: 10737974070587987529
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -39,13 +40,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -56,34 +56,34 @@ Objects {
   }
 }
 Objects {
-  Id: 3807392362367962035
-  Name: "Cube"
+  Id: 4697889948484277440
+  Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      X: 18.75
-      Y: 3133.66943
-      Z: 109.476959
+      X: -0.263183594
+      Y: -26.8704834
     }
     Rotation {
-      Yaw: -90
     }
     Scale {
-      X: 15.9000101
-      Y: 55.5053711
-      Z: 8.95187187
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 15829366686212814130
+  ParentId: 10737974070587987529
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
+      Name: "ma:Shared_Detail1:id"
       AssetReference {
-        Id: 11300883761621888783
+        Id: 3184356387751164974
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
   }
   Collidable_v2 {
@@ -94,13 +94,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 18393437648231545508
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -111,36 +110,23 @@ Objects {
   }
 }
 Objects {
-  Id: 11262378500523601969
-  Name: "Pipe - Half Thick"
+  Id: 5509125868460617811
+  Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 2248.96729
-      Y: -2.75245833
-      Z: -202.729858
+      X: 0.527832031
+      Y: 53.7409668
+      Z: 108.946289
     }
     Rotation {
-      Yaw: 89.9999924
     }
     Scale {
-      X: 77.999939
-      Y: 77.999939
-      Z: 7.61463737
+      X: 1.22405279
+      Y: 1.62987578
+      Z: 1.80216765
     }
   }
-  ParentId: 15829366686212814130
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11300883761621888783
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
+  ParentId: 10737974070587987529
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -149,68 +135,12 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7620351576055659081
+      Id: 4913020950094832864
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 6483825836909854748
-  Name: "Pipe - Half Thick"
-  Transform {
-    Location {
-      X: -2245.16016
-      Y: -2.75245833
-      Z: -202.729858
-    }
-    Rotation {
-      Yaw: -90
-    }
-    Scale {
-      X: 77.999939
-      Y: 77.999939
-      Z: 7.61463737
-    }
-  }
-  ParentId: 15829366686212814130
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11300883761621888783
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7620351576055659081
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {

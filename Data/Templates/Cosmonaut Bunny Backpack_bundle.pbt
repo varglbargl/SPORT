@@ -37,7 +37,7 @@ Assets {
     Id: "981458d76ba4409782c06a5e4375177c"
     OwnerAccountId: "21c0b4284eff4bb091ce80a75c984fd4"
     OwnerName: "varglbargl"
-    Version: "1.0.0"
+    Version: "1.1.0"
     Description: "A wearable backpack equipment depicting Marfusha, the first rabbit in space, looking cute in her little cosmonaut suit!\r\n\r\nThis one, like several of my other uploads, contains a secret. (Special thanks to NicholasForeman for the MIDIAudio player used in that.) Lemme know in the Core Creators Discord when you\'ve found it ~ !\r\n\r\nNote: Scale this equipment up to ~1.5x to fit on male characters."
   }
   SerializationVersion: 73

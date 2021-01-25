@@ -1,4 +1,13 @@
 Assets {
+  Id: 14955837698988191675
+  Name: "Office Carpet Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_urb_office_carpet_004_uv_ref"
+  }
+}
+Assets {
   Id: 14751741094054914800
   Name: "Grass Basic"
   PlatformAssetType: 2
@@ -14,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 12286167109268806023
+  Name: "Fantasy Sack Laying"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_sack_003_ref"
   }
 }
 Assets {
@@ -41,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "cliff_002"
+  }
+}
+Assets {
+  Id: 4787968503846606719
+  Name: "Metal 9 Slice Lockers 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_advanced_9slice_lockers_001_ref"
   }
 }
 Assets {

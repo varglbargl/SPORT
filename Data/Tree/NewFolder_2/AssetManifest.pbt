@@ -1,27 +1,36 @@
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
+  Id: 18393437648231545508
+  Name: "Urban Pipe Flange 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetId: "sm_prop_urb_pipes_acc_flange_001_ref"
   }
 }
 Assets {
-  Id: 7620351576055659081
-  Name: "Pipe - Half Thick"
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_003"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
-  Id: 5029777733976640292
-  Name: "Metal Steel Brushed"
+  Id: 4913020950094832864
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 3184356387751164974
+  Name: "Metal Basic 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_stainless-steel_001_uv"
+    AssetId: "mi_metal_basic_001"
   }
 }
