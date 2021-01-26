@@ -20,9 +20,6 @@ function getDressed(player, gearNumber, homeTown, teamName, primaryColor, second
   local costume = Utils.getCostume(gearNumber)
   local suit = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
 
-  primaryColor = primaryColor or costume.primary
-  secondaryColor = secondaryColor or costume.secondary
-
   wearCostume(player, suit)
 
   suit:Destroy()

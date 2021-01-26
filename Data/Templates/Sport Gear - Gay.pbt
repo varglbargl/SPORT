@@ -158,7 +158,7 @@ Assets {
       }
       Objects {
         Id: 638992369280318611
-        Name: "Pipe - Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 0.0510253906
@@ -218,7 +218,7 @@ Assets {
       }
       Objects {
         Id: 14345252287195264849
-        Name: "Sphere - Half Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 0.0510611534
@@ -278,7 +278,7 @@ Assets {
       }
       Objects {
         Id: 13847368497683356025
-        Name: "Urban Pipe Flange 02"
+        Name: "Secondary"
         Transform {
           Location {
             X: 6.73776674
@@ -338,7 +338,7 @@ Assets {
       }
       Objects {
         Id: 1966846069344295032
-        Name: "Urban Pipe Flange 02"
+        Name: "Secondary"
         Transform {
           Location {
             X: 6.73797464
@@ -398,7 +398,7 @@ Assets {
       }
       Objects {
         Id: 1102313456134586896
-        Name: "Pipe - Quarter Wedge Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 2.7677002
@@ -458,7 +458,7 @@ Assets {
       }
       Objects {
         Id: 2772682230924348935
-        Name: "Pipe - Quarter Wedge Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 2.7677002
@@ -638,7 +638,7 @@ Assets {
       }
       Objects {
         Id: 5441180133401779161
-        Name: "Pipe - Quarter Thick"
+        Name: "Secondary"
         Transform {
           Location {
             X: 0.0510253906
@@ -1589,7 +1589,7 @@ Assets {
       }
       Objects {
         Id: 2244196085320587262
-        Name: "Pipe - Half"
+        Name: "Secondary"
         Transform {
           Location {
             X: 2.68554688
@@ -1649,7 +1649,7 @@ Assets {
       }
       Objects {
         Id: 15530386012338235964
-        Name: "Thorn - Wide"
+        Name: "Secondary"
         Transform {
           Location {
             X: -0.456991494
@@ -1711,7 +1711,7 @@ Assets {
       }
       Objects {
         Id: 11313133395694782718
-        Name: "Thorn - Wide"
+        Name: "Secondary"
         Transform {
           Location {
             X: -0.45703125
@@ -2374,7 +2374,7 @@ Assets {
       }
       Objects {
         Id: 17613260182153467263
-        Name: "Military Tank Historic Turret 01"
+        Name: "Secondary"
         Transform {
           Location {
             X: 1.38366699
@@ -3080,7 +3080,7 @@ Assets {
       }
       Objects {
         Id: 7867868412672326812
-        Name: "Military Tank Historic Turret 01"
+        Name: "Secondary"
         Transform {
           Location {
             X: 1.37649894
@@ -4993,7 +4993,7 @@ Assets {
       }
       Objects {
         Id: 13999124994965198106
-        Name: "Military Tank Historic Mantlet 01"
+        Name: "Primary"
         Transform {
           Location {
             X: 1.37461984

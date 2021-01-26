@@ -1,6 +1,150 @@
 Name: "Locker Room"
 RootId: 16075967878473959232
 Objects {
+  Id: 17353747618163588566
+  Name: "Weapon - Pipe"
+  Transform {
+    Location {
+      X: 182.312012
+      Y: 61.0209961
+      Z: 131.160156
+    }
+    Rotation {
+      Pitch: 33.8963776
+      Yaw: 20.6737289
+      Roll: -35.4779472
+    }
+    Scale {
+      X: 0.702614427
+      Y: 0.702614427
+      Z: 0.702614427
+    }
+  }
+  ParentId: 16075967878473959232
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2197817192819564849
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5787646963779468904
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16237289561582141160
+  Name: "Gold Trophy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16075967878473959232
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8895961571950733374
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Gold Trophy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 386.728516
+            Y: -47.5439453
+            Z: 296.387695
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 155.985229
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.242391169
+            Y: 0.242391169
+            Z: 0.242391169
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1326902582483831732
+    }
+  }
+}
+Objects {
+  Id: 4624340159354001508
+  Name: "Modern Weapon - Stock 01"
+  Transform {
+    Location {
+      X: 148.012695
+      Y: 42.3081055
+      Z: 158.789063
+    }
+    Rotation {
+      Pitch: -39.0077438
+      Yaw: 77.7543411
+      Roll: 6.78392076
+    }
+    Scale {
+      X: 1.42547107
+      Y: 1.42547107
+      Z: 1.42547107
+    }
+  }
+  ParentId: 16075967878473959232
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 499697514733272876
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 1394184266050073300
   Name: "Decal Military Symbols 01"
   Transform {

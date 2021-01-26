@@ -28,6 +28,12 @@ Assets {
           Id: 50160225314986917
         }
       }
+      Overrides {
+        Name: "cs:SportGearRed"
+        AssetReference {
+          Id: 8611566564378382121
+        }
+      }
     }
   }
   SerializationVersion: 73

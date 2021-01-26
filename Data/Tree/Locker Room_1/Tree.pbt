@@ -811,7 +811,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enable"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -853,7 +853,7 @@ Objects {
     AudioAsset {
       Id: 10109037557142128655
     }
-    Volume: 0.1
+    Volume: 0.2
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -888,7 +888,7 @@ Objects {
     AudioAsset {
       Id: 396647106828930426
     }
-    Volume: 0.15
+    Volume: 0.3
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -923,7 +923,7 @@ Objects {
     AudioAsset {
       Id: 17867397140429474120
     }
-    Volume: 0.2
+    Volume: 0.3
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -958,7 +958,7 @@ Objects {
     AudioAsset {
       Id: 9530583414643071760
     }
-    Volume: 0.2
+    Volume: 0.3
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -993,7 +993,7 @@ Objects {
     AudioAsset {
       Id: 4922898019065870668
     }
-    Volume: 0.1
+    Volume: 0.3
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -1026,7 +1026,7 @@ Objects {
     AudioAsset {
       Id: 13195313602688115006
     }
-    Volume: 0.15
+    Volume: 0.3
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
@@ -1061,7 +1061,7 @@ Objects {
     AudioAsset {
       Id: 11590684579533424771
     }
-    Volume: 0.1
+    Volume: 0.2
     Falloff: -1
     Radius: -1
     EnableOcclusion: true

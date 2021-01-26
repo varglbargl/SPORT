@@ -63,6 +63,7 @@ Assets {
         ChildIds: 8657898945072805830
         ChildIds: 7127252889226974535
         ChildIds: 13422712859399071386
+        ChildIds: 7069277364626859236
         ChildIds: 12581822843919362059
         ChildIds: 12847777227141058863
         ChildIds: 260954226827290604
@@ -172,7 +173,7 @@ Assets {
       }
       Objects {
         Id: 3355773853968636877
-        Name: "Pipe - Thin"
+        Name: "Secondary"
         Transform {
           Location {
             X: 0.05078125
@@ -240,7 +241,7 @@ Assets {
       }
       Objects {
         Id: 983499097293431624
-        Name: "Sphere - Half Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 0.0510611534
@@ -304,7 +305,7 @@ Assets {
       }
       Objects {
         Id: 8657898945072805830
-        Name: "Urban Pipe Flange 02"
+        Name: "Primary"
         Transform {
           Location {
             X: 6.73788691
@@ -368,7 +369,7 @@ Assets {
       }
       Objects {
         Id: 7127252889226974535
-        Name: "Urban Pipe Flange 02"
+        Name: "Secondary"
         Transform {
           Location {
             X: 6.73785591
@@ -398,6 +399,15 @@ Assets {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -423,7 +433,7 @@ Assets {
       }
       Objects {
         Id: 13422712859399071386
-        Name: "Pipe - Quarter Wedge Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 2.7677002
@@ -486,8 +496,60 @@ Assets {
         }
       }
       Objects {
+        Id: 7069277364626859236
+        Name: "Secondary"
+        Transform {
+          Location {
+            X: -7.67982292
+            Y: 15.0540829
+            Z: 10.1811857
+          }
+          Rotation {
+            Pitch: 24.2893257
+            Yaw: 29.0266495
+            Roll: 85.1988907
+          }
+          Scale {
+            X: 0.045357611
+            Y: 0.045357611
+            Z: 0.045357611
+          }
+        }
+        ParentId: 1716960525082129839
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4246370390514634508
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
         Id: 12581822843919362059
-        Name: "Pipe - Quarter Wedge Thin"
+        Name: "Primary"
         Transform {
           Location {
             X: 2.7677002
@@ -551,7 +613,7 @@ Assets {
       }
       Objects {
         Id: 12847777227141058863
-        Name: "Ring - Quarter"
+        Name: "Primary"
         Transform {
           Location {
             X: 3.51735854
@@ -615,7 +677,7 @@ Assets {
       }
       Objects {
         Id: 260954226827290604
-        Name: "Ring - Quarter"
+        Name: "Primary"
         Transform {
           Location {
             X: 3.51735854
@@ -679,7 +741,7 @@ Assets {
       }
       Objects {
         Id: 1572509492494936360
-        Name: "Pipe - Quarter Thick"
+        Name: "Secondary"
         Transform {
           Location {
             X: 0.0510253906
@@ -2672,7 +2734,7 @@ Assets {
       }
       Objects {
         Id: 10855358122063634958
-        Name: "Ring - Extra Thick"
+        Name: "Secondary"
         Transform {
           Location {
             X: -0.277935296
@@ -2703,8 +2765,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.411
-              G: 0.00816553459
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
               A: 1
             }
           }
@@ -2779,7 +2842,7 @@ Assets {
       }
       Objects {
         Id: 12623701176162568140
-        Name: "Military Tank Historic Turret 01"
+        Name: "Primary"
         Transform {
           Location {
             X: 1.38366699
@@ -3941,7 +4004,7 @@ Assets {
       }
       Objects {
         Id: 12179874415296198147
-        Name: "Military Tank Historic Turret 01"
+        Name: "Primary"
         Transform {
           Location {
             X: 1.37649894
@@ -5301,7 +5364,7 @@ Assets {
       }
       Objects {
         Id: 11217160657610944759
-        Name: "Military Tank Historic Mantlet 01"
+        Name: "Primary"
         Transform {
           Location {
             X: 1.37461984
@@ -5523,7 +5586,7 @@ Assets {
       }
       Objects {
         Id: 7362510786902417116
-        Name: "2D Basic Shapes Decal"
+        Name: "Secondary"
         Transform {
           Location {
             X: 20.4091797
@@ -5550,9 +5613,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.718000054
-              G: 0.154660106
-              B: 0.069866918
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
               A: 1
             }
           }
@@ -5854,7 +5917,7 @@ Assets {
       }
       Objects {
         Id: 13725152289920683795
-        Name: "Cone - Bullet"
+        Name: "Secondary"
         Transform {
           Location {
             X: -32.1567307
@@ -5887,6 +5950,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 0.32
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -6162,7 +6234,7 @@ Assets {
       }
       Objects {
         Id: 11449924596819420803
-        Name: "Fantasy Sack Laying"
+        Name: "Secondary"
         Transform {
           Location {
             X: 1.45874023
@@ -6191,9 +6263,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 0.349
-              B: 0.162999988
+              R: 0.572
+              G: 0.117012136
+              B: 0.0148719801
               A: 1
             }
           }
@@ -6295,6 +6367,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_quarter_pipe_wedge_002"
+      }
+    }
+    Assets {
+      Id: 4246370390514634508
+      Name: "Decal Military Symbols 01"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_military_logo_001_ref"
       }
     }
     Assets {

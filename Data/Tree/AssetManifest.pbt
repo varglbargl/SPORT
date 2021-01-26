@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18193849052854628014
+  Name: "Emblem Star 2"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_066"
+  }
+}
+Assets {
   Id: 18076372418238527992
   Name: "Dirt 01"
   PlatformAssetType: 2
@@ -107,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16943161225760008560
+  Name: "Icon Health"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Health"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -140,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_005"
+  }
+}
+Assets {
+  Id: 16776836769773266833
+  Name: "Icon Flag"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Flag"
   }
 }
 Assets {
@@ -188,6 +215,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16077939380194922576
+  Name: "Icon Fireball"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Fireball"
+  }
+}
+Assets {
+  Id: 15959140737539398475
+  Name: "Shirt"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_048"
+  }
+}
+Assets {
   Id: 15745211306479370650
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -197,12 +242,66 @@ Assets {
   }
 }
 Assets {
+  Id: 15741512897669738183
+  Name: "Icon Damage"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Damage"
+  }
+}
+Assets {
+  Id: 15719063079288548895
+  Name: "Icon Death"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Death"
+  }
+}
+Assets {
+  Id: 15475387128101736388
+  Name: "Icon Settings"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Settings"
+  }
+}
+Assets {
   Id: 15419471716895672689
   Name: "Center Arrow 008 Wedge"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "CenterArrow_008Wedge"
+  }
+}
+Assets {
+  Id: 15226779164768545717
+  Name: "Burst"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_041"
+  }
+}
+Assets {
+  Id: 14947421715670574446
+  Name: "Electric Loop"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_044"
+  }
+}
+Assets {
+  Id: 14742621792402976079
+  Name: "Warp"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_018"
   }
 }
 Assets {
@@ -341,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13579336785416232151
+  Name: "Fire Department"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_023"
+  }
+}
+Assets {
   Id: 13499870741455156244
   Name: "Sci-fi Chair Support 01"
   PlatformAssetType: 1
@@ -386,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12973944263094943641
+  Name: "Icon Grenade"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Grenade"
+  }
+}
+Assets {
   Id: 12905923173550510229
   Name: "Cylinder - Polished"
   PlatformAssetType: 1
@@ -410,6 +527,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Whistle"
+  }
+}
+Assets {
+  Id: 12475666371123614148
+  Name: "Force Field"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_014"
   }
 }
 Assets {
@@ -473,6 +599,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeBulb_01_Text_063"
+  }
+}
+Assets {
+  Id: 11705201437075784387
+  Name: "Emblem 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_051"
   }
 }
 Assets {
@@ -557,6 +692,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11264238656613045462
+  Name: "Planet"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_017"
+  }
+}
+Assets {
   Id: 11228039791877073393
   Name: "Wedge - Concave"
   PlatformAssetType: 1
@@ -575,12 +719,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10885768916329008973
+  Name: "Carrot"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Carrot"
+  }
+}
+Assets {
   Id: 10835155324150586940
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 10682336961149633657
+  Name: "Arrow"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Arrow"
   }
 }
 Assets {
@@ -629,6 +791,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9405411771663346984
+  Name: "Icon Fist"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Fist"
+  }
+}
+Assets {
   Id: 9376996968657576182
   Name: "Decal Bullet Damage Stone"
   PlatformAssetType: 14
@@ -665,6 +836,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8997876356325466983
+  Name: "Dog"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_064"
+  }
+}
+Assets {
   Id: 8841354859436225786
   Name: "Keyboard"
   PlatformAssetType: 9
@@ -680,6 +860,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_027"
+  }
+}
+Assets {
+  Id: 8702540933785302793
+  Name: "Emblem 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_052"
   }
 }
 Assets {
@@ -854,6 +1043,24 @@ Assets {
   }
 }
 Assets {
+  Id: 7351071011837192733
+  Name: "Icon Diamond"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Diamond"
+  }
+}
+Assets {
+  Id: 7213085357802271354
+  Name: "Meat"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Meat"
+  }
+}
+Assets {
   Id: 7202307395712524294
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
@@ -863,12 +1070,48 @@ Assets {
   }
 }
 Assets {
+  Id: 7130918076783466498
+  Name: "Book"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Book"
+  }
+}
+Assets {
+  Id: 7078467425024092114
+  Name: "Icon Briefcase"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Briefcase"
+  }
+}
+Assets {
   Id: 6915026401214566089
   Name: "Sports Crowd Cheer 02 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_sports_crowd_cheer_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 6796044207340159720
+  Name: "Emblem 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_055"
+  }
+}
+Assets {
+  Id: 6757847837602072105
+  Name: "Banana"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Banana"
   }
 }
 Assets {
@@ -908,6 +1151,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6346083381187716613
+  Name: "Icon Arrow Up"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowUp"
+  }
+}
+Assets {
   Id: 6314713239762995836
   Name: "Hat"
   PlatformAssetType: 9
@@ -923,6 +1175,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_018"
+  }
+}
+Assets {
+  Id: 6161732794596978498
+  Name: "Icon Club"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Club"
   }
 }
 Assets {
@@ -944,12 +1205,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5787646963779468904
-  Name: "Weapon - Pipe"
-  PlatformAssetType: 1
+  Id: 5726894264892939395
+  Name: "Icon Spade"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_pipe_001"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Spade"
   }
 }
 Assets {
@@ -986,6 +1247,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_026"
+  }
+}
+Assets {
+  Id: 4902381483060096702
+  Name: "Mage Hat"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_MageHat"
   }
 }
 Assets {
@@ -1043,6 +1313,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4449806566210181021
+  Name: "Cheese"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Cheese"
+  }
+}
+Assets {
   Id: 4191189716791684405
   Name: "Pipe - Thick"
   PlatformAssetType: 1
@@ -1052,12 +1331,48 @@ Assets {
   }
 }
 Assets {
+  Id: 4101081237755086037
+  Name: "Target"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Target"
+  }
+}
+Assets {
   Id: 4042325493678578442
   Name: "Sign Font 1 Neon Lines: _"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Horizontal_01_Text_049"
+  }
+}
+Assets {
+  Id: 4011672600667678778
+  Name: "Icon Star"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Star"
+  }
+}
+Assets {
+  Id: 3892294400242779501
+  Name: "Icon Explosion"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Explosion"
+  }
+}
+Assets {
+  Id: 3833241509404263045
+  Name: "Drink"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_029"
   }
 }
 Assets {
@@ -1085,6 +1400,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Bat"
+  }
+}
+Assets {
+  Id: 3423336488811707452
+  Name: "Medical"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_022"
   }
 }
 Assets {
@@ -1124,6 +1448,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3025153718503099533
+  Name: "Icon Plaque"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Plaque"
+  }
+}
+Assets {
   Id: 2899842837741361229
   Name: "Concrete Tiles 01"
   PlatformAssetType: 2
@@ -1142,6 +1475,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2801407519727977968
+  Name: "Icon Close"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Close"
+  }
+}
+Assets {
   Id: 2607880056792422883
   Name: "Arch"
   PlatformAssetType: 1
@@ -1157,15 +1499,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_manhole_cover_01_ref"
-  }
-}
-Assets {
-  Id: 2197817192819564849
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {
@@ -1214,6 +1547,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1238282937320058786
+  Name: "Globe"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_019"
+  }
+}
+Assets {
   Id: 1219164686276614780
   Name: "Icon Core"
   PlatformAssetType: 9
@@ -1229,6 +1571,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 1105813672665503715
+  Name: "Pants"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_049"
   }
 }
 Assets {
@@ -1250,15 +1601,6 @@ Assets {
   }
 }
 Assets {
-  Id: 622433789355555801
-  Name: "BG Flat 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_020"
-  }
-}
-Assets {
   Id: 549490623371013608
   Name: "Icon Ice"
   PlatformAssetType: 9
@@ -1268,12 +1610,12 @@ Assets {
   }
 }
 Assets {
-  Id: 499697514733272876
-  Name: "Modern Weapon - Stock 01"
-  PlatformAssetType: 1
+  Id: 483467538191365134
+  Name: "Fish"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_stock_001"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Fish"
   }
 }
 Assets {
@@ -1301,5 +1643,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Outline_01_Text_001"
+  }
+}
+Assets {
+  Id: 148072237720706819
+  Name: "Banner"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Banner"
   }
 }

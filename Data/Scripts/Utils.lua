@@ -1,6 +1,7 @@
 local GEAR_GREEN = script:GetCustomProperty("SportGearGreen")
 local GEAR_ORANGE = script:GetCustomProperty("SportGearOrange")
 local GEAR_TEAL = script:GetCustomProperty("SportGearTeal")
+local GEAR_RED = script:GetCustomProperty("SportGearRed")
 local GEAR_GAY = script:GetCustomProperty("SportGearGay")
 
 local Utils = {}
@@ -9,24 +10,69 @@ local costumes = {
   {
     name = "Charlie Don't Surf",
     gear = GEAR_GREEN,
-    primary = "393D00",
-    secondary = "921D03"
+    primary = 32,
+    secondary = 28
   }, {
     name = "Steamroller Derby",
     gear = GEAR_ORANGE,
-    primary = "8D1E00",
-    secondary = "9796BC"
+    primary = 28,
+    secondary = 2
   }, {
     name = "20,000 League All-Star",
     gear = GEAR_TEAL,
-    primary = "005D6D",
-    secondary = "FFCEAB"
+    primary = 25,
+    secondary = 3
+  }, {
+    name = "Space Jamurai",
+    gear = GEAR_RED,
+    primary = 22,
+    secondary = 37
   }, {
     name = "im gay lmao",
     gear = GEAR_GAY,
-    primary = "F77892",
-    secondary = "26D2FB"
+    primary = 15,
+    secondary = 9
   }
+}
+
+local colors = {
+  "FFFFFF",
+  "FFEDDF",
+  "D9F8FF",
+  "C2C2C2",
+  "FFCEAB",
+  "C8FFBC",
+  "C6E09D",
+  "FFF380",
+  "26D2FB",
+  "9796BC",
+  "A58D96",
+  "FFFF00",
+  "DAFF00",
+  "3EFF00",
+  "F77892",
+  "C59328",
+  "787878",
+  "5D86BD",
+  "FF7100",
+  "9372FF",
+  "F60133",
+  "670200",
+  "DA0BA4",
+  "7C584B",
+  "005D6D",
+  "C70007",
+  "88227F",
+  "921D03",
+  "0B5508",
+  "4E00D9",
+  "383838",
+  "393D00",
+  "3E2818",
+  "5B0019",
+  "140232",
+  "161616",
+  "000000"
 }
 
 local teamPrefs = {
@@ -55,6 +101,7 @@ local teamPrefs = {
   "Pumpkin",
   "Toad",
   "Egg",
+  "Whale",
   "Butter",
   "Clam",
   "Oyster",
@@ -82,6 +129,8 @@ local teamPrefs = {
   "Ghost",
   "Lobster",
   "Dolphin",
+  "Boggle",
+  "Wharf",
   ""
 }
 
@@ -93,7 +142,6 @@ local teamSuffs = {
   "Caucus",
   "Club",
   "Mafia",
-
   "Punchers",
   "Moms",
   "Dads",
@@ -128,7 +176,10 @@ local teamSuffs = {
   "Ditchers",
   "Wagons",
   "Crimes",
-  "Motels"
+  "Motels",
+  "Stoppers",
+  "Chillers",
+  "Noises"
 }
 
 local homeTowns = {
@@ -228,6 +279,7 @@ local foulMessages = {
   "EXCESSIVE BLEEDING",
   "INADEQUATE SHOWBOATING",
   "RUNNING NEAR THE POOL",
+  "GLEAMING THE CUBE",
   "TOO FAR FROM THE LINE",
   "OFF SIDES",
   "SPILLING THE BEANS",
@@ -238,7 +290,6 @@ local foulMessages = {
   "BLUMENFELD COUNTERGAMBIT",
   "CHOWDERHOUSING",
   "HOLDING HANDS",
-  "FAILURE TO KISS THAT GOOD GOOD EGG",
   "GREASING THE PLATE",
   "USING A DEAD MEME",
   "Error running Lua task: Instruction limit exceeded. Your code may be in an infinite loop."
@@ -282,12 +333,17 @@ function getFromTable(thisTable, index)
 
     return thisTable[modIndex]
   else
-    return thisTable[math.random(1, #thisTable)]
+    local randomIndex = math.random(1, #thisTable)
+    return thisTable[randomIndex], randomIndex
   end
 end
 
 function Utils.getCostume(index)
   return getFromTable(costumes, index)
+end
+
+function Utils.getColor(index)
+  return getFromTable(colors, index)
 end
 
 function Utils.getTeamPrefix(index)
@@ -335,6 +391,46 @@ function Utils.setImageWithShadow(shadow, image, optionalColor)
   if optionalColor then
     highlight:SetColor(optionalColor)
   end
+end
+
+function paintPart(thisPart, thisColor)
+  if thisPart:IsA("CoreMesh") then
+    thisPart:SetColor(Color.FromLinearHex(thisColor.."00"))
+  elseif thisPart:IsA("Decal") then
+    thisPart:SetSmartProperty("Color", Color.FromLinearHex(thisColor))
+  end
+end
+
+function Utils.paintCostume(costume, primaryColor, secondaryColor)
+  if primaryColor then
+    local primaryParts = costume:FindDescendantsByName("Primary")
+
+    for _, part in ipairs(primaryParts) do
+      paintPart(part, primaryColor)
+    end
+  end
+
+  if secondaryColor then
+    local secondaryParts = costume:FindDescendantsByName("Secondary")
+
+    for _, part in ipairs(secondaryParts) do
+      paintPart(part, secondaryColor)
+    end
+  end
+end
+
+function Utils.playUiSfx(uiSfx, volume)
+  local sfx = World.SpawnAsset(uiSfx)
+  volume = volume or 1
+
+  sfx.isAttenuationEnabled = false
+  sfx.isOcclusionEnabled = false
+  sfx.isSpatializationEnabled = false
+  sfx.isTransient = true
+  sfx.pitch = math.random(-2, 2) * 100
+  sfx.volume = volume
+
+  sfx:Play()
 end
 
 return Utils

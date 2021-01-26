@@ -108,9 +108,16 @@ clientPlayer.resourceChangedEvent:Connect(updateScore)
 
 Utils.setTextWithShadow(SCORE, "0")
 
+function paintArmor(primaryColor, secondaryColor)
+  for _, piece in ipairs( clientPlayer:GetAttachedObjects() ) do
+    Utils.paintCostume(piece, primaryColor, secondaryColor)
+  end
+end
+
 function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
-  primaryColor = Color.FromLinearHex(primaryColor)
-  secondaryColor = Color.FromLinearHex(secondaryColor)
+  paintArmor(Utils.getColor(primaryColor), Utils.getColor(secondaryColor))
+  primaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
+  secondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
 
   Utils.setTextWithShadow(HOME_TOWN, homeTown, secondaryColor)
   Utils.setTextWithShadow(TEAM_NAME, teamName, primaryColor)

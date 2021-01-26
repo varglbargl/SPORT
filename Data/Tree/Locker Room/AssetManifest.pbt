@@ -314,6 +314,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5787646963779468904
+  Name: "Weapon - Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_pipe_001"
+  }
+}
+Assets {
   Id: 5786552377907408855
   Name: "Rubber Tiles 01"
   PlatformAssetType: 2
@@ -395,6 +404,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2197817192819564849
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
   Id: 1628849511756280386
   Name: "Whitebox Wall 01 Doorway 01 Frame"
   PlatformAssetType: 1
@@ -446,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
+  Id: 499697514733272876
+  Name: "Modern Weapon - Stock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_stock_001"
   }
 }
 Assets {
