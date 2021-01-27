@@ -61,29 +61,59 @@ clientPlayer:SetOverrideCamera(MENU_CAMERA)
 UI.SetCanCursorInteractWithUI(true)
 UI.SetCursorVisible(true)
 
-local gearNumber = 1
-local currentGear = Utils.getCostume(gearNumber)
+local gearNumber = nil
+local currentGear = nil
 local displayedCostume = nil
-
-local homeTown, townNumber = Utils.getHomeTown()
-
-local teamPref, prefNumber = Utils.getTeamPrefix()
-
-local teamSuff, suffNumber = Utils.getTeamSuffix()
-
-local logoInner = math.random(1, #innerLogos)
-local logoOuter = math.random(1, #outerLogos)
-
-local primaryNumber = currentGear.primary
-local currentPrimary = Utils.getColor(primaryNumber)
-
-local secondaryNumber = currentGear.secondary
-local currentSecondary = Utils.getColor(secondaryNumber)
-
+local homeTown = nil
+local townNumber = nil
+local teamPref = nil
+local prefNumber = nil
+local teamSuff = nil
+local suffNumber = nil
+local innerNumber = nil
+local outerNumber = nil
+local primaryNumber = nil
+local currentPrimary = nil
+local secondaryNumber = nil
+local currentSecondary = nil
 local teamAbbr = ""
 
+function loadTeam(teamData)
+  print(teamData)
+  if teamData then
+    currentGear, gearNumber = Utils.getCostume(teamData[1])
+    homeTown, townNumber = Utils.getHomeTown(teamData[2])
+    teamPref, prefNumber = Utils.getTeamPrefix(teamData[3])
+    teamSuff, suffNumber = Utils.getTeamSuffix(teamData[4])
+    displayCostume()
+    currentPrimary, primaryNumber = Utils.getColor(teamData[5])
+    currentSecondary, secondaryNumber = Utils.getColor(teamData[6])
+    Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
+    innerNumber = teamData[7]
+    outerNumber = teamData[8]
+  else
+    currentGear, gearNumber = Utils.getCostume(1)
+    displayedCostume = nil
+    homeTown, townNumber = Utils.getHomeTown()
+    teamPref, prefNumber = Utils.getTeamPrefix()
+    teamSuff, suffNumber = Utils.getTeamSuffix()
+    displayCostume()
+    primaryNumber = currentGear.primary
+    currentPrimary = Utils.getColor(primaryNumber)
+    secondaryNumber = currentGear.secondary
+    currentSecondary = Utils.getColor(secondaryNumber)
+    innerNumber = math.random(1, #innerLogos)
+    outerNumber = math.random(1, #outerLogos)
+  end
+
+  Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
+  updateUI()
+end
+
+Events.Connect("LT", loadTeam)
+
 function startGame()
-  Events.BroadcastToServer("GetDressed", clientPlayer, gearNumber, homeTown, teamPref.." "..teamSuff, primaryNumber, secondaryNumber, logoInner, logoOuter)
+  Events.BroadcastToServer("GetDressed", clientPlayer, gearNumber, townNumber, prefNumber, suffNumber, primaryNumber, secondaryNumber, innerNumber, outerNumber)
 
   clientPlayer:ClearOverrideCamera()
   UI.SetCanCursorInteractWithUI(false)
@@ -96,14 +126,14 @@ function updateUI()
   Utils.setTextWithShadow(TOWN_NAME, homeTown)
   Utils.setTextWithShadow(TEAM_PREF, teamPref)
   Utils.setTextWithShadow(TEAM_SUFF, teamSuff)
-  Utils.setImageWithShadow(INNER_LOGO, innerLogos[logoInner])
-  Utils.setImageWithShadow(OUTER_LOGO, outerLogos[logoOuter])
+  Utils.setImageWithShadow(INNER_LOGO, innerLogos[innerNumber])
+  Utils.setImageWithShadow(OUTER_LOGO, outerLogos[outerNumber])
   PRIMARY_COLOR:SetColor(Color.FromLinearHex(currentPrimary))
   SECONDARY_COLOR:SetColor(Color.FromLinearHex(currentSecondary))
 
   teamAbbr = string.sub(homeTown, 1, 1)..string.sub(teamPref, 1, 1)..string.sub(teamSuff, 1, 1)
 
-  Events.Broadcast("SetTeam", teamAbbr, currentPrimary, currentSecondary, logoInner, logoOuter)
+  Events.Broadcast("SetTeam", teamAbbr, primaryNumber, secondaryNumber, innerNumber, outerNumber)
 end
 
 function displayCostume()
@@ -115,18 +145,18 @@ function displayCostume()
 
   secondaryNumber = currentGear.secondary
   currentSecondary = Utils.getColor(secondaryNumber)
+
+  Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
 end
 
 function prevCostume()
-  gearNumber = gearNumber - 1
-  currentGear = Utils.getCostume(gearNumber)
+  currentGear, gearNumber = Utils.getCostume(gearNumber - 1)
   displayCostume()
   updateUI()
 end
 
 function nextCostume()
-  gearNumber = gearNumber + 1
-  currentGear = Utils.getCostume(gearNumber)
+  currentGear, gearNumber = Utils.getCostume(gearNumber + 1)
   displayCostume()
   updateUI()
 end
@@ -135,14 +165,12 @@ PREV_COSTUME.clickedEvent:Connect(prevCostume)
 NEXT_COSTUME.clickedEvent:Connect(nextCostume)
 
 function prevTown()
-  townNumber = townNumber - 1
-  homeTown = Utils.getHomeTown(townNumber)
+  homeTown, townNumber = Utils.getHomeTown(townNumber - 1)
   updateUI()
 end
 
 function nextTown()
-  townNumber = townNumber + 1
-  homeTown = Utils.getHomeTown(townNumber)
+  homeTown, townNumber = Utils.getHomeTown(townNumber + 1)
   updateUI()
 end
 
@@ -150,14 +178,12 @@ PREV_TOWN.clickedEvent:Connect(prevTown)
 NEXT_TOWN.clickedEvent:Connect(nextTown)
 
 function prevPref()
-  prefNumber = prefNumber - 1
-  teamPref = Utils.getTeamPrefix(prefNumber)
+  teamPref, prefNumber = Utils.getTeamPrefix(prefNumber - 1)
   updateUI()
 end
 
 function nextPref()
-  prefNumber = prefNumber + 1
-  teamPref = Utils.getTeamPrefix(prefNumber)
+  teamPref, prefNumber = Utils.getTeamPrefix(prefNumber + 1)
   updateUI()
 end
 
@@ -165,14 +191,12 @@ PREV_PREF.clickedEvent:Connect(prevPref)
 NEXT_PREF.clickedEvent:Connect(nextPref)
 
 function prevSuff()
-  suffNumber = suffNumber - 1
-  teamSuff = Utils.getTeamSuffix(suffNumber)
+  teamSuff, suffNumber = Utils.getTeamSuffix(suffNumber - 1)
   updateUI()
 end
 
 function nextSuff()
-  suffNumber = suffNumber + 1
-  teamSuff = Utils.getTeamSuffix(suffNumber)
+  teamSuff, suffNumber = Utils.getTeamSuffix(suffNumber + 1)
   updateUI()
 end
 
@@ -180,15 +204,15 @@ PREV_SUFF.clickedEvent:Connect(prevSuff)
 NEXT_SUFF.clickedEvent:Connect(nextSuff)
 
 function prevInner()
-  logoInner = logoInner - 1
+  innerNumber = innerNumber - 1
 
-  if logoInner == 0 then logoInner = #innerLogos end
+  if innerNumber == 0 then innerNumber = #innerLogos end
 
   updateUI()
 end
 
 function nextInner()
-  logoInner = logoInner % #innerLogos + 1
+  innerNumber = innerNumber % #innerLogos + 1
   updateUI()
 end
 
@@ -196,15 +220,15 @@ PREV_INNER.clickedEvent:Connect(prevInner)
 NEXT_INNER.clickedEvent:Connect(nextInner)
 
 function prevOuter()
-  logoOuter = logoOuter - 1
+  outerNumber = outerNumber - 1
 
-  if logoOuter == 0 then logoOuter = #outerLogos end
+  if outerNumber == 0 then outerNumber = #outerLogos end
 
   updateUI()
 end
 
 function nextOuter()
-  logoOuter = logoOuter % #outerLogos + 1
+  outerNumber = outerNumber % #outerLogos + 1
   updateUI()
 end
 
@@ -212,17 +236,17 @@ PREV_OUTER.clickedEvent:Connect(prevOuter)
 NEXT_OUTER.clickedEvent:Connect(nextOuter)
 
 function prevPrimary()
-  primaryNumber = primaryNumber - 1
-  currentPrimary = Utils.getColor(primaryNumber)
+  currentPrimary, primaryNumber = Utils.getColor(primaryNumber - 1)
 
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   updateUI()
 end
 
 function nextPrimary()
-  primaryNumber = primaryNumber + 1
-  currentPrimary = Utils.getColor(primaryNumber)
+  currentPrimary, primaryNumber = Utils.getColor(primaryNumber + 1)
 
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   updateUI()
 end
@@ -231,17 +255,17 @@ PREV_PRIMARY.clickedEvent:Connect(prevPrimary)
 NEXT_PRIMARY.clickedEvent:Connect(nextPrimary)
 
 function prevSecondary()
-  secondaryNumber = secondaryNumber - 1
-  currentSecondary = Utils.getColor(secondaryNumber)
+  currentSecondary, secondaryNumber = Utils.getColor(secondaryNumber - 1)
 
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   updateUI()
 end
 
 function nextSecondary()
-  secondaryNumber = secondaryNumber + 1
-  currentSecondary = Utils.getColor(secondaryNumber)
+  currentSecondary, secondaryNumber = Utils.getColor(secondaryNumber + 1)
 
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   updateUI()
 end
@@ -256,12 +280,13 @@ function randomizeAll()
   displayCostume()
   currentPrimary, primaryNumber = Utils.getColor()
   currentSecondary, secondaryNumber = Utils.getColor()
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   homeTown, townNumber = Utils.getHomeTown()
   teamPref, prefNumber = Utils.getTeamPrefix()
   teamSuff, suffNumber = Utils.getTeamSuffix()
-  logoInner = math.random(1, #innerLogos)
-  logoOuter = math.random(1, #outerLogos)
+  innerNumber = math.random(1, #innerLogos)
+  outerNumber = math.random(1, #outerLogos)
   updateUI()
 end
 
@@ -314,6 +339,3 @@ initButtonHover(NEXT_SECONDARY)
 initButtonHover(RANDOMIZE)
 
 PLAY_BUTTON.clickedEvent:Connect(startGame)
-
-displayCostume()
-updateUI()

@@ -77,7 +77,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -225,7 +225,7 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            Z: 33.8468857
+            Z: 30
           }
           Rotation {
           }
@@ -312,6 +312,7 @@ Assets {
         Name: "Bump Zone"
         Transform {
           Location {
+            Z: 17.2283344
           }
           Rotation {
           }

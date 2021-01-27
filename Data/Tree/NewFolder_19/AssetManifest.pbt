@@ -8,20 +8,20 @@ Assets {
   }
 }
 Assets {
-  Id: 9249676690155819450
-  Name: "Concrete Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_concrete_001"
-  }
-}
-Assets {
   Id: 7620351576055659081
   Name: "Pipe - Half Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_003"
+  }
+}
+Assets {
+  Id: 5029777733976640292
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
   }
 }

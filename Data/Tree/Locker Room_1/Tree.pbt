@@ -216,7 +216,7 @@ Objects {
 }
 Objects {
   Id: 13156698247145940521
-  Name: "Human Gal 2"
+  Name: "Human Gal"
   Transform {
     Location {
       Z: 107.000015

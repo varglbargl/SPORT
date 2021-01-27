@@ -1,36 +1,28 @@
 Name: "NewFolder_21"
-RootId: 9263426047572378667
+RootId: 82888217535424249
 Objects {
-  Id: 9281194603740685743
-  Name: "Sign Font 1 Neon Outline: S"
+  Id: 11419569650953247537
+  Name: "Cube"
   Transform {
     Location {
-      Y: -869.360229
+      X: -98.6702728
+      Y: -3732.24756
+      Z: 213.114456
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: 90
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 3.48041797
+      Y: 2
+      Z: 1.77681112
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Neon:color"
-      Color {
-        R: 50
-        G: 2.50000048
-        A: 1
-      }
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -41,12 +33,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13628636778869463711
+      Id: 18246390806564903405
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -57,36 +50,43 @@ Objects {
   }
 }
 Objects {
-  Id: 14488887903963419892
-  Name: "Sign Font 1 Neon Outline: E"
+  Id: 15861175740326962625
+  Name: "Cube"
   Transform {
     Location {
-      Y: -691.139099
+      X: 3043.40234
+      Y: -3552.24756
+      Z: 220
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -123.750046
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 13.8
+      Y: 27.4000111
+      Z: 9
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -97,12 +97,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13091441912678254675
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -113,37 +114,44 @@ Objects {
   }
 }
 Objects {
-  Id: 2667887392056402829
-  Name: "Sign Font 1 Neon Outline: R"
+  Id: 12550539126067794515
+  Name: "Cube"
   Transform {
     Location {
-      X: -0.0009765625
-      Y: -478.579712
+      X: 1423.75
+      Y: -3032.24756
+      Z: -130
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
+      Roll: -33.75
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 13.8000021
+      Y: 21.8686543
+      Z: 20.9000072
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -154,12 +162,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11131276483315135825
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -170,37 +179,42 @@ Objects {
   }
 }
 Objects {
-  Id: 5243635430075082669
-  Name: "Sign Font 1 Neon Outline: O"
+  Id: 18312235867637159335
+  Name: "Cube"
   Transform {
     Location {
-      X: -0.0009765625
-      Y: -325.965637
+      X: -676.400391
+      Y: -3915.78613
+      Z: 223.312973
     }
     Rotation {
-      Yaw: -89.9999924
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 0.7
+      Y: 1.9672662
+      Z: 1.25424
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -211,12 +225,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10127558158596447023
+      Id: 12798861650043271013
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -227,150 +242,43 @@ Objects {
   }
 }
 Objects {
-  Id: 4064488316136465646
-  Name: "Sign Font 1 Neon Outline: C"
+  Id: 17513140111732221525
+  Name: "Cube"
   Transform {
     Location {
-      X: -0.0009765625
-      Y: -172.385681
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
-    }
-  }
-  ParentId: 9263426047572378667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Neon:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Neon:color"
-      Color {
-        R: 50
-        G: 2.50000048
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1145488780530381135
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 13473100639196822290
-  Name: "Sign Font 1 Neon Outline: S"
-  Transform {
-    Location {
-      Y: -18.0617065
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
-    }
-  }
-  ParentId: 9263426047572378667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Neon:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Neon:color"
-      Color {
-        R: 50
-        G: 2.50000048
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13628636778869463711
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 1354341576521691117
-  Name: "Sign Font 1 Neon Outline: H"
-  Transform {
-    Location {
-      X: -0.0009765625
-      Y: 330.87262
+      X: 18.75
+      Y: -3137.24756
+      Z: 169.022858
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 15.9000025
+      Y: 71
+      Z: 1.21207476
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -381,12 +289,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6350461546992812389
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -397,37 +306,43 @@ Objects {
   }
 }
 Objects {
-  Id: 2294828784419800825
-  Name: "Sign Font 1 Neon Outline: G"
+  Id: 16424008784758335708
+  Name: "Cube"
   Transform {
     Location {
-      X: -0.0009765625
-      Y: 487.085938
+      X: 18.75
+      Y: 3131.11279
+      Z: 169.022858
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 15.9000025
+      Y: 71
+      Z: 1.21207476
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -438,12 +353,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11437251945967452260
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -454,37 +370,42 @@ Objects {
   }
 }
 Objects {
-  Id: 16206260280007248893
-  Name: "Sign Font 1 Neon Outline: I"
+  Id: 7117092560832162720
+  Name: "Pipe - Half Thick"
   Transform {
     Location {
-      X: -0.0009765625
-      Y: 589.84436
+      X: 3428.75
+      Y: -2.75256348
     }
     Rotation {
-      Yaw: -90
+      Yaw: 89.9999924
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 77.999939
+      Y: 77.999939
+      Z: 2.29999971
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -495,12 +416,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3483395971436441369
+      Id: 7620351576055659081
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -511,37 +433,42 @@ Objects {
   }
 }
 Objects {
-  Id: 8313383495862311782
-  Name: "Sign Font 1 Neon Outline: H"
+  Id: 7456358406658708152
+  Name: "Pipe - Half Thick"
   Transform {
     Location {
-      X: -0.001953125
-      Y: 800.226929
+      X: -3466.25
+      Y: -2.75256348
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 1.91560638
-      Y: 1.91560638
-      Z: 1.91560638
+      X: 77.999939
+      Y: 77.999939
+      Z: 2.29999971
     }
   }
-  ParentId: 9263426047572378667
+  ParentId: 82888217535424249
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Font_Neon:id"
+      Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 12827530473249900764
+        Id: 13157013216437696589
       }
     }
     Overrides {
-      Name: "ma:Font_Neon:color"
+      Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 50
-        G: 2.50000048
+        R: 3.5
+        G: 1.08459175
+        B: 0.416499853
         A: 1
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -552,12 +479,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6350461546992812389
+      Id: 7620351576055659081
     }
     Teams {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {

@@ -98,12 +98,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17290917823567430811
+  Name: "Sparkles"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Sparkles"
+  }
+}
+Assets {
   Id: 17153255781905611132
   Name: "Sign Font 1 Neon Lines: ="
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Horizontal_01_Text_048"
+  }
+}
+Assets {
+  Id: 17040815127639962220
+  Name: "Tech Circle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_031"
   }
 }
 Assets {
@@ -215,12 +233,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16084619408451921656
+  Name: "Icon Strength"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Strength"
+  }
+}
+Assets {
   Id: 16077939380194922576
   Name: "Icon Fireball"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Fireball"
+  }
+}
+Assets {
+  Id: 16054331508313822539
+  Name: "Barrel"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_009"
   }
 }
 Assets {
@@ -239,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_001_uv"
+  }
+}
+Assets {
+  Id: 15742233855991286429
+  Name: "Hydrant"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_068"
   }
 }
 Assets {
@@ -287,12 +332,39 @@ Assets {
   }
 }
 Assets {
+  Id: 15200471921938115000
+  Name: "Crosshair 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_004"
+  }
+}
+Assets {
   Id: 14947421715670574446
   Name: "Electric Loop"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Icon_044"
+  }
+}
+Assets {
+  Id: 14929236324843066122
+  Name: "UI Basic Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Frame_005"
+  }
+}
+Assets {
+  Id: 14751741094054914800
+  Name: "Grass Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_001_uv"
   }
 }
 Assets {
@@ -329,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_mil_fence_pole_02_end_001"
+  }
+}
+Assets {
+  Id: 14449858461220576655
+  Name: "Microchip"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_032"
   }
 }
 Assets {
@@ -383,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing4x_002Wedge"
+  }
+}
+Assets {
+  Id: 14308685797104036163
+  Name: "Crosshair 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_003"
   }
 }
 Assets {
@@ -485,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13108963628925209163
+  Name: "Sci-fi 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Fill_005"
+  }
+}
+Assets {
   Id: 13091441912678254675
   Name: "Sign Font 1 Neon Outline: E"
   PlatformAssetType: 1
@@ -500,6 +599,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Grenade"
+  }
+}
+Assets {
+  Id: 12966482809578269031
+  Name: "Emblem 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_054"
+  }
+}
+Assets {
+  Id: 12937332856460390182
+  Name: "Fantasy Frame 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_004"
   }
 }
 Assets {
@@ -656,6 +773,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11502465697854971382
+  Name: "Science Beaker"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFI_Icon_027"
+  }
+}
+Assets {
   Id: 11384631316084891420
   Name: "Sci-fi Frame 006"
   PlatformAssetType: 9
@@ -701,6 +827,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11232416293698382143
+  Name: "Icon Achievement"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Medal"
+  }
+}
+Assets {
   Id: 11228039791877073393
   Name: "Wedge - Concave"
   PlatformAssetType: 1
@@ -725,6 +860,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Carrot"
+  }
+}
+Assets {
+  Id: 10877182934637063111
+  Name: "Bandage"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_045"
   }
 }
 Assets {
@@ -764,6 +908,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9900828141678014754
+  Name: "Emblem 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_056"
+  }
+}
+Assets {
   Id: 9868808447480500953
   Name: "Wedge"
   PlatformAssetType: 1
@@ -800,6 +953,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9389027067783216968
+  Name: "Fries"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_031"
+  }
+}
+Assets {
   Id: 9376996968657576182
   Name: "Decal Bullet Damage Stone"
   PlatformAssetType: 14
@@ -815,6 +977,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_concrete_001"
+  }
+}
+Assets {
+  Id: 9153377062071312302
+  Name: "Icon Anchor"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Anchor"
   }
 }
 Assets {
@@ -860,6 +1031,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_027"
+  }
+}
+Assets {
+  Id: 8746280438263543514
+  Name: "Atomic"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_025"
   }
 }
 Assets {
@@ -917,6 +1097,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8501620255617371515
+  Name: "Radiation"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_023"
+  }
+}
+Assets {
+  Id: 8499250752921551957
+  Name: "Bike"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_004"
+  }
+}
+Assets {
   Id: 8441747654935751097
   Name: "Sports Crowd Ooh Reaction 01 SFX"
   PlatformAssetType: 7
@@ -932,6 +1130,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
+  Id: 8279903062178143202
+  Name: "Icon Potion"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Potion"
   }
 }
 Assets {
@@ -986,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_mil_fence_pole_02_connect_001"
+  }
+}
+Assets {
+  Id: 7656483612647922058
+  Name: "Pill"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_044"
   }
 }
 Assets {
@@ -1079,12 +1295,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7078467425024092114
-  Name: "Icon Briefcase"
+  Id: 6934475190068005525
+  Name: "Sleep"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Briefcase"
+    AssetId: "UI_Urban_Icon_074"
   }
 }
 Assets {
@@ -1124,12 +1340,39 @@ Assets {
   }
 }
 Assets {
+  Id: 6654608275753323919
+  Name: "Noodles"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_034"
+  }
+}
+Assets {
   Id: 6654037610077184271
   Name: "Frame Beveled 005"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_023"
+  }
+}
+Assets {
+  Id: 6629524270862601878
+  Name: "Emblem 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_053"
+  }
+}
+Assets {
+  Id: 6515808000666334413
+  Name: "Bread"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Bread"
   }
 }
 Assets {
@@ -1175,6 +1418,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_018"
+  }
+}
+Assets {
+  Id: 6241450347743651062
+  Name: "Icon Trophy"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Trophy"
   }
 }
 Assets {
@@ -1250,6 +1502,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4927619264831372049
+  Name: "Ringed Planet"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_016"
+  }
+}
+Assets {
   Id: 4902381483060096702
   Name: "Mage Hat"
   PlatformAssetType: 9
@@ -1313,6 +1574,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4464138379873183301
+  Name: "Icon Weapon Gun"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_WeaponGun"
+  }
+}
+Assets {
+  Id: 4450482210681499628
+  Name: "Icon Stamina"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Stamina"
+  }
+}
+Assets {
   Id: 4449806566210181021
   Name: "Cheese"
   PlatformAssetType: 9
@@ -1331,12 +1610,39 @@ Assets {
   }
 }
 Assets {
+  Id: 4129280087392430145
+  Name: "Fantasy Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_005"
+  }
+}
+Assets {
+  Id: 4102404659996285378
+  Name: "Icon Bomb Blast"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Boom"
+  }
+}
+Assets {
   Id: 4101081237755086037
   Name: "Target"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Target"
+  }
+}
+Assets {
+  Id: 4079063092577192146
+  Name: "Orange"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Orange"
   }
 }
 Assets {
@@ -1448,15 +1754,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3025153718503099533
-  Name: "Icon Plaque"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Plaque"
-  }
-}
-Assets {
   Id: 2899842837741361229
   Name: "Concrete Tiles 01"
   PlatformAssetType: 2
@@ -1472,6 +1769,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 2822065055529974975
+  Name: "Burger"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_030"
   }
 }
 Assets {
@@ -1493,12 +1799,57 @@ Assets {
   }
 }
 Assets {
+  Id: 2513357139504703627
+  Name: "Robot"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_004"
+  }
+}
+Assets {
   Id: 2494518377884194581
   Name: "Urban Manhole Cover 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_urb_manhole_cover_01_ref"
+  }
+}
+Assets {
+  Id: 2444524052885539648
+  Name: "Briefcase"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Icon_040"
+  }
+}
+Assets {
+  Id: 2340680077350982167
+  Name: "Grave"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Grave"
+  }
+}
+Assets {
+  Id: 2331448651964468946
+  Name: "Navigation"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Icon_Navigation"
+  }
+}
+Assets {
+  Id: 2217731831379675323
+  Name: "Hill 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_002"
   }
 }
 Assets {
@@ -1535,6 +1886,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
+  Id: 1559953462548567813
+  Name: "Boat"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Boatmedium"
   }
 }
 Assets {
@@ -1598,6 +1958,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_sports_organ_charge_ref"
+  }
+}
+Assets {
+  Id: 789595868788435617
+  Name: "Hex Field"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Icon_039"
   }
 }
 Assets {

@@ -23,12 +23,12 @@ local costumes = {
     primary = 25,
     secondary = 3
   }, {
-    name = "Space Jamurai",
+    name = "Shut Up and Jamurai",
     gear = GEAR_RED,
     primary = 22,
     secondary = 37
   }, {
-    name = "im gay lmao",
+    name = "Memepunk Spectastrphe",
     gear = GEAR_GAY,
     primary = 15,
     secondary = 9
@@ -46,9 +46,9 @@ local colors = {
   "FFF380",
   "26D2FB",
   "9796BC",
-  "A58D96",
-  "FFFF00",
-  "DAFF00",
+  "A57D96",
+  "FFEF00",
+  "AAFF00",
   "3EFF00",
   "F77892",
   "C59328",
@@ -71,8 +71,8 @@ local colors = {
   "3E2818",
   "5B0019",
   "140232",
-  "161616",
-  "000000"
+  "191619",
+  "050506"
 }
 
 local teamPrefs = {
@@ -127,10 +127,12 @@ local teamPrefs = {
   "Bread",
   "Anime",
   "Ghost",
+  "Burger",
   "Lobster",
   "Dolphin",
   "Boggle",
   "Wharf",
+  "Potion",
   ""
 }
 
@@ -164,6 +166,7 @@ local teamSuffs = {
   "Wizards",
   "Phones",
   "Goths",
+  "Burglars",
   "Launchers",
   "Melters",
   "Flippers",
@@ -179,7 +182,8 @@ local teamSuffs = {
   "Motels",
   "Stoppers",
   "Chillers",
-  "Noises"
+  "Noises",
+  "Castles"
 }
 
 local homeTowns = {
@@ -187,6 +191,7 @@ local homeTowns = {
   "Seattle",
   "Kansas City",
   "New Jersey",
+  "Transylvania",
   "Tokyo-3",
   "Atlantis",
   "Rivendell",
@@ -264,7 +269,9 @@ local homeTowns = {
   "Total Drama Island",
   "Strong Badia",
   "United Nations",
-  "Crime City"
+  "Shadow Moses Island",
+  "Crime City",
+  "Longmont"
 }
 
 local foulMessages = {
@@ -287,11 +294,15 @@ local foulMessages = {
   "UNAPPROVED HAIR STYLE",
   "BANANAS ON THE BOOST",
   "MAKIN 'EM WAIT FOR IT",
-  "BLUMENFELD COUNTERGAMBIT",
   "CHOWDERHOUSING",
   "HOLDING HANDS",
   "GREASING THE PLATE",
   "USING A DEAD MEME",
+  "FAILURE TO MAINTAIN IRONIC DETACHMENT",
+  "CAUGHT YOU SLIPPIN THO",
+  "NEGLECTING TO TYPE \"GLHF\"",
+  "CROSSING THE STREAMS",
+  "FAILURE TO HYDRATE",
   "Error running Lua task: Instruction limit exceeded. Your code may be in an infinite loop."
 }
 
@@ -331,7 +342,7 @@ function getFromTable(thisTable, index)
 
     if modIndex == 0 then modIndex = #thisTable end
 
-    return thisTable[modIndex]
+    return thisTable[modIndex], modIndex
   else
     local randomIndex = math.random(1, #thisTable)
     return thisTable[randomIndex], randomIndex
@@ -417,6 +428,11 @@ function Utils.paintCostume(costume, primaryColor, secondaryColor)
       paintPart(part, secondaryColor)
     end
   end
+end
+
+function Utils.setCostumeColors(costumeIndex, primaryColor, secondaryColor)
+  costumes[costumeIndex].primary = primaryColor
+  costumes[costumeIndex].secondary = secondaryColor
 end
 
 function Utils.playUiSfx(uiSfx, volume)

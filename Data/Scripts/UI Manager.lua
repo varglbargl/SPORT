@@ -9,6 +9,7 @@ local COUNTDOWN_SFX = script:GetCustomProperty("CountdownSFX")
 local JOINED_PANEL = script:GetCustomProperty("PlayerJoinedPanel"):WaitForObject()
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
 local HELMET_INNER = script:GetCustomProperty("HelmetInner"):WaitForObject()
+local HELMET_OUTER = script:GetCustomProperty("HelmetOuter"):WaitForObject()
 local INNER_LOGOS = script:GetCustomProperty("InnerLogos"):WaitForObject()
 local OUTER_LOGOS = script:GetCustomProperty("OuterLogos"):WaitForObject()
 local HOME_TOWN = script:GetCustomProperty("HomeTown"):WaitForObject()
@@ -108,28 +109,39 @@ clientPlayer.resourceChangedEvent:Connect(updateScore)
 
 Utils.setTextWithShadow(SCORE, "0")
 
-function paintArmor(primaryColor, secondaryColor)
-  for _, piece in ipairs( clientPlayer:GetAttachedObjects() ) do
+function paintArmor(thisPlayer, primaryColor, secondaryColor)
+  local armorPieces = thisPlayer:GetAttachedObjects()
+
+  while #armorPieces < 10 do -- there's always 10, that's how many are in the armor + player nameplate
+    Task.Wait(0.1)
+    armorPieces = thisPlayer:GetAttachedObjects()
+  end
+
+  for _, piece in ipairs(armorPieces) do
+    print("Painting "..thisPlayer.name.."'s "..piece.name..".")
     Utils.paintCostume(piece, primaryColor, secondaryColor)
   end
 end
 
-function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
-  paintArmor(Utils.getColor(primaryColor), Utils.getColor(secondaryColor))
-  primaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
-  secondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
+function announceTeamJoined(thisPlayer, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
+  paintArmor(thisPlayer, Utils.getColor(primaryColor), Utils.getColor(secondaryColor))
 
-  Utils.setTextWithShadow(HOME_TOWN, homeTown, secondaryColor)
-  Utils.setTextWithShadow(TEAM_NAME, teamName, primaryColor)
+  thisPrimaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
+  thisSecondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
+
+  Utils.setTextWithShadow(HOME_TOWN, Utils.getHomeTown(homeTown), thisSecondaryColor)
+  Utils.setTextWithShadow(TEAM_NAME, Utils.getTeamPrefix(namePrefix).." "..Utils.getTeamSuffix(nameSuffix), Color.Lerp(thisPrimaryColor, Color.WHITE, 0.1))
   Utils.setTextWithShadow(PLAYER_NAME, thisPlayer.name)
-  Utils.setImageWithShadow(HELMET_ICON, nil, primaryColor)
-  Utils.setImageWithShadow(HELMET_INNER, innerLogos[logoInner], secondaryColor)
-  -- Utils.setImageWithShadow(HELMET_OUTER, outerLogos[logoOuter])
+  Utils.setImageWithShadow(HELMET_ICON, nil, thisPrimaryColor)
+  Utils.setImageWithShadow(HELMET_INNER, innerLogos[logoInner], thisSecondaryColor)
+  HELMET_OUTER:SetImage(outerLogos[logoOuter]:GetImage())
+  HELMET_OUTER.rotationAngle = outerLogos[logoOuter].rotationAngle
+  HELMET_OUTER:SetColor(Color.Lerp(thisPrimaryColor, Color.TRANSPARENT, 0.5))
 
   CROSSHAIR.visibility = Visibility.INHERIT
   innerLogos[logoInner].visibility = Visibility.INHERIT
-  innerLogos[logoInner]:SetColor(secondaryColor)
-  BACKGROUND:SetColor(primaryColor * Color.New(0.075, 0.075, 0.075, 1))
+  innerLogos[logoInner]:SetColor(thisSecondaryColor)
+  BACKGROUND:SetColor(thisPrimaryColor * Color.New(0.075, 0.075, 0.075, 1))
 
   EaseUI.EaseX(JOINED_PANEL, -75, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
 
@@ -139,8 +151,8 @@ function announceTeamJoined(thisPlayer, homeTown, teamName, primaryColor, second
 end
 
 function setPlayerTeamInfo(teamAbbr, primaryColor, secondaryColor, logoInner, logoOuter)
-  primaryColor = Color.FromLinearHex(primaryColor)
-  secondaryColor = Color.FromLinearHex(secondaryColor)
+  primaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
+  secondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
 
   Utils.setTextWithShadow(ABBR, teamAbbr)
   Utils.setImageWithShadow(LOGO_INNER, innerLogos[logoInner], secondaryColor)

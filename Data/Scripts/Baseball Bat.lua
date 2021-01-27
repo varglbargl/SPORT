@@ -51,18 +51,18 @@ function bumpOther(thisTrigger, other)
 end
 
 function messUpPlayer(player)
-  print("Messing up " .. player.name)
   if HIT_SFX then World.SpawnAsset(HIT_SFX, {position = sfxPosition}) end
 
   player:EnableRagdoll("lower_spine", 1)
   player:EnableRagdoll("right_hip", 1)
   player:EnableRagdoll("left_hip", 1)
   player.movementControlMode = MovementControlMode.NONE
-
   player:SetMounted(false)
+  player.serverUserData["ScoringPlayer"] = equipment.owner
 
   Task.Wait(2)
   if not Object.IsValid(player) then return end
+  player.serverUserData["ScoringPlayer"] = nil
 
   while player:GetVelocity().z > 0 do
 

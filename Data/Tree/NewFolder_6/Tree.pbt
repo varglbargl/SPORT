@@ -1,23 +1,23 @@
 Name: "NewFolder_6"
-RootId: 5164329290455474760
+RootId: 3351997789201290905
 Objects {
-  Id: 11974628792532439388
+  Id: 2360633585478608480
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: -0.263183594
-      Y: -26.8704834
-      Z: 16.9765625
+      X: -0.262996018
+      Y: 133.206589
+      Z: 16.9768963
     }
     Rotation {
     }
     Scale {
-      X: 0.184881151
-      Y: 0.184881151
-      Z: 0.842441559
+      X: 0.184881136
+      Y: 0.184881136
+      Z: 0.84244144
     }
   }
-  ParentId: 5164329290455474760
+  ParentId: 3351997789201290905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -56,22 +56,22 @@ Objects {
   }
 }
 Objects {
-  Id: 15676757152350591717
+  Id: 12872824387345189325
   Name: "Urban Pipe Flange 01"
   Transform {
     Location {
-      X: -0.263183594
-      Y: -26.8704834
+      X: -0.262996018
+      Y: 133.206589
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
     }
   }
-  ParentId: 5164329290455474760
+  ParentId: 3351997789201290905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -110,7 +110,116 @@ Objects {
   }
 }
 Objects {
-  Id: 17680334502333720720
+  Id: 15934912125592141577
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -0.263183594
+      Y: -26.8704834
+      Z: 16.9765625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.184881151
+      Y: 0.184881151
+      Z: 0.842441559
+    }
+  }
+  ParentId: 3351997789201290905
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6747614045051753376
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4745892826343253059
+  Name: "Urban Pipe Flange 01"
+  Transform {
+    Location {
+      X: -0.263183594
+      Y: -26.8704834
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3351997789201290905
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18393437648231545508
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16277841155793929530
   Name: "Small Crate Lid"
   Transform {
     Location {
@@ -126,7 +235,7 @@ Objects {
       Z: 1.80216765
     }
   }
-  ParentId: 5164329290455474760
+  ParentId: 3351997789201290905
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

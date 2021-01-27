@@ -1,7 +1,7 @@
 Name: "NewFolder_3"
-RootId: 11169798841385963788
+RootId: 2903668172567749137
 Objects {
-  Id: 18117390082687412147
+  Id: 2469240481377576599
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 0.842441559
     }
   }
-  ParentId: 11169798841385963788
+  ParentId: 2903668172567749137
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -56,7 +56,7 @@ Objects {
   }
 }
 Objects {
-  Id: 269754373458523783
+  Id: 14807271381038499290
   Name: "Urban Pipe Flange 01"
   Transform {
     Location {
@@ -71,7 +71,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11169798841385963788
+  ParentId: 2903668172567749137
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -110,7 +110,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14489794545632498710
+  Id: 1157863201359632516
   Name: "Small Crate Lid"
   Transform {
     Location {
@@ -126,7 +126,7 @@ Objects {
       Z: 1.80216765
     }
   }
-  ParentId: 11169798841385963788
+  ParentId: 2903668172567749137
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

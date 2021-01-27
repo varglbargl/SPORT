@@ -251,8 +251,12 @@ Assets {
           Overrides {
             Name: "cs:HitSFX"
             AssetReference {
-              Id: 9904194551130587002
+              Id: 5161302206759130328
             }
+          }
+          Overrides {
+            Name: "cs:HeightMultiplier"
+            Float: 0.25
           }
         }
         WantsNetworking: true
@@ -339,12 +343,12 @@ Assets {
       }
     }
     Assets {
-      Id: 9904194551130587002
-      Name: "Sports Bowling Ball Floor Hit Impact 01 SFX"
+      Id: 5161302206759130328
+      Name: "Gunshot Sub Bass Sweetener 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_sports_bowling_ball_floor_hit_impact_01a_Cue_ref"
+        AssetId: "sfx_gunsweetener_subbass_01_Cue_ref"
       }
     }
     PrimaryAssetId {

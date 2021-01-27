@@ -2,11 +2,6 @@
 local FORCE = script:GetCustomProperty("Force")
 local BUMP_GIRLS = script:GetCustomProperty("BumpGirls")
 local BUMP_BALLS = script:GetCustomProperty("BumpBalls")
-local LIGHT = script:GetCustomProperty("Light")
-
-if LIGHT then
-  LIGHT = LIGHT:WaitForObject()
-end
 
 local trigger = script.parent
 local launchOrigin = script:GetWorldPosition()
@@ -29,14 +24,6 @@ function bumpOther(thisTrigger, other)
   other:SetVelocity(reverseVelocity)
 
   if BUMP_SFX then World.SpawnAsset(BUMP_SFX, {position = trigger:GetWorldPosition()}) end
-  if Object.IsValid(LIGHT) then
-    LIGHT.visibility = Visibility.INHERIT
-
-    Task.Wait(0.1)
-    if not Object.IsValid(LIGHT) then return end
-
-    LIGHT.visibility = Visibility.FORCE_OFF
-  end
 end
 
 bumpEvent = trigger.beginOverlapEvent:Connect(bumpOther)

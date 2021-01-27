@@ -16,10 +16,10 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 9910558257116576508
+        ChildIds: 5489361215785843077
         ChildIds: 18211227539867334956
         ChildIds: 6914584088899119372
-        Lifespan: 1
+        Lifespan: 2
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -31,8 +31,8 @@ Assets {
         }
       }
       Objects {
-        Id: 9910558257116576508
-        Name: "Impact Metal Heavy 01 SFX"
+        Id: 5489361215785843077
+        Name: "Sports Billiards Pool Ball Hit 01 SFX"
         Transform {
           Location {
           }
@@ -53,14 +53,14 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 11427767477882790425
+            Id: 6046428915597647049
           }
           AutoPlay: true
           Transient: true
-          Pitch: 500
-          Volume: 0.5
-          Falloff: 5000
-          Radius: 500
+          Pitch: -600
+          Volume: 0.6
+          Falloff: -1
+          Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
@@ -92,8 +92,8 @@ Assets {
           }
           AutoPlay: true
           Transient: true
-          Pitch: 200
-          Volume: 1
+          Pitch: -1200
+          Volume: 0.5
           Falloff: 5000
           Radius: 500
           IsSpatializationEnabled: true
@@ -172,12 +172,12 @@ Assets {
       }
     }
     Assets {
-      Id: 11427767477882790425
-      Name: "Impact Metal Heavy 01 SFX"
+      Id: 6046428915597647049
+      Name: "Sports Billiards Pool Ball Hit 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_gun_impact_metal_heavy_01_Cue_ref"
+        AssetId: "sfx_sports_billiards_pool_ball_hit_01a_Cue_ref"
       }
     }
     Assets {

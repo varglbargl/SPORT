@@ -1102,6 +1102,10 @@ Assets {
             Name: "cs:ResetBallAfterScore"
             Bool: false
           }
+          Overrides {
+            Name: "cs:BallZone"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

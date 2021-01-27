@@ -18,6 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 4869391305302706976
         ChildIds: 1055628210342598653
+        ChildIds: 18396274141631588797
         Lifespan: 2
         WantsNetworking: true
         Collidable_v2 {
@@ -115,11 +116,53 @@ Assets {
           AutoPlay: true
           Transient: true
           Pitch: 1000
-          Volume: 0.7
+          Volume: 0.8
           Falloff: -1
           Radius: -1
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 18396274141631588797
+        Name: "Explosion Kit Afterglow VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15014289848616926643
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 1
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4464152760224095347
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
         }
       }
     }
@@ -139,6 +182,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_sports_basketball_rim_backboard_bounce_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4464152760224095347
+      Name: "Explosion Kit Afterglow VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_mil_explokit_afterglow"
       }
     }
     PrimaryAssetId {

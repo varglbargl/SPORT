@@ -1,58 +1,6 @@
 Name: "Locker Room"
 RootId: 16075967878473959232
 Objects {
-  Id: 17353747618163588566
-  Name: "Weapon - Pipe"
-  Transform {
-    Location {
-      X: 182.312012
-      Y: 61.0209961
-      Z: 131.160156
-    }
-    Rotation {
-      Pitch: 33.8963776
-      Yaw: 20.6737289
-      Roll: -35.4779472
-    }
-    Scale {
-      X: 0.702614427
-      Y: 0.702614427
-      Z: 0.702614427
-    }
-  }
-  ParentId: 16075967878473959232
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2197817192819564849
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5787646963779468904
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 16237289561582141160
   Name: "Gold Trophy"
   Transform {
@@ -75,8 +23,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 386.728516
-            Y: -47.5439453
-            Z: 296.387695
+            Y: -120.102417
+            Z: 292.576172
           }
         }
         Overrides {
@@ -97,50 +45,6 @@ Objects {
     }
     TemplateAsset {
       Id: 1326902582483831732
-    }
-  }
-}
-Objects {
-  Id: 4624340159354001508
-  Name: "Modern Weapon - Stock 01"
-  Transform {
-    Location {
-      X: 148.012695
-      Y: 42.3081055
-      Z: 158.789063
-    }
-    Rotation {
-      Pitch: -39.0077438
-      Yaw: 77.7543411
-      Roll: 6.78392076
-    }
-    Scale {
-      X: 1.42547107
-      Y: 1.42547107
-      Z: 1.42547107
-    }
-  }
-  ParentId: 16075967878473959232
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 499697514733272876
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
     }
   }
 }
@@ -201,13 +105,13 @@ Objects {
   Transform {
     Location {
       X: 365.335449
-      Y: -109.753418
+      Y: -198.659424
       Z: 292.667969
     }
     Rotation {
       Pitch: -2.6060791
       Yaw: 114.75515
-      Roll: -23.6942844
+      Roll: -23.6942749
     }
     Scale {
       X: 0.924898922
@@ -1343,13 +1247,148 @@ Objects {
   }
 }
 Objects {
+  Id: 3388341185477045515
+  Name: "Weapons Trunk"
+  Transform {
+    Location {
+      X: 74.1210938
+      Y: -652.718689
+      Z: 43.1464844
+    }
+    Rotation {
+      Yaw: -86.2846069
+    }
+    Scale {
+      X: 1.13692033
+      Y: 1.13692033
+      Z: 1.13692033
+    }
+  }
+  ParentId: 16075967878473959232
+  ChildIds: 5281165747135250801
+  ChildIds: 1975726010632234336
+  ChildIds: 460280081077264808
+  ChildIds: 8582347641027062260
+  ChildIds: 18012424677454851782
+  ChildIds: 14314772074104629638
+  ChildIds: 348624453173791708
+  ChildIds: 15278822513294933917
+  ChildIds: 4624340159354001508
+  ChildIds: 17353747618163588566
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17353747618163588566
+  Name: "Weapon - Pipe"
+  Transform {
+    Location {
+      X: -14.6591797
+      Y: 22.114563
+      Z: 5.77246094
+    }
+    Rotation {
+      Pitch: -30.4648438
+      Yaw: 123.641434
+      Roll: -4.60830688
+    }
+    Scale {
+      X: 0.702614427
+      Y: 0.702614427
+      Z: 0.702614427
+    }
+  }
+  ParentId: 3388341185477045515
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2197817192819564849
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5787646963779468904
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4624340159354001508
+  Name: "Modern Weapon - Stock 01"
+  Transform {
+    Location {
+      X: 19.5351334
+      Y: -25.9219303
+      Z: 40.3964844
+    }
+    Rotation {
+      Pitch: -39.0077515
+      Yaw: 77.7543259
+      Roll: 6.78392267
+    }
+    Scale {
+      X: 1.42547107
+      Y: 1.42547107
+      Z: 1.42547107
+    }
+  }
+  ParentId: 3388341185477045515
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 499697514733272876
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 15278822513294933917
   Name: "Urban Pipe Coupling 04"
   Transform {
     Location {
-      X: 383.042969
-      Y: -660.242432
-      Z: 490.605469
+      X: 222.4953
+      Y: -724.710938
+      Z: 372.212891
     }
     Rotation {
     }
@@ -1359,7 +1398,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1393,7 +1432,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   TemplateInstance {
     ParameterOverrideMap {
       key: 613591839169554805
@@ -1405,9 +1444,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 140.749512
-            Y: 117.062012
-            Z: 183.257813
+            X: -19.7982903
+            Y: 52.5902443
+            Z: 64.8652344
           }
         }
         Overrides {
@@ -1438,13 +1477,13 @@ Objects {
   Name: "NewFolder"
   Transform {
     Location {
-      X: 156.400391
-      Y: 41.7063
-      Z: 153.25
+      X: -4.14737892
+      Y: -22.7654247
+      Z: 34.8574219
     }
     Rotation {
       Pitch: 1.96201956
-      Yaw: 15.416872
+      Yaw: 15.4168901
       Roll: -10.1234741
     }
     Scale {
@@ -1453,7 +1492,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1462,7 +1501,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder"
+    FilePartitionName: "NewFolder_1"
   }
 }
 Objects {
@@ -1475,7 +1514,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   TemplateInstance {
     ParameterOverrideMap {
       key: 16149852212896238054
@@ -1487,17 +1526,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 180.874512
-            Y: 108.633667
-            Z: 172.457031
+            X: 20.3266716
+            Y: 44.1618652
+            Z: 56.4599609
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 72.2817535
-            Yaw: -81.8602676
-            Roll: -74.6505
+            Pitch: 75.2454529
+            Yaw: -82.3922729
+            Roll: -72.9828796
           }
         }
         Overrides {
@@ -1520,14 +1559,14 @@ Objects {
   Name: "Military Crate Hinge 02"
   Transform {
     Location {
-      X: 183.947266
-      Y: 82.4926758
-      Z: 172.875
+      X: 23.3994503
+      Y: 18.0210934
+      Z: 54.4824219
     }
     Rotation {
-      Pitch: -1.10790443
+      Pitch: -1.10791016
       Yaw: 87.2230453
-      Roll: -113.255669
+      Roll: -113.255646
     }
     Scale {
       X: 0.804442227
@@ -1535,7 +1574,7 @@ Objects {
       Z: 0.804442227
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1564,14 +1603,14 @@ Objects {
   Name: "Military Crate Hinge 02"
   Transform {
     Location {
-      X: 183.871582
-      Y: 37.0467529
-      Z: 172.705078
+      X: 23.3237495
+      Y: -27.4249859
+      Z: 54.3125
     }
     Rotation {
-      Pitch: -1.10790443
+      Pitch: -1.10791016
       Yaw: 87.2230453
-      Roll: -113.255669
+      Roll: -113.255646
     }
     Scale {
       X: 0.804442227
@@ -1579,7 +1618,7 @@ Objects {
       Z: 0.804442227
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1608,13 +1647,13 @@ Objects {
   Name: "Military Epic Crate Lid"
   Transform {
     Location {
-      X: 188.321289
-      Y: 54.8815918
-      Z: 170.208008
+      X: 27.7734909
+      Y: -9.58991051
+      Z: 51.8154297
     }
     Rotation {
-      Yaw: 87.5336761
-      Roll: -38.4058075
+      Yaw: 87.5336685
+      Roll: -38.4057922
     }
     Scale {
       X: 0.593746305
@@ -1622,7 +1661,7 @@ Objects {
       Z: 0.593746305
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1651,9 +1690,9 @@ Objects {
   Name: "Military Epic Crate Base"
   Transform {
     Location {
-      X: 152.904297
-      Y: 58.5509033
-      Z: 119.25293
+      X: -7.64352
+      Y: -5.92094946
+      Z: 0.860351563
     }
     Rotation {
       Yaw: 87.5338364
@@ -1664,7 +1703,7 @@ Objects {
       Z: 0.593746305
     }
   }
-  ParentId: 16075967878473959232
+  ParentId: 3388341185477045515
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2536,7 +2575,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_1"
+    FilePartitionName: "NewFolder_2"
   }
 }
 Objects {
@@ -2565,7 +2604,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_2"
+    FilePartitionName: "NewFolder_3"
   }
 }
 Objects {
@@ -2594,7 +2633,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_3"
+    FilePartitionName: "NewFolder_4"
   }
 }
 Objects {
@@ -2623,7 +2662,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_4"
+    FilePartitionName: "NewFolder_5"
   }
 }
 Objects {
@@ -2742,7 +2781,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 364.209473
-            Y: -108.374146
+            Y: -197.280151
             Z: 305.930664
           }
         }
@@ -3314,7 +3353,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_5"
+    FilePartitionName: "NewFolder_6"
   }
 }
 Objects {
@@ -3533,7 +3572,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_6"
+    FilePartitionName: "NewFolder_7"
   }
 }
 Objects {
@@ -3562,7 +3601,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_7"
+    FilePartitionName: "NewFolder_8"
   }
 }
 Objects {
@@ -3591,7 +3630,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_8"
+    FilePartitionName: "NewFolder_9"
   }
 }
 Objects {
@@ -3599,16 +3638,17 @@ Objects {
   Name: "Military Rare Crate Lid"
   Transform {
     Location {
-      X: 48.7319336
-      Y: -689.695496
-      Z: 117.34082
+      X: 182.055176
+      Y: 34.1905518
+      Z: 157.689453
     }
     Rotation {
+      Yaw: 96.5259781
     }
     Scale {
-      X: 1.15255845
-      Y: 1.15255845
-      Z: 1.15255845
+      X: 0.653321683
+      Y: 0.653321683
+      Z: 0.653321683
     }
   }
   ParentId: 16075967878473959232
@@ -3641,16 +3681,17 @@ Objects {
   Name: "Military Rare Crate Base"
   Transform {
     Location {
-      X: 48.784668
-      Y: -640.744873
-      Z: 40.7714844
+      X: 153.52002
+      Y: 30.9790039
+      Z: 115.067383
     }
     Rotation {
+      Yaw: 96.5259781
     }
     Scale {
-      X: 1.15255845
-      Y: 1.15255845
-      Z: 1.15255845
+      X: 0.653321683
+      Y: 0.653321683
+      Z: 0.653321683
     }
   }
   ParentId: 16075967878473959232

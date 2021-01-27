@@ -248,8 +248,8 @@ Assets {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.964705944
-              G: 0.270588249
-              B: 0.380392194
+              G: 0.270588279
+              B: 0.380391926
               A: 1
             }
           }
@@ -281,9 +281,9 @@ Assets {
         Name: "Secondary"
         Transform {
           Location {
-            X: 6.73776674
-            Y: 15.4855881
-            Z: 2.32073259
+            X: 3.64941025
+            Y: 15.48559
+            Z: 5.38321304
           }
           Rotation {
             Pitch: 5.31900263
@@ -291,9 +291,9 @@ Assets {
             Roll: 89.9999847
           }
           Scale {
-            X: 0.230356827
-            Y: 0.230356917
-            Z: 0.338054687
+            X: 0.267249495
+            Y: 0.267249614
+            Z: 0.502975404
           }
         }
         ParentId: 10240237753363757351
@@ -328,6 +328,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -341,19 +342,18 @@ Assets {
         Name: "Secondary"
         Transform {
           Location {
-            X: 6.73797464
-            Y: -18.0097733
-            Z: 2.32075334
+            X: 3.65869141
+            Y: -14.2088013
+            Z: 5.37597656
           }
           Rotation {
-            Pitch: 5.31900263
-            Yaw: -6.10351563e-05
-            Roll: 89.9999771
+            Pitch: -4.61599731
+            Roll: -90
           }
           Scale {
-            X: 0.230356827
-            Y: 0.230356917
-            Z: 0.338054687
+            X: 0.267249495
+            Y: -0.267249614
+            Z: 0.502975404
           }
         }
         ParentId: 10240237753363757351
@@ -388,6 +388,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -688,6 +689,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -1678,8 +1680,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.0196078438
-              G: 0.596078455
+              R: 0.0196078345
+              G: 0.596078396
               B: 0.996078491
               A: 1
             }
@@ -2111,7 +2113,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 0.5
+            Float: 1
           }
           Overrides {
             Name: "bp:Size Min"
@@ -2192,7 +2194,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 0.5
+            Float: 1
           }
           Overrides {
             Name: "bp:Size Min"

@@ -16,15 +16,15 @@ function wearCostume(player, costume)
   end
 end
 
-function getDressed(player, gearNumber, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
+function getDressed(player, gearNumber, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
   local costume = Utils.getCostume(gearNumber)
-  local suit = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
+  local gear = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
 
-  wearCostume(player, suit)
+  wearCostume(player, gear)
 
-  suit:Destroy()
+  gear:Destroy()
 
-  Events.Broadcast("ReadyPlayer", player, homeTown, teamName, primaryColor, secondaryColor, logoInner, logoOuter)
+  Events.Broadcast("ReadyPlayer", player, gearNumber, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
 end
 
 function playerLeft(player)

@@ -1,7 +1,7 @@
 Name: "NewFolder_12"
-RootId: 4662817397752454872
+RootId: 15923654096706050998
 Objects {
-  Id: 14872535752358938013
+  Id: 15258254531939195946
   Name: "Cube"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 0.227985397
     }
   }
-  ParentId: 4662817397752454872
+  ParentId: 15923654096706050998
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -64,7 +64,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1337949088238008355
+  Id: 128255710030738555
   Name: "Cube"
   Transform {
     Location {
@@ -81,7 +81,7 @@ Objects {
       Z: 0.227985397
     }
   }
-  ParentId: 4662817397752454872
+  ParentId: 15923654096706050998
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -127,7 +127,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2359839743929790808
+  Id: 5096096856583212778
   Name: "Pipe - Half Thick"
   Transform {
     Location {
@@ -144,7 +144,7 @@ Objects {
       Z: 0.193928748
     }
   }
-  ParentId: 4662817397752454872
+  ParentId: 15923654096706050998
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -190,7 +190,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6056144298105397199
+  Id: 16666412930476172232
   Name: "Pipe - Half Thick"
   Transform {
     Location {
@@ -207,7 +207,7 @@ Objects {
       Z: 0.193928748
     }
   }
-  ParentId: 4662817397752454872
+  ParentId: 15923654096706050998
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

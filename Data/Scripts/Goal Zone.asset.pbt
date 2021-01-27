@@ -33,6 +33,10 @@ Assets {
         Bool: false
       }
       Overrides {
+        Name: "cs:BallZone"
+        Bool: true
+      }
+      Overrides {
         Name: "cs:Hole"
         Bool: false
       }

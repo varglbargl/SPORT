@@ -1,34 +1,42 @@
 Name: "NewFolder_19"
-RootId: 8401097677885909914
+RootId: 144872867248008979
 Objects {
-  Id: 14363284140730238977
+  Id: 2026672175552208999
   Name: "Cube"
   Transform {
     Location {
-      X: 18.75
-      Y: -3137.24805
-      Z: 109.476959
+      X: 18.7500038
+      Y: -3137.24854
+      Z: 560.949341
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 15.9000101
+      X: 15.9000111
       Y: 55.5053711
-      Z: 8.95187187
+      Z: 0.227985397
     }
   }
-  ParentId: 8401097677885909914
+  ParentId: 144872867248008979
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9249676690155819450
+        Id: 5029777733976640292
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.100595877
+        B: 0.49
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -56,34 +64,42 @@ Objects {
   }
 }
 Objects {
-  Id: 16129429780017000233
+  Id: 17523517164942918064
   Name: "Cube"
   Transform {
     Location {
-      X: 18.75
-      Y: 3133.66943
-      Z: 109.476959
+      X: 18.7500038
+      Y: 3133.66919
+      Z: 560.795593
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 15.9000101
+      X: 15.9000111
       Y: 55.5053711
-      Z: 8.95187187
+      Z: 0.227985397
     }
   }
-  ParentId: 8401097677885909914
+  ParentId: 144872867248008979
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9249676690155819450
+        Id: 5029777733976640292
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.100595877
+        B: 0.49
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -111,34 +127,42 @@ Objects {
   }
 }
 Objects {
-  Id: 7989109754290063202
+  Id: 9134163429521411778
   Name: "Pipe - Half Thick"
   Transform {
     Location {
       X: 2248.96729
-      Y: -2.75245833
-      Z: -202.729858
+      Y: -2.75234222
+      Z: 552.779358
     }
     Rotation {
-      Yaw: 89.9999924
+      Yaw: 89.9999542
     }
     Scale {
       X: 77.999939
       Y: 77.999939
-      Z: 7.61463737
+      Z: 0.193928748
     }
   }
-  ParentId: 8401097677885909914
+  ParentId: 144872867248008979
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9249676690155819450
+        Id: 5029777733976640292
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.100595877
+        B: 0.49
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -166,13 +190,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2882693459098721682
+  Id: 5242854887728492605
   Name: "Pipe - Half Thick"
   Transform {
     Location {
-      X: -2245.16016
-      Y: -2.75245833
-      Z: -202.729858
+      X: -2245.16064
+      Y: -2.75234222
+      Z: 552.779358
     }
     Rotation {
       Yaw: -90
@@ -180,20 +204,28 @@ Objects {
     Scale {
       X: 77.999939
       Y: 77.999939
-      Z: 7.61463737
+      Z: 0.193928748
     }
   }
-  ParentId: 8401097677885909914
+  ParentId: 144872867248008979
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9249676690155819450
+        Id: 5029777733976640292
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.100595877
+        B: 0.49
+        A: 1
+      }
     }
   }
   Collidable_v2 {

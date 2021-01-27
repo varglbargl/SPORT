@@ -280,7 +280,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -348,7 +348,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -446,7 +446,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -531,7 +531,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -643,7 +643,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -685,7 +685,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -727,7 +727,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -795,7 +795,7 @@ Objects {
         Overrides {
           Name: "ma:Shared_BaseMaterial:color"
           Color {
-            R: 2.35
+            R: 1.79999971
             G: 3
             A: 1
           }
@@ -1147,6 +1147,10 @@ Objects {
     Overrides {
       Name: "cs:PointValue"
       Int: 25
+    }
+    Overrides {
+      Name: "cs:BallZone"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -2205,14 +2209,6 @@ Objects {
             Yaw: 32.9064827
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -2482,7 +2478,7 @@ Objects {
 }
 Objects {
   Id: 5952079028810037736
-  Name: "Trigger"
+  Name: "Finish Line Zone"
   Transform {
     Location {
       X: -3161.14404
@@ -2537,6 +2533,10 @@ Objects {
     }
     Overrides {
       Name: "cs:ResetBallAfterScore"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:BallZone"
       Bool: false
     }
   }
@@ -2621,7 +2621,7 @@ Objects {
 }
 Objects {
   Id: 5662422261833072222
-  Name: "Trigger"
+  Name: "Pool Zone"
   Transform {
     Location {
       X: 2673.21045
@@ -2697,6 +2697,10 @@ Objects {
       AssetReference {
         Id: 841534158063459245
       }
+    }
+    Overrides {
+      Name: "cs:BallZone"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -5092,14 +5096,6 @@ Objects {
             Yaw: -53.0543518
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -5146,14 +5142,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -5198,14 +5186,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -7215,14 +7195,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
