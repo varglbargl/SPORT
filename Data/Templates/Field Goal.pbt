@@ -97,6 +97,12 @@ Assets {
           }
         }
         ParentId: 15118899632634144580
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "SoccerNet"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1323,6 +1329,10 @@ Assets {
             Name: "cs:PointValue"
             Int: 2
           }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "FieldGoal"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1390,6 +1400,10 @@ Assets {
           Overrides {
             Name: "cs:PointValue"
             Int: 3
+          }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "BasketballHoop"
           }
         }
         Collidable_v2 {

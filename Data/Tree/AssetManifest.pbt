@@ -197,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16413146103425618968
-  Name: "Sports Organ Short Rise Set 01 SFX"
-  PlatformAssetType: 10
-  PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "sfxabp_sports_organ_short_rise_ref"
-  }
-}
-Assets {
   Id: 16343881362210963692
   Name: "Corner Beveled 012"
   PlatformAssetType: 9
@@ -257,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_009"
+  }
+}
+Assets {
+  Id: 15989298941374295711
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {
@@ -701,6 +701,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12027373898209992860
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 11957752047128977443
   Name: "Moon"
   PlatformAssetType: 9
@@ -896,6 +905,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_parameter_driven_water_manual"
+  }
+}
+Assets {
+  Id: 10513285106299326875
+  Name: "Icon Checkmark"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Checkmark"
   }
 }
 Assets {
@@ -1265,6 +1283,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Diamond"
+  }
+}
+Assets {
+  Id: 7277259060674842476
+  Name: "Center Arrow 005 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_005Wedge"
   }
 }
 Assets {
@@ -1805,6 +1832,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Icon_004"
+  }
+}
+Assets {
+  Id: 2502613466750140936
+  Name: "Frame Outlined Thick 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_020"
   }
 }
 Assets {

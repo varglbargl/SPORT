@@ -1,5 +1,6 @@
 ﻿local GOAL_SFX = script:GetCustomProperty("GoalSFXTemplate")
 local FOUL_SFX = script:GetCustomProperty("FoulSFXTemplate")
+local EVENT_ON_GOAL = script:GetCustomProperty("EventOnGoal")
 local POINT_VALUE = script:GetCustomProperty("PointValue")
 local RESET_BALL_AFTER_SCORE = script:GetCustomProperty("ResetBallAfterScore")
 local CAN_FOUL = script:GetCustomProperty("CanFoul")
@@ -24,7 +25,9 @@ function scoreGoal(thisTrigger, other)
 
   if #scoringPlayers == 0 then return end
 
-  if CAN_FOUL and math.random(1, 10) == 5 then
+  if CAN_FOUL and math.random(1, 15) == 5 then
+    Events.Broadcast("Foul", scoringPlayers)
+
     if FOUL_SFX then World.SpawnAsset(FOUL_SFX, {position = other:GetWorldPosition()}) end
 
     for _, scorePlayer in ipairs(scoringPlayers) do
@@ -32,6 +35,9 @@ function scoreGoal(thisTrigger, other)
       Events.BroadcastToPlayer(scorePlayer, "FoulBall")
     end
   else
+    if POINT_VALUE > 0 then Events.Broadcast("Goal", scoringPlayers, other:IsA("Player"), other.name, POINT_VALUE) end
+    if EVENT_ON_GOAL and EVENT_ON_GOAL ~= "" then Events.Broadcast(EVENT_ON_GOAL, scoringPlayers, other:IsA("Player"), other.name, POINT_VALUE) end
+
     local sfxOffset = Vector3.ZERO
 
     if GIRL_ZONE then sfxOffset = Vector3.UP * 50 end

@@ -520,16 +520,16 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 15.6822309
+            X: 10.5900774
             Y: -24.5022564
             Z: 112.382568
           }
           Rotation {
           }
           Scale {
-            X: 0.999420762
-            Y: 0.370177209
-            Z: 1.32894325
+            X: 1.17363966
+            Y: 0.370177031
+            Z: 1.2702
           }
         }
         ParentId: 9758320633580747176
@@ -580,6 +580,10 @@ Assets {
               Id: 7366050044145627711
             }
           }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "TargetShoot"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -598,16 +602,16 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 11.0585289
+            X: 10.3201122
             Y: -24.5022564
             Z: 244.924
           }
           Rotation {
           }
           Scale {
-            X: 0.6
-            Y: 0.4
-            Z: 0.7
+            X: 0.70459193
+            Y: 0.399999827
+            Z: 0.669058
           }
         }
         ParentId: 9758320633580747176
@@ -657,6 +661,10 @@ Assets {
             AssetReference {
               Id: 7366050044145627711
             }
+          }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "TargetShoot"
           }
         }
         Collidable_v2 {

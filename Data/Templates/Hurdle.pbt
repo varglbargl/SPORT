@@ -1106,6 +1106,10 @@ Assets {
             Name: "cs:BallZone"
             Bool: false
           }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "HurdleJump"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

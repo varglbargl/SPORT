@@ -17,6 +17,10 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:EventOnGoal"
+        String: ""
+      }
+      Overrides {
         Name: "cs:PointValue"
         Int: 1
       }

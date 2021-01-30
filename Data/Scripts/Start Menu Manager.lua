@@ -79,33 +79,18 @@ local currentSecondary = nil
 local teamAbbr = ""
 
 function loadTeam(teamData)
-  print(teamData)
-  if teamData then
-    currentGear, gearNumber = Utils.getCostume(teamData[1])
-    homeTown, townNumber = Utils.getHomeTown(teamData[2])
-    teamPref, prefNumber = Utils.getTeamPrefix(teamData[3])
-    teamSuff, suffNumber = Utils.getTeamSuffix(teamData[4])
-    displayCostume()
-    currentPrimary, primaryNumber = Utils.getColor(teamData[5])
-    currentSecondary, secondaryNumber = Utils.getColor(teamData[6])
-    Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
-    innerNumber = teamData[7]
-    outerNumber = teamData[8]
-  else
-    currentGear, gearNumber = Utils.getCostume(1)
-    displayedCostume = nil
-    homeTown, townNumber = Utils.getHomeTown()
-    teamPref, prefNumber = Utils.getTeamPrefix()
-    teamSuff, suffNumber = Utils.getTeamSuffix()
-    displayCostume()
-    primaryNumber = currentGear.primary
-    currentPrimary = Utils.getColor(primaryNumber)
-    secondaryNumber = currentGear.secondary
-    currentSecondary = Utils.getColor(secondaryNumber)
-    innerNumber = math.random(1, #innerLogos)
-    outerNumber = math.random(1, #outerLogos)
-  end
+  currentGear, gearNumber = Utils.getCostume(teamData[1])
+  homeTown, townNumber = Utils.getHomeTown(teamData[2])
+  teamPref, prefNumber = Utils.getTeamPrefix(teamData[3])
+  teamSuff, suffNumber = Utils.getTeamSuffix(teamData[4])
+  displayCostume()
+  currentPrimary, primaryNumber = Utils.getColor(teamData[5])
+  currentSecondary, secondaryNumber = Utils.getColor(teamData[6])
+  Utils.setCostumeColors(gearNumber, primaryNumber, secondaryNumber)
+  innerNumber = teamData[7] or math.random(1, #innerLogos)
+  outerNumber = teamData[8] or math.random(1, #outerLogos)
 
+  Events.Broadcast("FadeFromBlack")
   Utils.paintCostume(displayedCostume, currentPrimary, currentSecondary)
   updateUI()
 end
@@ -113,12 +98,16 @@ end
 Events.Connect("LT", loadTeam)
 
 function startGame()
+  Events.Broadcast("FadeToBlack", 0.9)
   Events.BroadcastToServer("GetDressed", clientPlayer, gearNumber, townNumber, prefNumber, suffNumber, primaryNumber, secondaryNumber, innerNumber, outerNumber)
+  UI.SetCanCursorInteractWithUI(false)
+
+  Task.Wait(1)
 
   clientPlayer:ClearOverrideCamera()
-  UI.SetCanCursorInteractWithUI(false)
   UI.SetCursorVisible(false)
   THE_WHOLE_THING.visibility = Visibility.FORCE_OFF
+  Events.Broadcast("InitGameUI")
 end
 
 function updateUI()

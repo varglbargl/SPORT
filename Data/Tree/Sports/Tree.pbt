@@ -1,6 +1,2485 @@
 Name: "Sports"
 RootId: 1231868157073874387
 Objects {
+  Id: 16118093371670810499
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 80
+      Y: 3680.56372
+      Z: 1860
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 3426241607084365893
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3426241607084365893
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 16118093371670810499
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 9060055862536674026
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 100
+      Y: 3680.56372
+      Z: 1780
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 13526431976092118259
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 13526431976092118259
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 9060055862536674026
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 17543989513177040164
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -150
+      Y: 3680.56372
+      Z: 1760
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 6259809550442245559
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6259809550442245559
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 17543989513177040164
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 1864882179152280592
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -40
+      Y: 3680.56372
+      Z: 1710
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 1432025883895090328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1432025883895090328
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 1864882179152280592
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 14764444216799589114
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 180
+      Y: 3680.56372
+      Z: 1630
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7655670090251263790
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7655670090251263790
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 14764444216799589114
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 5772871029021827574
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -170
+      Y: 3680.56372
+      Z: 1530
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 11825019768509584171
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 11825019768509584171
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 5772871029021827574
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 7230518029489888452
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -50
+      Y: 3680.56372
+      Z: 1520
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 16782652088446806293
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16782652088446806293
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 7230518029489888452
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 6572031752471022575
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 160
+      Y: 3680.56372
+      Z: 1470
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 3281997990149366734
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3281997990149366734
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 6572031752471022575
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 14764098104487706363
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 140
+      Y: 3680.56372
+      Z: 1360
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 6424824081816980141
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6424824081816980141
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 14764098104487706363
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 18358268017104038445
+  Name: "Trigger"
+  Transform {
+    Location {
+      Y: 3680.56372
+      Z: 1380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 10037158668740439761
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 10037158668740439761
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 18358268017104038445
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 13431611938343984278
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -100
+      Y: 3680.56372
+      Z: 1350
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 12678520466988955775
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12678520466988955775
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 13431611938343984278
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 8482269807857155452
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -100
+      Y: 3680.56372
+      Z: 1210
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7602050337881138688
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7602050337881138688
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 8482269807857155452
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 4309395293055267957
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 110
+      Y: 3680.56372
+      Z: 1180
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7570979267926490165
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7570979267926490165
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 4309395293055267957
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 5184513071080318384
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -170
+      Y: 3680.56372
+      Z: 1130
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 5215780259170634439
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5215780259170634439
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 5184513071080318384
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 6999362000750332766
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -50
+      Y: 3680.56372
+      Z: 1060
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 15341723318263751967
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 15341723318263751967
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 6999362000750332766
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 4112552829164847960
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 180
+      Y: 3680.56372
+      Z: 1090
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7950096659976792189
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7950096659976792189
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 4112552829164847960
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 7537567373869603011
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 60
+      Y: 3680.56372
+      Z: 1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7277449466784449067
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7277449466784449067
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 7537567373869603011
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 10556809689998489751
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 100
+      Y: 3680.56372
+      Z: 890
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 1225254390581615381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1225254390581615381
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 10556809689998489751
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 14429817996622202977
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -110
+      Y: 3680.56372
+      Z: 850
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 14706485886651424074
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14706485886651424074
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 14429817996622202977
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 13702855043165723094
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 140
+      Y: 3680.56372
+      Z: 710
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 1577252300737486303
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1577252300737486303
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 13702855043165723094
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 1292173274841896246
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -110
+      Y: 3680.56372
+      Z: 700
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 7938280375616876243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7938280375616876243
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 1292173274841896246
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 16275586389967693305
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 40
+      Y: 3680.56372
+      Z: 650
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 17074991352410486174
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 17074991352410486174
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 16275586389967693305
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 16814320285399125655
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 130
+      Y: 3680.56372
+      Z: 600
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 14189627387452484113
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14189627387452484113
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 16814320285399125655
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 6592537765062324737
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -150
+      Y: 3680.56372
+      Z: 530
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 12446496322578452996
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 12446496322578452996
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 6592537765062324737
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 1576827840695862665
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 190
+      Y: 3680.56372
+      Z: 480
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 11510822401320467726
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 11510822401320467726
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 1576827840695862665
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 15256391371582763241
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 10
+      Y: 3680.56372
+      Z: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 14570930376194135863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14570930376194135863
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 15256391371582763241
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 12143798983316408010
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -190
+      Y: 3680.56372
+      Z: 380
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 6268029201258919496
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6268029201258919496
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 12143798983316408010
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 7766905056758546169
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -110
+      Y: 3680.56372
+      Z: 310
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 1426182973916911348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1426182973916911348
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 7766905056758546169
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 15012636987815984334
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -130
+      Y: 3680.56372
+      Z: 80
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 285110771411219494
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 285110771411219494
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 15012636987815984334
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 8793693366078125048
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 190
+      Y: 3680.56372
+      Z: 160
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 17821368849176369121
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 17821368849176369121
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 8793693366078125048
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
+  Id: 4743287169263767087
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 74.4018784
+      Y: 3680.56372
+      Z: 300.925751
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.417179585
+      Y: 1.05735064
+      Z: 0.417179585
+    }
+  }
+  ParentId: 1231868157073874387
+  ChildIds: 2579998019103842908
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 2579998019103842908
+  Name: "Bump Zone"
+  Transform {
+    Location {
+      Y: -23.4498158
+      Z: -438.501404
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39704919
+      Y: 0.945760071
+      Z: 2.39704919
+    }
+  }
+  ParentId: 4743287169263767087
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 200
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 11300651866510004794
+      }
+    }
+    Overrides {
+      Name: "cs:BumpBalls"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
+    }
+  }
+}
+Objects {
   Id: 11699822401851476861
   Name: "Trampoline"
   Transform {
@@ -1138,7 +3617,7 @@ Objects {
     }
     Overrides {
       Name: "cs:CanFoul"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:ResetBallAfterScore"
@@ -1146,11 +3625,15 @@ Objects {
     }
     Overrides {
       Name: "cs:PointValue"
-      Int: 25
+      Int: 10
     }
     Overrides {
       Name: "cs:BallZone"
       Bool: false
+    }
+    Overrides {
+      Name: "cs:EventOnGoal"
+      String: "RockClimbingWall"
     }
   }
   Collidable_v2 {
@@ -2461,14 +4944,6 @@ Objects {
             Roll: -43.9699097
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.24703443
-            Y: 1.24703443
-            Z: 1.24703443
-          }
-        }
       }
     }
     TemplateAsset {
@@ -2813,6 +5288,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Trigger {
+    InteractionLabel: "GoalHoop"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -2845,6 +5321,10 @@ Objects {
     Overrides {
       Name: "cs:GirlZone"
       Bool: false
+    }
+    Overrides {
+      Name: "cs:EventOnGoal"
+      String: "StripedRing"
     }
   }
   WantsNetworking: true
@@ -3032,6 +5512,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Trigger {
+    InteractionLabel: "GoalHoop"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -3064,6 +5545,10 @@ Objects {
     Overrides {
       Name: "cs:GirlZone"
       Bool: false
+    }
+    Overrides {
+      Name: "cs:EventOnGoal"
+      String: "StripedRing"
     }
   }
   Collidable_v2 {
@@ -4239,6 +6724,10 @@ Objects {
       Name: "cs:PointValue"
       Int: 5
     }
+    Overrides {
+      Name: "cs:EventOnGoal"
+      String: "TireHole"
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -4705,14 +7194,6 @@ Objects {
             Yaw: 143.142883
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -4758,14 +7239,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 143.142883
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -4815,14 +7288,6 @@ Objects {
             Yaw: 143.142883
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -4868,14 +7333,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 143.142883
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -5816,8 +8273,8 @@ Objects {
         Overrides {
           Name: "ma:Shared_Detail1:color"
           Color {
-            R: 0.0182489734
-            G: 0.344370127
+            R: 0.358549505
+            G: 0.0182489734
             B: 0.869
             A: 1
           }
@@ -5926,6 +8383,10 @@ Objects {
           Name: "cs:PointValue"
           Int: 5
         }
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
+        }
       }
     }
     TemplateAsset {
@@ -5990,6 +8451,10 @@ Objects {
         Overrides {
           Name: "cs:PointValue"
           Int: 4
+        }
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
         }
       }
     }
@@ -6056,6 +8521,10 @@ Objects {
           Name: "cs:PointValue"
           Int: 3
         }
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
+        }
       }
     }
     TemplateAsset {
@@ -6121,6 +8590,10 @@ Objects {
           Name: "cs:PointValue"
           Int: 2
         }
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
+        }
       }
     }
     TemplateAsset {
@@ -6168,6 +8641,15 @@ Objects {
             Y: 1.11256993
             Z: 1.11256993
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7619949423986544220
+      value {
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
         }
       }
     }
@@ -6233,6 +8715,10 @@ Objects {
         Overrides {
           Name: "cs:PointValue"
           Int: 5
+        }
+        Overrides {
+          Name: "cs:EventOnGoal"
+          String: "SkeeBallHole"
         }
       }
     }
@@ -7343,14 +9829,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

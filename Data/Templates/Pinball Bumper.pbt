@@ -294,6 +294,10 @@ Assets {
             Name: "cs:GirlZone"
             Bool: true
           }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "PinballBumper"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

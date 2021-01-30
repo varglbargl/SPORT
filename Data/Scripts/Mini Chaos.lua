@@ -16,5 +16,6 @@ function chaosLoop()
 end
 
 if ENABLED then
+  Task.Wait(MAX)
   chaosLoop()
 end

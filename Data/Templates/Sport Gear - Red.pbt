@@ -97,7 +97,7 @@ Assets {
         ChildIds: 10598098361799403147
         ChildIds: 531289123750340237
         ChildIds: 15980845586767459718
-        ChildIds: 5841710020893527749
+        ChildIds: 16820491709113131584
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -2494,50 +2494,18 @@ Assets {
         }
       }
       Objects {
-        Id: 5841710020893527749
-        Name: "Coin"
-        Transform {
-          Location {
-            X: -5.148458
-            Y: -1.20111031e-06
-            Z: 35.848793
-          }
-          Rotation {
-            Pitch: 90
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2458427867507699281
-        ChildIds: 16820491709113131584
-        ChildIds: 8581341872997180027
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-          FilePartitionName: "Coin"
-        }
-      }
-      Objects {
         Id: 16820491709113131584
         Name: "Manticore Logo"
         Transform {
           Location {
-            X: 0.323919892
-            Y: -3.13836921e-07
-            Z: -0.238709062
+            X: -4.90975046
+            Y: -1.5149476e-06
+            Z: 36.172718
           }
           Rotation {
-            Pitch: 8.80704308
-            Yaw: -81.0289917
-            Roll: 135.874619
+            Pitch: 8.86436939
+            Yaw: -98.91436
+            Roll: 44.49
           }
           Scale {
             X: 0.0458052
@@ -2545,7 +2513,7 @@ Assets {
             Z: 0.0722040311
           }
         }
-        ParentId: 5841710020893527749
+        ParentId: 2458427867507699281
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -2573,35 +2541,6 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
-          }
-        }
-      }
-      Objects {
-        Id: 8581341872997180027
-        Name: "Jiggle Physics"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: -66.8013611
-            Roll: 1.60051816e-11
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 5841710020893527749
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 15778608797656580739
           }
         }
       }

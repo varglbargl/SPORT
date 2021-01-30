@@ -23,8 +23,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 386.728516
-            Y: -120.102417
-            Z: 292.576172
+            Y: -85.7636719
+            Z: 295.499023
           }
         }
         Overrides {
@@ -1386,9 +1386,9 @@ Objects {
   Name: "Urban Pipe Coupling 04"
   Transform {
     Location {
-      X: 222.4953
-      Y: -724.710938
-      Z: 372.212891
+      X: 24.456789
+      Y: 271.432617
+      Z: 388.640717
     }
     Rotation {
     }
