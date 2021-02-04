@@ -1464,6 +1464,6 @@ Assets {
   Marketplace {
     Description: "This trophy is for W I N N N E R S only."
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
   DirectlyPublished: true
 }

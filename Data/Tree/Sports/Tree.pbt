@@ -2571,14 +2571,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -2626,14 +2618,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -2672,14 +2656,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -3420,14 +3396,34 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6319.37354
-            Y: -685.396545
-            Z: 7.61353302
+            X: 6925
+            Y: 135
+            Z: 7.61347198
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12994835293408528151
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 71.4691086
+            Z: -2000
           }
         }
       }
@@ -3556,7 +3552,7 @@ Objects {
   Name: "Bump Zone"
   Transform {
     Location {
-      Z: -101.834587
+      Z: -110
     }
     Rotation {
     }
@@ -4572,15 +4568,15 @@ Objects {
           Vector {
             X: -1525
             Y: 259.999969
-            Z: 80
+            Z: 40
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -31.5
-            Yaw: 12.6695118
-            Roll: -23.2773438
+            Yaw: 12.669549
+            Roll: -23.2772827
           }
         }
       }
@@ -4933,7 +4929,7 @@ Objects {
           Vector {
             X: -3268.65771
             Y: -1227.39233
-            Z: 99.4214859
+            Z: 65.0001
           }
         }
         Overrides {
@@ -8909,9 +8905,18 @@ Objects {
   }
 }
 Objects {
-  Id: 5891304435093810787
+  Id: 5533236514125997982
   Name: "Pinball"
   Transform {
+    Location {
+      X: 1698.16711
+      Y: -2114.8667
+      Z: 783.977234
+    }
+    Rotation {
+      Pitch: -20.7637634
+      Yaw: 32.9063835
+    }
     Scale {
       X: 1
       Y: 1
@@ -8919,6 +8924,9 @@ Objects {
     }
   }
   ParentId: 1231868157073874387
+  ChildIds: 2554391370803248296
+  ChildIds: 17083790857460523834
+  ChildIds: 10181898484276466142
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8926,35 +8934,453 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15688622626898540981
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pinball"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1698.16711
-            Y: -2135.5918
-            Z: 779.24
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -20.7637634
-            Yaw: 32.9061
-            Roll: 9.1307794e-07
-          }
-        }
+  PhysicsObject {
+    PhysicsShape {
+      Value: "mc:ephysicsshape:sphere"
+    }
+    Settings {
+      IsEnabled: true
+      OverrideMass: true
+      Mass: 500
+    }
+    Radius: 80
+    Length: 200
+  }
+  InstanceHistory {
+    SelfId: 5533236514125997982
+    SubobjectId: 15688622626898540981
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 10181898484276466142
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.87052405
+      Y: 1.87052405
+      Z: 1.87052405
+    }
+  }
+  ParentId: 5533236514125997982
+  ChildIds: 13945206491427188492
+  ChildIds: 11562232619666431983
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:sphere"
+    }
+  }
+  InstanceHistory {
+    SelfId: 10181898484276466142
+    SubobjectId: 1746957790957604853
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 11562232619666431983
+  Name: "Bump Zone"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 9.90377375e-05
+      Roll: -4.26885947e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10181898484276466142
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Force"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:BumpSFXTemplate"
+      AssetReference {
+        Id: 17978200423667041239
       }
     }
-    TemplateAsset {
-      Id: 1711127399596342526
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5667948223875261713
     }
+  }
+  InstanceHistory {
+    SelfId: 11562232619666431983
+    SubobjectId: 3820850381888733636
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 13945206491427188492
+  Name: "Ball Touch"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10181898484276466142
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HitSFX"
+      AssetReference {
+        Id: 5161302206759130328
+      }
+    }
+    Overrides {
+      Name: "cs:HeightMultiplier"
+      Float: 0.25
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14496407068716881889
+    }
+  }
+  InstanceHistory {
+    SelfId: 13945206491427188492
+    SubobjectId: 6121655267240128807
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 17083790857460523834
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5533236514125997982
+  ChildIds: 15696267780369859871
+  ChildIds: 10105441824613955989
+  ChildIds: 1371691098511250480
+  ChildIds: 10079349824682936608
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 17083790857460523834
+    SubobjectId: 8675902271751601425
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 10079349824682936608
+  Name: "Decal Numbers and Symbols 01"
+  Transform {
+    Location {
+      X: 3.24129534
+      Y: 0.823450089
+      Z: 75.7835693
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.182687879
+      Y: 0.182691574
+      Z: 0.0511026
+    }
+  }
+  ParentId: 17083790857460523834
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 8
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13274836654542401903
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1371691098511250480
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      X: 1.33514404e-05
+      Y: -4.17232513e-05
+      Z: 59.258049
+    }
+    Rotation {
+      Yaw: 6.48867936e-05
+      Roll: 1.28066029e-06
+    }
+    Scale {
+      X: 1.00000048
+      Y: 1.00000012
+      Z: 1.0477134
+    }
+  }
+  ParentId: 17083790857460523834
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17945239831481027215
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 10
+        G: 10
+        B: 10
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1635575429928581372
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10105441824613955989
+  Name: "Sphere"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.5639143
+      Y: 1.5639143
+      Z: 1.5639143
+    }
+  }
+  ParentId: 17083790857460523834
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17945239831481027215
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0094984
+        G: 0.01
+        B: 0.0094984
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13164005449179335890
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10105441824613955989
+    SubobjectId: 1823557280029697982
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 15696267780369859871
+  Name: "Sports Bowling Ball Rolling on Floor Loop 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 9.90377375e-05
+      Roll: -4.26885947e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17083790857460523834
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9034206691479566054
+    }
+    AutoPlay: true
+    Repeat: true
+    Pitch: -600
+    Volume: 0.3
+    Falloff: -1
+    Radius: -1
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 15696267780369859871
+    SubobjectId: 5523513215022586676
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
+  }
+}
+Objects {
+  Id: 2554391370803248296
+  Name: "Roll Forever"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5533236514125997982
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2665123366382329527
+    }
+  }
+  InstanceHistory {
+    SelfId: 2554391370803248296
+    SubobjectId: 13114529429668684419
+    InstanceId: 5891304435093810787
+    TemplateId: 1711127399596342526
   }
 }
 Objects {
@@ -9032,7 +9458,7 @@ Objects {
           Vector {
             X: -1215
             Y: 830
-            Z: 50
+            Z: 45
           }
         }
         Overrides {
@@ -9370,7 +9796,7 @@ Objects {
           Vector {
             X: -900
             Y: 2320
-            Z: 65
+            Z: 50
           }
         }
         Overrides {
@@ -9417,7 +9843,7 @@ Objects {
           Vector {
             X: -3765
             Y: -1500
-            Z: 65
+            Z: 45
           }
         }
         Overrides {
@@ -11155,15 +11581,15 @@ Objects {
           Vector {
             X: -1525
             Y: -235.000031
-            Z: 53.5632401
+            Z: 30
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -31.5
-            Yaw: 12.669363
-            Roll: -23.2775574
+            Yaw: 12.6694546
+            Roll: -23.2774048
           }
         }
         Overrides {
@@ -11334,15 +11760,15 @@ Objects {
           Vector {
             X: -470
             Y: 1120
-            Z: 40
+            Z: 30
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
             Pitch: -31.5
-            Yaw: 12.6692467
-            Roll: -23.2777405
+            Yaw: 12.6692839
+            Roll: -23.2776794
           }
         }
         Overrides {
@@ -11451,14 +11877,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -11480,35 +11898,6 @@ Objects {
   WantsNetworking: true
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1823557280029697982
-      value {
-        Overrides {
-          Name: "StaticMesh"
-          AssetReference {
-            Id: 14572320601727606471
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.640000045
-            G: 0.62912
-            B: 0.57472
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:color"
-          Color {
-            R: 0.567000031
-            G: 0.557361
-            B: 0.509166
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 15688622626898540981
       value {
         Overrides {
@@ -11520,7 +11909,12 @@ Objects {
           Vector {
             X: -490
             Y: 20
-            Z: 65
+            Z: 45
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }

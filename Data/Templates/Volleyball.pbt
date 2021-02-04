@@ -7,7 +7,7 @@ Assets {
       RootId: 15688622626898540981
       Objects {
         Id: 15688622626898540981
-        Name: "Soccer Ball"
+        Name: "Volleyball"
         Transform {
           Scale {
             X: 1
@@ -103,9 +103,18 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.726627588
-              G: 0.765000045
-              B: 0.726627588
+              R: 0.567000031
+              G: 0.557361
+              B: 0.509166
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.640000045
+              G: 0.62912
+              B: 0.57472
               A: 1
             }
           }
@@ -118,12 +127,13 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 7099548973716498945
+            Id: 14572320601727606471
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -207,12 +217,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7099548973716498945
-      Name: "Ball - Soccer 01"
+      Id: 14572320601727606471
+      Name: "Ball - Volleyball 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_ball_soccer_01_ref"
+        AssetId: "sm_prop_urb_ball_volleyball_01_ref"
       }
     }
     Assets {
@@ -229,5 +239,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

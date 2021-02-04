@@ -4,9 +4,9 @@ Assets {
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14110831436255925097
+      RootId: 11980842682813265943
       Objects {
-        Id: 14110831436255925097
+        Id: 11980842682813265943
         Name: "A Glittering Piece of that Radical Rock: The Super Aggro Crag"
         Transform {
           Scale {
@@ -15,13 +15,16 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 12147122413662449016
+        ChildIds: 9098699854978310670
+        ChildIds: 14126162085679651770
         ChildIds: 16431217836597496261
         ChildIds: 2280116090780689496
         ChildIds: 1508681228793629427
         ChildIds: 18366656208413803055
         ChildIds: 6018257625922582937
         ChildIds: 12382383479547696800
+        ChildIds: 16604531395167561319
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -33,21 +36,144 @@ Assets {
         }
       }
       Objects {
+        Id: 9098699854978310670
+        Name: "Rock Flat 01"
+        Transform {
+          Location {
+            X: 13.9627342
+            Y: 12.0086908
+            Z: 15.1855469
+          }
+          Rotation {
+            Pitch: -79.3323593
+            Yaw: -98.4072571
+            Roll: 8.46233368
+          }
+          Scale {
+            X: 0.00411508046
+            Y: 0.0011070976
+            Z: 0.104212642
+          }
+        }
+        ParentId: 11980842682813265943
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.2575
+              B: 0.00999999
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6668120270664692602
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14126162085679651770
+        Name: "Rock Flat 01"
+        Transform {
+          Location {
+            X: 13.8022747
+            Y: -0.289973259
+            Z: 12.4833984
+          }
+          Rotation {
+            Pitch: -70.4419403
+            Yaw: -93.3461838
+            Roll: 3.41152358
+          }
+          Scale {
+            X: 0.0163925383
+            Y: 0.000587421935
+            Z: 0.229979888
+          }
+        }
+        ParentId: 11980842682813265943
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.953000069
+              G: 0.605
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6668120270664692602
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
         Id: 16431217836597496261
         Name: "Cube - Chamfered Small Polished"
         Transform {
           Location {
+            Z: 11.4287109
           }
           Rotation {
-            Roll: -89.9999924
+            Yaw: -6.03709054e-07
+            Roll: -89.9999619
           }
           Scale {
-            X: 0.466425806
-            Y: 0.400000125
-            Z: 1.00731325
+            X: 0.273988724
+            Y: 0.234968826
+            Z: 0.591717839
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -102,36 +228,37 @@ Assets {
       }
       Objects {
         Id: 2280116090780689496
-        Name: "Heart - Broken Left"
+        Name: "Rock Flat 01"
         Transform {
           Location {
-            Y: 12.5136719
-            Z: 47.3134766
+            X: 0.412605524
+            Y: 2.20761061
+            Z: 35.9433594
           }
           Rotation {
-            Pitch: 46.3806572
-            Yaw: 89.9999695
-            Roll: -180
+            Pitch: -81.7698364
+            Yaw: -88.7332458
+            Roll: 176.614883
           }
           Scale {
-            X: 1.63757479
-            Y: 0.404989809
-            Z: 1.54802549
+            X: 0.0885068402
+            Y: 0.0902591199
+            Z: 0.386780202
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16630259605395466384
+              Id: 3253558818924111694
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.5
-              G: 10
+              R: 0.583324432
+              G: 35
               A: 1
             }
           }
@@ -144,7 +271,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 1635583956509038736
+            Id: 6668120270664692602
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -164,37 +291,63 @@ Assets {
         Name: "Sign Font 1: G"
         Transform {
           Location {
-            X: 23.0791016
-            Y: 22.5123291
-            Z: -7.39550781
+            X: 13.7955132
+            Y: 12.2380276
+            Z: 5.73242188
           }
           Rotation {
-            Yaw: -89.9999924
+            Pitch: 5.01997709
+            Yaw: -89.9999619
+            Roll: -2.14265256e-07
           }
           Scale {
-            X: 0.0999999791
-            Y: 0.018125
-            Z: 0.1
+            X: 0.0449081659
+            Y: 0.00813960657
+            Z: 0.0449081808
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Faces:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Insides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
             }
           }
         }
@@ -226,37 +379,63 @@ Assets {
         Name: "Sign Font 1: U"
         Transform {
           Location {
-            X: 23.0791016
-            Y: 13.4207153
-            Z: -7.39550781
+            X: 13.7952385
+            Y: 7.91253519
+            Z: 6.11425781
           }
           Rotation {
-            Yaw: -89.9999924
+            Pitch: 5.01997709
+            Yaw: -89.9999619
+            Roll: -2.14265256e-07
           }
           Scale {
-            X: 0.0999999791
-            Y: 0.018125
-            Z: 0.1
+            X: 0.0449081659
+            Y: 0.00813960657
+            Z: 0.0449081808
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Faces:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Insides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
             }
           }
         }
@@ -288,37 +467,63 @@ Assets {
         Name: "Sign Font 1: T"
         Transform {
           Location {
-            X: 23.0791016
-            Y: 1.37084961
-            Z: -7.39550781
+            X: 13.7954664
+            Y: 2.04392242
+            Z: 6.62890625
           }
           Rotation {
-            Yaw: -89.9999924
+            Pitch: 5.01997709
+            Yaw: -89.9999619
+            Roll: -2.14265256e-07
           }
           Scale {
-            X: 0.0999999791
-            Y: 0.018125
-            Z: 0.1
+            X: 0.0449081659
+            Y: 0.00813960657
+            Z: 0.0449081808
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Faces:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Insides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
             }
           }
         }
@@ -350,37 +555,63 @@ Assets {
         Name: "Sign Font 1: S"
         Transform {
           Location {
-            X: 23.0791016
-            Y: -10.9696045
-            Z: -7.39550781
+            X: 13.7955494
+            Y: -3.82577229
+            Z: 7.14355469
           }
           Rotation {
-            Yaw: -89.9999924
+            Pitch: 5.01997709
+            Yaw: -89.9999619
+            Roll: -2.14265256e-07
           }
           Scale {
-            X: 0.0999999791
-            Y: 0.018125
-            Z: 0.1
+            X: 0.0449081659
+            Y: 0.00813960657
+            Z: 0.0449081808
           }
         }
-        ParentId: 14110831436255925097
+        ParentId: 11980842682813265943
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font_Sides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Faces:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
             }
           }
           Overrides {
             Name: "ma:Font_Insides:id"
             AssetReference {
-              Id: 9433300448696105807
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Sides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Faces:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font_Insides:color"
+            Color {
+              R: 1.5
+              G: 0.952256083
+              A: 1
             }
           }
         }
@@ -407,6 +638,85 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 16604531395167561319
+        Name: "Rock Flat 01"
+        Transform {
+          Location {
+            X: 13.8619213
+            Y: -0.0404348373
+            Z: 12.1699219
+          }
+          Rotation {
+            Pitch: -71.3376465
+            Yaw: -94.7171402
+            Roll: 4.88324213
+          }
+          Scale {
+            X: 0.0148559418
+            Y: 0.000591915916
+            Z: 0.217220768
+          }
+        }
+        ParentId: 11980842682813265943
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12827530473249900764
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.1
+              G: 0.1
+              B: 0.1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6668120270664692602
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+    }
+    Assets {
+      Id: 6668120270664692602
+      Name: "Rock Flat 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rock_generic_004"
+      }
+    }
+    Assets {
+      Id: 12827530473249900764
+      Name: "Emissive Glow Opaque"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
+      }
     }
     Assets {
       Id: 12481642197065593470
@@ -427,21 +737,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1635583956509038736
-      Name: "Heart - Broken Left"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_heart_broken_left_001"
-      }
-    }
-    Assets {
-      Id: 16630259605395466384
-      Name: "Frosted Glass"
+      Id: 3253558818924111694
+      Name: "Frosted Glass No Distortion"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass"
+        AssetId: "fxma_frosted_glass_nodistortion"
       }
     }
     Assets {
@@ -451,15 +752,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "CollegeInset_01_Text_006_ref"
-      }
-    }
-    Assets {
-      Id: 9433300448696105807
-      Name: "Metal Gold 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_gold_001"
       }
     }
     Assets {
@@ -494,5 +786,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

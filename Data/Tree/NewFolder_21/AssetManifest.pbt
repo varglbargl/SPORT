@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17914528321410060029
+  Name: "Metal Painted Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_painted_old_001_uv"
+  }
+}
+Assets {
   Id: 13157013216437696589
   Name: "Asphalt 01"
   PlatformAssetType: 2

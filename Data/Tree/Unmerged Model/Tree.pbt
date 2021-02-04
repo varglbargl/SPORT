@@ -1,741 +1,48 @@
 Name: "Unmerged Model"
 RootId: 12147122413662449016
 Objects {
-  Id: 535983455270910657
+  Id: 3142291707339705457
   Name: "A Glittering Piece of that Radical Rock: The Super Aggro Crag"
   Transform {
-    Location {
-      X: -7536.80176
-      Y: 1206.0885
-      Z: -10332.0928
-    }
-    Rotation {
-      Yaw: 161.113586
-    }
     Scale {
-      X: 0.587421894
-      Y: 0.587421894
-      Z: 0.587421894
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 12147122413662449016
-  ChildIds: 47773659684499986
-  ChildIds: 2352257663195111533
-  ChildIds: 15782607540455017968
-  ChildIds: 15009483691167638363
-  ChildIds: 4197624181210344327
-  ChildIds: 10891578693486710833
-  ChildIds: 8031215948696436488
-  ChildIds: 2507565070617350095
-  ChildIds: 13467626826725247910
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 535983455270910657
-    SubobjectId: 14110831436255925097
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 13467626826725247910
-  Name: "Rock Flat 01"
-  Transform {
-    Location {
-      X: 23.769516
-      Y: 20.4430428
-      Z: 6.39546442
-    }
-    Rotation {
-      Pitch: -79.3323669
-      Yaw: -98.4072266
-      Roll: 8.46231365
-    }
-    Scale {
-      X: 0.00700532366
-      Y: 0.00188467209
-      Z: 0.177406803
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12827530473249900764
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11980842682813265943
+      value {
+        Overrides {
+          Name: "Name"
+          String: "A Glittering Piece of that Radical Rock: The Super Aggro Crag"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7536.80176
+            Y: 1203.84595
+            Z: -10341.9023
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 161.113586
+          }
+        }
       }
     }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.2575
-        B: 0.00999999
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668120270664692602
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 2507565070617350095
-  Name: "Rock Flat 01"
-  Transform {
-    Location {
-      X: 23.5978966
-      Y: -0.0688344
-      Z: 1.26180339
-    }
-    Rotation {
-      Pitch: -71.3377075
-      Yaw: -94.7171936
-      Roll: 4.88324738
-    }
-    Scale {
-      X: 0.025290072
-      Y: 0.0010076504
-      Z: 0.36978665
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.1
-        G: 0.1
-        B: 0.1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668120270664692602
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 8031215948696436488
-  Name: "Sign Font 1: S"
-  Transform {
-    Location {
-      X: 23.4849072
-      Y: -6.51281881
-      Z: -7.29485273
-    }
-    Rotation {
-      Pitch: 5.01997709
-      Yaw: -90
-    }
-    Scale {
-      X: 0.0764495954
-      Y: 0.0138564911
-      Z: 0.0764496177
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Sides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Sides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18180402978942654961
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8031215948696436488
-    SubobjectId: 12382383479547696800
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 10891578693486710833
-  Name: "Sign Font 1: T"
-  Transform {
-    Location {
-      X: 23.484766
-      Y: 3.47947931
-      Z: -8.17096615
-    }
-    Rotation {
-      Pitch: 5.01997709
-      Yaw: -90
-    }
-    Scale {
-      X: 0.0764495954
-      Y: 0.0138564911
-      Z: 0.0764496177
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Sides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Sides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15526984044819979542
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 10891578693486710833
-    SubobjectId: 6018257625922582937
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 4197624181210344327
-  Name: "Sign Font 1: U"
-  Transform {
-    Location {
-      X: 23.4843788
-      Y: 13.4699354
-      Z: -9.04708
-    }
-    Rotation {
-      Pitch: 5.01997709
-      Yaw: -90
-    }
-    Scale {
-      X: 0.0764495954
-      Y: 0.0138564911
-      Z: 0.0764496177
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Sides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Sides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13374238185315750084
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 4197624181210344327
-    SubobjectId: 18366656208413803055
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 15009483691167638363
-  Name: "Sign Font 1: G"
-  Transform {
-    Location {
-      X: 23.4848461
-      Y: 20.8334541
-      Z: -9.69710064
-    }
-    Rotation {
-      Pitch: 5.01997709
-      Yaw: -90
-    }
-    Scale {
-      X: 0.0764495954
-      Y: 0.013856492
-      Z: 0.0764496177
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font_Sides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Sides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Faces:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font_Insides:color"
-      Color {
-        R: 1.5
-        G: 0.952256083
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18195972188392712264
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15009483691167638363
-    SubobjectId: 1508681228793629427
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 15782607540455017968
-  Name: "Rock Flat 01"
-  Transform {
-    Location {
-      X: 0.702400625
-      Y: 3.7581346
-      Z: 39.2638626
-    }
-    Rotation {
-      Pitch: -81.7704468
-      Yaw: -88.7337646
-      Roll: 176.614883
-    }
-    Scale {
-      X: 0.155071571
-      Y: 0.153660372
-      Z: 0.65843153
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3253558818924111694
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.583324432
-        G: 35
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668120270664692602
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15782607540455017968
-    SubobjectId: 2280116090780689496
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 2352257663195111533
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Roll: -89.9999924
-    }
-    Scale {
-      X: 0.466425806
-      Y: 0.400000125
-      Z: 1.00731325
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 5029777733976640292
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.611046314
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 3.03586555
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.15
-        G: 0.15
-        B: 0.15
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12481642197065593470
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 2352257663195111533
-    SubobjectId: 16431217836597496261
-    InstanceId: 3142291707339705457
-    TemplateId: 7223431808546132858
-  }
-}
-Objects {
-  Id: 47773659684499986
-  Name: "Rock Flat 01"
-  Transform {
-    Location {
-      X: 23.4960938
-      Y: -0.493652344
-      Z: 1.79492188
-    }
-    Rotation {
-      Pitch: -70.4419861
-      Yaw: -93.3462219
-      Roll: 3.41152978
-    }
-    Scale {
-      X: 0.0279059019
-      Y: 0.001
-      Z: 0.391507179
-    }
-  }
-  ParentId: 535983455270910657
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.953000069
-        G: 0.605
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6668120270664692602
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
+    TemplateAsset {
+      Id: 7223431808546132858
     }
   }
 }
@@ -1188,12 +495,12 @@ Objects {
   Name: "Ace Flag"
   Transform {
     Location {
-      X: 10853.8086
+      X: 12968.0059
       Y: -5326.63428
-      Z: 1356.31384
+      Z: 7307.2666
     }
     Rotation {
-      Yaw: -24.0913353
+      Yaw: -24.0913391
     }
     Scale {
       X: 1.99688292
@@ -1251,8 +558,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 739.128601
+      Y: 86.0585861
+      Z: -1417.65
     }
     Rotation {
     }
@@ -1267,9 +575,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }
@@ -1302,9 +610,9 @@ Objects {
   Name: "Pride Flag"
   Transform {
     Location {
-      X: 11742.5078
+      X: 13856.7051
       Y: 4382.4126
-      Z: 1356.31384
+      Z: 7307.2666
     }
     Rotation {
     }
@@ -1364,8 +672,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 710.954285
+      Y: -228.308
+      Z: -1417.65
     }
     Rotation {
     }
@@ -1380,9 +689,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }
@@ -1415,12 +724,12 @@ Objects {
   Name: "Bi Flag"
   Transform {
     Location {
-      X: 12212.5781
+      X: 14326.7754
       Y: -3424.81885
-      Z: 1356.31384
+      Z: 7307.2666
     }
     Rotation {
-      Yaw: -13.5920401
+      Yaw: -13.592041
     }
     Scale {
       X: 1.99688292
@@ -1478,8 +787,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 743.172729
+      Y: -52.2610931
+      Z: -1417.65
     }
     Rotation {
     }
@@ -1494,9 +804,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }
@@ -1529,12 +839,12 @@ Objects {
   Name: "Lesbian Flag"
   Transform {
     Location {
-      X: 12915.4854
+      X: 15029.6826
       Y: -808.054199
-      Z: 1356.3136
+      Z: 7307.26611
     }
     Rotation {
-      Yaw: -9.69104767
+      Yaw: -9.69104
     }
     Scale {
       X: 1.99688292
@@ -1592,8 +902,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 738.214905
+      Y: -103.498848
+      Z: -1417.64978
     }
     Rotation {
     }
@@ -1608,9 +919,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }
@@ -1643,12 +954,12 @@ Objects {
   Name: "Enby Flag"
   Transform {
     Location {
-      X: 10463.3584
+      X: 12577.5557
       Y: 6224.91504
-      Z: 1356.31384
+      Z: 7310.95264
     }
     Rotation {
-      Yaw: -1.63665807
+      Yaw: -1.63665771
     }
     Scale {
       X: 1.99688292
@@ -1706,8 +1017,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 717.03418
+      Y: -207.581009
+      Z: -1417.64978
     }
     Rotation {
     }
@@ -1722,9 +1034,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }
@@ -1757,9 +1069,9 @@ Objects {
   Name: "Trans Flag"
   Transform {
     Location {
-      X: 12776.377
+      X: 14890.5742
       Y: 1954.08374
-      Z: 1356.3136
+      Z: 7307.26611
     }
     Rotation {
     }
@@ -1819,8 +1131,9 @@ Objects {
   Name: "Urban Fence Pole - Gate End"
   Transform {
     Location {
-      X: -11.561697
-      Y: -5.10804796
+      X: 710.954285
+      Y: -228.308365
+      Z: -1417.64978
     }
     Rotation {
     }
@@ -1835,9 +1148,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.566000044
-        G: 0.566000044
-        B: 0.566000044
+        R: 0.279
+        G: 0.279
+        B: 0.279
         A: 1
       }
     }

@@ -18,7 +18,40 @@ function newRoundName()
   local randNum2 = math.random(10, 19)
   local randNum3 = math.random(21, 49)
 
-  local randomLoc = Utils.randomFromTable({
+  local terms = {
+    "Marney",
+    "Marinade",
+    "Pickle",
+    "Swindle",
+    "Shindig",
+    "Hoedown",
+    "Shakedown",
+    "Birdie",
+    "Bogey",
+    "Eagle",
+    "Chipper",
+    "Woodstock",
+    "Red Zone",
+    "Checkmate",
+    "Bumble",
+    "Fumble",
+    "Fairway",
+    "Solitaire",
+    "Sweeper",
+    "Pile-up",
+    "Tipper",
+    "Jogger",
+    "Steamer",
+    "Stretch",
+    "Foxtrot",
+    "Tango",
+    "Pringle",
+    "Ripper",
+    "Mangle",
+    "Slapper"
+  }
+
+  local locations = {
     "on Deck",
     "on "..randNum1.."th Base",
     "in the Hole",
@@ -43,12 +76,31 @@ function newRoundName()
     "from Below",
     "Below Zero",
     "Over the Limit",
-    "on the Clock"
-  })
+    "on the Clock",
+    "Steps Beyond",
+    "Over Par",
+    "Under Par",
+    "Down the Pitch",
+    "in the Rough",
+    "in the Blue",
+    "in the Pipe",
+    "Pieces in Check",
+    "in the Pocket"
+  }
+
+  Utils.shuffleTable(locations)
+  Utils.shuffleTable(terms)
 
   roundName = Utils.randomFromTable({
-    "Top of the "..randNum2.."th - "..randNum1.." "..randomLoc,
-    randNum1.."th & "..randNum3.." - "..randNum2.." "..randomLoc
+    "Top of the "..randNum2.."th - "..randNum1.." "..locations[1],
+    "Bottom of the "..randNum2.."th - "..randNum3.." "..locations[1],
+    randNum1.."th & "..randNum3.." - "..randNum2.." "..locations[1],
+    "Lap "..randNum1.." of "..randNum2.." - "..randNum3.." "..locations[1],
+    randNum2.." to "..randNum1.." "..terms[1].." - "..randNum3.." "..locations[1],
+    "HEAVEN OR HELL: Duel "..randNum1.." - Let's ROCK!",
+    randNum2.." "..locations[1]..", "..randNum3.." "..locations[2],
+    randNum1.."-Man "..terms[1].." - "..randNum3.." "..locations[1],
+    randNum1.." "..terms[1].."s short of a "..terms[2]
   })
 
   return roundName
@@ -101,6 +153,7 @@ function playerReady(player, gearNumber, homeTown, namePrefix, nameSuffix, prima
   Task.Wait(1.1)
   if not Object.IsValid(player) then return end
 
+  Events.Broadcast("GiveGoals", player)
   player:SetWorldPosition(script:GetWorldPosition())
   player.movementControlMode = MovementControlMode.LOOK_RELATIVE
   World.SpawnAsset(JOIN_SFX)
@@ -108,7 +161,7 @@ function playerReady(player, gearNumber, homeTown, namePrefix, nameSuffix, prima
   Events.BroadcastToPlayer(player, "FadeFromBlack")
   Events.BroadcastToAllPlayers("tJ", player, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
 
-  Task.Wait(1.1)
+  Task.Wait()
   if not Object.IsValid(player) then return end
 
   player:AddImpulse(Vector3.UP * 50)

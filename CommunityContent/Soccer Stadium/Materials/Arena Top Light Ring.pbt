@@ -2,7 +2,7 @@ Assets {
   Id: 3968523735381553352
   Name: "Arena Top Light Ring"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 7566058324420131542
     ParameterOverrides {

@@ -1,5 +1,6 @@
-﻿local Utils = require(script:GetCustomProperty("Utils"))
-local EaseUI = require(script:GetCustomProperty("EaseUI"))
+﻿local EaseUI = require(script:GetCustomProperty("EaseUI"))
+local Utils = require(script:GetCustomProperty("Utils"))
+local Goals = require(script:GetCustomProperty("Goals"))
 
 local FOUL_BALL = script:GetCustomProperty("FoulBall"):WaitForObject()
 local SCORE = script:GetCustomProperty("Score"):WaitForObject()
@@ -36,7 +37,8 @@ local clientPlayer = Game.GetLocalPlayer()
 local messageTask = nil
 
 function initUI()
-  print("initializing game UI")
+  goalsVisible = false
+  GOAL_LIST.parent.x = 390
   GOAL_LIST.parent.visibility = Visibility.INHERIT
   PLAYER_LIST.visibility = Visibility.INHERIT
 end
@@ -82,25 +84,30 @@ function updateScore(thisPlayer, resourceName, amount)
   if not Object.IsValid(thisPlayer) then return end
   if thisPlayer ~= clientPlayer then return end
   if resourceName ~= "Score" then return end
-  if displayedScore ~= realScore then return end
 
   realScore = amount
 
-  while displayedScore < realScore do
-    displayedScore = displayedScore + 1
-    Utils.setTextWithShadow(SCORE, tostring(amount))
-    Task.Wait()
+  if displayedScore > realScore then
+    displayedScore = realScore
+    Utils.setTextWithShadow(SCORE, tostring(displayedScore))
   end
 
+  while displayedScore < realScore do
+    displayedScore = displayedScore + 1
+    Utils.setTextWithShadow(SCORE, tostring(displayedScore))
+    Task.Wait(0.05)
+  end
 end
 
 local roundStartTime = nil
-local timerTask = nil
 local roundLength = 0
 
 function syncRound(thisTime, thisLength, roundName, weather, reset)
   roundStartTime = thisTime
   roundLength = thisLength
+  realScore = 0
+  displayedScore = 0
+  Utils.setTextWithShadow(SCORE, tostring(0))
 
   EaseUI.EaseY(ROUND_NAME, 72, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.IN)
   Task.Wait(0.75)
@@ -218,15 +225,22 @@ end
 
 function setGoals(goalIds)
   completedGoals = 0
+
+  if not goalsVisible then
+    toggleGoals()
+  end
+
   for i, goalId in ipairs(goalIds) do
     local descriptionText = goals[i]:FindDescendantByName("Description")
-    local thisGoal = Utils.getGoalById(goalId)
+    local thisGoal = Goals.getGoalById(goalId)
     local goalCheck = goals[i]:FindDescendantByName("Check")
 
     goalCheck.visibility = Visibility.FORCE_OFF
     descriptionText.text = thisGoal.description
     descriptionText:SetColor(Color.WHITE)
     goalCheck.parent:SetColor(getRarityColor(thisGoal))
+
+    Task.Wait()
   end
 end
 
@@ -235,9 +249,8 @@ function updateGoals(progress)
 end
 
 function goalDone(goalIndex, goalId)
-  -- UI.ShowFlyUpText("+"..Utils.getGoalById(goalId).reward, clientPlayer:GetWorldPosition() + Vector3.UP * 150, {duration = 1, color = Color.RED, isBig = true})
   local flyupText = goals[goalIndex]:FindDescendantByName("Flyup")
-  local thisGoal = Utils.getGoalById(goalId)
+  local thisGoal = Goals.getGoalById(goalId)
 
   Utils.setTextWithShadow(flyupText, "+"..thisGoal.reward, getRarityColor(thisGoal))
   goals[goalIndex]:FindDescendantByName("Description"):SetColor(Color.New(0.5, 0.5, 0.5, 0.5))
@@ -263,7 +276,7 @@ function toggleGoals()
   goalsAnimating = true
 
   if goalsVisible then
-    EaseUI.EaseX(GOAL_LIST.parent, 382, 0.25, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+    EaseUI.EaseX(GOAL_LIST.parent, 390, 0.25, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
     goalsVisible = false
   else
     EaseUI.EaseX(GOAL_LIST.parent, 0, 0.25, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.OUT)

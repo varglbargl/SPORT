@@ -3787,6 +3787,6 @@ Assets {
   Marketplace {
     Description: "It\'s a tuba! You know, the instrument.\r\n\r\nAnyway, @ me on the discord if you download this and turn it into a gun. I 100% wanna see someone do that!"
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
   DirectlyPublished: true
 }

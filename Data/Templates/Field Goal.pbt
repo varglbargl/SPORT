@@ -120,8 +120,9 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: -294.001465
+            X: -381.941833
             Y: 778.068726
+            Z: -362.010559
           }
           Rotation {
             Pitch: -13.6539307
@@ -129,7 +130,7 @@ Assets {
           Scale {
             X: 2.75
             Y: 2.75
-            Z: 1.30000007
+            Z: 2.24315667
           }
         }
         ParentId: 2867523189515929329
@@ -161,17 +162,17 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: -167.012695
+            X: -145.862793
             Y: 778.068726
-            Z: 529.737427
+            Z: 530.766418
           }
           Rotation {
             Pitch: -87.2146912
           }
           Scale {
-            X: 2.75
-            Y: 2.75
-            Z: 1.30000007
+            X: 2.08308
+            Y: 2.08304477
+            Z: 9.64896
           }
         }
         ParentId: 2867523189515929329
@@ -183,7 +184,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3844709690263076331
+            Id: 15897705887741699672
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -203,17 +204,17 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: -167.012695
+            X: -145.862793
             Y: -1092.66943
-            Z: 529.737427
+            Z: 530.766418
           }
           Rotation {
             Pitch: -87.2146912
           }
           Scale {
-            X: 2.75
-            Y: 2.75
-            Z: 1.30000007
+            X: 2.08308
+            Y: 2.08304477
+            Z: 9.64896
           }
         }
         ParentId: 2867523189515929329
@@ -225,7 +226,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3844709690263076331
+            Id: 15897705887741699672
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -245,8 +246,9 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: -294.001465
-            Y: -1092.66943
+            X: -381.941711
+            Y: -1092.66956
+            Z: -362.010559
           }
           Rotation {
             Pitch: -13.6539307
@@ -254,7 +256,7 @@ Assets {
           Scale {
             X: 2.75
             Y: 2.75
-            Z: 1.30000007
+            Z: 2.24315667
           }
         }
         ParentId: 2867523189515929329
@@ -287,7 +289,7 @@ Assets {
         Transform {
           Location {
             X: -167.012695
-            Y: 778.068726
+            Y: 760.875366
             Z: 529.737427
           }
           Rotation {
@@ -295,9 +297,9 @@ Assets {
             Roll: -90
           }
           Scale {
-            X: 2.75
-            Y: 2.75
-            Z: 4.40000153
+            X: 2.08308
+            Y: 2.08304477
+            Z: 36.7061577
           }
         }
         ParentId: 2867523189515929329
@@ -309,7 +311,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3844709690263076331
+            Id: 15897705887741699672
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -329,15 +331,16 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: 360.998535
+            X: 360.998596
             Y: 778.068726
+            Z: -366.468506
           }
           Rotation {
           }
           Scale {
             X: 2.75
             Y: 2.75
-            Z: 1.30000007
+            Z: 2.24315667
           }
         }
         ParentId: 2867523189515929329
@@ -369,15 +372,16 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: 360.998535
+            X: 360.998474
             Y: -1096.93127
+            Z: -366.468506
           }
           Rotation {
           }
           Scale {
             X: 2.75
             Y: 2.75
-            Z: 1.30000007
+            Z: 2.24315667
           }
         }
         ParentId: 2867523189515929329
@@ -409,18 +413,18 @@ Assets {
         Name: "Urban Fence Pole - Gate End"
         Transform {
           Location {
-            X: 370.998535
-            Y: 778.068726
-            Z: 560
+            X: 368.246582
+            Y: 760.875366
+            Z: 554.282166
           }
           Rotation {
             Pitch: 90
             Roll: -90
           }
           Scale {
-            X: 2.75
-            Y: 2.75
-            Z: 4.40000153
+            X: 2.08308
+            Y: 2.08304477
+            Z: 36.7061577
           }
         }
         ParentId: 2867523189515929329
@@ -432,7 +436,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3844709690263076331
+            Id: 15897705887741699672
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -671,7 +675,7 @@ Assets {
           Location {
             X: 97.9389648
             Y: -152.315292
-            Z: 540.416077
+            Z: 544.310608
           }
           Rotation {
             Pitch: -2.41900635
@@ -1587,6 +1591,15 @@ Assets {
       }
     }
     Assets {
+      Id: 15897705887741699672
+      Name: "Urban Pipe Straight"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_straight_001_ref"
+      }
+    }
+    Assets {
       Id: 12095835209017042614
       Name: "Cube"
       PlatformAssetType: 1
@@ -1699,5 +1712,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

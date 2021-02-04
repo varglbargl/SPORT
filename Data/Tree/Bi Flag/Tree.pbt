@@ -5,9 +5,9 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 204.164063
-      Y: -35.0126953
-      Z: -118.282959
+      X: 315.980103
+      Y: -623.539063
+      Z: -1275.42944
     }
     Rotation {
       Yaw: 5.52905078e-07
@@ -73,9 +73,9 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 204.169922
-      Y: -35.0087891
-      Z: 83.8881836
+      X: 315.985779
+      Y: -623.540039
+      Z: -1073.25659
     }
     Rotation {
       Roll: -2
@@ -140,9 +140,9 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 204.166016
-      Y: -35.0146484
-      Z: 33.8876953
+      X: 315.980469
+      Y: -623.540039
+      Z: -1123.25415
     }
     Rotation {
       Roll: -2
@@ -207,9 +207,9 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 204.181641
-      Y: -35.0087891
-      Z: -16.1120605
+      X: 315.999084
+      Y: -623.53125
+      Z: -1173.25781
     }
     Rotation {
       Roll: -2
@@ -274,9 +274,9 @@ Objects {
   Name: "Curtains Straight"
   Transform {
     Location {
-      X: 204.173828
-      Y: -35.0126953
-      Z: -66.9682617
+      X: 315.990723
+      Y: -623.542969
+      Z: -1224.11426
     }
     Rotation {
       Roll: -2

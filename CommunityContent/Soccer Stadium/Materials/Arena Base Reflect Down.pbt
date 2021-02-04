@@ -2,7 +2,7 @@ Assets {
   Id: 17561195280276857226
   Name: "Arena Base Reflect Down"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 15405022796251312998
     ParameterOverrides {

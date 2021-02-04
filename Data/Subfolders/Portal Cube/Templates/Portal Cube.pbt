@@ -40,5 +40,5 @@ Assets {
     Version: "1.0.0"
     Description: "A cube with 4 portal VFX mirror effects to reflect 4 different dioramas.\r\nDrag and drop in your map"
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

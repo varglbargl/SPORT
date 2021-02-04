@@ -2,7 +2,7 @@ Assets {
   Id: 6274063000954973144
   Name: "Wavy Cloth"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 11539893633438123535
     ParameterOverrides {

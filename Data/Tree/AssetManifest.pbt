@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17914528321410060029
+  Name: "Metal Painted Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_painted_old_001_uv"
+  }
+}
+Assets {
   Id: 17874989041036741677
   Name: "Pipe - Half Thick"
   PlatformAssetType: 1
@@ -143,12 +152,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
+  Id: 16918249890438281391
+  Name: "Sign Font 1 Neon Outline: T"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeNeon_Outline_01_Text_019"
   }
 }
 Assets {
@@ -197,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16417116211763376902
+  Name: "Girder Medium Angled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_angle_girder_001_ref"
+  }
+}
+Assets {
   Id: 16343881362210963692
   Name: "Corner Beveled 012"
   PlatformAssetType: 9
@@ -239,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Fireball"
+  }
+}
+Assets {
+  Id: 16063969410337438280
+  Name: "Clear Coat Reflector Hex 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_reflector_hex_003"
   }
 }
 Assets {
@@ -377,21 +404,21 @@ Assets {
   }
 }
 Assets {
+  Id: 14728219112114319567
+  Name: "Whitebox Stairs 01 Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_stairs_001"
+  }
+}
+Assets {
   Id: 14672404339147855747
   Name: "Water"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Urban_Icon_077"
-  }
-}
-Assets {
-  Id: 14671404091088855717
-  Name: "Sign Font 1 Neon Outline: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "CollegeNeon_Outline_01_Text_000"
   }
 }
 Assets {
@@ -473,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Crosshair_003"
+  }
+}
+Assets {
+  Id: 14176234275809442376
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
   }
 }
 Assets {
@@ -584,15 +620,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13091441912678254675
-  Name: "Sign Font 1 Neon Outline: E"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "CollegeNeon_Outline_01_Text_004"
-  }
-}
-Assets {
   Id: 12973944263094943641
   Name: "Icon Grenade"
   PlatformAssetType: 9
@@ -653,6 +680,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Icon_014"
+  }
+}
+Assets {
+  Id: 12470521115008125758
+  Name: "Pyramid - 8-Sided Truncated Hollow Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_8_sided_truncated_hollow_thin_001"
   }
 }
 Assets {
@@ -773,15 +809,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
   Id: 11502465697854971382
   Name: "Science Beaker"
   PlatformAssetType: 9
@@ -809,15 +836,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11300883761621888783
-  Name: "Concrete Sidewalk"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_concrete_sidewalk_001"
-  }
-}
-Assets {
   Id: 11279682431906909865
   Name: "Sci-fi Base Railing 02"
   PlatformAssetType: 1
@@ -836,6 +854,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11247321032504813866
+  Name: "Sign Font 1 Neon Outline: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeNeon_Outline_01_Text_015"
+  }
+}
+Assets {
   Id: 11232416293698382143
   Name: "Icon Achievement"
   PlatformAssetType: 9
@@ -851,6 +878,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_wedge_curved_concave_001"
+  }
+}
+Assets {
+  Id: 11131276483315135825
+  Name: "Sign Font 1 Neon Outline: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeNeon_Outline_01_Text_017"
   }
 }
 Assets {
@@ -914,6 +950,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Checkmark"
+  }
+}
+Assets {
+  Id: 10415104586946721638
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 10127558158596447023
+  Name: "Sign Font 1 Neon Outline: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeNeon_Outline_01_Text_014"
   }
 }
 Assets {
@@ -1160,6 +1214,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8212176680984131479
+  Name: "Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_001"
+  }
+}
+Assets {
   Id: 8180204723415153167
   Name: "Frame Ring 026"
   PlatformAssetType: 9
@@ -1175,15 +1238,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter-pipe_003"
-  }
-}
-Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
   }
 }
 Assets {
@@ -1232,15 +1286,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7573629316572273781
-  Name: "Sign Font 1 Neon Outline: N"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "CollegeNeon_Outline_01_Text_013"
-  }
-}
-Assets {
   Id: 7470635470376502876
   Name: "Drumline Percussion Music Stingers Set 01 SFX"
   PlatformAssetType: 10
@@ -1256,6 +1301,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Urban_Icon_047"
+  }
+}
+Assets {
+  Id: 7464116942536605689
+  Name: "Computer Monitor 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_computer-monitor_001"
   }
 }
 Assets {
@@ -1412,6 +1466,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6487754684597919083
+  Name: "Wedge - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_hq_001"
+  }
+}
+Assets {
   Id: 6429935802779687077
   Name: "Sci-fi Fill 004"
   PlatformAssetType: 9
@@ -1526,6 +1589,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_026"
+  }
+}
+Assets {
+  Id: 5109129970559468393
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 4947781718118422411
+  Name: "Carbon Fiber 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carbon-fiber_001"
   }
 }
 Assets {
@@ -1691,6 +1772,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3998036951856960909
+  Name: "Pipe - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_002"
+  }
+}
+Assets {
   Id: 3892294400242779501
   Name: "Icon Explosion"
   PlatformAssetType: 9
@@ -1751,6 +1841,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 3218403431706377959
+  Name: "Craftsman Stairs 01 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
   }
 }
 Assets {
@@ -1898,6 +1997,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1982645692000776487
+  Name: "Whitebox Wall 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_half"
+  }
+}
+Assets {
   Id: 1673604840497545603
   Name: "Tornado"
   PlatformAssetType: 9
@@ -1940,6 +2048,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
+  Id: 1284861266963068962
+  Name: "Wedge - Concave"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_concave_001"
   }
 }
 Assets {
@@ -2042,20 +2159,20 @@ Assets {
   }
 }
 Assets {
-  Id: 345075856807296896
-  Name: "Sign Font 1 Neon Outline: B"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "CollegeNeon_Outline_01_Text_001"
-  }
-}
-Assets {
   Id: 148072237720706819
   Name: "Banner"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Banner"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }

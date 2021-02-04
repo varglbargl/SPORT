@@ -48,5 +48,5 @@ Assets {
     Version: "1.0.0"
     Description: "This is to help in creating costumes that will need to conform somewhat to the player shape.  You can create geometry and tuck it under nodes coresponding to certain parts of the skeleton."
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

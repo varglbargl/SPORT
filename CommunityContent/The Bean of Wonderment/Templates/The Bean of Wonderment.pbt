@@ -228,6 +228,6 @@ Assets {
   Marketplace {
     Description: "It\'s a bean. Plain and Simple "
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
   DirectlyPublished: true
 }

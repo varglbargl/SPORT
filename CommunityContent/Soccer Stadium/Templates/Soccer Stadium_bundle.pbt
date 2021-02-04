@@ -46,5 +46,5 @@ Assets {
     Version: "1.0.0"
     Description: "Soccer stadium for Core Soccer.\r\n\r\n"
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

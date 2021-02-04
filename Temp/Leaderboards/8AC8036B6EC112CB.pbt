@@ -1,8 +1,8 @@
 GlobalEntries {
   Id: "21c0b4284eff4bb091ce80a75c984fd4"
   Name: "varglbargl"
-  ScoreFormatted: "720.0"
-  DateTime: "2021-01-19T17:53:48.481Z"
+  ScoreFormatted: "1059.0"
+  DateTime: "2021-02-04T07:27:23.316Z"
 }
 GlobalEntries {
   Id: "BOT_Bot1"
@@ -13,8 +13,8 @@ GlobalEntries {
 GlobalEntries {
   Id: "BOT_Bot2"
   Name: "Bot2"
-  ScoreFormatted: "219.0"
-  DateTime: "2021-01-19T18:43:08.710Z"
+  ScoreFormatted: "285.0"
+  DateTime: "2021-02-01T07:22:10.970Z"
 }
 GlobalEntries {
   Id: "BOT_Bot3"
@@ -31,8 +31,8 @@ GlobalEntries {
 WeeklyEntries {
   Id: "21c0b4284eff4bb091ce80a75c984fd4"
   Name: "varglbargl"
-  ScoreFormatted: "720.0"
-  DateTime: "2021-01-19T17:53:48.481Z"
+  ScoreFormatted: "1059.0"
+  DateTime: "2021-02-04T07:27:23.316Z"
 }
 WeeklyEntries {
   Id: "BOT_Bot1"
@@ -43,8 +43,8 @@ WeeklyEntries {
 WeeklyEntries {
   Id: "BOT_Bot2"
   Name: "Bot2"
-  ScoreFormatted: "219.0"
-  DateTime: "2021-01-19T18:43:08.710Z"
+  ScoreFormatted: "285.0"
+  DateTime: "2021-02-01T07:22:10.970Z"
 }
 WeeklyEntries {
   Id: "BOT_Bot3"

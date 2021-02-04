@@ -46,5 +46,5 @@ Assets {
     Version: "1.0.0"
     Description: "Put the Core logo text in your game. C O R e"
   }
-  SerializationVersion: 73
+  SerializationVersion: 74
 }

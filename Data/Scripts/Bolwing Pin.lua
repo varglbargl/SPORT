@@ -6,6 +6,7 @@ local triggerPos = trigger:GetWorldPosition()
 
 bowlingPin.serverUserData["RespawnPos"] = bowlingPin:GetWorldPosition()
 bowlingPin.serverUserData["Hitable"] = true
+bowlingPin.serverUserData["IsABowlingPin"] = true
 bowlingPin.serverUserData["HitSFX"] = HIT_SFX
 
 function bumpOther(thisTrigger, other)

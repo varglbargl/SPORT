@@ -5,17 +5,17 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: -98.6702728
-      Y: -3732.24756
-      Z: 213.114456
+      X: -101.928841
+      Y: -3709.23096
+      Z: 220.118546
     }
     Rotation {
       Yaw: 90
     }
     Scale {
-      X: 3.48041797
+      X: 3.421
       Y: 2
-      Z: 1.77681112
+      Z: 1.737
     }
   }
   ParentId: 82888217535424249
@@ -23,6 +23,12 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17914528321410060029
+      }
     }
   }
   Collidable_v2 {
@@ -54,8 +60,8 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 3043.40234
-      Y: -3552.24756
+      X: 3047.76196
+      Y: -3545.55835
       Z: 220
     }
     Rotation {
@@ -376,6 +382,7 @@ Objects {
     Location {
       X: 3428.75
       Y: -2.75256348
+      Z: -0.367478698
     }
     Rotation {
       Yaw: 89.9999924
@@ -439,6 +446,7 @@ Objects {
     Location {
       X: -3466.25
       Y: -2.75256348
+      Z: -0.374293953
     }
     Rotation {
       Yaw: -90

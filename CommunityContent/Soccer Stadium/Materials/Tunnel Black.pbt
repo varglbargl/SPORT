@@ -2,7 +2,7 @@ Assets {
   Id: 3799338054420187386
   Name: "Tunnel Black"
   PlatformAssetType: 13
-  SerializationVersion: 73
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {
