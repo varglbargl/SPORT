@@ -187498,6 +187498,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -187641,7 +187642,7 @@ Objects {
     Location {
       X: -2515.39136
       Y: 590.383423
-      Z: -6.10351563e-05
+      Z: -47.0253906
     }
     Rotation {
       Yaw: 5.90974188
@@ -187649,7 +187650,7 @@ Objects {
     Scale {
       X: 1.50685942
       Y: 3.6884377
-      Z: 0.00771123217
+      Z: 0.533285379
     }
   }
   ParentId: 18075759612854524150
@@ -189631,7 +189632,7 @@ Objects {
   Name: "Decal Painted Lines 01"
   Transform {
     Location {
-      X: -2011.58032
+      X: -2019.74487
       Y: 245
     }
     Rotation {
@@ -189640,7 +189641,7 @@ Objects {
     Scale {
       X: 1.96245706
       Y: 0.456918389
-      Z: 0.01
+      Z: 0.002
     }
   }
   ParentId: 18075759612854524150

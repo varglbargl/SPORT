@@ -9,9 +9,9 @@ local roundLength = 300
 local weather = 1
 local roundName = ""
 
--- if Environment.IsPreview() then
---   roundLength = 20
--- end
+if Environment.IsPreview() then
+  roundLength = 20
+end
 
 function newRoundName()
   local randNum1 = math.random(4, 9)
@@ -28,7 +28,7 @@ function newRoundName()
     "Shakedown",
     "Birdie",
     "Bogey",
-    "Eagle",
+    "Deagle",
     "Chipper",
     "Woodstock",
     "Red Zone",
@@ -48,7 +48,9 @@ function newRoundName()
     "Pringle",
     "Ripper",
     "Mangle",
-    "Slapper"
+    "Slapper",
+    "Checksum",
+    "Chombo"
   }
 
   local locations = {
@@ -148,6 +150,7 @@ end
 function playerReady(player, gearNumber, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
   if not Object.IsValid(player) then return end
 
+  player.serverUserData["TeamInfoString"] = Utils.getTeamInfoString(homeTown, namePrefix, nameSuffix)
   Storage.SetPlayerData(player, {savedTeam = {gearNumber, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter}})
 
   Task.Wait(1.1)

@@ -39,6 +39,12 @@ Objects {
             Yaw: 161.113586
           }
         }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
       }
     }
     TemplateAsset {
@@ -92,7 +98,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -161,7 +167,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -230,7 +236,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -288,7 +294,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -347,7 +353,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -407,7 +413,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -467,7 +473,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -512,7 +518,7 @@ Objects {
   ChildIds: 12479918540376189437
   ChildIds: 4155229474447323505
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -626,7 +632,7 @@ Objects {
   ChildIds: 15585416658189338991
   ChildIds: 1129178568126864897
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -741,7 +747,7 @@ Objects {
   ChildIds: 7935138619284083292
   ChildIds: 2943984337880169865
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -856,7 +862,7 @@ Objects {
   ChildIds: 8732645862261133689
   ChildIds: 5512501858657315873
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -971,7 +977,7 @@ Objects {
   ChildIds: 12806671300717773515
   ChildIds: 18135522186930955992
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1085,7 +1091,7 @@ Objects {
   ChildIds: 839157153124869298
   ChildIds: 18143057779274443775
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -1435,12 +1441,13 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
+      Y: 111.671387
       Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 117
+      X: 124.146347
       Y: 53.700016
       Z: 1
     }

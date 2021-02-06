@@ -3,6 +3,14 @@ Assets {
   Name: "Leaderboard_World"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:Utils"
+        AssetReference {
+          Id: 38795918962233543
+        }
+      }
+    }
   }
   SerializationVersion: 74
 }

@@ -106,6 +106,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -154,6 +155,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -221,6 +223,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {

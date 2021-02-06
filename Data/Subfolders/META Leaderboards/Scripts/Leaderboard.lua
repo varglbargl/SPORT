@@ -88,7 +88,9 @@ local function OnUpdate(leaderboardPersistence, leaderboardStat, player, score, 
 		if(#RESOURCE_NAME <= 0) then return end
 		if(resourceName ~= RESOURCE_NAME) then return end
 
-		Leaderboards.SubmitPlayerScore(LeaderboardReference, player, score)
+		if player.serverUserData["TeamInfoString"] then
+			Leaderboards.SubmitPlayerScore(LeaderboardReference, player, score, player.serverUserData["TeamInfoString"])
+		end
 
 		if(UPDATE_ON_RESOURCE_CHANGED) then
 			Update()

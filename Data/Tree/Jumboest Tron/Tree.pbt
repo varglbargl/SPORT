@@ -5,16 +5,16 @@ Objects {
   Name: "NewFolder"
   Transform {
     Location {
-      X: -2800
-      Y: -550
-      Z: 6700
+      X: -2766.3418
+      Y: 1240.48657
+      Z: 6773.66309
     }
     Rotation {
     }
     Scale {
-      X: 2.60000014
-      Y: 2.60000014
-      Z: 2.60000014
+      X: 2.41270685
+      Y: 2.41270685
+      Z: 2.41270685
     }
   }
   ParentId: 16768490889354311915
@@ -52,14 +52,16 @@ Objects {
           Name: "Scale"
           Vector {
             X: 0.1
-            Y: 0.808584213
-            Z: 4.00000048
+            Y: 6.19006443
+            Z: 1
           }
         }
         Overrides {
           Name: "Position"
           Vector {
-            Z: 170.489014
+            X: -3.85161957e-06
+            Y: -5.38495493
+            Z: 188.990021
           }
         }
         Overrides {
@@ -77,6 +79,11 @@ Objects {
             A: 1
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -85,12 +92,18 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Z: -23.2577267
+            Z: -7.43713522
           }
         }
         Overrides {
           Name: "Text"
           String: "UPDATES IN 10 SECONDS"
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
         }
       }
     }
@@ -101,6 +114,12 @@ Objects {
           Name: "Visible"
           Enum {
             Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 7
           }
         }
       }
@@ -153,7 +172,7 @@ Objects {
         Overrides {
           Name: "cs:LeaderboardReference"
           NetReference {
-            Key: "8AC8036B6EC112CB"
+            Key: "92AA3254FB1DBC03"
             Type {
               Value: "mc:enetreferencetype:leaderboard"
             }
@@ -162,6 +181,10 @@ Objects {
         Overrides {
           Name: "cs:UpdateTimer"
           Float: 10
+        }
+        Overrides {
+          Name: "cs:LeaderboardType"
+          String: "WEEKLY"
         }
       }
     }
@@ -293,7 +316,7 @@ Objects {
       Roll: 63.4349213
     }
     Scale {
-      X: 41
+      X: 33.1000099
       Y: 19
       Z: 250
     }

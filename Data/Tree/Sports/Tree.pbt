@@ -5312,7 +5312,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:PointValue"
-      Int: 5
+      Int: 10
     }
     Overrides {
       Name: "cs:GirlZone"
@@ -5379,15 +5379,15 @@ Objects {
     Location {
       X: -229.26123
       Y: -784.585571
-      Z: 1523.01379
+      Z: 1531.00916
     }
     Rotation {
       Pitch: 90
     }
     Scale {
-      X: 4.50000048
-      Y: 4.50000048
-      Z: 4.50000048
+      X: 4.92341614
+      Y: 4.92341614
+      Z: 4.92341614
     }
   }
   ParentId: 1231868157073874387
@@ -5488,15 +5488,15 @@ Objects {
     Location {
       X: -229.261108
       Y: -784.585693
-      Z: 1523.01379
+      Z: 1531.00916
     }
     Rotation {
       Pitch: 90
     }
     Scale {
-      X: 2.83899093
-      Y: 2.83899093
-      Z: 0.366321415
+      X: 3.01717734
+      Y: 3.01717734
+      Z: 0.38931331
     }
   }
   ParentId: 1231868157073874387
@@ -11590,14 +11590,6 @@ Objects {
             Pitch: -31.5
             Yaw: 12.6694546
             Roll: -23.2774048
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
           }
         }
       }

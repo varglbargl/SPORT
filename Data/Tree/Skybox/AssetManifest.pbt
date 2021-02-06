@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16797849320478581618
+  Name: "Star Dome"
+  PlatformAssetType: 19
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_StarDome"
+  }
+}
+Assets {
   Id: 16281989283233682780
   Name: "Sci-fi Base Antenna 01"
   PlatformAssetType: 1

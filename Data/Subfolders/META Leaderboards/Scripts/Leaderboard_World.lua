@@ -55,6 +55,12 @@ local currentEntries = {}
 local lastUpdate = time()
 
 ------------------------------------------------------------------------------------------------------------------------
+--	DUMB STUFF I ADDED LOL
+------------------------------------------------------------------------------------------------------------------------
+
+local Utils = require(script:GetCustomProperty("Utils"))
+
+------------------------------------------------------------------------------------------------------------------------
 --	LOCAL FUNCTIONS
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -79,7 +85,7 @@ local function GetShouldUpdate(newEntries, currentEntries)
 
 		if(newEntry.id ~= currentEntry.id) then
 			return true
-		elseif(newEntry.score ~= currentEntry.score) then
+		elseif(newEntry.score ~= currentEntry.score) or (newEntry.name ~= currentEntry.name) then
 			return true
 		end
 	end
@@ -90,13 +96,25 @@ end
 local function GetFirstTenEntries(entries)
 	local newEntries = {}
 
-	for index, entry in ipairs(entries) do
-		if(index > 10) then break end
-
-		newEntries[index] = entries[index]
+	for i, entry in ipairs(entries) do
+    if newEntries[entry.additionalData] then
+      newEntries[entry.additionalData] = newEntries[entry.additionalData] + entry.score
+    else
+      newEntries[entry.additionalData] = entry.score
+    end
 	end
 
-	return newEntries
+  local finalEntries = {}
+
+  for i,v in pairs(newEntries) do
+   table.insert(finalEntries, {name = Utils.getTeamInfoFromString(i), score = v})
+  end
+
+  table.sort(finalEntries, function(a, b)
+    return a.score > b.score
+  end)
+
+  return {table.unpack(finalEntries, 1, 10)}
 end
 
 local function ClearEntries()
@@ -158,7 +176,12 @@ function Update(id)
 			playerPosition:SetColor(NO_PODIUM_PLACEMENT_COLOR)
 		end
 
-		playerName.text = string.sub(entry.name, 1, 23)
+		playerName.text = entry.name
+
+		if string.len(entry.name) > 25 then
+			playerName:SetScale(Vector3.New(0.9, 0.95 - (string.len(entry.name) - 25) * 0.02, 1.25))
+		end
+
 		playerName:SetColor(USERNAME_COLOR)
 
 		if(DISPLAY_AS_INTEGER) then

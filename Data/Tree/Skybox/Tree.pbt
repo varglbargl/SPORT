@@ -1,13 +1,65 @@
 Name: "Skybox"
 RootId: 6132425677051170883
 Objects {
+  Id: 11461077874614029026
+  Name: "City"
+  Transform {
+    Location {
+      X: 18077.7344
+      Y: 8296.42676
+      Z: -800
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6132425677051170883
+  ChildIds: 1329073438951852074
+  ChildIds: 17497498234308293184
+  ChildIds: 1373678345620934433
+  ChildIds: 17500486108186615200
+  ChildIds: 925946755192365202
+  ChildIds: 747216926575497393
+  ChildIds: 15209384334741398092
+  ChildIds: 16015361618382452392
+  ChildIds: 9770209365433445851
+  ChildIds: 11282278910467303037
+  ChildIds: 10418077195982217438
+  ChildIds: 14682310127109515018
+  ChildIds: 15874150305225636655
+  ChildIds: 15529392549436441168
+  ChildIds: 7887835208299658150
+  ChildIds: 3378891650500880940
+  ChildIds: 757958751374353103
+  ChildIds: 9251170350876323422
+  ChildIds: 4201890796405577518
+  ChildIds: 14282051943222069650
+  ChildIds: 3235746343974785318
+  ChildIds: 883165733404677063
+  ChildIds: 9592192037705649442
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    Model {
+    }
+  }
+}
+Objects {
   Id: 9592192037705649442
   Name: "Sci-fi Base Antenna 01"
   Transform {
     Location {
-      X: 25947.9297
-      Y: 17755
-      Z: 9799.99219
+      X: 7870.19531
+      Y: 9458.57324
+      Z: 10599.9922
     }
     Rotation {
     }
@@ -17,7 +69,7 @@ Objects {
       Z: 31.8943291
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -59,7 +111,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 2113581946855463137
@@ -84,15 +136,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9975
-            Y: -27090.5742
-            Z: -1500
+            X: -8102.73438
+            Y: -35387
+            Z: -700
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 90
+            Yaw: 89.9999924
           }
         }
         Overrides {
@@ -115,9 +167,9 @@ Objects {
   Name: "Sci-fi Base Pillar 02 - Base 01"
   Transform {
     Location {
-      X: 26000
-      Y: 17700
-      Z: 2824.88672
+      X: 7922.26563
+      Y: 9403.57324
+      Z: 3624.88672
     }
     Rotation {
     }
@@ -127,7 +179,7 @@ Objects {
       Z: 12.5
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -156,12 +208,12 @@ Objects {
   Name: "Sci-fi Base Breakout Box 02"
   Transform {
     Location {
-      X: 36250
-      Y: 11625
-      Z: 10524.8867
+      X: 18172.2656
+      Y: 3328.57324
+      Z: 11324.8867
     }
     Rotation {
-      Yaw: -179.999969
+      Yaw: -179.999954
     }
     Scale {
       X: 1
@@ -169,7 +221,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -198,12 +250,12 @@ Objects {
   Name: "Sci-fi Base Breakout Box 02"
   Transform {
     Location {
-      X: 36150
-      Y: 14025
-      Z: 12474.8867
+      X: 18072.2656
+      Y: 5728.57324
+      Z: 13274.8867
     }
     Rotation {
-      Yaw: -179.999985
+      Yaw: -179.999969
     }
     Scale {
       X: 1
@@ -211,7 +263,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -240,12 +292,12 @@ Objects {
   Name: "Sci-fi Base HVAC 01"
   Transform {
     Location {
-      X: 37050
-      Y: 11500
-      Z: 9149.88672
+      X: 18972.2656
+      Y: 3203.57324
+      Z: 9949.88672
     }
     Rotation {
-      Yaw: 89.9999924
+      Yaw: 89.9999847
     }
     Scale {
       X: 4.5
@@ -253,7 +305,7 @@ Objects {
       Z: 4.5
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -282,9 +334,9 @@ Objects {
   Name: "Sci-fi Base Pillar 01"
   Transform {
     Location {
-      X: 38325
-      Y: 13925
-      Z: 2824.88672
+      X: 20247.2656
+      Y: 5628.57324
+      Z: 3624.88672
     }
     Rotation {
     }
@@ -294,7 +346,7 @@ Objects {
       Z: 18.5
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -323,9 +375,9 @@ Objects {
   Name: "Sci-fi Base Pillar 02 - Base 01"
   Transform {
     Location {
-      X: 38000
-      Y: 12275
-      Z: 2824.88672
+      X: 19922.2656
+      Y: 3978.57324
+      Z: 3624.88672
     }
     Rotation {
     }
@@ -335,7 +387,7 @@ Objects {
       Z: 15.5
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -376,7 +428,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 3901263486423301576
@@ -388,9 +440,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -34700
-            Y: -19400
-            Z: -200
+            X: -52777.7344
+            Y: -27696.4258
+            Z: 600
           }
         }
         Overrides {
@@ -431,7 +483,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 4605729470771364380
@@ -443,9 +495,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 36275
-            Y: -14975
-            Z: -1100
+            X: 18197.2656
+            Y: -23271.4258
+            Z: -300
           }
         }
         Overrides {
@@ -485,7 +537,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 4163482428573934281
@@ -497,14 +549,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 50800
-            Y: 21550
+            X: 32722.2656
+            Y: 13253.5732
+            Z: 800
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 90
+            Yaw: 89.9999924
           }
         }
         Overrides {
@@ -540,7 +593,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 2113581946855463137
@@ -565,15 +618,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -8400
-            Y: 42600
-            Z: 650
+            X: -26477.7344
+            Y: 34303.5742
+            Z: 1450
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -90
+            Yaw: -89.9999924
           }
         }
         Overrides {
@@ -609,7 +662,7 @@ Objects {
       Z: 1.1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 17844421109156835865
@@ -621,15 +674,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -18400
-            Y: 40200
-            Z: 2600
+            X: -36477.7344
+            Y: 31903.5742
+            Z: 3400
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 90
+            Yaw: 89.9999924
           }
         }
         Overrides {
@@ -652,12 +705,12 @@ Objects {
   Name: "Newsport City"
   Transform {
     Location {
-      X: 40800
-      Y: -23200
-      Z: 21506.0352
+      X: 22722.2656
+      Y: -31496.4258
+      Z: 22306.0352
     }
     Rotation {
-      Yaw: -17.0776367
+      Yaw: -17.0776501
     }
     Scale {
       X: 2.38478184
@@ -665,7 +718,7 @@ Objects {
       Z: 2.38478184
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -682,9 +735,9 @@ Objects {
   Name: "Big Football"
   Transform {
     Location {
-      X: 40800
-      Y: -23200
-      Z: 21506.0352
+      X: 22722.2656
+      Y: -31496.4258
+      Z: 22306.0352
     }
     Rotation {
     }
@@ -694,7 +747,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -711,9 +764,9 @@ Objects {
   Name: "BBK1 - Scifi - Air treatment tower"
   Transform {
     Location {
-      X: 40800
-      Y: -23200
-      Z: 4006.04688
+      X: 22722.2656
+      Y: -31496.4258
+      Z: 4806.04688
     }
     Rotation {
     }
@@ -723,7 +776,7 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   ChildIds: 7813285233055625768
   ChildIds: 4558973596967851695
   ChildIds: 10280845655673512669
@@ -1727,7 +1780,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 1806033434638268346
@@ -1739,9 +1792,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 30360.1836
-            Y: -30618.3906
-            Z: -800
+            X: 12282.4492
+            Y: -38914.8164
           }
         }
         Overrides {
@@ -1755,7 +1807,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -90
+            Yaw: -89.9999924
           }
         }
       }
@@ -1775,7 +1827,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 2113581946855463137
@@ -1800,15 +1852,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 17600
-            Y: 21600
-            Z: -102.340042
+            X: -477.734375
+            Y: 13303.5732
+            Z: 697.66
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
         }
         Overrides {
@@ -1836,7 +1888,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 4605729470771364380
@@ -1848,15 +1900,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9600
-            Y: 28800
-            Z: -102.338089
+            X: -8477.73438
+            Y: 20503.5742
+            Z: 697.661926
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 89.9999924
+            Yaw: 89.9999847
           }
         }
         Overrides {
@@ -1884,7 +1936,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 17844421109156835865
@@ -1896,9 +1948,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1896.96509
-            Y: 26400
-            Z: -102.338089
+            X: -19974.7
+            Y: 18103.5742
+            Z: 697.661926
           }
         }
         Overrides {
@@ -1931,7 +1983,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 3901263486423301576
@@ -1943,9 +1995,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 37864.957
-            Y: 25412.8164
-            Z: -102.338089
+            X: 19787.2227
+            Y: 17116.3906
+            Z: 697.661926
           }
         }
         Overrides {
@@ -1973,7 +2025,8 @@ Objects {
   Name: "Plane Circle - One Sided"
   Transform {
     Location {
-      Z: -800
+      X: -18077.7344
+      Y: -8296.42676
     }
     Rotation {
     }
@@ -1983,7 +2036,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2026,7 +2079,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6132425677051170883
+  ParentId: 11461077874614029026
   TemplateInstance {
     ParameterOverrideMap {
       key: 4163482428573934281
@@ -2038,14 +2091,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -17600
-            Y: 25600
+            X: -35677.7344
+            Y: 17303.5742
+            Z: 800
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -179.999985
+            Yaw: -179.999969
           }
         }
         Overrides {
@@ -2065,7 +2119,7 @@ Objects {
 }
 Objects {
   Id: 10005074784157121906
-  Name: "Default Sky"
+  Name: "Sky"
   Transform {
     Location {
     }
@@ -2081,6 +2135,7 @@ Objects {
   ChildIds: 13551641546322277000
   ChildIds: 7155168770677928712
   ChildIds: 10505154200474359396
+  ChildIds: 13943520738830767907
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -2091,6 +2146,74 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13943520738830767907
+  Name: "Star Dome"
+  Transform {
+    Location {
+      X: -343.762451
+      Y: 403.767334
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10005074784157121906
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Star Visibility"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Star Brightness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Space Tint"
+      Color {
+        R: 0.032596156
+        B: 0.214000016
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Star Color Cycle"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Color Gradient"
+      Enum {
+        Value: "mc:ecolorgradients:11"
+      }
+    }
+    Overrides {
+      Name: "bp:Star Color Intensity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Real Stars"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16797849320478581618
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
@@ -2154,9 +2277,9 @@ Objects {
     Overrides {
       Name: "bp:Sun Disc Color"
       Color {
-        R: 5
-        G: 5
-        B: 5
+        R: 10
+        G: 10
+        B: 10
         A: 1
       }
     }
@@ -2184,6 +2307,14 @@ Objects {
     Overrides {
       Name: "bp:Draw Sun"
       Bool: true
+    }
+    Overrides {
+      Name: "bp:Dynamic Shadow Distance"
+      Float: 7.5
+    }
+    Overrides {
+      Name: "bp:Shadow Cascade Count"
+      Int: 2
     }
   }
   Collidable_v2 {

@@ -75,117 +75,6 @@ local colors = {
   "050506"
 }
 
-local teamPrefs = {
-  "Danger",
-  "Dungeon",
-  "Flannel",
-  "Sport",
-  "Horse",
-  "Pony",
-  "Jazz",
-  "Helmet",
-  "Laundry",
-  "Shrimp",
-  "Slurpee",
-  "Chowder",
-  "Tuba",
-  "Sparkle",
-  "VTuber",
-  "Garbage",
-  "Lumber",
-  "Space",
-  "Brunch",
-  "Piano",
-  "Flamingo",
-  "Muppet",
-  "Pumpkin",
-  "Toad",
-  "Egg",
-  "Whale",
-  "Butter",
-  "Clam",
-  "Oyster",
-  "Algebra",
-  "Cinnamon",
-  "Muscle",
-  "Volcano",
-  "Deli",
-  "Seagull",
-  "Moose",
-  "Mushroom",
-  "Dough",
-  "Pasta",
-  "Gloop",
-  "Slime",
-  "Penguin",
-  "Goggle",
-  "Squid",
-  "Disco",
-  "Poison",
-  "TikTok",
-  "Alpaca",
-  "Bread",
-  "Anime",
-  "Ghost",
-  "Burger",
-  "Lobster",
-  "Dolphin",
-  "Boggle",
-  "Wharf",
-  "Potion",
-  ""
-}
-
-local teamSuffs = {
-  "Gang",
-  "Squadron",
-  "Union",
-  "Crew",
-  "Caucus",
-  "Club",
-  "Mafia",
-  "Punchers",
-  "Moms",
-  "Dads",
-  "Lads",
-  "Boyz",
-  "Girlz",
-  "Teens",
-  "Guns",
-  "Trucks",
-  "Snobs",
-  "Lords",
-  "H4ck3rZ",
-  "Blasters",
-  "Magnets",
-  "Stackers",
-  "Mashers",
-  "Cannons",
-  "Farmers",
-  "Jammers",
-  "Wizards",
-  "Phones",
-  "Goths",
-  "Burglars",
-  "Launchers",
-  "Melters",
-  "Flippers",
-  "Reviewers",
-  "Slammers",
-  "Dunkers",
-  "Jousters",
-  "Witches",
-  "Printers",
-  "Ditchers",
-  "Wagons",
-  "Crimes",
-  "Motels",
-  "Stoppers",
-  "Chillers",
-  "Noises",
-  "Castles"
-}
-
 local homeTowns = {
   "Philadelphia",
   "Seattle",
@@ -272,7 +161,122 @@ local homeTowns = {
   "Shadow Moses Island",
   "Crime City",
   "Longmont",
-  "Honnō City"
+  "Honnō City",
+  "Taco Bell"
+}
+
+local teamPrefs = {
+  "",
+  "Danger",
+  "Dungeon",
+  "Flannel",
+  "Sport",
+  "Horse",
+  "Pony",
+  "Jazz",
+  "Helmet",
+  "Laundry",
+  "Shrimp",
+  "Slurpee",
+  "Chowder",
+  "Tuba",
+  "Sparkle",
+  "VTuber",
+  "Garbage",
+  "Lumber",
+  "Space",
+  "Brunch",
+  "Piano",
+  "Flamingo",
+  "Muppet",
+  "Pumpkin",
+  "Toad",
+  "Egg",
+  "Whale",
+  "Butter",
+  "Clam",
+  "Oyster",
+  "Algebra",
+  "Cinnamon",
+  "Muscle",
+  "Volcano",
+  "Deli",
+  "Seagull",
+  "Moose",
+  "Mushroom",
+  "Dough",
+  "Pasta",
+  "Gloop",
+  "Slime",
+  "Penguin",
+  "Goggle",
+  "Squid",
+  "Disco",
+  "Poison",
+  "TikTok",
+  "Alpaca",
+  "Bread",
+  "Anime",
+  "Ghost",
+  "Burger",
+  "Lobster",
+  "Dolphin",
+  "Boggle",
+  "Wharf",
+  "Potion",
+  "Bagel",
+  "Pizza",
+  "Badger"
+}
+
+local teamSuffs = {
+  "Gang",
+  "Squadron",
+  "Union",
+  "Crew",
+  "Caucus",
+  "Club",
+  "Mafia",
+  "Moms",
+  "Dads",
+  "Lads",
+  "Boyz",
+  "Girlz",
+  "Teens",
+  "Guns",
+  "Trucks",
+  "Snobs",
+  "Lords",
+  "H4ck3rZ",
+  "Blasters",
+  "Punchers",
+  "Magnets",
+  "Stackers",
+  "Mashers",
+  "Cannons",
+  "Farmers",
+  "Jammers",
+  "Wizards",
+  "Phones",
+  "Goths",
+  "Burglars",
+  "Launchers",
+  "Melters",
+  "Flippers",
+  "Reviewers",
+  "Slammers",
+  "Dunkers",
+  "Jousters",
+  "Witches",
+  "Printers",
+  "Ditchers",
+  "Wagons",
+  "Crimes",
+  "Motels",
+  "Stoppers",
+  "Chillers",
+  "Noises",
+  "Castles"
 }
 
 local foulMessages = {
@@ -337,7 +341,9 @@ local deathMessages = {
   "HAHA NICE",
   "BOTTOM TEXT",
   "[SUPA HOT FIRE VOICE] I'M NOT A GAMER",
-  "LET'S GO TO THE LEADERBOARD, MO"
+  "LET'S GO TO THE LEADERBOARD, MO",
+  "DON'T GET YOUR TAINT IN A MANGLE",
+  "DON'T GET YOUR MANE IN A TANGLE"
 }
 
 function Utils.randomFromTable(arr)
@@ -365,6 +371,10 @@ function Utils.getColor(index)
   return getFromTable(colors, index)
 end
 
+function Utils.getHomeTown(index)
+  return getFromTable(homeTowns, index)
+end
+
 function Utils.getTeamPrefix(index)
   return getFromTable(teamPrefs, index)
 end
@@ -373,8 +383,28 @@ function Utils.getTeamSuffix(index)
   return getFromTable(teamSuffs, index)
 end
 
-function Utils.getHomeTown(index)
-  return getFromTable(homeTowns, index)
+function Utils.getFullTeamName(homeTownIndex, prefixIndex, suffixIndex)
+  local result = ""
+
+  if prefixIndex == 1 then
+    result = Utils.getHomeTown(homeTownIndex).." "..Utils.getTeamSuffix(suffixIndex)
+  else
+    result = Utils.getHomeTown(homeTownIndex).." "..Utils.getTeamPrefix(prefixIndex).." "..Utils.getTeamSuffix(suffixIndex)
+  end
+
+  return result
+end
+
+function Utils.getTeamInfoString(homeTownIndex, prefixIndex, suffixIndex)
+  return string.sub("0"..homeTownIndex, -2)..string.sub("0"..prefixIndex, -2)..string.sub("0"..suffixIndex, -2)
+end
+
+function Utils.getTeamInfoFromString(teamInfoString)
+  local homeTownIndex = tonumber(string.sub(teamInfoString, 1, 2))
+  local prefixIndex = tonumber(string.sub(teamInfoString, 3, 4))
+  local suffixIndex = tonumber(string.sub(teamInfoString, 5, 6))
+
+  return Utils.getFullTeamName(homeTownIndex, prefixIndex, suffixIndex)
 end
 
 function Utils.getFoulMessage(index)
