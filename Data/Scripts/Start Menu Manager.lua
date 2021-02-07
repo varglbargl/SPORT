@@ -101,11 +101,11 @@ function startGame()
   Events.Broadcast("FadeToBlack", 0.9)
   Events.BroadcastToServer("GetDressed", clientPlayer, gearNumber, townNumber, prefNumber, suffNumber, primaryNumber, secondaryNumber, innerNumber, outerNumber)
   UI.SetCanCursorInteractWithUI(false)
+  UI.SetCursorVisible(false)
 
   Task.Wait(1)
 
   clientPlayer:ClearOverrideCamera()
-  UI.SetCursorVisible(false)
   THE_WHOLE_THING.visibility = Visibility.FORCE_OFF
   Events.Broadcast("InitGameUI")
 end
@@ -326,5 +326,13 @@ initButtonHover(NEXT_PRIMARY)
 initButtonHover(PREV_SECONDARY)
 initButtonHover(NEXT_SECONDARY)
 initButtonHover(RANDOMIZE)
+
+PLAY_BUTTON.hoveredEvent:Connect(function(thisButton)
+  EaseUI.EaseX(thisButton.parent, 5, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
+end)
+
+PLAY_BUTTON.unhoveredEvent:Connect(function(thisButton)
+  EaseUI.EaseX(thisButton.parent, 25, 0.25, EaseUI.EasingEquation.BACK, EaseUI.EasingDirection.OUT)
+end)
 
 PLAY_BUTTON.clickedEvent:Connect(startGame)

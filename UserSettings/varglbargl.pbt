@@ -92,6 +92,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 63379098224419855
+    value {
+    }
+  }
+  ObjectStates {
     key: 65170619582840059
     value {
     }
@@ -4189,6 +4194,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 2434583201835226987
+    value {
+    }
+  }
+  ObjectStates {
     key: 2437783796718894158
     value {
     }
@@ -5644,6 +5654,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 3298437997344123066
+    value {
+    }
+  }
+  ObjectStates {
     key: 3298680521862372166
     value {
     }
@@ -5886,7 +5901,6 @@ ObjectSettings {
   ObjectStates {
     key: 3439348070377213501
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -6779,7 +6793,6 @@ ObjectSettings {
   ObjectStates {
     key: 3972205678489474139
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -9369,6 +9382,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 5508784234309295657
+    value {
+    }
+  }
+  ObjectStates {
     key: 5509125868460617811
     value {
       IsLocked: true
@@ -10421,6 +10439,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 6076542570050937770
+    value {
+    }
+  }
+  ObjectStates {
     key: 6079015182463295674
     value {
     }
@@ -10462,6 +10485,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 6100230447958356213
+    value {
+    }
+  }
+  ObjectStates {
+    key: 6101142408023732131
     value {
     }
   }
@@ -12709,6 +12737,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 7426345792740800985
+    value {
+    }
+  }
+  ObjectStates {
+    key: 7432849334604186003
     value {
     }
   }
@@ -15739,6 +15772,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 9260649798492351989
+    value {
+    }
+  }
+  ObjectStates {
     key: 9263426047572378667
     value {
     }
@@ -17149,6 +17187,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 10119314450820950543
+    value {
+    }
+  }
+  ObjectStates {
     key: 10123039144852643857
     value {
     }
@@ -17929,6 +17972,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 10635533482044744988
+    value {
+    }
+  }
+  ObjectStates {
     key: 10635614450897587238
     value {
     }
@@ -18040,6 +18088,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 10698207414632110318
+    value {
+    }
+  }
+  ObjectStates {
+    key: 10699347261174715975
     value {
     }
   }
@@ -18180,6 +18233,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 10807519203515855006
+    value {
+    }
+  }
+  ObjectStates {
+    key: 10810973354736285409
     value {
     }
   }
@@ -18530,6 +18588,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 11021663507535259736
+    value {
+    }
+  }
+  ObjectStates {
+    key: 11021714814998598357
     value {
     }
   }
@@ -21996,6 +22059,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 13284268221034730963
+    value {
+    }
+  }
+  ObjectStates {
+    key: 13290314165340089619
     value {
     }
   }
@@ -25851,6 +25919,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 15535934469639522451
+    value {
+    }
+  }
+  ObjectStates {
     key: 15536464322237567787
     value {
     }
@@ -27421,7 +27494,6 @@ ObjectSettings {
   ObjectStates {
     key: 16494149445785654469
     value {
-      IsHidden: true
     }
   }
   ObjectStates {
@@ -29286,6 +29358,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 17681497664832865902
+    value {
+    }
+  }
+  ObjectStates {
     key: 17684786619325714300
     value {
     }
@@ -30479,6 +30556,27 @@ ObjectSettings {
   ObjectStates {
     key: 18446101783547198160
     value {
+    }
+  }
+}
+DebugPerks {
+  Perks {
+    PerkId: "1d4d98efd8684bd98b2d7fe28a6fdbcc"
+    PerkCounts {
+      key: 0
+      value: 0
+    }
+    PerkCounts {
+      key: 1
+      value: 0
+    }
+    PerkCounts {
+      key: 2
+      value: 0
+    }
+    PerkCounts {
+      key: 3
+      value: 0
     }
   }
 }

@@ -1501,7 +1501,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_1"
+    FilePartitionName: "NewFolder_8"
   }
 }
 Objects {
@@ -2322,8 +2322,8 @@ Objects {
   Name: "Urban Floor Grate Fire Escape - 2m x 2m"
   Transform {
     Location {
-      X: 296.728516
-      Y: -514.97522
+      X: 304.45459
+      Y: -525.425781
       Z: 35
     }
     Rotation {
@@ -2575,7 +2575,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_2"
+    FilePartitionName: "NewFolder_9"
   }
 }
 Objects {
@@ -2604,7 +2604,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_3"
+    FilePartitionName: "NewFolder_10"
   }
 }
 Objects {
@@ -2633,7 +2633,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_4"
+    FilePartitionName: "NewFolder_11"
   }
 }
 Objects {
@@ -2662,7 +2662,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_5"
+    FilePartitionName: "NewFolder_12"
   }
 }
 Objects {
@@ -3240,7 +3240,7 @@ Objects {
   Transform {
     Location {
       X: 131.871094
-      Y: -352.229614
+      Y: -437.932434
       Z: 36.5732422
     }
     Rotation {
@@ -3371,7 +3371,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_6"
+    FilePartitionName: "NewFolder_13"
   }
 }
 Objects {
@@ -3590,7 +3590,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_7"
+    FilePartitionName: "NewFolder_14"
   }
 }
 Objects {
@@ -3619,7 +3619,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_8"
+    FilePartitionName: "NewFolder_15"
   }
 }
 Objects {
@@ -3648,7 +3648,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "NewFolder_9"
+    FilePartitionName: "NewFolder_16"
   }
 }
 Objects {

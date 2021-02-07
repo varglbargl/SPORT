@@ -1,34 +1,44 @@
 Name: "NewFolder_5"
-RootId: 15287008192186974628
+RootId: 6498236760163419110
 Objects {
-  Id: 13809225514593828529
+  Id: 5879224310566610262
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: -0.262996018
-      Y: 133.206589
-      Z: 16.9768963
+      X: 136.521973
+      Y: 7.984375
+      Z: 16.0761719
     }
     Rotation {
+      Pitch: -0.103484191
+      Yaw: -90.0703
+      Roll: -0.3516801
     }
     Scale {
-      X: 0.184881136
-      Y: 0.184881136
-      Z: 0.84244144
+      X: 0.146797061
+      Y: 0.14680098
+      Z: 0.999068856
     }
   }
-  ParentId: 15287008192186974628
+  ParentId: 6498236760163419110
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 3184356387751164974
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 3184356387751164974
+        Id: 17914528321410060029
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.589000046
+        G: 0.0300389659
+        B: 0.0300389659
+        A: 1
       }
     }
   }
@@ -56,33 +66,40 @@ Objects {
   }
 }
 Objects {
-  Id: 6050036104523600783
-  Name: "Urban Pipe Flange 01"
+  Id: 8984196413278484731
+  Name: "Ring - Quarter Thick"
   Transform {
     Location {
-      X: -0.262996018
-      Y: 133.206589
+      X: 106.625
+      Y: 7.83837891
+      Z: 115.542114
     }
     Rotation {
+      Pitch: 0.351249278
+      Yaw: -0.0716247112
+      Roll: -90.1044846
     }
     Scale {
-      X: 0.99999994
-      Y: 0.99999994
-      Z: 0.99999994
+      X: 0.733985305
+      Y: -0.733985305
+      Z: 0.733985305
     }
   }
-  ParentId: 15287008192186974628
+  ParentId: 6498236760163419110
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 3184356387751164974
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 3184356387751164974
+        Id: 17914528321410060029
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.589000046
+        G: 0.0300389659
+        B: 0.0300389659
+        A: 1
       }
     }
   }
@@ -94,7 +111,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18393437648231545508
+      Id: 113576250836441117
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -110,34 +127,40 @@ Objects {
   }
 }
 Objects {
-  Id: 5588506216982520913
+  Id: 1247922072229109566
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: -0.263183594
-      Y: -26.8704834
-      Z: 16.9765625
+      X: -69.7084961
+      Y: 8.00610352
+      Z: 143.820801
     }
     Rotation {
+      Pitch: -0.104727283
+      Yaw: -90.0712
+      Roll: 89.6498108
     }
     Scale {
-      X: 0.184881151
-      Y: 0.184881151
-      Z: 0.842441559
+      X: 0.146797061
+      Y: 0.146797061
+      Z: 1.76156569
     }
   }
-  ParentId: 15287008192186974628
+  ParentId: 6498236760163419110
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 3184356387751164974
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 3184356387751164974
+        Id: 17914528321410060029
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.589000046
+        G: 0.0300389659
+        B: 0.0300389659
+        A: 1
       }
     }
   }
@@ -165,33 +188,40 @@ Objects {
   }
 }
 Objects {
-  Id: 4807499015732015090
-  Name: "Urban Pipe Flange 01"
+  Id: 5040943706601290201
+  Name: "Ring - Quarter Thick"
   Transform {
     Location {
-      X: -0.263183594
-      Y: -26.8704834
+      X: -69.5283203
+      Y: 8.05981445
+      Z: 114.461914
     }
     Rotation {
+      Pitch: -0.351290256
+      Yaw: 179.928452
+      Roll: 90.1044846
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.733985305
+      Y: 0.733985305
+      Z: 0.733985305
     }
   }
-  ParentId: 15287008192186974628
+  ParentId: 6498236760163419110
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 3184356387751164974
-      }
-    }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 3184356387751164974
+        Id: 17914528321410060029
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.589000046
+        G: 0.0300389659
+        B: 0.0300389659
+        A: 1
       }
     }
   }
@@ -203,7 +233,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18393437648231545508
+      Id: 113576250836441117
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -219,23 +249,43 @@ Objects {
   }
 }
 Objects {
-  Id: 8963529435929613607
-  Name: "Small Crate Lid"
+  Id: 244061343943005903
+  Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.527832031
-      Y: 53.7409668
-      Z: 108.946289
+      X: -98.2363281
+      Y: 8.27856445
+      Z: 14.7734375
     }
     Rotation {
+      Pitch: -0.103484191
+      Yaw: -90.0703
+      Roll: -0.3516801
     }
     Scale {
-      X: 1.22405279
-      Y: 1.62987578
-      Z: 1.80216765
+      X: 0.146797061
+      Y: 0.14680098
+      Z: 0.999068856
     }
   }
-  ParentId: 15287008192186974628
+  ParentId: 6498236760163419110
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17914528321410060029
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.589000046
+        G: 0.0300389659
+        B: 0.0300389659
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -244,7 +294,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4913020950094832864
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true

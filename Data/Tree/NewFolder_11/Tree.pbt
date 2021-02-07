@@ -1,67 +1,34 @@
 Name: "NewFolder_11"
-RootId: 15364678771126417550
+RootId: 11169798841385963788
 Objects {
-  Id: 14804285302563798767
-  Name: "Sphere"
+  Id: 18117390082687412147
+  Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: 0.0537176654
-      Y: -0.634567738
-      Z: -1.97553933
+      X: -0.263183594
+      Y: -26.8704834
+      Z: 16.9765625
     }
     Rotation {
-      Pitch: -12.0544739
-      Yaw: 158.730331
-      Roll: -141.332489
     }
     Scale {
-      X: 1.71885026
-      Y: 1.71885026
-      Z: 1.71885026
+      X: 0.184881151
+      Y: 0.184881151
+      Z: 0.842441559
     }
   }
-  ParentId: 15364678771126417550
+  ParentId: 11169798841385963788
   UnregisteredParameters {
     Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 18209708905784008205
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 2
-        G: 1.95013344
-        B: 1.72799993
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 1.5
-        G: 0.0464998484
-        B: 0.0464998484
-        A: 1
+        Id: 3184356387751164974
       }
     }
   }
@@ -73,7 +40,102 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 15100306515943018207
+      Id: 6747614045051753376
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 269754373458523783
+  Name: "Urban Pipe Flange 01"
+  Transform {
+    Location {
+      X: -0.263183594
+      Y: -26.8704834
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11169798841385963788
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3184356387751164974
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18393437648231545508
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14489794545632498710
+  Name: "Small Crate Lid"
+  Transform {
+    Location {
+      X: 0.527832031
+      Y: 53.7409668
+      Z: 108.946289
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.22405279
+      Y: 1.62987578
+      Z: 1.80216765
+    }
+  }
+  ParentId: 11169798841385963788
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4913020950094832864
     }
     Teams {
       IsTeamCollisionEnabled: true

@@ -16,9 +16,7 @@ Assets {
           }
         }
         ParentId: 1231868157073874387
-        ChildIds: 8174095975645096377
-        ChildIds: 11825265670451087770
-        ChildIds: 4455150167659708036
+        ChildIds: 8715175223182634855
         ChildIds: 1112688797274125653
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -31,15 +29,42 @@ Assets {
         }
       }
       Objects {
+        Id: 8715175223182634855
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11187041276532084378
+        ChildIds: 8174095975645096377
+        ChildIds: 11825265670451087770
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 8174095975645096377
         Name: "Urban Pipe Cap 02"
         Transform {
           Location {
+            X: 6.10351563e-05
             Z: 139.298813
           }
           Rotation {
-            Yaw: -179.999985
-            Roll: -179.999985
+            Yaw: -179.999954
+            Roll: -179.999954
           }
           Scale {
             X: 8.35832405
@@ -47,7 +72,7 @@ Assets {
             Z: 7.85351372
           }
         }
-        ParentId: 11187041276532084378
+        ParentId: 8715175223182634855
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail2:color"
@@ -104,8 +129,8 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: 0.573608398
-            Y: -0.891845644
+            X: 0.573669434
+            Y: -0.891845703
             Z: 139.298813
           }
           Rotation {
@@ -116,7 +141,7 @@ Assets {
             Z: 0.0154783772
           }
         }
-        ParentId: 11187041276532084378
+        ParentId: 8715175223182634855
         UnregisteredParameters {
           Overrides {
             Name: "bp:Sides"
@@ -167,56 +192,6 @@ Assets {
           TeamSettings {
           }
           DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 4455150167659708036
-        Name: "Point Light"
-        Transform {
-          Location {
-            Z: 80
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11187041276532084378
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        Light {
-          Intensity: 25
-          Color {
-            R: 1
-            G: 0.25
-            A: 1
-          }
-          CastShadows: true
-          VolumetricIntensity: 5
-          TeamSettings {
-          }
-          Light {
-            Temperature: 6500
-            LocalLight {
-              AttenuationRadius: 1000
-              PointLight {
-                SourceRadius: 20
-                SoftSourceRadius: 20
-                FallOffExponent: 8
-                UseFallOffExponent: true
-              }
-            }
-            MaxDrawDistance: 5000
-            MaxDistanceFadeRange: 1000
           }
         }
       }
@@ -328,12 +303,6 @@ Assets {
         }
         ParentId: 1112688797274125653
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Light"
-            ObjectReference {
-              SubObjectId: 4455150167659708036
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

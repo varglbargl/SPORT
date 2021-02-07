@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16941397466002120363
+  Name: "Cylinder - Chamfered"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_chamfer"
+  }
+}
+Assets {
   Id: 16621764221698965205
   Name: "Air Conditioned Room Tone Loop 01 SFX"
   PlatformAssetType: 7
@@ -44,12 +53,57 @@ Assets {
   }
 }
 Assets {
+  Id: 15100306515943018207
+  Name: "Ball - Tennis 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_ball_tennis_01_ref"
+  }
+}
+Assets {
+  Id: 14265964246441922108
+  Name: "Pipe - Quarter Wedge"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_pipe_wedge_001"
+  }
+}
+Assets {
+  Id: 14212988502358508072
+  Name: "Metal Basic Steel"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "steel_001"
+  }
+}
+Assets {
   Id: 13195313602688115006
   Name: "Drop Object into Toilet Water 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_drop_object_into_toilet_01a_Cue_ref"
+  }
+}
+Assets {
+  Id: 13125941995488115797
+  Name: "Energy Tube Glow"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "Energy_Tube_Glow"
+  }
+}
+Assets {
+  Id: 11861305170361793883
+  Name: "Ball - Golf 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_ball_golf_01_ref"
   }
 }
 Assets {
@@ -116,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7099548973716498945
+  Name: "Ball - Soccer 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_ball_soccer_01_ref"
+  }
+}
+Assets {
   Id: 6932471205999455048
   Name: "Cinematic Music Score Set 01"
   PlatformAssetType: 10
@@ -149,6 +212,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_drop_object_into_liquid_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 4104876699390949625
+  Name: "Callout Sparkle"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_sparkles_volume_vfx"
   }
 }
 Assets {

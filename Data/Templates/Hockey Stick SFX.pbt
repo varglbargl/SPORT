@@ -177,6 +177,10 @@ Assets {
             Name: "bp:Dust Gravity"
             Float: -5
           }
+          Overrides {
+            Name: "bp:Enable Dust"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

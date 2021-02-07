@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17604553131937809776
+  Name: "Tree Birch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_003"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -35,12 +44,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14307818101647843922
+  Name: "Urban Damaged Rebar - Single 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_005_ref"
+  }
+}
+Assets {
   Id: 13157013216437696589
   Name: "Asphalt 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_asphault_001"
+  }
+}
+Assets {
+  Id: 13143340125256660386
+  Name: "Fern 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_003"
   }
 }
 Assets {
@@ -104,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_ammo_cann_001"
+  }
+}
+Assets {
+  Id: 3850835316358332222
+  Name: "Wood Floor Herringbone Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_herringbone_light_001_uv"
   }
 }
 Assets {

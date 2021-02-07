@@ -60,9 +60,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 3047.76196
-      Y: -3545.55835
-      Z: 220
+      X: 3051.29077
+      Y: -3540.33423
+      Z: 451.241882
     }
     Rotation {
       Yaw: -123.750046
@@ -70,7 +70,7 @@ Objects {
     Scale {
       X: 13.8
       Y: 27.4000111
-      Z: 9
+      Z: 4.63466501
     }
   }
   ParentId: 82888217535424249

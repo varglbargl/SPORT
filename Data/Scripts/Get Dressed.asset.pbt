@@ -10,6 +10,21 @@ Assets {
           Id: 38795918962233543
         }
       }
+      Overrides {
+        Name: "cs:TipJar"
+        NetReference {
+          Key: "1d4d98efd8684bd98b2d7fe28a6fdbcc"
+          Type {
+            Value: "mc:enetreferencetype:creatorperk"
+          }
+        }
+      }
+      Overrides {
+        Name: "cs:TinyCrown"
+        AssetReference {
+          Id: 6249319888332090478
+        }
+      }
     }
   }
   SerializationVersion: 74

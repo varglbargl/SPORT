@@ -5,7 +5,7 @@ Objects {
   Name: "NewFolder"
   Transform {
     Location {
-      X: -2766.3418
+      X: -2794.11426
       Y: 1240.48657
       Z: 6773.66309
     }

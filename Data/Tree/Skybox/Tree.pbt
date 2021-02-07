@@ -41,6 +41,16 @@ Objects {
   ChildIds: 3235746343974785318
   ChildIds: 883165733404677063
   ChildIds: 9592192037705649442
+  ChildIds: 11942415674721372363
+  ChildIds: 14602437733564469784
+  ChildIds: 16511662759442900751
+  ChildIds: 3159562274944856663
+  ChildIds: 505320464914059490
+  ChildIds: 16531766555802332728
+  ChildIds: 7938506253450732003
+  ChildIds: 9511705467014974990
+  ChildIds: 3187483010393869514
+  ChildIds: 11239249094517274766
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -49,6 +59,1802 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 11239249094517274766
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -16683.4258
+      Y: 7202.49707
+      Z: 5545.80566
+    }
+    Rotation {
+      Pitch: 2.23579407
+      Yaw: 50.9666214
+      Roll: 2.75487781
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 17436939132327043852
+  ChildIds: 1110275752752182735
+  ChildIds: 3200678498218234387
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 3200678498218234387
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 11239249094517274766
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 1110275752752182735
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 11239249094517274766
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 17436939132327043852
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 11239249094517274766
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 3187483010393869514
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -28721.6367
+      Y: 7129.97266
+      Z: 5648.6167
+    }
+    Rotation {
+      Pitch: -0.48494339
+      Yaw: -117.247322
+      Roll: -0.941620052
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 14774418069868898313
+  ChildIds: 14976506251560825588
+  ChildIds: 10147154548810349335
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 10147154548810349335
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 3187483010393869514
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 14976506251560825588
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 3187483010393869514
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 14774418069868898313
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 3187483010393869514
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 9511705467014974990
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -13751.2744
+      Y: 7202.49707
+      Z: 5545.80566
+    }
+    Rotation {
+      Yaw: -56.8617134
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 5274493902928965668
+  ChildIds: 17191512216992708612
+  ChildIds: 11765999900166654954
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 11765999900166654954
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 9511705467014974990
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 17191512216992708612
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 9511705467014974990
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 5274493902928965668
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 9511705467014974990
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 7938506253450732003
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -25710.2656
+      Y: 7202.49707
+      Z: 5654.49316
+    }
+    Rotation {
+      Pitch: -1.73864508
+      Yaw: 49.0273361
+      Roll: -1.99999964
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 2408566848438880293
+  ChildIds: 11512631706283374734
+  ChildIds: 4646371796107031300
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 4646371796107031300
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 7938506253450732003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 11512631706283374734
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 7938506253450732003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 2408566848438880293
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 7938506253450732003
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 16531766555802332728
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -10611.1797
+      Y: 7148.11035
+      Z: 5609.71729
+    }
+    Rotation {
+      Yaw: -67.0625916
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 12825208458519353566
+  ChildIds: 9094865197257782926
+  ChildIds: 12488054698051162514
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 12488054698051162514
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 16531766555802332728
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 9094865197257782926
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 16531766555802332728
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 12825208458519353566
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 16531766555802332728
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 505320464914059490
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -22737.1289
+      Y: 7202.49707
+      Z: 5481.42822
+    }
+    Rotation {
+      Pitch: 2.23579407
+      Yaw: 50.9666405
+      Roll: 2.75487828
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 8364073064141035910
+  ChildIds: 1972901356439977279
+  ChildIds: 7238110143298749216
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 7238110143298749216
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 505320464914059490
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 1972901356439977279
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 505320464914059490
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 8364073064141035910
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 505320464914059490
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 3159562274944856663
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -7591.51563
+      Y: 7129.97266
+      Z: 5584.23926
+    }
+    Rotation {
+      Pitch: -0.48494339
+      Yaw: -117.247284
+      Roll: -0.941619754
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 2708634202317861731
+  ChildIds: 964922445189925684
+  ChildIds: 16530188810230534365
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 16530188810230534365
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 3159562274944856663
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 964922445189925684
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 3159562274944856663
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 2708634202317861731
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 3159562274944856663
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 16511662759442900751
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -19804.9766
+      Y: 7202.49707
+      Z: 5481.42822
+    }
+    Rotation {
+      Yaw: -56.8616791
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 4543977059212374522
+  ChildIds: 15843442850494882366
+  ChildIds: 15689821567554299164
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15689821567554299164
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 16511662759442900751
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 15843442850494882366
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 16511662759442900751
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 4543977059212374522
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 16511662759442900751
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 14602437733564469784
+  Name: "Palm Tree Re-Redux"
+  Transform {
+    Location {
+      X: -4580.14355
+      Y: 7202.49707
+      Z: 5590.11572
+    }
+    Rotation {
+      Pitch: -1.73864508
+      Yaw: 49.0273361
+      Roll: -2
+    }
+    Scale {
+      X: 1.83643115
+      Y: 1.83643115
+      Z: 1.83643115
+    }
+  }
+  ParentId: 11461077874614029026
+  ChildIds: 18147660575995405312
+  ChildIds: 15843578129366458968
+  ChildIds: 5766998456648523216
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12312020230845974290
+    SubobjectId: 1796440610541643157
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 5766998456648523216
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: 16.0959415
+      Yaw: 9.99684062e-07
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 14602437733564469784
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15832288328290322060
+    SubobjectId: 7603411275960951819
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 15843578129366458968
+  Name: "Fern 03"
+  Transform {
+    Location {
+      X: 29.0061569
+      Y: -21.8142643
+      Z: 727.506
+    }
+    Rotation {
+      Pitch: -38.6987305
+      Yaw: 6.83724082e-08
+      Roll: -1.66714478
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 14602437733564469784
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13143340125256660386
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11745847608242625356
+    SubobjectId: 1239204813199686091
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 18147660575995405312
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 21.7729492
+      Y: 11.0322266
+      Z: 31.5087891
+    }
+    Rotation {
+      Pitch: -1.52554321
+      Yaw: -71.4248657
+      Roll: 0.448372066
+    }
+    Scale {
+      X: 5.60601664
+      Y: 5.60600901
+      Z: 3.58080578
+    }
+  }
+  ParentId: 14602437733564469784
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3850835316358332222
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14307818101647843922
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12160545908042002436
+    SubobjectId: 1941570470461084291
+    InstanceId: 11931410385249445916
+    TemplateId: 4982221242171972726
+  }
+}
+Objects {
+  Id: 11942415674721372363
+  Name: "Tree Birch 02"
+  Transform {
+    Location {
+      X: -7158.10547
+      Y: -21663.0352
+      Z: 5148.7041
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.85878396
+      Y: 3.01896167
+      Z: 2.91493583
+    }
+  }
+  ParentId: 11461077874614029026
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 2
+        G: 0.343999863
+        B: 1.50319958
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Trunk:color"
+      Color {
+        R: 0.237000018
+        G: 0.203839764
+        B: 0.150495008
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Trunk:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17604553131937809776
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
     }
   }
 }
@@ -2223,9 +4029,9 @@ Objects {
     Location {
     }
     Rotation {
-      Pitch: -53.0215759
-      Yaw: -38.8780212
-      Roll: 45.2642593
+      Pitch: -53.0213623
+      Yaw: -51.2649536
+      Roll: 45.2646942
     }
     Scale {
       X: 1

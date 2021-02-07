@@ -1,6 +1,204 @@
 Name: "Sports"
 RootId: 1231868157073874387
 Objects {
+  Id: 16286401983466243327
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 6821.05859
+      Y: 412.802948
+      Z: -50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 62.73
+      Y: 57.5046539
+      Z: 1
+    }
+  }
+  ParentId: 1231868157073874387
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14751741094054914800
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.428332388
+        G: 0.897
+        B: 0.298700958
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7720048919640473192
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -3363.12695
+      Y: 406.959808
+      Z: -50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 62.562
+      Y: 57.087925
+      Z: 1
+    }
+  }
+  ParentId: 1231868157073874387
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14751741094054914800
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.428332388
+        G: 0.897
+        B: 0.298700958
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8850041815899058832
+  Name: "Left Field"
+  Transform {
+    Location {
+      X: 2274.86621
+      Y: -1176.00574
+      Z: -50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1231868157073874387
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Left Field"
+  }
+}
+Objects {
+  Id: 10332406042235930693
+  Name: "Right Field"
+  Transform {
+    Location {
+      X: 1287.49805
+      Y: 1329.73877
+      Z: -50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1231868157073874387
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Right Field"
+  }
+}
+Objects {
   Id: 16118093371670810499
   Name: "Trigger"
   Transform {
@@ -7072,15 +7270,17 @@ Objects {
   Transform {
     Location {
       X: 76.9404297
-      Y: 6.87579346
+      Y: 6.87573242
     }
     Rotation {
-      Pitch: 90
+      Pitch: 103.236145
+      Yaw: 90
+      Roll: 90
     }
     Scale {
-      X: 4.5
-      Y: 4.5
-      Z: 1.4
+      X: 4.65989733
+      Y: 4.65989733
+      Z: 1.38958967
     }
   }
   ParentId: 11685211788237344670
@@ -7093,7 +7293,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8050488825896343419
+      Id: 5787536389408429161
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7127,7 +7327,7 @@ Objects {
     Overrides {
       Name: "cs:Speed"
       Vector {
-        Z: 0.1
+        Z: 0.12
       }
     }
   }
@@ -7815,9 +8015,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -4856.55029
-            Y: 3578.6189
-            Z: 157.00914
+            X: -4847.86572
+            Y: 3557.54834
+            Z: 156.990692
           }
         }
         Overrides {
@@ -7886,9 +8086,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4867.39307
-            Y: 3594.86426
-            Z: 157.00914
+            X: 4859.6748
+            Y: 3576.13867
+            Z: 156.992737
           }
         }
         Overrides {
@@ -8224,100 +8424,6 @@ Objects {
     }
     TemplateAsset {
       Id: 1820055564129280376
-    }
-  }
-}
-Objects {
-  Id: 12943538485765967554
-  Name: "Pinball Bumper"
-  Transform {
-    Location {
-      X: 3910.70361
-      Y: -1273.96313
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1231868157073874387
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3247861411888323927
-      value {
-        Overrides {
-          Name: "cs:PointValue"
-          Int: 2
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6939751512884635423
-      value {
-        Overrides {
-          Name: "cs:Force"
-          Int: 2500
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8174095975645096377
-      value {
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.358549505
-            G: 0.0182489734
-            B: 0.869
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11187041276532084378
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pinball Bumper"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2631.81494
-            Y: 89.0448914
-            Z: -31.7215576
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.46153617
-            Y: 1.46153617
-            Z: 1.46153617
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11825265670451087770
-      value {
-        Overrides {
-          Name: "bp:Emissive Boost"
-          Float: 3
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10426424399723969108
     }
   }
 }
@@ -9941,17 +10047,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 1823557280029697982
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 5
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 15688622626898540981
       value {
         Overrides {
@@ -10057,14 +10152,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -10102,6 +10189,7 @@ Objects {
           Vector {
             X: -6354.91504
             Y: -807.207764
+            Z: 8.53429794
           }
         }
         Overrides {
@@ -10146,71 +10234,12 @@ Objects {
           Vector {
             X: -6335.65918
             Y: 1051.50818
+            Z: 8.53429794
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10426424399723969108
-    }
-  }
-}
-Objects {
-  Id: 11439248059911364984
-  Name: "Pinball Bumper"
-  Transform {
-    Location {
-      X: 4016.16895
-      Y: 1543.62256
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1231868157073874387
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11187041276532084378
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Pinball Bumper"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 613.218628
-            Y: -1363.7467
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -10224,12 +10253,6 @@ Objects {
   Id: 7065436664307553513
   Name: "Pinball Bumper"
   Transform {
-    Location {
-      X: 3910.70361
-      Y: -1273.96313
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -10237,6 +10260,12 @@ Objects {
     }
   }
   ParentId: 1231868157073874387
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 11187041276532084378

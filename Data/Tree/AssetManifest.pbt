@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16189644268170403872
+  Name: "Container - Square Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_thin_ref"
+  }
+}
+Assets {
   Id: 16126599246819206263
   Name: "Sports Crowd Ooh Reaction 04 SFX"
   PlatformAssetType: 7
@@ -368,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15100306515943018207
+  Name: "Ball - Tennis 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_ball_tennis_01_ref"
+  }
+}
+Assets {
   Id: 14947421715670574446
   Name: "Electric Loop"
   PlatformAssetType: 9
@@ -383,15 +401,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Frame_005"
-  }
-}
-Assets {
-  Id: 14751741094054914800
-  Name: "Grass Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_001_uv"
   }
 }
 Assets {
@@ -467,15 +476,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14359217783623684227
-  Name: "Rubber Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_scf_rubber_panels_004_uv"
-  }
-}
-Assets {
   Id: 14352142775622346981
   Name: "Sports Referee Whistle Long 01 SFX"
   PlatformAssetType: 7
@@ -500,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Crosshair_003"
+  }
+}
+Assets {
+  Id: 14307818101647843922
+  Name: "Urban Damaged Rebar - Single 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dest_rebar_005_ref"
   }
 }
 Assets {
@@ -611,6 +620,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13143340125256660386
+  Name: "Fern 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_003"
+  }
+}
+Assets {
   Id: 13108963628925209163
   Name: "Sci-fi 005"
   PlatformAssetType: 9
@@ -653,6 +671,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
+  Id: 12852907377364376948
+  Name: "Crowd Small Cheering 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_crowd_small_cheering_01_Cue_ref"
   }
 }
 Assets {
@@ -752,6 +779,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Icon_Moon"
+  }
+}
+Assets {
+  Id: 11810621305121432406
+  Name: "Meta Coins Shuffling Purchase 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_meta_coins_purchase_01_cue_ref"
   }
 }
 Assets {
@@ -926,6 +962,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10756477137136531627
+  Name: "Decal Sci-fi Details 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scf_details_001_ref"
+  }
+}
+Assets {
   Id: 10682336961149633657
   Name: "Arrow"
   PlatformAssetType: 9
@@ -935,12 +980,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10629362715696424225
-  Name: "Generic Water"
-  PlatformAssetType: 2
+  Id: 10591069762182009240
+  Name: "Fantasy Coins 001"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_001"
   }
 }
 Assets {
@@ -968,15 +1013,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "CollegeNeon_Outline_01_Text_014"
-  }
-}
-Assets {
-  Id: 10124763657611866910
-  Name: "Military Tank Modern Hatch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_mod_hatch_001_ref"
   }
 }
 Assets {
@@ -1040,6 +1076,19 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_bullet_stone_001"
+  }
+}
+Assets {
+  Id: 9266597523532318888
+  Name: "Tip Jar"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "1d4d98efd8684bd98b2d7fe28a6fdbcc"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -1655,6 +1704,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4764641276225100400
+  Name: "Survival Craft Jar 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Crafting_Jar_001"
+  }
+}
+Assets {
   Id: 4731052670671609033
   Name: "Liquid Decal"
   PlatformAssetType: 14
@@ -1715,6 +1773,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_004"
+  }
+}
+Assets {
+  Id: 4138155886992534322
+  Name: "Military Tank Historic Gear 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_hst_gear_002_ref"
   }
 }
 Assets {
@@ -1787,6 +1854,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Explosion"
+  }
+}
+Assets {
+  Id: 3850835316358332222
+  Name: "Wood Floor Herringbone Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_herringbone_light_001_uv"
   }
 }
 Assets {
@@ -1979,15 +2055,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2217731831379675323
-  Name: "Hill 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_002"
-  }
-}
-Assets {
   Id: 2174184688664788373
   Name: "Frame Ring 6x 003 Wedge"
   PlatformAssetType: 9
@@ -2003,6 +2070,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_wall_001_half"
+  }
+}
+Assets {
+  Id: 1940675080077667078
+  Name: "Tech Panel 05"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sf_gen_tech-panel_005"
   }
 }
 Assets {

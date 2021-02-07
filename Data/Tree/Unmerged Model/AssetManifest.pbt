@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14751741094054914800
-  Name: "Grass Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_001_uv"
-  }
-}
-Assets {
   Id: 13825144149218119546
   Name: "Rock Block 02"
   PlatformAssetType: 1

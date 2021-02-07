@@ -1,36 +1,54 @@
 Assets {
-  Id: 18393437648231545508
-  Name: "Urban Pipe Flange 01"
+  Id: 18180402978942654961
+  Name: "Sign Font 1: S"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_flange_001_ref"
+    AssetId: "CollegeInset_01_Text_018_ref"
   }
 }
 Assets {
-  Id: 6747614045051753376
-  Name: "Cylinder - Bottom-Aligned"
+  Id: 17677791411844349538
+  Name: "Sign Font 1: O"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
+    AssetId: "CollegeInset_01_Text_014_ref"
   }
 }
 Assets {
-  Id: 4913020950094832864
-  Name: "Small Crate Lid"
+  Id: 15526984044819979542
+  Name: "Sign Font 1: T"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+    AssetId: "CollegeInset_01_Text_019_ref"
   }
 }
 Assets {
-  Id: 3184356387751164974
-  Name: "Metal Basic 01"
+  Id: 15190550605585270816
+  Name: "Sign Font 1: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeInset_01_Text_015_ref"
+  }
+}
+Assets {
+  Id: 8077259136112168962
+  Name: "Sign Font 1: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeInset_01_Text_017_ref"
+  }
+}
+Assets {
+  Id: 5239190762824009429
+  Name: "Metal Painted 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
+    AssetId: "mi_metal_painted_new_001_uv"
   }
 }

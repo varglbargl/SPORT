@@ -1,7 +1,14 @@
 ﻿local Utils = require(script:GetCustomProperty("Utils"))
+local TIP_JAR = script:GetCustomProperty("TipJar")
+local TINY_CROWN = script:GetCustomProperty("TinyCrown")
 
 function wearCostume(player, costume)
   local sockets = costume:GetChildren()
+
+  if player:HasPerk(TIP_JAR) then
+    local crown = World.SpawnAsset(TINY_CROWN, {position = Vector3.UP * -1000})
+    crown:AttachToPlayer(player, "head")
+  end
 
   for idx, child in pairs(sockets) do
     if child:IsA("Equipment") then

@@ -1,10 +1,10 @@
 Assets {
-  Id: 18393437648231545508
-  Name: "Urban Pipe Flange 01"
-  PlatformAssetType: 1
+  Id: 17914528321410060029
+  Name: "Metal Painted Old 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_flange_001_ref"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_painted_old_001_uv"
   }
 }
 Assets {
@@ -17,20 +17,11 @@ Assets {
   }
 }
 Assets {
-  Id: 4913020950094832864
-  Name: "Small Crate Lid"
+  Id: 113576250836441117
+  Name: "Ring - Quarter Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
-  }
-}
-Assets {
-  Id: 3184356387751164974
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
+    AssetId: "sm_quarter_torus_003"
   }
 }
