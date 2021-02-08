@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14751741094054914800
-  Name: "Grass Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_001_uv"
-  }
-}
-Assets {
   Id: 13274836654542401903
   Name: "Decal Numbers and Symbols 01"
   PlatformAssetType: 14
@@ -41,15 +32,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
-  }
-}
-Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
   }
 }
 Assets {

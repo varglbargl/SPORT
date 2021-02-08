@@ -305,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15935921492711161322
+  Name: "Park Bench"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_park_bench_001"
+  }
+}
+Assets {
   Id: 15745211306479370650
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -401,6 +410,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Frame_005"
+  }
+}
+Assets {
+  Id: 14854968792221569118
+  Name: "Decal Stains Bottom 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_bottom_001"
   }
 }
 Assets {
@@ -581,6 +599,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Urban_Icon_023"
+  }
+}
+Assets {
+  Id: 13565815907994828789
+  Name: "Decal Burnt Streaks 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_burned_streak_002_ref"
   }
 }
 Assets {
@@ -2196,6 +2223,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Icon_039"
+  }
+}
+Assets {
+  Id: 644702272838245878
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
   }
 }
 Assets {

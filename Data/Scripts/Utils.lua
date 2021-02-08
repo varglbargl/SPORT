@@ -3,6 +3,7 @@ local GEAR_ORANGE = script:GetCustomProperty("SportGearOrange")
 local GEAR_TEAL = script:GetCustomProperty("SportGearTeal")
 local GEAR_RED = script:GetCustomProperty("SportGearRed")
 local GEAR_GAY = script:GetCustomProperty("SportGearGay")
+local GEAR_YARR = script:GetCustomProperty("SportGearYarr")
 
 local Utils = {}
 
@@ -32,6 +33,11 @@ local costumes = {
     gear = GEAR_GAY,
     primary = 15,
     secondary = 9
+  }, {
+    name = "Placeholder Salty Dog",
+    gear = GEAR_YARR,
+    primary = 36,
+    secondary = 22
   }
 }
 
@@ -447,6 +453,9 @@ function paintPart(thisPart, thisColor)
     thisPart:SetColor(Color.FromLinearHex(thisColor.."00"))
   elseif thisPart:IsA("Decal") then
     thisPart:SetSmartProperty("Color", Color.FromLinearHex(thisColor))
+    if thisPart:GetSmartProperty("Color Emissive") then
+      thisPart:SetSmartProperty("Color Emissive", Color.FromLinearHex(thisColor))
+    end
   end
 end
 

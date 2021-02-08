@@ -1,6 +1,85 @@
 Name: "Left Field"
 RootId: 8850041815899058832
 Objects {
+  Id: 2468288019334458749
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 396.301025
+      Y: -293.43457
+      Z: 221.964874
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.29518127
+      Y: 5.29518127
+      Z: 0.0273356829
+    }
+  }
+  ParentId: 8850041815899058832
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2887966541650210293
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 964252635380732098
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 14359217783623684227
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        G: 0.835099101
+        B: 0.97
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        G: 0.435482293
+        B: 0.901
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1137112816547272582
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 13564902069844640647
   Name: "Cube"
   Transform {
@@ -27,9 +106,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0365669653
-        G: 0.302000016
-        B: 0.00150998065
+        R: 0.0895567611
+        G: 0.406000018
+        B: 0.00202999823
         A: 1
       }
     }
@@ -873,85 +952,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 10124763657611866910
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 15113546084337067997
-  Name: "Cylinder"
-  Transform {
-    Location {
-      X: 396.301025
-      Y: -293.434692
-      Z: 206.673706
-    }
-    Rotation {
-    }
-    Scale {
-      X: 4.62588167
-      Y: 4.62588167
-      Z: 0.001
-    }
-  }
-  ParentId: 8850041815899058832
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail2:id"
-      AssetReference {
-        Id: 2887966541650210293
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 10629362715696424225
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 14359217783623684227
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        G: 0.835099101
-        B: 0.97
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        G: 0.468833119
-        B: 0.97
-        A: 1
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1137112816547272582
     }
     Teams {
       IsTeamCollisionEnabled: true

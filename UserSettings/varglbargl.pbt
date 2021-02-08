@@ -3569,6 +3569,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 2069295486988593597
+    value {
+    }
+  }
+  ObjectStates {
     key: 2070934211573714373
     value {
     }
@@ -8963,6 +8968,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 5258090702569936214
+    value {
+    }
+  }
+  ObjectStates {
+    key: 5259377278243602300
     value {
     }
   }
@@ -15947,6 +15957,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 9380465754550821769
+    value {
+    }
+  }
+  ObjectStates {
     key: 9383512989109006295
     value {
     }
@@ -21128,6 +21143,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 12625544199937466070
+    value {
+    }
+  }
+  ObjectStates {
     key: 12630975107248566680
     value {
     }
@@ -21279,6 +21299,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 12743483313204729665
+    value {
+    }
+  }
+  ObjectStates {
+    key: 12746630737226763605
     value {
     }
   }
@@ -26424,6 +26449,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 15842555837998206278
+    value {
+    }
+  }
+  ObjectStates {
     key: 15843682331281355575
     value {
     }
@@ -27393,6 +27423,11 @@ ObjectSettings {
   }
   ObjectStates {
     key: 16413902867899447430
+    value {
+    }
+  }
+  ObjectStates {
+    key: 16417945546622945426
     value {
     }
   }
@@ -30158,6 +30193,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 18139049033189048883
+    value {
+    }
+  }
+  ObjectStates {
     key: 18143057779274443775
     value {
     }
@@ -30499,6 +30539,11 @@ ObjectSettings {
     }
   }
   ObjectStates {
+    key: 18415769130149995410
+    value {
+    }
+  }
+  ObjectStates {
     key: 18418400297694009641
     value {
     }
@@ -30564,7 +30609,7 @@ DebugPerks {
     PerkId: "1d4d98efd8684bd98b2d7fe28a6fdbcc"
     PerkCounts {
       key: 0
-      value: 0
+      value: 1
     }
     PerkCounts {
       key: 1

@@ -1,6 +1,452 @@
 Name: "Skatepark"
 RootId: 5462249447977609073
 Objects {
+  Id: 4653502722976712522
+  Name: "Main Street Stairs 01 - 1.5m"
+  Transform {
+    Location {
+      X: 1302.45361
+      Y: -623.828613
+      Z: 1134.61072
+    }
+    Rotation {
+      Yaw: -89.999939
+    }
+    Scale {
+      X: -0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Foundation:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Foundation:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6023105047490337935
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17818375139574244439
+  Name: "Main Street Stairs 01 - 1.5m"
+  Transform {
+    Location {
+      X: -2098.65381
+      Y: -623.828613
+      Z: 1134.61072
+    }
+    Rotation {
+      Yaw: 89.9999619
+    }
+    Scale {
+      X: 0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Foundation:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Foundation:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6023105047490337935
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11998119893518690087
+  Name: "Main Street Stairs 01 - 1.5m"
+  Transform {
+    Location {
+      X: 105.128052
+      Y: -623.82959
+      Z: 1134.61072
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Foundation:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Foundation:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6023105047490337935
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1974832676507849888
+  Name: "Main Street Stairs 01 - 1.5m"
+  Transform {
+    Location {
+      X: -901.312622
+      Y: -623.827637
+      Z: 1134.61072
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: -0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Foundation:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9249676690155819450
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Foundation:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.85
+        G: 0.827333272
+        B: 0.807500064
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6023105047490337935
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2909729638602690398
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 738.793579
+      Y: -2372.20288
+      Z: 1397.85168
+    }
+    Rotation {
+      Pitch: -23.5088806
+      Yaw: 178.366196
+      Roll: 85.9535065
+    }
+    Scale {
+      X: 0.638744593
+      Y: 0.638744593
+      Z: 0.638744593
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 8504891171962169981
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9679322403761836218
+  Name: "Decal Military Symbols 02"
+  Transform {
+    Location {
+      X: 736.610168
+      Y: -2371.93921
+      Z: 1400.01038
+    }
+    Rotation {
+      Pitch: -9.31442261
+      Yaw: 177.359131
+      Roll: 86.2401352
+    }
+    Scale {
+      X: 0.857030809
+      Y: 0.857030809
+      Z: 0.857030809
+    }
+  }
+  ParentId: 5462249447977609073
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 9180483725168295866
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5399081523665495821
+  Name: "Street Sign - Triangle"
+  Transform {
+    Location {
+      X: 737.629578
+      Y: -2357.45288
+      Z: 1400.80115
+    }
+    Rotation {
+      Pitch: -14.2708435
+      Yaw: 177.694824
+      Roll: -3.82809448
+    }
+    Scale {
+      X: 3.80000091
+      Y: 3.80000091
+      Z: 3.80000091
+    }
+  }
+  ParentId: 5462249447977609073
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14194377119273813072
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 17577128754000657879
   Name: "Decal Burnt Streaks 01"
   Transform {
@@ -65,9 +511,9 @@ Objects {
       Yaw: 89.9999771
     }
     Scale {
-      X: 0.999999881
-      Y: 1.82044911
-      Z: 1.90385127
+      X: 0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
     }
   }
   ParentId: 5462249447977609073
@@ -136,12 +582,12 @@ Objects {
       Z: 993.520874
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
-      X: -0.999999881
-      Y: 1.82044911
-      Z: 1.90385127
+      X: -0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
     }
   }
   ParentId: 5462249447977609073
@@ -210,12 +656,12 @@ Objects {
       Z: 993.520874
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
-      X: -0.999999881
-      Y: 1.82044911
-      Z: 1.90385127
+      X: -0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
     }
   }
   ParentId: 5462249447977609073
@@ -483,9 +929,9 @@ Objects {
       Yaw: 89.9999847
     }
     Scale {
-      X: 0.999999881
-      Y: 1.82044911
-      Z: 1.90385127
+      X: 0.4730483
+      Y: 0.886965513
+      Z: 0.946096599
     }
   }
   ParentId: 5462249447977609073
@@ -992,6 +1438,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 4
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1039,6 +1489,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 2
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1053,156 +1507,6 @@ Objects {
     TeamSettings {
     }
     DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 14017455152199495584
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 3010.59351
-      Y: -2309.94043
-      Z: 1410.80591
-    }
-    Rotation {
-      Pitch: -14.9999962
-      Yaw: -179.999985
-      Roll: 89.9999847
-    }
-    Scale {
-      X: 0.638744593
-      Y: 0.638744593
-      Z: 0.638744593
-    }
-  }
-  ParentId: 5462249447977609073
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Corner Rounding"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 8504891171962169981
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 4678170275297812497
-  Name: "Decal Military Symbols 02"
-  Transform {
-    Location {
-      X: 3008.74512
-      Y: -2309.94043
-      Z: 1413.27185
-    }
-    Rotation {
-      Pitch: -0.769837439
-      Yaw: -179.999985
-      Roll: 89.9999847
-    }
-    Scale {
-      X: 0.857030809
-      Y: 0.857030809
-      Z: 0.857030809
-    }
-  }
-  ParentId: 5462249447977609073
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 0
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 9180483725168295866
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-}
-Objects {
-  Id: 5027498668413243397
-  Name: "Street Sign - Triangle"
-  Transform {
-    Location {
-      X: 3009.19702
-      Y: -2295.50171
-      Z: 1414.95227
-    }
-    Rotation {
-      Pitch: -5.73720837
-      Yaw: -179.999985
-      Roll: 5.11450691e-14
-    }
-    Scale {
-      X: 3.80000091
-      Y: 3.80000091
-      Z: 3.80000091
-    }
-  }
-  ParentId: 5462249447977609073
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14194377119273813072
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
     }
   }
 }

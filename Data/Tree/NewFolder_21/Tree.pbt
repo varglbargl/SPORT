@@ -2,7 +2,7 @@ Name: "NewFolder_21"
 RootId: 82888217535424249
 Objects {
   Id: 11419569650953247537
-  Name: "Cube"
+  Name: "Girder Medium 4m"
   Transform {
     Location {
       X: -101.928841
@@ -124,9 +124,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 1423.75
+      X: 1414.30334
       Y: -3032.24756
-      Z: -130
+      Z: -129.509033
     }
     Rotation {
       Yaw: -90
@@ -186,7 +186,7 @@ Objects {
 }
 Objects {
   Id: 18312235867637159335
-  Name: "Cube"
+  Name: "Road Ramp Bottom Center"
   Transform {
     Location {
       X: -676.400391

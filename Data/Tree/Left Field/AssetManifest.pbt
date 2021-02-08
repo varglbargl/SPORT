@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10629362715696424225
-  Name: "Generic Water"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
-  }
-}
-Assets {
   Id: 10124763657611866910
   Name: "Military Tank Modern Hatch 01"
   PlatformAssetType: 1
@@ -77,5 +68,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 964252635380732098
+  Name: "Generic Water"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_parameter_driven_water_manual"
   }
 }

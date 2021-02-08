@@ -10,7 +10,7 @@ local weather = 1
 local roundName = ""
 
 if Environment.IsPreview() then
-  roundLength = 20
+  roundLength = 40
 end
 
 function newRoundName()

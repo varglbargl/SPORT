@@ -34,6 +34,12 @@ Assets {
           Id: 8611566564378382121
         }
       }
+      Overrides {
+        Name: "cs:SportGearYarr"
+        AssetReference {
+          Id: 14348082950482467574
+        }
+      }
     }
   }
   SerializationVersion: 74
