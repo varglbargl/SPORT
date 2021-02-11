@@ -102,6 +102,10 @@ Assets {
             Name: "cs:EventOnGoal"
             String: "SoccerNet"
           }
+          Overrides {
+            Name: "cs:ResetBallAfterScore"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1337,6 +1341,14 @@ Assets {
             Name: "cs:EventOnGoal"
             String: "FieldGoal"
           }
+          Overrides {
+            Name: "cs:GirlZone"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ResetBallAfterScore"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1408,6 +1420,14 @@ Assets {
           Overrides {
             Name: "cs:EventOnGoal"
             String: "BasketballHoop"
+          }
+          Overrides {
+            Name: "cs:GirlZone"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ResetBallAfterScore"
+            Bool: false
           }
         }
         Collidable_v2 {

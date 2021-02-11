@@ -19,7 +19,6 @@ Objects {
   ChildIds: 12147122413662449016
   ChildIds: 18075759612854524150
   ChildIds: 1231868157073874387
-  ChildIds: 7242491189083410704
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,38 +28,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 7242491189083410704
-  Name: "Anchor"
-  Transform {
-    Location {
-      X: -8104.72119
-      Y: 1868.99243
-      Z: -10280.5439
-    }
-    Rotation {
-      Pitch: -8.80664063
-      Yaw: 123.402824
-      Roll: -6.16589355
-    }
-    Scale {
-      X: 0.493885189
-      Y: 0.493885189
-      Z: 0.493885189
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Anchor"
   }
 }
 Objects {

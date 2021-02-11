@@ -117,8 +117,8 @@ function updateUI()
   Utils.setTextWithShadow(TEAM_SUFF, teamSuff)
   Utils.setImageWithShadow(INNER_LOGO, innerLogos[innerNumber])
   Utils.setImageWithShadow(OUTER_LOGO, outerLogos[outerNumber])
-  PRIMARY_COLOR:SetColor(Color.FromLinearHex(currentPrimary))
-  SECONDARY_COLOR:SetColor(Color.FromLinearHex(currentSecondary))
+  PRIMARY_COLOR:SetColor(currentPrimary)
+  SECONDARY_COLOR:SetColor(currentSecondary)
 
   teamAbbr = string.sub(homeTown, 1, 1)..string.sub(teamPref, 1, 1)..string.sub(teamSuff, 1, 1)
 

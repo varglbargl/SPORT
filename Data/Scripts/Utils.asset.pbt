@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:ColorLibrary"
+        AssetReference {
+          Id: 16162779636077966738
+        }
+      }
+      Overrides {
         Name: "cs:SportGearGreen"
         AssetReference {
           Id: 961863967307435574

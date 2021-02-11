@@ -20,6 +20,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1577599514484059302
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6.14318848
+            Y: 14.1861572
+            Z: 33.20858
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 11016008883488947103
       value {
         Overrides {
@@ -9805,15 +9818,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 217891488275924150
-      value {
-        Overrides {
-          Name: "cs:ResetBallAfterScore"
-          Bool: false
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 2867523189515929329
       value {
         Overrides {
@@ -9831,32 +9835,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 2934404104705913075
-      value {
-        Overrides {
-          Name: "cs:GirlZone"
-          Bool: true
-        }
-        Overrides {
-          Name: "cs:ResetBallAfterScore"
-          Bool: false
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3085699085387842163
-      value {
-        Overrides {
-          Name: "cs:GirlZone"
-          Bool: true
-        }
-        Overrides {
-          Name: "cs:ResetBallAfterScore"
-          Bool: false
         }
       }
     }

@@ -1,3 +1,5 @@
+local Colors = require(script:GetCustomProperty("ColorLibrary"))
+
 local GEAR_GREEN = script:GetCustomProperty("SportGearGreen")
 local GEAR_ORANGE = script:GetCustomProperty("SportGearOrange")
 local GEAR_TEAL = script:GetCustomProperty("SportGearTeal")
@@ -11,74 +13,34 @@ local costumes = {
   {
     name = "Charlie Don't Surf",
     gear = GEAR_GREEN,
-    primary = 32,
-    secondary = 28
+    primary = 20,
+    secondary = 11
   }, {
     name = "Steamroller Derby",
     gear = GEAR_ORANGE,
-    primary = 28,
-    secondary = 2
+    primary = 10,
+    secondary = 41
   }, {
     name = "20,000 League All-Star",
     gear = GEAR_TEAL,
-    primary = 25,
-    secondary = 3
+    primary = 26,
+    secondary = 7
   }, {
     name = "Shut Up and Jamurai",
     gear = GEAR_RED,
-    primary = 22,
-    secondary = 37
+    primary = 4,
+    secondary = 46
   }, {
     name = "Ball Like a Girl",
     gear = GEAR_GAY,
-    primary = 15,
-    secondary = 9
+    primary = 1,
+    secondary = 24
   }, {
     name = "The Soakland Raider",
     gear = GEAR_YARR,
-    primary = 36,
-    secondary = 22
+    primary = 25,
+    secondary = 4
   }
-}
-
-local colors = {
-  "FFFFFF",
-  "FFEDDF",
-  "D9F8FF",
-  "C2C2C2",
-  "FFCEAB",
-  "C8FFBC",
-  "C6E09D",
-  "FFF380",
-  "26D2FB",
-  "9796BC",
-  "A57D96",
-  "FFEF00",
-  "AAFF00",
-  "3EFF00",
-  "F77892",
-  "C59328",
-  "787878",
-  "5D86BD",
-  "FF7100",
-  "9372FF",
-  "F60133",
-  "670200",
-  "DA0BA4",
-  "7C584B",
-  "005D6D",
-  "C70007",
-  "88227F",
-  "921D03",
-  "0B5508",
-  "4E00D9",
-  "383838",
-  "393D00",
-  "3E2818",
-  "5B0019",
-  "140232",
-  "191619",
-  "050506"
 }
 
 local homeTowns = {
@@ -374,7 +336,7 @@ function Utils.getCostume(index)
 end
 
 function Utils.getColor(index)
-  return getFromTable(colors, index)
+  return getFromTable(Colors, index)
 end
 
 function Utils.getHomeTown(index)
@@ -464,11 +426,11 @@ end
 
 function paintPart(thisPart, thisColor)
   if thisPart:IsA("CoreMesh") then
-    thisPart:SetColor(Color.FromLinearHex(thisColor.."00"))
+    thisPart:SetColor(thisColor * Color.TRANSPARENT)
   elseif thisPart:IsA("Decal") then
-    thisPart:SetSmartProperty("Color", Color.FromLinearHex(thisColor))
+    thisPart:SetSmartProperty("Color", thisColor)
     if thisPart:GetSmartProperty("Color Emissive") then
-      thisPart:SetSmartProperty("Color Emissive", Color.FromLinearHex(thisColor))
+      thisPart:SetSmartProperty("Color Emissive", thisColor)
     end
   end
 end

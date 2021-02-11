@@ -178,8 +178,8 @@ end
 function announceTeamJoined(thisPlayer, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
   paintArmor(thisPlayer, Utils.getColor(primaryColor), Utils.getColor(secondaryColor))
 
-  thisPrimaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
-  thisSecondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
+  thisPrimaryColor = Utils.getColor(primaryColor)
+  thisSecondaryColor = Utils.getColor(secondaryColor)
 
   Utils.setTextWithShadow(HOME_TOWN, Utils.getHomeTown(homeTown), thisSecondaryColor)
   Utils.setTextWithShadow(TEAM_NAME, Utils.getTeamPrefix(namePrefix).." "..Utils.getTeamSuffix(nameSuffix), Color.Lerp(thisPrimaryColor, Color.WHITE, 0.1))
@@ -203,8 +203,8 @@ function announceTeamJoined(thisPlayer, homeTown, namePrefix, nameSuffix, primar
 end
 
 function setPlayerTeamInfo(teamAbbr, primaryColor, secondaryColor, logoInner, logoOuter)
-  primaryColor = Color.FromLinearHex(Utils.getColor(primaryColor))
-  secondaryColor = Color.FromLinearHex(Utils.getColor(secondaryColor))
+  primaryColor = Utils.getColor(primaryColor)
+  secondaryColor = Utils.getColor(secondaryColor)
 
   Utils.setTextWithShadow(ABBR, teamAbbr)
   Utils.setImageWithShadow(LOGO_INNER, innerLogos[logoInner], secondaryColor)

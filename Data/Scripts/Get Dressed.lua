@@ -27,6 +27,8 @@ function getDressed(player, gearNumber, homeTown, namePrefix, nameSuffix, primar
   local costume = Utils.getCostume(gearNumber)
   local gear = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
 
+  print(primaryColor, secondaryColor)
+
   wearCostume(player, gear)
 
   gear:Destroy()
