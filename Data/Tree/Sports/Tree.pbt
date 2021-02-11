@@ -1,6 +1,61 @@
 Name: "Sports"
 RootId: 1231868157073874387
 Objects {
+  Id: 13837894988001987634
+  Name: "Mascot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1231868157073874387
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11016008883488947103
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ref"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2839.63672
+            Y: 2013.94885
+            Z: 137.276596
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 175.62175
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.23714709
+            Y: 1.23714709
+            Z: 1.23714709
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1377068663812180587
+    }
+  }
+}
+Objects {
   Id: 17507272502491758757
   Name: "Ramp"
   Transform {
@@ -8106,7 +8161,7 @@ Objects {
           Vector {
             X: 1593.95178
             Y: -2470.31152
-            Z: 1002.99677
+            Z: 1010.15381
           }
         }
         Overrides {
@@ -8175,7 +8230,7 @@ Objects {
           Vector {
             X: 1280.52356
             Y: -2904.4126
-            Z: 793.570557
+            Z: 800.727539
           }
         }
         Overrides {
@@ -8244,7 +8299,7 @@ Objects {
           Vector {
             X: 919.095825
             Y: -2904.4126
-            Z: 552.072266
+            Z: 559.229248
           }
         }
         Overrides {
@@ -8313,7 +8368,7 @@ Objects {
           Vector {
             X: 583.376343
             Y: -2904.4126
-            Z: 327.75174
+            Z: 334.908813
           }
         }
         Overrides {
@@ -8374,7 +8429,7 @@ Objects {
           Vector {
             X: 343.119751
             Y: -2904.4126
-            Z: 167.217468
+            Z: 174.374542
           }
         }
         Overrides {
@@ -8439,7 +8494,7 @@ Objects {
           Vector {
             X: 1593.95178
             Y: -3333.56689
-            Z: 1002.99677
+            Z: 1010.15381
           }
         }
         Overrides {
@@ -8659,7 +8714,7 @@ Objects {
 }
 Objects {
   Id: 5533236514125997982
-  Name: "Pinball"
+  Name: "8-Ball"
   Transform {
     Location {
       X: 1698.16711
@@ -9750,6 +9805,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 217891488275924150
+      value {
+        Overrides {
+          Name: "cs:ResetBallAfterScore"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 2867523189515929329
       value {
         Overrides {
@@ -9767,6 +9831,32 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 2934404104705913075
+      value {
+        Overrides {
+          Name: "cs:GirlZone"
+          Bool: true
+        }
+        Overrides {
+          Name: "cs:ResetBallAfterScore"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3085699085387842163
+      value {
+        Overrides {
+          Name: "cs:GirlZone"
+          Bool: true
+        }
+        Overrides {
+          Name: "cs:ResetBallAfterScore"
+          Bool: false
         }
       }
     }

@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18222469618563496456
+  Name: "Survival Barrel 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Barrel_001"
+  }
+}
+Assets {
   Id: 18209708905784008205
   Name: "Rubber Old 01"
   PlatformAssetType: 2
@@ -104,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 17476811500278807319
+  Name: "Center Circle 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterCircle_001"
   }
 }
 Assets {
@@ -212,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_angle_girder_001_ref"
+  }
+}
+Assets {
+  Id: 16383892298197191029
+  Name: "Survival Megaphone 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Megaphone_001"
   }
 }
 Assets {
@@ -755,6 +782,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12368172678110561934
+  Name: "UI Basic Shape Circle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Circle"
+  }
+}
+Assets {
   Id: 12343937913841555500
   Name: "Frame Beveled 010"
   PlatformAssetType: 9
@@ -944,6 +980,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11196046202766439875
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
   Id: 11131276483315135825
   Name: "Sign Font 1 Neon Outline: R"
   PlatformAssetType: 1
@@ -1034,6 +1079,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10301535744230498932
+  Name: "Screw"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Urban_Icon_039"
+  }
+}
+Assets {
   Id: 10127558158596447023
   Name: "Sign Font 1 Neon Outline: O"
   PlatformAssetType: 1
@@ -1103,6 +1157,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_bullet_stone_001"
+  }
+}
+Assets {
+  Id: 9357121714694539738
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
@@ -1305,6 +1368,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing_026"
+  }
+}
+Assets {
+  Id: 8045805921383477789
+  Name: "BG Flat 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_019"
   }
 }
 Assets {
@@ -1875,6 +1947,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3982060083774520823
+  Name: "Survival Can 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Can_001"
+  }
+}
+Assets {
   Id: 3892294400242779501
   Name: "Icon Explosion"
   PlatformAssetType: 9
@@ -2145,6 +2226,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1543117911371456973
+  Name: "Survival Can 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Can_002"
+  }
+}
+Assets {
   Id: 1319869304156270170
   Name: "UI Gradient Rectangular 001"
   PlatformAssetType: 9
@@ -2190,6 +2280,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1128773357322343167
+  Name: "BG Gradient 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_022"
+  }
+}
+Assets {
   Id: 1105813672665503715
   Name: "Pants"
   PlatformAssetType: 9
@@ -2214,6 +2313,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_sports_organ_charge_ref"
+  }
+}
+Assets {
+  Id: 814495295031742911
+  Name: "Survival Whistle 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Whistle_001"
   }
 }
 Assets {

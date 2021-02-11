@@ -10,6 +10,10 @@ Assets {
           X: 5
         }
       }
+      Overrides {
+        Name: "cs:Local"
+        Bool: true
+      }
     }
   }
   SerializationVersion: 74

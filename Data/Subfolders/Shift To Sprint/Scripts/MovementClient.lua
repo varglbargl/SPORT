@@ -49,6 +49,7 @@ function Tick()
 	currentStates = newStates
 	if didChange then
 		Events.BroadcastToServer("changeMovementType", currentStates)
+    Task.Wait(0.1)
 	end
 end
 

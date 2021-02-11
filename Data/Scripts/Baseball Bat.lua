@@ -21,7 +21,7 @@ function bumpOther(thisTrigger, other)
   local launchForce = FORCE
 
   if BUMP_GIRLS and other:IsA("Player") then
-    launchForce = FORCE / 2
+    launchForce = FORCE * 0.75
   end
 
   local launchVelocity = equipment.owner:GetViewWorldRotation() * Vector3.FORWARD * launchForce + Vector3.UP * UP_FORCE + equipment.owner:GetVelocity() * 0.5
@@ -39,12 +39,13 @@ function bumpOther(thisTrigger, other)
     sfx:Play()
   end
 
+  other.serverUserData["ScoringPlayer"] = equipment.owner
+
   if BUMP_GIRLS and other:IsA("Player") and FORCE > 1000 then
     Task.Spawn(function() messUpPlayer(other) end)
     Task.Wait()
   end
 
-  other.serverUserData["ScoringPlayer"] = equipment.owner
   other:SetVelocity(launchVelocity)
 
   if not other:IsA("Player") then other:SetAngularVelocity(Vector3.New(math.random(-720, 720), math.random(-720, 720), math.random(-720, 720))) end
@@ -58,13 +59,11 @@ function messUpPlayer(player)
   player:EnableRagdoll("left_hip", 1)
   player.movementControlMode = MovementControlMode.NONE
   player:SetMounted(false)
-  player.serverUserData["ScoringPlayer"] = equipment.owner
 
-  Task.Wait(2)
+  Task.Wait(1)
   if not Object.IsValid(player) then return end
-  player.serverUserData["ScoringPlayer"] = nil
 
-  while player:GetVelocity().z > 0 do
+  while player:GetVelocity().z > 0.1 do
 
     Task.Wait(0.5)
     if not Object.IsValid(player) then return end
@@ -72,6 +71,11 @@ function messUpPlayer(player)
 
   player:DisableRagdoll()
   player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+
+  Task.Wait(3)
+
+  if not Object.IsValid(player) then return end
+  player.serverUserData["ScoringPlayer"] = nil
 end
 
 function enableHitting()

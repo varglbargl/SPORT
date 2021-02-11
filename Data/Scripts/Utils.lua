@@ -34,7 +34,7 @@ local costumes = {
     primary = 15,
     secondary = 9
   }, {
-    name = "Placeholder Salty Dog",
+    name = "The Soakland Raider",
     gear = GEAR_YARR,
     primary = 36,
     secondary = 22
@@ -293,7 +293,6 @@ local foulMessages = {
   "UNSPORTING LANGUAGE",
   "ADMINISTRATIVE TECHNICAL",
   "A BEE FLEW INTO MY WHISTLE",
-  "CRYING IN BASEBALL",
   "EXCESSIVE BLEEDING",
   "INADEQUATE SHOWBOATING",
   "RUNNING NEAR THE POOL",
@@ -308,7 +307,6 @@ local foulMessages = {
   "CHOWDERHOUSING",
   "HOLDING HANDS",
   "GREASING THE PLATE",
-  "USING A DEAD MEME",
   "FAILURE TO MAINTAIN IRONIC DETACHMENT",
   "CAUGHT YOU SLIPPIN THO",
   "NEGLECTING TO TYPE \"GLHF\"",
@@ -316,6 +314,8 @@ local foulMessages = {
   "FAILURE TO HYDRATE",
   "FEEDING THE JUNGLER",
   "REFUNDING A WORD BAN",
+  "QUIT YER HORSE ROUNDIN'",
+  "DUNKING THE UMP",
   "Error running Lua task: Instruction limit exceeded. Your code may be in an infinite loop."
 }
 
@@ -419,6 +419,20 @@ end
 
 function Utils.getDeathMessage(index)
   return getFromTable(deathMessages, index)
+end
+
+function Utils.shakeElement(element, numSeconds)
+  local initialPos = Vector2.New(element.x, element.y)
+  local startTime = time()
+
+  while time() < startTime + numSeconds do
+    Task.Wait()
+    element.x = initialPos.x + math.random(-4, 4)
+    element.y = initialPos.y + math.random(-4, 4)
+  end
+
+  element.x = initialPos.x
+  element.y = initialPos.y
 end
 
 function Utils.setTextWithShadow(shadow, message, optionalColor)

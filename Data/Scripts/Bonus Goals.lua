@@ -17,8 +17,8 @@ Goals.realGoalList = {
   },
   {
     id = 3,
-    description = "Put a Player through a Goal Zone",
-    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "Goal", "Player") end,
+    description = "Put a Player through a Field Goal",
+    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "FieldGoal", "Player") end,
     reward = 10,
     requirment = function() return #Game.GetPlayers() > 1 end
   },
@@ -67,7 +67,7 @@ Goals.realGoalList = {
   },
   {
     id = 11,
-    description = "Knock a player through one of the striped Rings",
+    description = "Knock a player through one of the Striped Rings",
     test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "StripedRing", "Player") end,
     reward = 50,
     requirment = function() return #Game.GetPlayers() > 1 end
@@ -80,10 +80,21 @@ Goals.realGoalList = {
   },
   {
     id = 13,
-    description = "Launch a Player into the stands",
-    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "ItsOutaHere", "Player") end,
-    reward = 25,
-    requirment = function() return #Game.GetPlayers() > 1 end
+    description = "Hit the Referee out of the park",
+    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "ItsOutaHere", "Ref") end,
+    reward = 25
+  },
+  {
+    id = 14,
+    description = "Put the Referee in a Skee Ball hole",
+    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 1, "SkeeBallHole", "Ref") end,
+    reward = 25
+  },
+  {
+    id = 15,
+    description = "Score 3 field goals with the Referee",
+    test = function(player, goalIndex, goalID, reward) xEventsForPlayer(player, goalIndex, goalID, reward, 3, "FieldGoal", "Ref") end,
+    reward = 50
   }
 }
 

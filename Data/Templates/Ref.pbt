@@ -1,13 +1,13 @@
 Assets {
   Id: 1377068663812180587
-  Name: "Mascot"
+  Name: "Ref"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 11016008883488947103
       Objects {
         Id: 11016008883488947103
-        Name: "Mascot"
+        Name: "Ref"
         Transform {
           Scale {
             X: 1.23714709
@@ -2112,9 +2112,9 @@ Assets {
         Name: "Ring - Thick"
         Transform {
           Location {
-            X: -2.03239822
-            Y: -1.31293988
-            Z: 1.34598613
+            X: -1.84432876
+            Y: -1.3282572
+            Z: 1.67219841
           }
           Rotation {
             Pitch: 3.65344071
@@ -2960,8 +2960,8 @@ Assets {
         Name: "Prism - 5-Sided Polished"
         Transform {
           Location {
-            X: 17.5409088
-            Y: -1.71167755
+            X: 16.5549812
+            Y: -1.78716373
             Z: 25.6955242
           }
           Rotation {
@@ -3020,14 +3020,14 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 18.1951694
-            Y: -1.69749391
+            X: 17.20928
+            Y: -1.7729882
             Z: 25.762331
           }
           Rotation {
             Pitch: 5.8682251
             Yaw: 1.22330689
-            Roll: -95.7462845
+            Roll: -95.7462769
           }
           Scale {
             X: 0.0523162074
@@ -3296,14 +3296,14 @@ Assets {
         Name: "Pipe - 5-Sided Thick"
         Transform {
           Location {
-            X: 19.4376316
-            Y: -0.535053968
+            X: 18.451746
+            Y: -0.610543132
             Z: 22.2294312
           }
           Rotation {
             Pitch: -64.9257507
             Yaw: 56.6417656
-            Roll: -55.889225
+            Roll: -55.8892212
           }
           Scale {
             X: 0.0608520471
@@ -3356,14 +3356,14 @@ Assets {
         Name: "Trim Crenellated 8m 02"
         Transform {
           Location {
-            X: 18.7537842
-            Y: -0.440216064
+            X: 18.0567627
+            Y: -0.493347168
             Z: 2.56414795
           }
           Rotation {
             Pitch: 81.7920609
             Yaw: -134.240204
-            Roll: -21.7311478
+            Roll: -21.7311401
           }
           Scale {
             X: 0.0316691622
@@ -3416,14 +3416,14 @@ Assets {
         Name: "Trim Crenellated 8m 02"
         Transform {
           Location {
-            X: 19.0846939
-            Y: 1.97072136
+            X: 18.3882313
+            Y: 1.91739726
             Z: 0.939181507
           }
           Rotation {
             Pitch: 81.7886124
             Yaw: -134.262421
-            Roll: -76.4749908
+            Roll: -76.4749756
           }
           Scale {
             X: 0.0316691622
@@ -3476,12 +3476,12 @@ Assets {
         Name: "Capsule"
         Transform {
           Location {
-            X: 18.8048153
-            Y: 0.689029217
+            X: 17.9940376
+            Y: 0.626957774
             Z: 1.65987718
           }
           Rotation {
-            Pitch: -5.86827946
+            Pitch: -5.86828613
             Yaw: -178.776688
             Roll: 5.74646759
           }
@@ -3548,13 +3548,13 @@ Assets {
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 19.450367
-            Y: -1.41551101
+            X: 18.4645653
+            Y: -1.49098933
             Z: 24.5775337
           }
           Rotation {
             Pitch: 64.9260483
-            Yaw: -123.35862
+            Yaw: -123.358612
             Roll: 55.8888741
           }
           Scale {

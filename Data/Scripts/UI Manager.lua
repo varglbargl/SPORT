@@ -10,6 +10,9 @@ local CROSSHAIR = script:GetCustomProperty("Crosshair"):WaitForObject()
 local PLAYER_LIST = script:GetCustomProperty("PlayerList"):WaitForObject()
 local GOAL_LIST = script:GetCustomProperty("GoalList"):WaitForObject()
 local CHEEVO_STINGERS = script:GetCustomProperty("AchievementStingers"):WaitForObject()
+local REFEREE = script:GetCustomProperty("Ref"):WaitForObject()
+local SPEECH_BUBBLE = script:GetCustomProperty("SpeechBubble"):WaitForObject()
+
 
 local JOINED_PANEL = script:GetCustomProperty("PlayerJoinedPanel"):WaitForObject()
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
@@ -34,11 +37,11 @@ local goals = GOAL_LIST:GetChildren()
 local cheevoStingers = CHEEVO_STINGERS:GetChildren()
 
 local clientPlayer = Game.GetLocalPlayer()
-local messageTask = nil
+local foulAnimTask = nil
 
 function initUI()
-  goalsVisible = false
-  GOAL_LIST.parent.x = 390
+  GOAL_LIST.parent.x = 0
+  goalsVisible = true
   GOAL_LIST.parent.visibility = Visibility.INHERIT
   PLAYER_LIST.visibility = Visibility.INHERIT
 end
@@ -51,29 +54,32 @@ end
 
 Events.Connect("InitGameUI", initUI)
 
-function showMessage(message)
-  Utils.setTextWithShadow(FOUL_BALL, message)
+function foulBall()
+  if foulAnimTask then foulAnimTask:Cancel() end
 
-  if messageTask then messageTask:Cancel() end
+  foulAnimTask = Task.Spawn(function()
+    EaseUI.EaseX(REFEREE, 5, 0.1, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.OUT)
+    EaseUI.EaseY(REFEREE, 5, 0.1, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.OUT)
 
-  messageTask = Task.Spawn(function()
-    Task.Wait(3.5)
-    if not Object.IsValid(clientPlayer) then return end
+    Task.Wait(0.1)
 
+    SPEECH_BUBBLE.visibility = Visibility.INHERIT
+    Utils.setTextWithShadow(FOUL_BALL, "FOUL BALL: "..Utils.getFoulMessage())
+    Utils.shakeElement(REFEREE, 1)
+
+    Task.Wait(2.5)
+
+    SPEECH_BUBBLE.visibility = Visibility.FORCE_OFF
     Utils.setTextWithShadow(FOUL_BALL, "")
+    EaseUI.EaseX(REFEREE, 500, 0.1, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
+    EaseUI.EaseY(REFEREE, 500, 0.1, EaseUI.EasingEquation.CUBIC, EaseUI.EasingDirection.IN)
   end)
-end
-
-function foulBall(message)
-  if not Object.IsValid(clientPlayer) then return end
-
-  showMessage("FOUL BALL: " .. Utils.getFoulMessage())
 end
 
 function wasted()
   if not Object.IsValid(clientPlayer) then return end
 
-  showMessage(Utils.getDeathMessage() .. "!")
+  -- showMessage(Utils.getDeathMessage() .. "!")
 end
 
 local realScore = 0
@@ -156,7 +162,10 @@ Utils.setTextWithShadow(SCORE, "0")
 function paintArmor(thisPlayer, primaryColor, secondaryColor)
   local armorPieces = thisPlayer:GetAttachedObjects()
 
-  while #armorPieces < 10 do -- there's always 10, that's how many are in the armor + player nameplate
+  -- there's always 10, that's how many are in the armor + player nameplate
+  -- REMEMBER TO CHANGE THIS if you add more pieces of armor
+
+  while #armorPieces < 10 do
     Task.Wait(0.1)
     armorPieces = thisPlayer:GetAttachedObjects()
   end
