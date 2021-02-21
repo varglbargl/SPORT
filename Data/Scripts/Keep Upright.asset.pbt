@@ -3,6 +3,12 @@ Assets {
   Name: "Keep Upright"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:isPhysicsSimulated"
+        Bool: false
+      }
+    }
   }
   SerializationVersion: 74
 }

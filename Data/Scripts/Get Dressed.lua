@@ -10,24 +10,23 @@ function wearCostume(player, costume)
     crown:AttachToPlayer(player, "head")
   end
 
-  for idx, child in pairs(sockets) do
-    if child:IsA("Equipment") then
-      child:Equip(player)
-      child.unequippedEvent:Connect(function(thisEquipment, thisPlayer)
+  for idx, part in pairs(sockets) do
+    if part:IsA("Equipment") then
+      part:Equip(player)
+      part.unequippedEvent:Connect(function(thisEquipment)
         thisEquipment:Destroy()
       end)
-
     else
-      child:AttachToPlayer(player, child.name)
+      part:AttachToPlayer(player, part.name)
     end
+
+   part.serverUserData["Owner"] = player
   end
 end
 
 function getDressed(player, gearNumber, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
   local costume = Utils.getCostume(gearNumber)
   local gear = World.SpawnAsset(costume.gear, {position = Vector3.UP * -1000})
-
-  print(primaryColor, secondaryColor)
 
   wearCostume(player, gear)
 

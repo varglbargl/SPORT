@@ -1,7 +1,7 @@
 Name: "NewFolder_1"
-RootId: 4586318015378618300
+RootId: 1392553173086327204
 Objects {
-  Id: 10464392943390264436
+  Id: 12256484295230650614
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 1.87493229
     }
   }
-  ParentId: 4586318015378618300
+  ParentId: 1392553173086327204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -64,7 +64,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8837366437011903713
+  Id: 9634226270855651575
   Name: "Ring - Quarter Thick"
   Transform {
     Location {
@@ -83,7 +83,7 @@ Objects {
       Z: 0.733985305
     }
   }
-  ParentId: 4586318015378618300
+  ParentId: 1392553173086327204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -125,7 +125,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9603432984174835104
+  Id: 2792072850412396212
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -144,7 +144,7 @@ Objects {
       Z: 5.432
     }
   }
-  ParentId: 4586318015378618300
+  ParentId: 1392553173086327204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -186,7 +186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8961902902099128544
+  Id: 5664007992511414397
   Name: "Ring - Quarter Thick"
   Transform {
     Location {
@@ -205,7 +205,7 @@ Objects {
       Z: 0.733985305
     }
   }
-  ParentId: 4586318015378618300
+  ParentId: 1392553173086327204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -247,7 +247,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4800766974393856216
+  Id: 12264386829605169648
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -266,7 +266,7 @@ Objects {
       Z: 0.999068856
     }
   }
-  ParentId: 4586318015378618300
+  ParentId: 1392553173086327204
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

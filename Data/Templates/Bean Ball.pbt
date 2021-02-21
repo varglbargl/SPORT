@@ -16,8 +16,8 @@ Assets {
           }
         }
         ParentId: 1231868157073874387
+        ChildIds: 15959800088259460244
         ChildIds: 13332153976945168872
-        ChildIds: 1322365368188628191
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38,6 +38,45 @@ Assets {
           }
           Radius: 50
           Length: 150
+        }
+      }
+      Objects {
+        Id: 15959800088259460244
+        Name: "Ball Handler"
+        Transform {
+          Location {
+            X: -2.0845142e-05
+            Y: 1.34425582e-05
+            Z: 3.12473712e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.24147344
+            Y: 1.24147463
+            Z: 1.7488513
+          }
+        }
+        ParentId: 12738537115175017238
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 15411024064792520997
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -263,80 +302,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 1322365368188628191
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.24147344
-            Y: 1.24147463
-            Z: 1.74885118
-          }
-        }
-        ParentId: 12738537115175017238
-        ChildIds: 15959800088259460244
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:capsule"
-          }
-        }
-      }
-      Objects {
-        Id: 15959800088259460244
-        Name: "Ball Touch"
-        Transform {
-          Location {
-            Y: 1.55301859e-05
-            Z: 2.56266594e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1322365368188628191
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 15411024064792520997
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 1.25
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
+    }
+    Assets {
+      Id: 15411024064792520997
+      Name: "Cartoon Bounce Jump Boing 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cartoon_bounce_jump_boing_01a_Cue_ref"
       }
     }
     Assets {
@@ -364,15 +337,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_hemisphere_003"
-      }
-    }
-    Assets {
-      Id: 15411024064792520997
-      Name: "Cartoon Bounce Jump Boing 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_cartoon_bounce_jump_boing_01a_Cue_ref"
       }
     }
     PrimaryAssetId {

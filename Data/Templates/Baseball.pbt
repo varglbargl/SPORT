@@ -15,9 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1231868157073874387
+        ChildIds: 10292479163354628069
         ChildIds: 11031581684146548366
-        ChildIds: 17769571259677254098
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38,6 +38,45 @@ Assets {
           }
           Radius: 15
           Length: 200
+        }
+      }
+      Objects {
+        Id: 10292479163354628069
+        Name: "Ball Handler"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -1.36603776e-05
+            Yaw: -1.36603776e-05
+            Roll: -8.53773508e-06
+          }
+          Scale {
+            X: 0.4
+            Y: 0.4
+            Z: 0.4
+          }
+        }
+        ParentId: 656451111108739378
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 17758161708489877386
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -156,124 +195,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 17769571259677254098
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.4
-            Y: 0.4
-            Z: 0.4
-          }
-        }
-        ParentId: 656451111108739378
-        ChildIds: 10292479163354628069
-        ChildIds: 17864579976285912093
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
-        }
-      }
-      Objects {
-        Id: 10292479163354628069
-        Name: "Ball Touch"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17769571259677254098
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 17758161708489877386
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 1
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
-      }
-      Objects {
-        Id: 17864579976285912093
-        Name: "Bump Zone"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17769571259677254098
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:BumpSFXTemplate"
-            AssetReference {
-              Id: 17491356702976100347
-            }
-          }
-          Overrides {
-            Name: "cs:Force"
-            Int: 1000
-          }
-          Overrides {
-            Name: "cs:BumpBalls"
-            Bool: false
-          }
-        }
-        Lifespan: 1
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 5667948223875261713
-          }
-        }
+    }
+    Assets {
+      Id: 17758161708489877386
+      Name: "Sports Baseball Thump 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sports_baseball_thump_01_Cue_ref"
       }
     }
     Assets {
@@ -301,15 +230,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_rope_001"
-      }
-    }
-    Assets {
-      Id: 17758161708489877386
-      Name: "Sports Baseball Thump 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_sports_baseball_thump_01_Cue_ref"
       }
     }
     PrimaryAssetId {

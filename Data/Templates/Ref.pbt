@@ -15,10 +15,10 @@ Assets {
             Z: 1.23714709
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1231868157073874387
+        ChildIds: 15571895049763773028
+        ChildIds: 17964869858340826949
         ChildIds: 7124369243811351009
-        ChildIds: 5971198585556193434
-        ChildIds: 14771358866066861452
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -35,10 +35,84 @@ Assets {
             OverrideMass: true
             Mass: 200
             LinearDamping: 0.5
-            AngularDamping: 0.5
+            AngularDamping: 0.65
           }
           Radius: 40
           Length: 200
+        }
+      }
+      Objects {
+        Id: 15571895049763773028
+        Name: "Ball Handler"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11016008883488947103
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 5502251226882033764
+            }
+          }
+          Overrides {
+            Name: "cs:KeepUpright"
+            Bool: true
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
+        }
+      }
+      Objects {
+        Id: 17964869858340826949
+        Name: "Keep Upright"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11016008883488947103
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:isPhysicsSimulated"
+            Bool: true
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 13901690737120962492
+          }
         }
       }
       Objects {
@@ -46,7 +120,6 @@ Assets {
         Name: "ClientContext"
         Transform {
           Location {
-            Z: 5
           }
           Rotation {
           }
@@ -82,12 +155,11 @@ Assets {
           Location {
           }
           Rotation {
-            Yaw: -4.43962235e-05
           }
           Scale {
-            X: 0.808311343
-            Y: 0.808311343
-            Z: 0.808311343
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 7124369243811351009
@@ -126,9 +198,9 @@ Assets {
         Name: "Human Gal 1"
         Transform {
           Location {
-            X: -3.1026051
-            Y: 1.96591735
-            Z: -63.0176353
+            X: -3.10253906
+            Y: 1.96588135
+            Z: -58.0176353
           }
           Rotation {
           }
@@ -204,14 +276,14 @@ Assets {
         Name: "Head"
         Transform {
           Location {
-            X: -1.92368627
-            Y: 4.63782454
-            Z: 18.2544098
+            X: -1.92333984
+            Y: 4.63778687
+            Z: 23.2544022
           }
           Rotation {
-            Pitch: -6.81357098
-            Yaw: 8.26455116
-            Roll: 1.07480787e-07
+            Pitch: -6.81356812
+            Yaw: 8.26456165
+            Roll: 1.61221195e-07
           }
           Scale {
             X: 3.09769607
@@ -2881,9 +2953,9 @@ Assets {
         Name: "Torso"
         Transform {
           Location {
-            X: 3.96617222
-            Y: 2.48443246
-            Z: -22.2238445
+            X: 3.96630859
+            Y: 2.48443604
+            Z: -17.2238464
           }
           Rotation {
           }
@@ -3680,9 +3752,9 @@ Assets {
         Name: "Right Leg"
         Transform {
           Location {
-            X: 6.18703032
-            Y: 20.5269489
-            Z: -46.8830681
+            X: 6.18701172
+            Y: 20.5269775
+            Z: -41.8830719
           }
           Rotation {
           }
@@ -3894,9 +3966,9 @@ Assets {
         Name: "Left Leg"
         Transform {
           Location {
-            X: 7.41335535
-            Y: -15.3005867
-            Z: -49.6182861
+            X: 7.41381836
+            Y: -15.3005981
+            Z: -44.6182861
           }
           Rotation {
           }
@@ -4108,14 +4180,14 @@ Assets {
         Name: "Right Arm"
         Transform {
           Location {
-            X: -8.75762749
-            Y: 25.7029591
-            Z: 32.2761116
+            X: -8.75732422
+            Y: 25.7029419
+            Z: 37.2761154
           }
           Rotation {
-            Pitch: 2.7103076
+            Pitch: 2.71030092
             Yaw: -0.973510742
-            Roll: -39.7479095
+            Roll: -39.7479248
           }
           Scale {
             X: 1.29070675
@@ -5257,14 +5329,14 @@ Assets {
         Name: "Left Arm"
         Transform {
           Location {
-            X: 1.83547461
-            Y: -22.398571
-            Z: 34.8621902
+            X: 1.83569336
+            Y: -22.3985901
+            Z: 39.8621902
           }
           Rotation {
-            Pitch: -2.70868206
-            Yaw: -0.983428836
-            Roll: 39.7846642
+            Pitch: -2.7086792
+            Yaw: -0.983428955
+            Roll: 39.7846527
           }
           Scale {
             X: 1.29070675
@@ -5688,107 +5760,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 5971198585556193434
-        Name: "Trigger"
-        Transform {
-          Location {
-            Z: -3.409729
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.911512733
-            Y: 0.911512733
-            Z: 2.15649104
-          }
-        }
-        ParentId: 11016008883488947103
-        ChildIds: 15571895049763773028
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:capsule"
-          }
-        }
-      }
-      Objects {
-        Id: 15571895049763773028
-        Name: "Ball Touch"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.886780083
-            Y: 0.886780083
-            Z: 0.374827147
-          }
-        }
-        ParentId: 5971198585556193434
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 5502251226882033764
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 0.5
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
-      }
-      Objects {
-        Id: 14771358866066861452
-        Name: "Keep Upright"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11016008883488947103
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13901690737120962492
-          }
-        }
+    }
+    Assets {
+      Id: 5502251226882033764
+      Name: "Funny Party Horn Whistle Blow Short 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_funny_party_horn_whistle_blow_short_01a_Cue_ref"
       }
     }
     Assets {
@@ -6185,15 +6164,6 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "bp_decal_military_logo_001_ref"
-      }
-    }
-    Assets {
-      Id: 5502251226882033764
-      Name: "Funny Party Horn Whistle Blow Short 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_funny_party_horn_whistle_blow_short_01a_Cue_ref"
       }
     }
     PrimaryAssetId {

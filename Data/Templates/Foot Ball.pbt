@@ -15,9 +15,9 @@ Assets {
             Z: 0.4
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1231868157073874387
+        ChildIds: 13113306449462720815
         ChildIds: 13517450507356934543
-        ChildIds: 9155024201934981820
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38,6 +38,45 @@ Assets {
           }
           Radius: 50
           Length: 150
+        }
+      }
+      Objects {
+        Id: 13113306449462720815
+        Name: "Ball Handler"
+        Transform {
+          Location {
+            X: 1275.00012
+            Y: -851.785767
+            Z: -69.642807
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.07142866
+            Y: 1.07142866
+            Z: 1.07142866
+          }
+        }
+        ParentId: 3001504604372899946
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 7554167201681416352
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -233,81 +272,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 9155024201934981820
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.49999988
-            Y: 1.49999988
-            Z: 1.49999988
-          }
-        }
-        ParentId: 3001504604372899946
-        ChildIds: 13113306449462720815
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
-        }
-      }
-      Objects {
-        Id: 13113306449462720815
-        Name: "Ball Touch"
-        Transform {
-          Location {
-            X: 850.000061
-            Y: -567.857178
-            Z: -46.4285774
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.714285791
-            Y: 0.714285791
-            Z: 0.714285791
-          }
-        }
-        ParentId: 9155024201934981820
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 7554167201681416352
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 1.6
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
+    }
+    Assets {
+      Id: 7554167201681416352
+      Name: "Sports Soccer Ball Hit 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sports_soccer_ball_hit_01_Cue_ref"
       }
     }
     Assets {
@@ -344,15 +316,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 7554167201681416352
-      Name: "Sports Soccer Ball Hit 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_sports_soccer_ball_hit_01_Cue_ref"
       }
     }
     PrimaryAssetId {

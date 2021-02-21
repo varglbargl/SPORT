@@ -616,6 +616,7 @@ Assets {
         }
         ParentId: 9758320633580747176
         ChildIds: 4390365456366080412
+        ChildIds: 14655740059158700992
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -676,6 +677,51 @@ Assets {
         Script {
           ScriptAsset {
             Id: 14037647102674003308
+          }
+        }
+      }
+      Objects {
+        Id: 14655740059158700992
+        Name: "Bump Zone"
+        Transform {
+          Location {
+            X: 1.06503257e-05
+            Y: 78.6865616
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.07787371
+            Y: 1.89865375
+            Z: 1.13511992
+          }
+        }
+        ParentId: 11546098912876111612
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Force"
+            Int: 750
+          }
+          Overrides {
+            Name: "cs:BumpGirls"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:BumpSFXTemplate"
+            AssetReference {
+              Id: 841534158063459245
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5667948223875261713
           }
         }
       }

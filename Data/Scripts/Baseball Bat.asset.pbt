@@ -28,6 +28,11 @@ Assets {
         Name: "cs:BumpGirls"
         Bool: true
       }
+      Overrides {
+        Name: "cs:Ability"
+        ObjectReference {
+        }
+      }
     }
   }
   SerializationVersion: 74

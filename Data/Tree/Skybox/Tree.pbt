@@ -26,8 +26,6 @@ Objects {
   ChildIds: 747216926575497393
   ChildIds: 15209384334741398092
   ChildIds: 16015361618382452392
-  ChildIds: 9770209365433445851
-  ChildIds: 11282278910467303037
   ChildIds: 10418077195982217438
   ChildIds: 14682310127109515018
   ChildIds: 15874150305225636655
@@ -2282,65 +2280,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11282278910467303037
-  Name: "Newsport City"
-  Transform {
-    Location {
-      X: 22722.2656
-      Y: -31496.4258
-      Z: 22306.0352
-    }
-    Rotation {
-      Yaw: -17.0776501
-    }
-    Scale {
-      X: 2.38478184
-      Y: 2.38478184
-      Z: 2.38478184
-    }
-  }
-  ParentId: 11461077874614029026
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Newsport City"
-  }
-}
-Objects {
-  Id: 9770209365433445851
-  Name: "Big Football"
-  Transform {
-    Location {
-      X: 22722.2656
-      Y: -31496.4258
-      Z: 22306.0352
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2
-      Y: 2
-      Z: 2
-    }
-  }
-  ParentId: 11461077874614029026
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Big Football"
-  }
-}
-Objects {
   Id: 16015361618382452392
   Name: "BBK1 - Scifi - Air treatment tower"
   Transform {
@@ -3696,6 +3635,65 @@ Objects {
     TemplateAsset {
       Id: 13531110599177685060
     }
+  }
+}
+Objects {
+  Id: 9770209365433445851
+  Name: "Big Football"
+  Transform {
+    Location {
+      X: 40800
+      Y: -23200
+      Z: 21506.0352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 6132425677051170883
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Big Football"
+  }
+}
+Objects {
+  Id: 11282278910467303037
+  Name: "Neo Sportport"
+  Transform {
+    Location {
+      X: 40800
+      Y: -23200
+      Z: 21506.0352
+    }
+    Rotation {
+      Yaw: -17.0776653
+    }
+    Scale {
+      X: 2.38478184
+      Y: 2.38478184
+      Z: 2.38478184
+    }
+  }
+  ParentId: 6132425677051170883
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Neo Sportport"
   }
 }
 Objects {

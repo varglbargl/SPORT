@@ -16,8 +16,8 @@ Assets {
           }
         }
         ParentId: 1231868157073874387
+        ChildIds: 10765177042297287680
         ChildIds: 18040849254492151359
-        ChildIds: 4952026595566454019
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38,6 +38,46 @@ Assets {
           }
           Radius: 68
           Length: 270
+        }
+      }
+      Objects {
+        Id: 10765177042297287680
+        Name: "Ball Handler"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.58563673
+            Y: 1.58562922
+            Z: 2.84233856
+          }
+        }
+        ParentId: 7865506722451429593
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 13603608828950496522
+            }
+          }
+          Overrides {
+            Name: "cs:HeightMultiplier"
+            Float: 0
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -3597,78 +3637,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 4952026595566454019
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.58563673
-            Y: 1.58562922
-            Z: 2.84233856
-          }
-        }
-        ParentId: 7865506722451429593
-        ChildIds: 10765177042297287680
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:capsule"
-          }
-        }
-      }
-      Objects {
-        Id: 10765177042297287680
-        Name: "Ball Touch"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4952026595566454019
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 13603608828950496522
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 0
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
+    }
+    Assets {
+      Id: 13603608828950496522
+      Name: "Ship Boat Fog Horn 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ship_boat_fog_horn_01_Cue_ref"
       }
     }
     Assets {
@@ -3813,15 +3789,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_003"
-      }
-    }
-    Assets {
-      Id: 13603608828950496522
-      Name: "Ship Boat Fog Horn 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_ship_boat_fog_horn_01_Cue_ref"
       }
     }
     PrimaryAssetId {

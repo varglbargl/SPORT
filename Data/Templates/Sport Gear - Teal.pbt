@@ -25,6 +25,7 @@ Assets {
         ChildIds: 7787461740112276558
         ChildIds: 2851193854151914389
         ChildIds: 3970651352401177020
+        ChildIds: 14922493914422055295
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7249,6 +7250,96 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+          }
+        }
+      }
+      Objects {
+        Id: 14922493914422055295
+        Name: "root"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12898721258406100106
+        ChildIds: 9459858995661436232
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 9459858995661436232
+        Name: "Trigger"
+        Transform {
+          Location {
+            Z: 110
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.85
+            Y: 0.85
+            Z: 2.25
+          }
+        }
+        ParentId: 14922493914422055295
+        ChildIds: 11714959107208868121
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:capsule"
+          }
+        }
+      }
+      Objects {
+        Id: 11714959107208868121
+        Name: "Ball Toucher"
+        Transform {
+          Location {
+            Z: -50
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 1
+          }
+        }
+        ParentId: 9459858995661436232
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2549143277325042399
           }
         }
       }

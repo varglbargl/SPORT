@@ -10,18 +10,17 @@ Assets {
         Name: "Ramp"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.600018442
+            Y: 0.600018442
+            Z: 0.600018442
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1231868157073874387
         ChildIds: 3132576630072458536
         ChildIds: 1174656697681098119
         ChildIds: 2015213719146485572
         ChildIds: 10169881319968527415
         ChildIds: 1413834513172787118
-        ChildIds: 3520000609554547169
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -334,69 +333,6 @@ Assets {
           TeamSettings {
           }
           DecalBP {
-          }
-        }
-      }
-      Objects {
-        Id: 3520000609554547169
-        Name: "Trigger"
-        Transform {
-          Location {
-            X: 116.629761
-            Y: 127.600708
-            Z: 383.891479
-          }
-          Rotation {
-            Roll: -62.1313171
-          }
-          Scale {
-            X: 11.5766373
-            Y: 3.04653382
-            Z: 10.594142
-          }
-        }
-        ParentId: 16814320307244729250
-        ChildIds: 9692175589375184611
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 9692175589375184611
-        Name: "Boost Zone"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3520000609554547169
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9137102860764670582
           }
         }
       }

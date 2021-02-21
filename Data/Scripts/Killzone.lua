@@ -14,6 +14,11 @@ function respawnPlayer(thisTrigger, other)
     Task.Wait(5)
     if not Object.IsValid(other) then return end
 
+    if other.lifeSpan > 0 then
+      other:Destroy()
+      return
+    end
+
     other.serverUserData["ScoringPlayer"] = nil
     other:SetWorldRotation(Rotation.ZERO)
     other:SetVelocity(Vector3.ZERO)

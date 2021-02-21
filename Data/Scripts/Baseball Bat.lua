@@ -22,6 +22,10 @@ function bumpOther(thisTrigger, other)
 
   if BUMP_GIRLS and other:IsA("Player") then
     launchForce = FORCE * 0.75
+
+    if other.serverUserData["Kart"] then
+      other.serverUserData["Kart"]:Unequip()
+    end
   end
 
   local launchVelocity = equipment.owner:GetViewWorldRotation() * Vector3.FORWARD * launchForce + Vector3.UP * UP_FORCE + equipment.owner:GetVelocity() * 0.5
@@ -48,15 +52,21 @@ function bumpOther(thisTrigger, other)
 
   other:SetVelocity(launchVelocity)
 
-  if not other:IsA("Player") then other:SetAngularVelocity(Vector3.New(math.random(-720, 720), math.random(-720, 720), math.random(-720, 720))) end
+  if not other:IsA("Player") then
+    if other.serverUserData["KeepUpright"] then
+      other:SetAngularVelocity(Vector3.New(0, 0, math.random(-720, 720)))
+    else
+      other:SetAngularVelocity(Vector3.New(math.random(-720, 720), math.random(-720, 720), math.random(-720, 720)))
+    end
+  end
 end
 
 function messUpPlayer(player)
   if HIT_SFX then World.SpawnAsset(HIT_SFX, {position = sfxPosition}) end
 
-  player:EnableRagdoll("lower_spine", 1)
-  player:EnableRagdoll("right_hip", 1)
-  player:EnableRagdoll("left_hip", 1)
+  player:EnableRagdoll("lower_spine", 0.9)
+  player:EnableRagdoll("right_hip", 0.9)
+  player:EnableRagdoll("left_hip", 0.9)
   player.movementControlMode = MovementControlMode.NONE
   player:SetMounted(false)
 

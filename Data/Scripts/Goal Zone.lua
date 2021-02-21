@@ -25,7 +25,7 @@ function scoreGoal(thisTrigger, other)
 
   if #scoringPlayers == 0 then return end
 
-  if CAN_FOUL and math.random(1, 15) == 5 then
+  if CAN_FOUL and (math.random(1, 15) == 5 or other.serverUserData["AlwaysFoul"]) then
     Events.Broadcast("Foul", scoringPlayers)
 
     if FOUL_SFX then World.SpawnAsset(FOUL_SFX, {position = other:GetWorldPosition()}) end

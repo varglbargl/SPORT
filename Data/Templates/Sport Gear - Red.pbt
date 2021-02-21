@@ -25,6 +25,7 @@ Assets {
         ChildIds: 13113599258361220748
         ChildIds: 13226080066793005492
         ChildIds: 5906609200904787618
+        ChildIds: 16963462956747331607
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1066,9 +1067,9 @@ Assets {
         Name: "Horn"
         Transform {
           Location {
-            X: 20.7461414
-            Y: 8.91800785
-            Z: 3.06520939
+            X: 20.7268219
+            Y: 8.93308353
+            Z: 3.08210325
           }
           Rotation {
             Pitch: 23.0293674
@@ -1366,9 +1367,9 @@ Assets {
         Name: "Horn"
         Transform {
           Location {
-            X: 20.753418
-            Y: -7.40429688
-            Z: 3.07263184
+            X: 20.7299805
+            Y: -7.43994141
+            Z: 3.06896973
           }
           Rotation {
             Pitch: 23.0293484
@@ -1426,9 +1427,9 @@ Assets {
         Name: "Bone Human Ulna 01"
         Transform {
           Location {
-            X: 20.9038086
-            Y: -7.47247314
-            Z: 3.34674072
+            X: 20.9040012
+            Y: -7.47267866
+            Z: 3.34683633
           }
           Rotation {
             Pitch: 1.61094785
@@ -1436,9 +1437,9 @@ Assets {
             Roll: 2.02892518
           }
           Scale {
-            X: 0.260212213
-            Y: -0.0802391544
-            Z: 0.189865977
+            X: 0.0109445322
+            Y: 0.0109459367
+            Z: 0.0715100542
           }
         }
         ParentId: 2458427867507699281
@@ -1467,7 +1468,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6833131841630692165
+            Id: 1137112816547272582
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1547,7 +1548,7 @@ Assets {
         Transform {
           Location {
             X: 20.9021034
-            Y: 8.94962311
+            Y: 8.94968414
             Z: 3.34645772
           }
           Rotation {
@@ -1556,9 +1557,9 @@ Assets {
             Roll: -2.11428833
           }
           Scale {
-            X: 0.26123476
-            Y: 0.0802365094
-            Z: 0.189827964
+            X: 0.0109445322
+            Y: 0.0109459367
+            Z: 0.0714957491
           }
         }
         ParentId: 2458427867507699281
@@ -1587,7 +1588,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 6833131841630692165
+            Id: 1137112816547272582
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -10237,6 +10238,96 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 16963462956747331607
+        Name: "root"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14784820388929851106
+        ChildIds: 15332154118915035096
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 15332154118915035096
+        Name: "Trigger"
+        Transform {
+          Location {
+            Z: 110
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.85
+            Y: 0.85
+            Z: 2.25
+          }
+        }
+        ParentId: 16963462956747331607
+        ChildIds: 16459097719199991729
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:capsule"
+          }
+        }
+      }
+      Objects {
+        Id: 16459097719199991729
+        Name: "Ball Toucher"
+        Transform {
+          Location {
+            Z: -50
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 1
+          }
+        }
+        ParentId: 15332154118915035096
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2549143277325042399
+          }
+        }
+      }
     }
     Assets {
       Id: 6311366293788934284
@@ -10338,12 +10429,12 @@ Assets {
       }
     }
     Assets {
-      Id: 6833131841630692165
-      Name: "Bone Human Ulna 01"
+      Id: 1137112816547272582
+      Name: "Cylinder"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_ulna_01_ref"
+        AssetId: "sm_cylinder_002"
       }
     }
     Assets {
@@ -10479,15 +10570,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "F7_Text_021"
-      }
-    }
-    Assets {
-      Id: 1137112816547272582
-      Name: "Cylinder"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_002"
       }
     }
     Assets {

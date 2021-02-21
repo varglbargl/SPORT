@@ -1,13 +1,13 @@
 Assets {
-  Id: 7216494041638187790
-  Name: "MIDIAudio"
+  Id: 2549143277325042399
+  Name: "Ball Toucher"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:JSON"
+        Name: "cs:PlayerHitSFX"
         AssetReference {
-          Id: 1479461782155665870
+          Id: 17491356702976100347
         }
       }
     }

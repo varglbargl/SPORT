@@ -7,15 +7,15 @@ Assets {
       RootId: 7959978695704443258
       Objects {
         Id: 7959978695704443258
-        Name: "Group"
+        Name: "Beans??"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 3.12660313
+            Y: 3.12660313
+            Z: 3.12660313
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7713368841031468331
         ChildIds: 6626825156016387457
         ChildIds: 3213156959356950233
         ChildIds: 2441850264324139900
@@ -51,6 +51,7 @@ Assets {
         ChildIds: 14485840978318144930
         ChildIds: 14319457707932998175
         ChildIds: 7537975577387982130
+        ChildIds: 6807240758006972020
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -404,10 +405,10 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.557292
-              G: 0.557292
-              B: 0.557292
-              A: 0.697
+              R: 0.90200007
+              G: 0.90200007
+              B: 0.90200007
+              A: 0.5
             }
           }
         }
@@ -2072,6 +2073,67 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 10734630945552580735
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6807240758006972020
+        Name: "Urban Pipe Cap 03"
+        Transform {
+          Location {
+            X: 0.0166593175
+            Y: -0.386594146
+            Z: 0.303481311
+          }
+          Rotation {
+            Pitch: -1.98742676
+            Yaw: 62.4827843
+            Roll: -3.80880737
+          }
+          Scale {
+            X: 0.780044734
+            Y: 0.780045509
+            Z: 0.111502916
+          }
+        }
+        ParentId: 7959978695704443258
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3184356387751164974
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.85
+              G: 0.85
+              B: 0.85
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12632251234297570874
           }
           Teams {
             IsTeamCollisionEnabled: true

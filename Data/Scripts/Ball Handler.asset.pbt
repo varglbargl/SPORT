@@ -1,6 +1,6 @@
 Assets {
   Id: 14496407068716881889
-  Name: "Ball Touch"
+  Name: "Ball Handler"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -11,8 +11,12 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:HeightMultiplier"
-        Float: 0.75
+        Name: "cs:AlwaysFoul"
+        Bool: false
+      }
+      Overrides {
+        Name: "cs:KeepUpright"
+        Bool: false
       }
     }
     Assets {

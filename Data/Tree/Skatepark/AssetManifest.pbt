@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18031180683407583988
-  Name: "Urban Pipe Cap 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_urb_pipes_acc_cap_002_ref"
-  }
-}
-Assets {
   Id: 17914528321410060029
   Name: "Metal Painted Old 01"
   PlatformAssetType: 2
@@ -59,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_hazard_symbols_001"
-  }
-}
-Assets {
-  Id: 14194377119273813072
-  Name: "Street Sign - Triangle"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_street-sign_triangle_001"
   }
 }
 Assets {
@@ -125,21 +107,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9180483725168295866
-  Name: "Decal Military Symbols 02"
-  PlatformAssetType: 14
+  Id: 8434211854958298357
+  Name: "Wedge - Corner Concave"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_military_logo_2_ref"
-  }
-}
-Assets {
-  Id: 8504891171962169981
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_corner_rounded_concave_001"
   }
 }
 Assets {

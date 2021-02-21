@@ -1,6 +1,243 @@
 Name: "Unmerged Model"
 RootId: 12147122413662449016
 Objects {
+  Id: 779899756877818750
+  Name: "Basketball Hoop"
+  Transform {
+    Location {
+      X: 8588.46875
+      Y: 5748.08252
+      Z: 1952.14087
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.20149565
+      Y: 2.20149565
+      Z: 2.20149565
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Basketball Hoop"
+  }
+}
+Objects {
+  Id: 3008039150746518541
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -5775.90967
+      Y: 2865.67969
+      Z: 474.173859
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.2327292
+      Y: 3.2327292
+      Z: 3.2327292
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_7"
+  }
+}
+Objects {
+  Id: 232108271641040670
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -199.994629
+      Y: 3181.98438
+      Z: 511.861603
+    }
+    Rotation {
+      Pitch: 10.2589159
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 3.30314851
+      Y: 3.30314851
+      Z: 3.30314851
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Railing"
+  }
+}
+Objects {
+  Id: 1392553173086327204
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -3436.50732
+      Y: 3125.29028
+      Z: 511.861603
+    }
+    Rotation {
+      Pitch: 10.2589159
+    }
+    Scale {
+      X: 3.30314851
+      Y: 3.30314851
+      Z: 3.30314851
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_1"
+  }
+}
+Objects {
+  Id: 6664577718371615567
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -2450.65234
+      Y: 6634.39404
+      Z: 401.726959
+    }
+    Rotation {
+      Pitch: -4.62768507
+    }
+    Scale {
+      X: 3.2327292
+      Y: 3.2327292
+      Z: 3.2327292
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_3"
+  }
+}
+Objects {
+  Id: 10351198871053645824
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -4542.21924
+      Y: 6634.39404
+      Z: 571.027344
+    }
+    Rotation {
+      Pitch: -4.62768507
+    }
+    Scale {
+      X: 3.2327292
+      Y: 3.2327292
+      Z: 3.2327292
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_4"
+  }
+}
+Objects {
+  Id: 5413352315086165036
+  Name: "Railing"
+  Transform {
+    Location {
+      X: -4781.41602
+      Y: 2865.67969
+      Z: 369.837189
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.2327292
+      Y: 3.2327292
+      Z: 3.2327292
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder_5"
+  }
+}
+Objects {
+  Id: 772485635735978049
+  Name: "Middle Net"
+  Transform {
+    Location {
+      X: -230
+      Y: -2167.57471
+      Z: -655
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12147122413662449016
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Middle Net"
+  }
+}
+Objects {
   Id: 16286401983466243327
   Name: "Cube"
   Transform {

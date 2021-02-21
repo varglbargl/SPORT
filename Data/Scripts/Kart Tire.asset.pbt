@@ -1,6 +1,6 @@
 Assets {
-  Id: 6695237015703086192
-  Name: "MessageBannerClient"
+  Id: 16820546452270509115
+  Name: "Kart Tire"
   PlatformAssetType: 3
   TextAsset {
   }

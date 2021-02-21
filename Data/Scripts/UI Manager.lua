@@ -13,7 +13,6 @@ local CHEEVO_STINGERS = script:GetCustomProperty("AchievementStingers"):WaitForO
 local REFEREE = script:GetCustomProperty("Ref"):WaitForObject()
 local SPEECH_BUBBLE = script:GetCustomProperty("SpeechBubble"):WaitForObject()
 
-
 local JOINED_PANEL = script:GetCustomProperty("PlayerJoinedPanel"):WaitForObject()
 local HELMET_ICON = script:GetCustomProperty("HelmetIcon"):WaitForObject()
 local HELMET_INNER = script:GetCustomProperty("HelmetInner"):WaitForObject()
@@ -162,10 +161,10 @@ Utils.setTextWithShadow(SCORE, "0")
 function paintArmor(thisPlayer, primaryColor, secondaryColor)
   local armorPieces = thisPlayer:GetAttachedObjects()
 
-  -- there's always 10, that's how many are in the armor + player nameplate
+  -- there's always 11, 9 armor slots + 1 ball bump trigger + 1 player nameplate
   -- REMEMBER TO CHANGE THIS if you add more pieces of armor
 
-  while #armorPieces < 10 do
+  while #armorPieces < 11 do
     Task.Wait(0.1)
     armorPieces = thisPlayer:GetAttachedObjects()
   end
@@ -176,10 +175,10 @@ function paintArmor(thisPlayer, primaryColor, secondaryColor)
 end
 
 function announceTeamJoined(thisPlayer, homeTown, namePrefix, nameSuffix, primaryColor, secondaryColor, logoInner, logoOuter)
-  paintArmor(thisPlayer, Utils.getColor(primaryColor), Utils.getColor(secondaryColor))
-
   thisPrimaryColor = Utils.getColor(primaryColor)
   thisSecondaryColor = Utils.getColor(secondaryColor)
+
+  paintArmor(thisPlayer, thisPrimaryColor, thisSecondaryColor)
 
   Utils.setTextWithShadow(HOME_TOWN, Utils.getHomeTown(homeTown), thisSecondaryColor)
   Utils.setTextWithShadow(TEAM_NAME, Utils.getTeamPrefix(namePrefix).." "..Utils.getTeamSuffix(nameSuffix), Color.Lerp(thisPrimaryColor, Color.WHITE, 0.1))

@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16481809911105756704
+  Name: "Ring"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_004"
+  }
+}
+Assets {
   Id: 16417116211763376902
   Name: "Girder Medium Angled"
   PlatformAssetType: 1
@@ -395,6 +404,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15405022796251312998
+  Name: "Concrete Bunker"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_bunker_001"
+  }
+}
+Assets {
   Id: 15226779164768545717
   Name: "Burst"
   PlatformAssetType: 9
@@ -446,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_bottom_001"
+  }
+}
+Assets {
+  Id: 14772109110006971041
+  Name: "Decal Hazard Symbols 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_hazard_symbols_001"
   }
 }
 Assets {
@@ -761,15 +788,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Scifi_Icon_014"
-  }
-}
-Assets {
-  Id: 12470521115008125758
-  Name: "Pyramid - 8-Sided Truncated Hollow Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_8_sided_truncated_hollow_thin_001"
   }
 }
 Assets {
@@ -1130,6 +1148,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Military_Icon_058"
+  }
+}
+Assets {
+  Id: 9433300448696105807
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
@@ -2097,6 +2124,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Close"
+  }
+}
+Assets {
+  Id: 2741271044510249904
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
   }
 }
 Assets {

@@ -15,9 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1231868157073874387
+        ChildIds: 6121655267240128807
         ChildIds: 8675902271751601425
-        ChildIds: 1746957790957604853
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38,6 +38,45 @@ Assets {
           }
           Radius: 41
           Length: 200
+        }
+      }
+      Objects {
+        Id: 6121655267240128807
+        Name: "Ball Handler"
+        Transform {
+          Location {
+            X: 850.000061
+            Y: -567.857178
+            Z: -46.4285774
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.714285791
+            Y: 0.714285791
+            Z: 0.714285791
+          }
+        }
+        ParentId: 15688622626898540981
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 6580314352300658320
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -68,7 +107,7 @@ Assets {
       }
       Objects {
         Id: 1823557280029697982
-        Name: "PhysicsSphereMesh"
+        Name: "Ball - Soccer 01"
         Transform {
           Location {
           }
@@ -134,77 +173,14 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 1746957790957604853
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15688622626898540981
-        ChildIds: 6121655267240128807
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
-        }
-      }
-      Objects {
-        Id: 6121655267240128807
-        Name: "Ball Touch"
-        Transform {
-          Location {
-            X: 850.000061
-            Y: -567.857178
-            Z: -46.4285774
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.714285791
-            Y: 0.714285791
-            Z: 0.714285791
-          }
-        }
-        ParentId: 1746957790957604853
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 6580314352300658320
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
-          }
-        }
+    }
+    Assets {
+      Id: 6580314352300658320
+      Name: "Sports Soccer Ball Kick 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_sports_soccer_ball_kick_01_Cue_ref"
       }
     }
     Assets {
@@ -214,15 +190,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prop_urb_ball_soccer_01_ref"
-      }
-    }
-    Assets {
-      Id: 6580314352300658320
-      Name: "Sports Soccer Ball Kick 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_sports_soccer_ball_kick_01_Cue_ref"
       }
     }
     PrimaryAssetId {

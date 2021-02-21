@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 1231868157073874387
+        ChildIds: 6121655267240128807
         ChildIds: 13114529429668684419
         ChildIds: 8675902271751601425
         ChildIds: 1746957790957604853
@@ -37,6 +38,42 @@ Assets {
           }
           Radius: 80
           Length: 200
+        }
+      }
+      Objects {
+        Id: 6121655267240128807
+        Name: "Ball Handler"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.87052405
+            Y: 1.87052405
+            Z: 1.87052405
+          }
+        }
+        ParentId: 15688622626898540981
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitSFX"
+            AssetReference {
+              Id: 5161302206759130328
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14496407068716881889
+          }
         }
       }
       Objects {
@@ -96,7 +133,7 @@ Assets {
       }
       Objects {
         Id: 1823557280029697982
-        Name: "PhysicsSphereMesh"
+        Name: "Sphere"
         Transform {
           Location {
           }
@@ -213,7 +250,6 @@ Assets {
           }
         }
         ParentId: 15688622626898540981
-        ChildIds: 6121655267240128807
         ChildIds: 3820850381888733636
         WantsNetworking: true
         Collidable_v2 {
@@ -229,46 +265,6 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:sphere"
-          }
-        }
-      }
-      Objects {
-        Id: 6121655267240128807
-        Name: "Ball Touch"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1746957790957604853
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:HitSFX"
-            AssetReference {
-              Id: 5161302206759130328
-            }
-          }
-          Overrides {
-            Name: "cs:HeightMultiplier"
-            Float: 0.25
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14496407068716881889
           }
         }
       }
@@ -316,6 +312,15 @@ Assets {
       }
     }
     Assets {
+      Id: 5161302206759130328
+      Name: "Gunshot Sub Bass Sweetener 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_gunsweetener_subbass_01_Cue_ref"
+      }
+    }
+    Assets {
       Id: 13164005449179335890
       Name: "Sphere"
       PlatformAssetType: 1
@@ -340,15 +345,6 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_sports_bowling_ball_rolling_floor_loop_01_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 5161302206759130328
-      Name: "Gunshot Sub Bass Sweetener 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_gunsweetener_subbass_01_Cue_ref"
       }
     }
     PrimaryAssetId {

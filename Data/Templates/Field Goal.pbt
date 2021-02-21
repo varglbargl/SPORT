@@ -33,13 +33,9 @@ Assets {
         ChildIds: 1757487515434894282
         ChildIds: 10990412701096482683
         ChildIds: 15555070112012349317
-        ChildIds: 1030482583382476888
-        ChildIds: 8179672961061849342
-        ChildIds: 13574962098120070258
-        ChildIds: 15429512893888518042
+        ChildIds: 12108103370615196844
         ChildIds: 16309584040063061255
         ChildIds: 14532916767470436211
-        ChildIds: 467968412972163024
         ChildIds: 10016613343667866082
         ChildIds: 17808088119441229679
         ChildIds: 12071985509882973071
@@ -991,41 +987,80 @@ Assets {
         }
       }
       Objects {
-        Id: 1030482583382476888
-        Name: "Cube - Arched"
+        Id: 12108103370615196844
+        Name: "Basketball Hoop"
         Transform {
           Location {
-            X: -70.0361328
-            Y: -144.380508
-            Z: 1289.72241
+            X: -170.03624
+            Y: -142.471069
+            Z: 1311.98462
           }
           Rotation {
-            Yaw: -90
           }
           Scale {
-            X: 4.13484716
-            Y: 0.16028972
-            Z: 2.23291588
+            X: 1.4409802
+            Y: 1.4409802
+            Z: 1.4409802
           }
         }
         ParentId: 2867523189515929329
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 11927995792369591208
-            }
-          }
-        }
+        ChildIds: 13574962098120070258
+        ChildIds: 8179672961061849342
+        ChildIds: 15429512893888518042
+        ChildIds: 1030482583382476888
+        ChildIds: 467968412972163024
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 13574962098120070258
+        Name: "Urban Pipe Clamp 03"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2.19999981
+            Y: 5.99999714
+            Z: 6.09999704
+          }
+        }
+        ParentId: 12108103370615196844
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.545
+              G: 0.0168949775
+              B: 0.0168949775
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5239190762824009429
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
         CoreMesh {
           MeshAsset {
-            Id: 6157052486327499304
+            Id: 10676167695277844009
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1045,13 +1080,13 @@ Assets {
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
-            X: -62.8896484
-            Y: -144.380508
-            Z: 1408.71814
+            X: 107.146484
+            Y: -1.90950048
+            Z: 96.7335205
           }
           Rotation {
             Pitch: -6.83018879e-06
-            Yaw: -89.9999924
+            Yaw: -89.9999847
             Roll: 89.999939
           }
           Scale {
@@ -1060,7 +1095,7 @@ Assets {
             Z: 0.0215218775
           }
         }
-        ParentId: 2867523189515929329
+        ParentId: 12108103370615196844
         UnregisteredParameters {
           Overrides {
             Name: "bp:Sides"
@@ -1104,72 +1139,13 @@ Assets {
         }
       }
       Objects {
-        Id: 13574962098120070258
-        Name: "Urban Pipe Clamp 03"
-        Transform {
-          Location {
-            X: -170.036133
-            Y: -142.470963
-            Z: 1311.98462
-          }
-          Rotation {
-            Pitch: -90
-          }
-          Scale {
-            X: 2.19999981
-            Y: 5.99999714
-            Z: 6.09999704
-          }
-        }
-        ParentId: 2867523189515929329
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.545
-              G: 0.0168949775
-              B: 0.0168949775
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5239190762824009429
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10676167695277844009
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
         Id: 15429512893888518042
         Name: "Cone - Truncated Hollow Wide Thin"
         Transform {
           Location {
-            X: 72.9726563
-            Y: -142.964508
-            Z: 1304.2738
+            X: 243.008789
+            Y: -0.493164063
+            Z: -7.71081543
           }
           Rotation {
           }
@@ -1179,7 +1155,7 @@ Assets {
             Z: -2.63375449
           }
         }
-        ParentId: 2867523189515929329
+        ParentId: 12108103370615196844
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1229,6 +1205,136 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+          }
+        }
+      }
+      Objects {
+        Id: 1030482583382476888
+        Name: "Cube - Arched"
+        Transform {
+          Location {
+            X: 100
+            Y: -1.90949535
+            Z: -22.262207
+          }
+          Rotation {
+            Yaw: -89.9999924
+          }
+          Scale {
+            X: 4.13484716
+            Y: 0.16028972
+            Z: 2.23291588
+          }
+        }
+        ParentId: 12108103370615196844
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11927995792369591208
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6157052486327499304
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 467968412972163024
+        Name: "Goal Zone"
+        Transform {
+          Location {
+            X: 245.15918
+            Y: -5.85200644
+            Z: -56.9689026
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.01181531
+            Y: 0.927497327
+            Z: 0.698744535
+          }
+        }
+        ParentId: 12108103370615196844
+        ChildIds: 2934404104705913075
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 2934404104705913075
+        Name: "Goal Zone"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 467968412972163024
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:PointValue"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:EventOnGoal"
+            String: "BasketballHoop"
+          }
+          Overrides {
+            Name: "cs:GirlZone"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ResetBallAfterScore"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14037647102674003308
           }
         }
       }
@@ -1340,86 +1446,6 @@ Assets {
           Overrides {
             Name: "cs:EventOnGoal"
             String: "FieldGoal"
-          }
-          Overrides {
-            Name: "cs:GirlZone"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:ResetBallAfterScore"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14037647102674003308
-          }
-        }
-      }
-      Objects {
-        Id: 467968412972163024
-        Name: "Goal Zone"
-        Transform {
-          Location {
-            X: 75.1230469
-            Y: -148.323029
-            Z: 1267.9104
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.2
-            Y: 1.1
-            Z: 0.6
-          }
-        }
-        ParentId: 2867523189515929329
-        ChildIds: 2934404104705913075
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 2934404104705913075
-        Name: "Goal Zone"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 467968412972163024
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:PointValue"
-            Int: 3
-          }
-          Overrides {
-            Name: "cs:EventOnGoal"
-            String: "BasketballHoop"
           }
           Overrides {
             Name: "cs:GirlZone"
@@ -1656,6 +1682,33 @@ Assets {
       }
     }
     Assets {
+      Id: 10676167695277844009
+      Name: "Urban Pipe Clamp 03"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_clamp_003_ref"
+      }
+    }
+    Assets {
+      Id: 8504891171962169981
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
+      }
+    }
+    Assets {
+      Id: 14066694038347774075
+      Name: "Cone - Truncated Hollow Wide Thin"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cone_truncated_hollow_006"
+      }
+    }
+    Assets {
       Id: 6157052486327499304
       Name: "Cube - Arched"
       PlatformAssetType: 1
@@ -1671,33 +1724,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_wood_raw_white_001_uv"
-      }
-    }
-    Assets {
-      Id: 8504891171962169981
-      Name: "2D Basic Shapes Decal"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "dcl_basicShapes"
-      }
-    }
-    Assets {
-      Id: 10676167695277844009
-      Name: "Urban Pipe Clamp 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_urb_pipes_acc_clamp_003_ref"
-      }
-    }
-    Assets {
-      Id: 14066694038347774075
-      Name: "Cone - Truncated Hollow Wide Thin"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cone_truncated_hollow_006"
       }
     }
     Assets {

@@ -52,7 +52,6 @@ function bumpOther(thisTrigger, other)
 end
 
 function resetPin()
-  Task.Wait(math.random(1, 50) / 100)
   if not Object.IsValid(bowlingPin) then return end
 
   bowlingPin.serverUserData["ScoringPlayer"] = nil

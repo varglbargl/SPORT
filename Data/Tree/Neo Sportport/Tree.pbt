@@ -1,4 +1,4 @@
-Name: "Newsport City"
+Name: "Neo Sportport"
 RootId: 11282278910467303037
 Objects {
   Id: 16088165361301636290
@@ -2132,6 +2132,10 @@ Objects {
       Vector {
         Z: 0.25
       }
+    }
+    Overrides {
+      Name: "cs:Local"
+      Bool: false
     }
   }
   Collidable_v2 {

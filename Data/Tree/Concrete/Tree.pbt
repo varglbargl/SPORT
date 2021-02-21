@@ -1,5 +1,34 @@
-Name: "NewFolder_20"
+Name: "Concrete"
 RootId: 8401097677885909914
+Objects {
+  Id: 11759675801486794802
+  Name: "NewFolder"
+  Transform {
+    Location {
+      X: -3310.30737
+      Y: 5426.29443
+      Z: -292.008057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8401097677885909914
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder"
+  }
+}
 Objects {
   Id: 17737180125061194451
   Name: "Wedge"
@@ -323,7 +352,7 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 2417.59106
+      X: 2527.9812
       Y: 5082.02881
       Z: 109.476959
     }
@@ -332,7 +361,7 @@ Objects {
     }
     Scale {
       X: 18.9
-      Y: 50.4
+      Y: 52.77
       Z: 9
     }
   }
@@ -451,7 +480,7 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 1828.70166
+      X: 3077.72192
       Y: 3282.20215
       Z: 109.476959
     }
@@ -459,8 +488,8 @@ Objects {
       Yaw: -90
     }
     Scale {
-      X: 18.8999882
-      Y: 47.4428787
+      X: 18.8999863
+      Y: 72.4245758
       Z: 9
     }
   }
