@@ -1,26 +1,25 @@
 local DRIVE_TRIGGER = script:GetCustomProperty("DriveTrigger"):WaitForObject()
-local KART_PLAYER_SETTINGS = script:GetCustomProperty("KartPlayerSettings"):WaitForObject()
-local DEFAULT_PLAYER_SETTINGS = script:GetCustomProperty("DefaultPlayerSettings"):WaitForObject()
 local EXPLODE_SFX = script:GetCustomProperty("KartExplodeSFX")
 local BOOST = script:GetCustomProperty("BoostAbility"):WaitForObject()
 
 local kart = script.parent
+local driver = nil
 local driving = false
 local onGround = false
 local speed = 0
 local gravity = 0
-local SpawnPos = kart:GetWorldPosition()
+local spawnTransform = kart:GetWorldTransform()
 local getOutEvent = nil
 local boostEvent = nil
-local unequipEvent = nil
 local explodeTime = 0
 local driverAbilities = nil
 
+local jumpHeight = 1500000
+
 function getIn(thisTrigger, player)
   DRIVE_TRIGGER.collision = Collision.FORCE_OFF
-  KART_PLAYER_SETTINGS:ApplyToPlayer(player)
   player.serverUserData["Kart"] = kart
-  player.animationStance = "unarmed_sit_spaceship_bentleg"
+  driver = player
 
   driverAbilities = player:GetAbilities()
 
@@ -28,7 +27,7 @@ function getIn(thisTrigger, player)
     ability.isEnabled = false
   end
 
-  kart:Equip(player)
+  BOOST.owner = player
 
   driving = true
   explodeTime = time() + math.random(30, 120)
@@ -39,11 +38,17 @@ function getIn(thisTrigger, player)
     if keyCode == "ability_extra_33" then
       getOut(player)
     end
+
+    if keyCode == "ability_primary" and Object.IsValid(BOOST.owner) and BOOST:GetCurrentPhase() == AbilityPhase.READY then
+      BOOST:Activate()
+    end
+
     if onGround and not jumping and (keyCode == "ability_extra_17" or keyCode == "ability_secondary") then
       jumping = true
-      gravity = -1500
+      -- gravity = -1500
+      kart:AddImpulse(Vector3.UP * jumpHeight)
 
-      Task.Wait(1)
+      Task.Wait(2)
 
       jumping = false
     end
@@ -54,10 +59,12 @@ function getIn(thisTrigger, player)
       return getOut(player)
     end
 
-    speed = 6000
+    -- speed = 6000
+    kart:AddImpulse(kart:GetWorldTransform():GetForwardVector() * 2000000)
   end)
 
-  unequipEvent = kart.unequippedEvent:Connect(function(thisKart, thisPlayer)
+  -- handler params: Vehicle_vehicle, Player_oldDriver
+  unequipEvent = kart.driverExitedEvent:Connect(function(thisKart, thisPlayer)
     getOut(thisPlayer)
   end)
 
@@ -66,35 +73,36 @@ function getIn(thisTrigger, player)
 end
 
 function getOut(player)
-  getOutEvent:Disconnect()
-  boostEvent:Disconnect()
-  unequipEvent:Disconnect()
+  if getOutEvent then getOutEvent:Disconnect() end
+  if boostEvent then boostEvent:Disconnect() end
 
   if Object.IsValid(player) then
     player.serverUserData["Kart"] = nil
-    DEFAULT_PLAYER_SETTINGS:ApplyToPlayer(player)
     player.animationStance = "unarmed_stance"
 
-    local currentRot = player:GetWorldRotation()
-    player:SetWorldRotation(Rotation.New(0, 0, currentRot.z))
+    player:SetWorldRotation(Rotation.New(0, 0, player:GetWorldRotation().z))
 
-    kart:Unequip()
-  end
+    -- kart:Unequip()
+    kart:RemoveDriver()
 
-  for _, ability in ipairs(driverAbilities) do
-    if Object.IsValid(ability) then
-      ability.isEnabled = true
+    BOOST.owner = nil
+
+    if driverAbilities then
+      for _, ability in ipairs(driverAbilities) do
+        if Object.IsValid(ability) then
+          ability.isEnabled = true
+        end
+      end
     end
   end
 
   driverAbilities = nil
-  speed = 0
-  gravity = 0
   driving = false
+  driver = nil
 
   World.SpawnAsset(EXPLODE_SFX, {position = kart:GetWorldPosition()})
 
-  kart:SetWorldPosition(SpawnPos)
+  kart:SetWorldTransform(spawnTransform)
 
   Task.Wait(1)
 
@@ -108,49 +116,41 @@ function driveLoop(player, dt)
     return getOut(player)
   end
 
-  local currentVel = player:GetVelocity()
+  -- local currentVel = player:GetVelocity()
   local myPlayerTransform = player:GetWorldTransform()
   local myPlayerPosition = player:GetWorldPosition()
   local myPlayerUp = myPlayerTransform:GetUpVector()
-  local myPlayerForward = myPlayerTransform:GetForwardVector()
+  -- local myPlayerForward = myPlayerTransform:GetForwardVector()
   local aboveMyPlayer = myPlayerPosition + myPlayerUp * 100
   local belowMyPlayer = myPlayerPosition + myPlayerUp * -160
   local raycastBelowMyPlayer = World.Raycast(aboveMyPlayer, belowMyPlayer, {ignorePlayers = true})
 
-  local fromQuat = Quaternion.New(Rotation.New(myPlayerForward, myPlayerUp))
-  local toQuat = Quaternion.New(Rotation.New(Vector3.New(myPlayerForward.x, myPlayerForward.y, 0):GetNormalized(), Vector3.UP))
+  -- local fromQuat = Quaternion.New(Rotation.New(myPlayerForward, myPlayerUp))
+  -- local toQuat = Quaternion.New(Rotation.New(Vector3.New(myPlayerForward.x, myPlayerForward.y, 0):GetNormalized(), Vector3.UP))
 
   if jumping then
     gravity = gravity + 50
   elseif raycastBelowMyPlayer then
-    local impactAlignedPlayerUp = raycastBelowMyPlayer:GetImpactNormal() + myPlayerUp
-    local impactAlignedPlayerForward = Quaternion.New(myPlayerTransform:GetRightVector(), 90) * impactAlignedPlayerUp
-    toQuat = Quaternion.New(Rotation.New(impactAlignedPlayerForward, impactAlignedPlayerUp))
-    player:SetWorldRotation(Rotation.New(Quaternion.Slerp(fromQuat, toQuat, 0.25)))
-    gravity = 50
     onGround = true
   else
     raycastBelowMyPlayer = World.Raycast(myPlayerPosition + Vector3.UP * 125, myPlayerPosition - Vector3.UP * 150, {ignorePlayers = true})
-    gravity = gravity + 50
 
     if raycastBelowMyPlayer then
-      player:SetWorldRotation(Rotation.New(Quaternion.Slerp(fromQuat, toQuat, 0.5)))
       onGround = true
     else
-      player:SetWorldRotation(Rotation.New(Quaternion.Slerp(fromQuat, toQuat, 0.025)))
       onGround = false
     end
   end
 
-  if player:IsBindingPressed("ability_extra_21") and speed < 2000 then
-    speed = speed + 1000 * dt
-  elseif player:IsBindingPressed("ability_extra_31") then
-    speed = math.max(speed - 2000 * dt, -500)
-  else
-    speed = speed * (1 - dt * 2)
-  end
+  -- if player:IsBindingPressed("ability_extra_21") and speed < 2000 then
+  --   speed = speed + 1000 * dt
+  -- elseif player:IsBindingPressed("ability_extra_31") then
+  --   speed = math.max(speed - 2000 * dt, -500)
+  -- else
+  --   speed = speed * (1 - dt * 2)
+  -- end
 
-  player:SetVelocity(Vector3.Lerp(currentVel, Vector3.New(myPlayerForward.x * speed, myPlayerForward.y * speed, myPlayerForward.z * speed - gravity), 0.1))
+  -- player:SetVelocity(Vector3.Lerp(currentVel, Vector3.New(myPlayerForward.x * speed, myPlayerForward.y * speed, myPlayerForward.z * speed - gravity), 0.1))
 
   dt = Task.Wait()
 
@@ -158,4 +158,4 @@ function driveLoop(player, dt)
 end
 
 DRIVE_TRIGGER.interactedEvent:Connect(getIn)
-Events.Connect("ResetAllBalls", function() kart:Unequip() end)
+Events.Connect("ResetAllBalls", function() kart:RemoveDriver() end)

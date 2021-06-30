@@ -11,7 +11,7 @@ bowlingPin.serverUserData["HitSFX"] = HIT_SFX
 
 function bumpOther(thisTrigger, other)
   if not Object.IsValid(other) then return end
-  if not Object.IsValid(other.serverUserData["ScoringPlayer"]) and not other:IsA("Player") then return end
+  if not Object.IsValid(other.serverUserData["ScoringPlayer"]) and not other:IsA("Player") and not other:IsA("Vehicle") then return end
   if math.abs(bowlingPin:GetWorldRotation().x) + math.abs(bowlingPin:GetWorldRotation().y) > 10 then return end
 
   local scorer = nil
@@ -20,6 +20,8 @@ function bumpOther(thisTrigger, other)
     scorer = other.serverUserData["ScoringPlayer"]
   elseif other:IsA("Player") then
     scorer = other
+  elseif other:IsA("Vehicle") then
+    scorer = other.driver
   end
 
   if not Object.IsValid(scorer) then return end

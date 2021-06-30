@@ -46,6 +46,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           IsGroup: true
         }
@@ -74,8 +77,13 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
           Text: "01"
+          FontAsset {
+          }
           Color {
             R: 0.783538043
             G: 0.701102138
@@ -116,8 +124,13 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
           Text: "abcdefghijklmnopqrstuvw"
+          FontAsset {
+          }
           Color {
             R: 1
             G: 1
@@ -158,8 +171,13 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
           Text: "999.9M"
+          FontAsset {
+          }
           Color {
             G: 0.496933132
             B: 1
@@ -181,5 +199,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

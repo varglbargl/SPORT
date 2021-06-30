@@ -123,7 +123,7 @@ function playerJoined(player)
   local storedData = Storage.GetPlayerData(player)
 
 
-  Task.Wait(1.1)
+  Task.Wait(3)
 
   if storedData["savedTeam"] then
     -- Load Team

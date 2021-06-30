@@ -10,7 +10,7 @@ Assets {
         Name: "Pinball Bumper"
         Transform {
           Scale {
-            X: 1
+            X: -1
             Y: 1
             Z: 1
           }
@@ -23,6 +23,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -50,6 +53,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
         }
@@ -107,6 +113,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
         CoreMesh {
           MeshAsset {
             Id: 18031180683407583988
@@ -115,12 +124,13 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
@@ -176,7 +186,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 3
+            Float: 4
           }
         }
         Collidable_v2 {
@@ -184,6 +194,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Blueprint {
           BlueprintAsset {
@@ -194,20 +207,25 @@ Assets {
           DecalBP {
           }
         }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
       }
       Objects {
         Id: 1112688797274125653
         Name: "Trigger"
         Transform {
           Location {
-            Z: 30
+            X: 0.000242829323
+            Y: 0.000115394592
+            Z: -9.13893127
           }
           Rotation {
           }
           Scale {
-            X: 3.48263502
-            Y: 3.48263502
-            Z: 3.48263502
+            X: 3.97910857
+            Y: 3.97910857
+            Z: 3.97910857
           }
         }
         ParentId: 11187041276532084378
@@ -218,6 +236,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
           TeamSettings {
@@ -280,6 +301,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 14037647102674003308
@@ -291,7 +315,7 @@ Assets {
         Name: "Bump Zone"
         Transform {
           Location {
-            Z: 17.2283344
+            Z: -6.43405151
           }
           Rotation {
           }
@@ -309,6 +333,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Script {
           ScriptAsset {
@@ -340,5 +367,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

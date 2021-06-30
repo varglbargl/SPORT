@@ -47,6 +47,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Height: 50
           RenderTransformPivot {
@@ -100,6 +103,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 40
           UIX: 15
@@ -121,6 +127,8 @@ Assets {
             Size: 25
             Justification {
               Value: "mc:etextjustify:center"
+            }
+            Font {
             }
           }
           AnchorLayout {
@@ -157,6 +165,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 4
@@ -214,6 +225,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: -240
           UIX: 89
@@ -238,6 +252,8 @@ Assets {
               Value: "mc:etextjustify:left"
             }
             ClipTextToSize: true
+            Font {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -273,6 +289,9 @@ Assets {
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
           Width: 4
@@ -330,6 +349,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Control {
           Width: 110
           UIX: -20
@@ -352,6 +374,8 @@ Assets {
               Value: "mc:etextjustify:right"
             }
             ClipTextToSize: true
+            Font {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -373,5 +397,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

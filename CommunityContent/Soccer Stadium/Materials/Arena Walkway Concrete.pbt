@@ -2,7 +2,7 @@ Assets {
   Id: 4150830763767603033
   Name: "Arena Walkway Concrete"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 11346393743062480927
     ParameterOverrides {

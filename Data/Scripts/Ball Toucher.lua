@@ -8,7 +8,6 @@ local trigger = script.parent
 function touchBall(thisTrigger, other)
   if not Object.IsValid(other) or not other.serverUserData["IsABall"] then return end
 
-
   if other.lifeSpan > 0 then
     other.lifeSpan = other.lifeSpan + 5
   end
@@ -19,6 +18,8 @@ function touchBall(thisTrigger, other)
   local launchOrigin = script:GetWorldPosition()
   local ballPos = other:GetWorldPosition()
   local finalVel = ownerVel + (ballPos - launchOrigin):GetNormalized() * 250 + Vector3.UP * 750
+
+  print(ballVel.size)
 
   if ballVel.size > 2000 and other.serverUserData["ScoringPlayer"] ~= owner then
     if Object.IsValid(psfx) then psfx:Destroy() end

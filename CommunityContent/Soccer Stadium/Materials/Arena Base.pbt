@@ -2,7 +2,7 @@ Assets {
   Id: 3007839718043115251
   Name: "Arena Base"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 1194599590935038955
     ParameterOverrides {

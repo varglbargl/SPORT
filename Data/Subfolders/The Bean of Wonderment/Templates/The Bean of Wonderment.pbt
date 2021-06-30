@@ -19,6 +19,9 @@ Assets {
             Z: 1
           }
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -40,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "It\'s a bean. Plain and Simple "
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

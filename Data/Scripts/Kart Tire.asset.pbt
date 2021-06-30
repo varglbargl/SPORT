@@ -3,6 +3,14 @@ Assets {
   Name: "Kart Tire"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:ForwardDirection"
+        Vector {
+          Y: 1
+        }
+      }
+    }
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 12782147783543312364
   Name: "Arena Decorative Top Band"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 3871918816573801483
     ParameterOverrides {

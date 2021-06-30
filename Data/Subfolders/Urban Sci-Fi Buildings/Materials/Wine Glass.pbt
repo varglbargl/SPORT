@@ -2,7 +2,7 @@ Assets {
   Id: 282070547922787390
   Name: "Wine Glass"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 14493158368457294190
     ParameterOverrides {

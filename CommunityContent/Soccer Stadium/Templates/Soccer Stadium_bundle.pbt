@@ -25,6 +25,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -46,5 +49,5 @@ Assets {
     Version: "1.0.0"
     Description: "Soccer stadium for Core Soccer.\r\n\r\n"
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

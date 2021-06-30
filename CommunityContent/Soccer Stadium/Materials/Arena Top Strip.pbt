@@ -2,7 +2,7 @@ Assets {
   Id: 12819052663633185583
   Name: "Arena Top Strip"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 16063969410337438280
     ParameterOverrides {

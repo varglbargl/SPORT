@@ -14,21 +14,34 @@ trigger.collision = Collision.FORCE_OFF
 
 function bumpOther(thisTrigger, other)
   if not Object.IsValid(other) then return end
+
+  if other:IsA("Vehicle") and Object.IsValid(other.driver) and other ~= trigger.parent then
+    local kart = other
+    other = kart.driver
+    kart:RemoveDriver()
+  end
+
   if not other:IsA("Player") and not other.serverUserData["Hitable"] then return end
   if not BUMP_GIRLS and other:IsA("Player") then return end
-  if not equipment or not equipment.owner or equipment.owner == other then return end
+
+  local owner = nil
+
+  if trigger.parent:IsA("Vehicle") then
+    owner = trigger.parent.driver
+  else
+    if not equipment or not equipment.owner or equipment.owner == other then return end
+    owner = equipment.owner
+  end
+
+  if not Object.IsValid(owner) then return end
 
   local launchForce = FORCE
 
   if BUMP_GIRLS and other:IsA("Player") then
     launchForce = FORCE * 0.75
-
-    if other.serverUserData["Kart"] then
-      other.serverUserData["Kart"]:Unequip()
-    end
   end
 
-  local launchVelocity = equipment.owner:GetViewWorldRotation() * Vector3.FORWARD * launchForce + Vector3.UP * UP_FORCE + equipment.owner:GetVelocity() * 0.5
+  local launchVelocity = owner:GetViewWorldRotation() * Vector3.FORWARD * launchForce + Vector3.UP * UP_FORCE + owner:GetVelocity() * 0.5
   local sfxPosition = Vector3.Lerp(trigger:GetWorldPosition(), other:GetWorldPosition(), 0.5)
 
   if BUMP_SFX and not Object.IsValid(bumpSFX) then bumpSFX = World.SpawnAsset(BUMP_SFX, {position = sfxPosition}) end
@@ -43,12 +56,14 @@ function bumpOther(thisTrigger, other)
     sfx:Play()
   end
 
-  other.serverUserData["ScoringPlayer"] = equipment.owner
+  other.serverUserData["ScoringPlayer"] = owner
 
   if BUMP_GIRLS and other:IsA("Player") and FORCE > 1000 then
     Task.Spawn(function() messUpPlayer(other) end)
     Task.Wait()
   end
+
+  if not Object.IsValid(other) then return end
 
   other:SetVelocity(launchVelocity)
 

@@ -5,10 +5,12 @@ local spawnPosition = SPAWN_POINT:GetWorldPosition()
 
 function respawnPlayer(thisTrigger, other)
   if other:IsA("Player") then
-    other:Respawn({position = spawnPosition, rotation = Rotation.ZERO})
+    other:Spawn({position = spawnPosition, rotation = Rotation.ZERO})
     Events.BroadcastToPlayer(other, "Wasted")
 
     World.SpawnAsset(HIT_SFX, {position = other:GetWorldPosition()})
+  elseif other:IsA("Vehicle") and other.driver then
+    other:RemoveDriver()
   elseif other.serverUserData["IsABowlingPin"] then
 
     Task.Wait(5)

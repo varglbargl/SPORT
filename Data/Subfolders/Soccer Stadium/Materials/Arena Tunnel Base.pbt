@@ -2,7 +2,7 @@ Assets {
   Id: 12702265378314934802
   Name: "Arena Tunnel Base"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 11346393743062480927
     ParameterOverrides {

@@ -9,18 +9,26 @@ local BALL_ZONE = script:GetCustomProperty("BallZone")
 local HOLE = script:GetCustomProperty("Hole")
 
 local trigger = script.parent
+local scoredPlayers = {}
 
 function scoreGoal(thisTrigger, other)
   if not Object.IsValid(other) then return end
 
   local scoringPlayers = {}
 
-  if GIRL_ZONE and other:IsA("Player") then
+  if GIRL_ZONE and other:IsA("Player") and not scoredPlayers[other] then
     table.insert(scoringPlayers, other)
+    scoredPlayers[other] = true
   end
 
-  if BALL_ZONE and other.serverUserData["IsABall"] and Object.IsValid(other.serverUserData["ScoringPlayer"]) or BALL_ZONE and not HOLE and other:IsA("Player") and Object.IsValid(other.serverUserData["ScoringPlayer"]) then
+  if GIRL_ZONE and other:IsA("Vehicle") and other.driver and not scoredPlayers[other.driver] then
+    table.insert(scoringPlayers, other.driver)
+    scoredPlayers[other.driver] = true
+  end
+
+  if BALL_ZONE and other.serverUserData["IsABall"] and Object.IsValid(other.serverUserData["ScoringPlayer"]) or BALL_ZONE and not HOLE and other:IsA("Player") and Object.IsValid(other.serverUserData["ScoringPlayer"]) and not scoredPlayers[other.serverUserData["ScoringPlayer"]] then
     table.insert(scoringPlayers, other.serverUserData["ScoringPlayer"])
+    scoredPlayers[other.serverUserData["ScoringPlayer"]] = true
   end
 
   if #scoringPlayers == 0 then return end
@@ -45,6 +53,11 @@ function scoreGoal(thisTrigger, other)
 
     for _, scorePlayer in ipairs(scoringPlayers) do
       scorePlayer:AddResource("Score", POINT_VALUE)
+
+      Task.Spawn(function()
+        Task.Wait()
+        scoredPlayers[scorePlayer] = nil
+      end)
     end
   end
 

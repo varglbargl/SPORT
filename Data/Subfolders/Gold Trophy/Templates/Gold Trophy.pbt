@@ -27,6 +27,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -48,5 +51,5 @@ Assets {
     Version: "1.0.0"
     Description: "This trophy is for W I N N N E R S only."
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

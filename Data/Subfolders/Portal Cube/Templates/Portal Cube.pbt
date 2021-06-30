@@ -19,6 +19,9 @@ Assets {
             Z: 1
           }
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -40,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "A cube with 4 portal VFX mirror effects to reflect 4 different dioramas.\r\nDrag and drop in your map"
   }
-  SerializationVersion: 74
+  SerializationVersion: 91
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 13006658205396515557
   Name: "Custom -Retainer Wall"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 9986175644527668604
     ParameterOverrides {

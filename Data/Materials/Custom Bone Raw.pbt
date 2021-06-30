@@ -2,7 +2,7 @@ Assets {
   Id: 17945239831481027215
   Name: "Bowling Ball"
   PlatformAssetType: 13
-  SerializationVersion: 74
+  SerializationVersion: 91
   CustomMaterialAsset {
     BaseMaterialId: 13133454271266588232
     ParameterOverrides {
